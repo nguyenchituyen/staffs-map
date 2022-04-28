@@ -77,9 +77,52 @@ const Map: React.FC<MapProps> = ({
     }
   }, [ref, map]);
 
+  const myStyles =[
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    }
+  ];
+
   React.useEffect(() => {
     if (map) {
-      map.setOptions(options);
+      map.setOptions({
+        options,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: myStyles , 
+      });
     }
   }, [map, options]);
 
@@ -112,9 +155,21 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
     };
   }, [marker]);
 
+
   React.useEffect(() => {
     if (marker) {
-      marker.setOptions(options);
+      marker.setOptions({
+        options,
+        ...{
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            scale: 8.5,
+            fillColor: "#F00",
+            fillOpacity: 0.4,
+            strokeWeight: 0.4
+          }
+        }
+      });
     }
   }, [marker, options]);
 
