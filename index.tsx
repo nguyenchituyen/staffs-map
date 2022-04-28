@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import data from './data';
-import staffData from './staff1';
+import staffData from './staff2';
 
 
 const render = (status: Status) => {
@@ -29,14 +29,24 @@ const App: React.VFC = () => {
     const dataFilter = staffData.filter((ite) => ite.Department === event.target.value);
     if(dataFilter && dataFilter.length > 0) {
       setDataList(dataFilter);
-    } else {
+    } else if(event.target.value === 'All') {
       setDataList(staffData);
+    } else {
+      setDataList([]);
     }
   };
 
   const [area, setArea] = React.useState('');
   const handleChangeArea = (event: SelectChangeEvent) => {
     setArea(event.target.value as string);
+    const dataFilter = staffData.filter((ite) => ite.District === event.target.value);
+    if(dataFilter && dataFilter.length > 0) {
+      setDataList(dataFilter);
+    } else if(event.target.value === 'All') {
+      setDataList(staffData);
+    } else {
+      setDataList([]);
+    }
   };
 
   const handleRender = () => {
@@ -127,13 +137,49 @@ const Map: React.FC<MapProps> = ({
 
   const myStyles =[
     {
-        "featureType": "administrative.locality",
+        "featureType": "administrative.country",
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "simplified"
+                "visibility": "on"
             }
         ]
+    },
+    {
+      "featureType": "administrative.land_parcel",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+    },
+    {
+      "featureType": "administrative.locality",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+    },
+    {
+      "featureType": "administrative.neighborhood",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+    },
+    {
+      "featureType": "administrative.province",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
     },
     {
         "featureType": "landscape",
@@ -231,7 +277,7 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
   React.useEffect(() => {
     if (marker) {
       // geocodeAddress(options.item.address, options.id);
-      const colorFill = departments === '' || departments === 'all' ? "#FF0000" : data.bgColor[options.item.Department]
+      // const colorFill = departments === '' || departments === 'All' ? "#FF0000" : data.bgColor[options.item.Department]
       marker.setOptions({
         options,
         ...{

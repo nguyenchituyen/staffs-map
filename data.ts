@@ -4,7 +4,7 @@ const staffDatas = [
 const departmentDatas = [
     {
         id: 0,
-        name: 'all'
+        name: 'All'
     },
     {
         id: 1,
@@ -70,45 +70,98 @@ const departmentDatas = [
 
 const areaDatas = [
     {
-      id: 0,
-      name: 'Quan 1'
+      id: -1,
+      name: 'All'
     },
     {
-      id: 1,
-      name: 'Quan 2'
+      id: 0,
+      name: 'Quận 1'
     },
+    // {
+    //   id: 1,
+    //   name: 'Quận 2'
+    // },
     {
       id: 2,
-      name: 'Quan 3'
+      name: 'Quận 3'
     },
     {
       id: 3,
-      name: 'Quan 4'
+      name: 'Quận 4'
     },
     {
       id: 4,
-      name: 'Quan 5'
+      name: 'Quận 5'
     },
     {
       id: 5,
-      name: 'Quan 6'
+      name: 'Quận 6'
+    },
+    {
+      id: 6,
+      name: 'Quận 7'
     },
     {
       id: 7,
-      name: 'Quan 7'
+      name: 'Quận 8'
     },
-    {
-      id: 8,
-      name: 'Quan 8'
-    },
+    // {
+    //   id: 8,
+    //   name: 'Quận 9'
+    // },
     {
       id: 9,
-      name: 'Quan 9'
+      name: 'Quận 10'
     },
     {
       id: 10,
-      name: 'Quan 10'
+      name: 'Quận 11'
+    },
+    {
+      id: 11,
+      name: 'Quận 12'
+    },
+    {
+      id: 12,
+      name: 'Thủ Đức'
+    },
+    {
+      id: 13,
+      name: 'Bình Thạnh'
+    },
+    {
+      id: 14,
+      name: 'Gò Vấp'
+    },
+    {
+      id: 15,
+      name: 'Bình Tân'
+    },
+    {
+      id: 16,
+      name: 'Tân Bình'
+    },
+    {
+      id: 17,
+      name: 'Tân Phú'
+    },
+    {
+      id: 18,
+      name: 'Phú Nhuận'
+    },
+    {
+      id: 19,
+      name: 'Đồng Nai'
+    },
+    {
+      id: 20,
+      name: 'Hóc Môn'
+    },
+    {
+      id: 21,
+      name: 'Bình Dương'
     }
+
 ];
 
 const bgColor = {
