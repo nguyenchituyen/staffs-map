@@ -27,3 +27,6 @@ input {
   font-size: larger;
 }
 
+.MuiMenu-paper {
+  max-height: 320px !important;
+}

@@ -60,7 +60,7 @@ const App: React.VFC = () => {
 
   return (
     <>
-      <div style={{margin: '8px'}}>
+      <div style={{margin: '24px'}}>
         <h1 style={{fontSize: '24px', lineHeight: '36px', letterSpacing: '2.5px', fontWeight: '700',  color: '#18181d'}}>Aperia Staff Map </h1>
         <div style={{display: 'flex', marginBottom: '24px'}}>
           <div style={{width: '280px', marginRight: '24px'}}>
