@@ -1,6 +1,14 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import { Button } from "@mui/material";
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import data from './data';
+import staffData from './staff1';
+
 
 const render = (status: Status) => {
   return <h1>{status}</h1>;
@@ -12,51 +20,91 @@ const App: React.VFC = () => {
     lat: 10.8092805, //IBM Building location
     lng: 106.6663751,
   });
-  const markers = [
-    {
-      lat: 10.8118654,
-      lng: 106.6665712
-    },
-    {
-      lat: 10.8118726,
-      lng: 106.6665749
-    },
-    {
-      lat: 10.8132689,
-      lng: 106.6685168
-    },
-    {
-      lat: 10.8126959,
-      lng: 106.6689473
-    },
-    {
-      lat: 10.8146242,
-      lng: 106.6700285
-    },
-    {
-      lat: 10.814414,
-      lng: 106.6697983
+
+  const [dataList, setDataList] = React.useState(staffData);
+
+  const [department, setDepartment] = React.useState('');
+  const handleChangeDepartment = (event: SelectChangeEvent) => {
+    setDepartment(event.target.value as string);
+    const dataFilter = staffData.filter((ite) => ite.Department === event.target.value);
+    if(dataFilter && dataFilter.length > 0) {
+      setDataList(dataFilter);
+    } else {
+      setDataList(staffData);
     }
-  ]
+  };
+
+  const [area, setArea] = React.useState('');
+  const handleChangeArea = (event: SelectChangeEvent) => {
+    setArea(event.target.value as string);
+  };
+
+  const handleRender = () => {
+    let arrDatas = [];
+    for(let i = 0; i < 305; i ++) {
+      const item = localStorage.getItem(`test-data-${i}`);
+      arrDatas.push(item)
+      localStorage.setItem('total-data', JSON.stringify(arrDatas))
+    }
+  }
 
   return (
-    <div style={{ display: "flex", height: "100%" }}>
-      <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!} render={render}>
-        <Map
-          center={center}
-          zoom={zoom}
-          style={{ flexGrow: "1", height: "100%" }}
-        >
-          {markers.map((latLng, i) => {
-            return <Marker 
-            key={i} 
-            position={latLng} 
-            icon="http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-          />})
-          }
-        </Map>
-      </Wrapper>
-    </div>
+    <>
+      <div style={{margin: '8px'}}>
+        <h1 style={{fontSize: '24px', lineHeight: '36px', letterSpacing: '2.5px', fontWeight: '700',  color: '#18181d'}}>Aperia Staff Map </h1>
+        <div style={{display: 'flex', marginBottom: '24px'}}>
+          <div style={{width: '280px', marginRight: '24px'}}>
+            <FormControl fullWidth>
+              <InputLabel id="select-label-department">Department</InputLabel>
+              <Select
+                labelId="select-label-department"
+                id="demo-simple-select"
+                value={department}
+                label="Department"
+                onChange={handleChangeDepartment}
+              >
+              {data.departmentDatas.map((ite, i) => <MenuItem key={i}  value={ite.name}>{ite.name}</MenuItem>)}
+            </Select>
+            </FormControl>
+          </div>
+          <div style={{width: '280px'}}>
+            <FormControl fullWidth>
+            <InputLabel id="select-label-area">Area</InputLabel>
+              <Select
+                labelId="select-label-area"
+                id="demo-simple-select"
+                value={area}
+                label="Area"
+                onChange={handleChangeArea}
+              >
+              {data.areaDatas.map((ite, i) => <MenuItem key={i} value={ite.name}>{ite.name}</MenuItem>)}
+            </Select>
+            </FormControl>
+            {/* <Button onClick={handleRender}>RENDER</Button> */}
+          </div>
+        </div>
+      </div>
+      <div style={{ display: "flex", height: "100%" }}>
+        <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!} render={render}>
+          <Map
+            center={center}
+            zoom={zoom}
+            style={{ flexGrow: "1", height: "100%" }}
+          >
+            {dataList && dataList.map((item, i) => {
+              return <Marker 
+                  key={i} 
+                  position={item.position}
+                  item={item}
+                  id={i}
+                  areas={area}
+                  departments={department}
+                />})
+            }
+          </Map>
+        </Wrapper>
+      </div>
+    </>
   );
 };
 interface MapProps extends google.maps.MapOptions {
@@ -79,7 +127,7 @@ const Map: React.FC<MapProps> = ({
 
   const myStyles =[
     {
-        "featureType": "administrative",
+        "featureType": "administrative.locality",
         "elementType": "all",
         "stylers": [
             {
@@ -113,7 +161,16 @@ const Map: React.FC<MapProps> = ({
                 "visibility": "off"
             }
         ]
-    }
+    },
+    {
+      "featureType": "road",
+      "elementType": "all",
+      "stylers": [
+        { 
+          "visibility": "off"
+        }
+      ]
+    },
   ];
 
   React.useEffect(() => {
@@ -141,6 +198,7 @@ const Map: React.FC<MapProps> = ({
 
 const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
   const [marker, setMarker] = React.useState<google.maps.Marker>();
+  const { departments, areas } = options;
 
   React.useEffect(() => {
     if (!marker) {
@@ -154,18 +212,34 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
       }
     };
   }, [marker]);
+  
 
+  const geocodeAddress = (address, id) => {
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDhC3MaEgg0iXTbzFsHfEaTtz9NVD-mxOI&address=${address}`)
+        .then((response) => response.json())
+        .then((responseJson) => {
+          if(responseJson.status === 'OK') {
+            localStorage.setItem(`test-data-${id}`, JSON.stringify({
+              ...options.item,
+              potision: responseJson.results[0].geometry.location
+            }));
+          }
+        })
+        
+  }
 
   React.useEffect(() => {
     if (marker) {
+      // geocodeAddress(options.item.address, options.id);
+      const colorFill = departments === '' || departments === 'all' ? "#FF0000" : data.bgColor[options.item.Department]
       marker.setOptions({
         options,
         ...{
           icon: {
             path: google.maps.SymbolPath.CIRCLE,
             scale: 8.5,
-            fillColor: "#F00",
-            fillOpacity: 0.4,
+            fillColor: data.bgColor[options.item.Department],
+            fillOpacity: 0.8,
             strokeWeight: 0.4
           }
         }
