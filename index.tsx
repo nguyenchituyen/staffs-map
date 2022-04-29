@@ -208,15 +208,24 @@ const Map: React.FC<MapProps> = ({
             }
         ]
     },
-    // {
-    //   "featureType": "road.local",
-    //   "elementType": "all",
-    //   "stylers": [
-    //     { 
-    //       "visibility": "off"
-    //     }
-    //   ]
-    // },
+    {
+      "featureType": "road.highway",
+      "elementType": "all",
+      "stylers": [
+        { 
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway.controlled_access",
+      "elementType": "all",
+      "stylers": [
+        { 
+          "visibility": "off"
+        }
+      ]
+    },
   ];
 
   React.useEffect(() => {
