@@ -208,15 +208,15 @@ const Map: React.FC<MapProps> = ({
             }
         ]
     },
-    {
-      "featureType": "road",
-      "elementType": "all",
-      "stylers": [
-        { 
-          "visibility": "off"
-        }
-      ]
-    },
+    // {
+    //   "featureType": "road.local",
+    //   "elementType": "all",
+    //   "stylers": [
+    //     { 
+    //       "visibility": "off"
+    //     }
+    //   ]
+    // },
   ];
 
   React.useEffect(() => {
@@ -224,8 +224,9 @@ const Map: React.FC<MapProps> = ({
       map.setOptions({
         options,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: myStyles , 
+        styles: myStyles
       });
+      
     }
   }, [map, options]);
 
