@@ -18,11 +18,11 @@ const render = (status: Status) => {
 const marks = [
   {
     value: 0,
-    label: '0 Year',
+    label: '0 year',
   },
   {
     value: 15,
-    label: '15 Years',
+    label: '15 years',
   }
 ];
 
