@@ -1,6 +1,3 @@
-const staffDatas = [
-]
-
 const departmentDatas = [
     {
         id: 0,
@@ -185,7 +182,6 @@ const bgColor = {
 
 export default {
     bgColor,
-    staffDatas,
     departmentDatas,
     areaDatas
 }

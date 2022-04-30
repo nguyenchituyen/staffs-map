@@ -3,16 +3,28 @@ import * as ReactDom from "react-dom";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import { Button } from "@mui/material";
+import { Button, Slider } from "@mui/material";
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import data from './data';
-import staffData from './staff2';
+import staffData from './staff3';
+import datatest from './convert-test';
 
 
 const render = (status: Status) => {
   return <h1>{status}</h1>;
 };
+
+const marks = [
+  {
+    value: 0,
+    label: '0 Year',
+  },
+  {
+    value: 15,
+    label: '15 Years',
+  }
+];
 
 const App: React.VFC = () => {
   const [zoom, setZoom] = React.useState(12);
@@ -22,32 +34,46 @@ const App: React.VFC = () => {
   });
 
   const [dataList, setDataList] = React.useState(staffData);
+  const [year, setYear] = React.useState([0, 15]);
 
-  const [department, setDepartment] = React.useState('');
+  const [department, setDepartment] = React.useState('All');
   const handleChangeDepartment = (event: SelectChangeEvent) => {
     setDepartment(event.target.value as string);
-    const dataFilter = staffData.filter((ite) => ite.Department === event.target.value);
-    if(dataFilter && dataFilter.length > 0) {
-      setDataList(dataFilter);
-    } else if(event.target.value === 'All') {
-      setDataList(staffData);
-    } else {
-      setDataList([]);
-    }
   };
 
-  const [area, setArea] = React.useState('');
+  const [area, setArea] = React.useState('All');
   const handleChangeArea = (event: SelectChangeEvent) => {
     setArea(event.target.value as string);
-    const dataFilter = staffData.filter((ite) => ite.District === event.target.value);
-    if(dataFilter && dataFilter.length > 0) {
+  };
+
+  const handleOnChangeYear = (e) => {
+    setYear(e.target.value as number[]);
+  }
+
+  React.useEffect(() => {
+    let dataFilter = staffData;
+    if((department !== "" && department !== 'All') || (area !== "" && area !== 'All') || (year[0] !== 0 || year[1] !== 15)) {
+      
+      if(department !== 'All') {
+        dataFilter = dataFilter.filter((ite) => ite.Department === department);
+      }
+
+      if(area !== 'All') {
+        dataFilter = dataFilter.filter((ite) => ite.District === area);
+      }
+
+      if(year[0] !== 0 || year[1] !== 15) {
+        dataFilter = dataFilter.filter((ite) => {
+          return ite.Seniorty + 0 >= year[0] && ite.Seniorty + 0 <= year[1]
+        });
+      }
       setDataList(dataFilter);
-    } else if(event.target.value === 'All') {
+    } else if(department === "All" && area === "All" && year[0] === 0 && year[1] === 15){
       setDataList(staffData);
     } else {
       setDataList([]);
     }
-  };
+  }, [year, department, area])
 
   const handleRender = () => {
     let arrDatas = [];
@@ -56,6 +82,25 @@ const App: React.VFC = () => {
       arrDatas.push(item)
       localStorage.setItem('total-data', JSON.stringify(arrDatas))
     }
+  }
+
+  const handleRender1 =() => {
+    const dt = datatest.map((ite) => {
+      const item = dataList.filter((item) => item.Nickname === ite.Nickname)
+      let district = "";
+      let position = null;
+      if(item) {
+        district = item[0].District;
+        position = item[0].position;
+      }
+      return {
+        ...ite,
+        District: district,
+        position
+      }
+    })
+
+    localStorage.setItem('total-dt', JSON.stringify(dt))
   }
 
   return (
@@ -77,7 +122,7 @@ const App: React.VFC = () => {
             </Select>
             </FormControl>
           </div>
-          <div style={{width: '280px'}}>
+          <div style={{width: '280px', marginRight: '38px'}}>
             <FormControl fullWidth>
             <InputLabel id="select-label-area">Area</InputLabel>
               <Select
@@ -90,7 +135,12 @@ const App: React.VFC = () => {
               {data.areaDatas.map((ite, i) => <MenuItem key={i} value={ite.name}>{ite.name}</MenuItem>)}
             </Select>
             </FormControl>
-            {/* <Button onClick={handleRender}>RENDER</Button> */}
+          </div>
+          <div style={{width: '280px', display: 'flex', alignItems: 'center'}}>
+            <FormControl fullWidth>
+              <Slider getAriaLabel={() => 'Year range'} defaultValue={1} aria-label="Default" valueLabelDisplay="auto" max={15} min={0} marks={marks} value={year} onChange={handleOnChangeYear} />
+            </FormControl>
+            {/* <Button onClick={handleRender1}>RENDER</Button> */}
           </div>
         </div>
       </div>
@@ -254,7 +304,6 @@ const Map: React.FC<MapProps> = ({
 
 const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
   const [marker, setMarker] = React.useState<google.maps.Marker>();
-  const { departments, areas } = options;
 
   React.useEffect(() => {
     if (!marker) {
@@ -270,19 +319,18 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
   }, [marker]);
   
 
-  const geocodeAddress = (address, id) => {
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDhC3MaEgg0iXTbzFsHfEaTtz9NVD-mxOI&address=${address}`)
-        .then((response) => response.json())
-        .then((responseJson) => {
-          if(responseJson.status === 'OK') {
-            localStorage.setItem(`test-data-${id}`, JSON.stringify({
-              ...options.item,
-              potision: responseJson.results[0].geometry.location
-            }));
-          }
-        })
-        
-  }
+  // const geocodeAddress = (address, id) => {
+  //   fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDhC3MaEgg0iXTbzFsHfEaTtz9NVD-mxOI&address=${address}`)
+  //       .then((response) => response.json())
+  //       .then((responseJson) => {
+  //         if(responseJson.status === 'OK') {
+  //           localStorage.setItem(`test-data-${id}`, JSON.stringify({
+  //             ...options.item,
+  //             potision: responseJson.results[0].geometry.location
+  //           }));
+  //         }
+  //       })   
+  // }
 
   React.useEffect(() => {
     if (marker) {
