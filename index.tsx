@@ -340,6 +340,7 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
       if(options.item) {
         marker.setOptions({
           options,
+          cursor: 'auto',
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
@@ -354,44 +355,33 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
         marker.setOptions(options);
       }
 
-    const apriaContent =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h3 id="firstHeading" class="firstHeading">Aperia</h3>' +
-    '<div id="bodyContent">' +
-    "<p><b>Address:</b> " +
-    "12 Song Thao, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam" +
-    "</p>" +
-    "</div>" +
-    "</div>";
+      if(!options?.item) {
+        const apriaContent =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h3 id="firstHeading" class="firstHeading">Aperia</h3>' +
+          '<div id="bodyContent">' +
+          "<p><b>Address:</b> " +
+          "12 Song Thao, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam" +
+          "</p>" +
+          "</div>" +
+          "</div>";
 
-    const staffContent =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h3 id="firstHeading" class="firstHeading">Staff Info</h3>' +
-    '<div id="bodyContent">' +
-    "<p><b>Department:</b> " +  options?.item?.Department + "</p>" +
-    "<p><b>Nickname:</b> " +  options?.item?.Nickname + "</p>" +
-    "<p><b>Vietnamese Name:</b> " +  options?.item?.VietnameseName + "</p>" +
-    "<p><b>StartDate:</b> " +  options?.item?.StartDate + "</p>" +
-    "<p><b>Seniorty:</b> " +  options?.item?.Seniorty + "</p>" +
-    "<p><b>Address:</b> " +  options?.item?.Address + "</p>" +
-    "</div>" +
-    "</div>";
-
-      const infowindow = new google.maps.InfoWindow({
-        content: options?.item ? staffContent : apriaContent
-      });
-      marker.addListener('click', function() {
-        infowindow.open({
-          anchor: marker,
-          map: marker.map,
-          shouldFocus: false,
+        const infowindow = new google.maps.InfoWindow({
+          content: apriaContent
         });
-      });
-
+        marker.addListener('mouseover', function() {
+          infowindow.open({
+            anchor: marker,
+            map: marker.map,
+            shouldFocus: false,
+          });
+        });
+        marker.addListener('mouseout', function() {
+          infowindow.close();
+        });
+      }
     }
   }, [marker, options]);
 
