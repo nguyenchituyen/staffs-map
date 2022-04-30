@@ -138,7 +138,7 @@ const App: React.VFC = () => {
           </div>
           <div style={{width: '280px', display: 'flex', alignItems: 'center'}}>
             <FormControl fullWidth>
-              <Slider getAriaLabel={() => 'Year range'} defaultValue={1} aria-label="Default" valueLabelDisplay="auto" max={15} min={0} marks={marks} value={year} onChange={handleOnChangeYear} />
+              <Slider step={0.6} getAriaLabel={() => 'Year range'} defaultValue={1} aria-label="Default" valueLabelDisplay="auto" max={15} min={0} marks={marks} value={year} onChange={handleOnChangeYear} />
             </FormControl>
             {/* <Button onClick={handleRender1}>RENDER</Button> */}
           </div>
