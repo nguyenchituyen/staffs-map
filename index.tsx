@@ -30,7 +30,7 @@ const App: React.VFC = () => {
   const [zoom, setZoom] = React.useState(12);
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 10.8092805, //IBM Building location
-    lng: 106.6663751,
+    lng: 106.6660986,
   });
 
   const [dataList, setDataList] = React.useState(staffData);
@@ -145,12 +145,14 @@ const App: React.VFC = () => {
         </div>
       </div>
       <div style={{ display: "flex", height: "100%" }}>
+        <div id="marker-tooltip"></div>
         <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!} render={render}>
           <Map
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
           >
+            <Marker position={center}/>
             {dataList && dataList.map((item, i) => {
               return <Marker 
                   key={i} 
@@ -318,7 +320,6 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
     };
   }, [marker]);
   
-
   // const geocodeAddress = (address, id) => {
   //   fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDhC3MaEgg0iXTbzFsHfEaTtz9NVD-mxOI&address=${address}`)
   //       .then((response) => response.json())
@@ -336,18 +337,61 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
     if (marker) {
       // geocodeAddress(options.item.address, options.id);
       // const colorFill = departments === '' || departments === 'All' ? "#FF0000" : data.bgColor[options.item.Department]
-      marker.setOptions({
-        options,
-        ...{
-          icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            scale: 8.5,
-            fillColor: data.bgColor[options.item.Department],
-            fillOpacity: 0.8,
-            strokeWeight: 0.4
+      if(options.item) {
+        marker.setOptions({
+          options,
+          ...{
+            icon: {
+              path: google.maps.SymbolPath.CIRCLE,
+              scale: 8.5,
+              fillColor: data.bgColor[options.item?.Department],
+              fillOpacity: 0.8,
+              strokeWeight: 0.4
+            }
           }
-        }
+        });
+      } else {
+        marker.setOptions(options);
+      }
+
+    const apriaContent =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h3 id="firstHeading" class="firstHeading">Aperia</h3>' +
+    '<div id="bodyContent">' +
+    "<p><b>Address:</b> " +
+    "12 Song Thao, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam" +
+    "</p>" +
+    "</div>" +
+    "</div>";
+
+    const staffContent =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h3 id="firstHeading" class="firstHeading">Staff Info</h3>' +
+    '<div id="bodyContent">' +
+    "<p><b>Department:</b> " +  options?.item?.Department + "</p>" +
+    "<p><b>Nickname:</b> " +  options?.item?.Nickname + "</p>" +
+    "<p><b>Vietnamese Name:</b> " +  options?.item?.VietnameseName + "</p>" +
+    "<p><b>StartDate:</b> " +  options?.item?.StartDate + "</p>" +
+    "<p><b>Seniorty:</b> " +  options?.item?.Seniorty + "</p>" +
+    "<p><b>Address:</b> " +  options?.item?.Address + "</p>" +
+    "</div>" +
+    "</div>";
+
+      const infowindow = new google.maps.InfoWindow({
+        content: options?.item ? staffContent : apriaContent
       });
+      marker.addListener('click', function() {
+        infowindow.open({
+          anchor: marker,
+          map: marker.map,
+          shouldFocus: false,
+        });
+      });
+
     }
   }, [marker, options]);
 
