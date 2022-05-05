@@ -1,70 +1,61 @@
 const departmentDatas = [
-    {
-        id: 0,
-        name: 'All'
-    },
-    {
-        id: 1,
-        name: 'Admin'
-    },
-    {
-        id: 2,
-        name: 'BA'
-    },
-    {
-        id: 3,
-        name: 'DB'
-    },
-    {
-        id: 4,
-        name: 'DBA'
-    },
-    {
-        id: 5,
-        name: 'Design'
-    },
-    {
-        id: 6,
-        name: 'Director'
-    },
-    {
-        id: 7,
-        name: 'Finance'
-    },
-    {
-        id: 8,
-        name: 'Front - end'
-    },
-    {
-        id: 9,
-        name: 'Graphic Designer'
-    },
-    {
-        id: 10,
-        name: 'HR'
-    },
-    {
-        id: 11,
-        name: 'IS'
-    },
-    {
-        id: 12,
-        name: 'IT'
-    },
-    {
-        id: 13,
-        name: 'PM'
-    },
-    {
-        id: 14,
-        name: 'PMO'
-    },
-    {
-        id: 15,
-        name: 'QC'
-    }
+  {
+    id: 0,
+    name: 'All'
+  },
+  {
+    id: 1,
+    name: 'Admin'
+  },
+  {
+    id: 2,
+    name: 'PMO'
+  },
+  {
+    id: 3,
+    name: 'SQL Developer'
+  },
+  {
+    id: 4,
+    name: 'Software Developer'
+  },
+  {
+    id: 5,
+    name: 'QC'
+  },
+  {
+    id: 6,
+    name: 'BA'
+  },
+  {
+    id: 7,
+    name: 'HR'
+  },
+  {
+    id: 8,
+    name: 'SM'
+  },
+  {
+    id: 9,
+    name: 'IT'
+  },
+  {
+    id: 10,
+    name: 'Design'
+  },
+  {
+    id: 11,
+    name: 'Frontend Developer'
+  },
+  {
+    id: 12,
+    name: 'DBA'
+  },
+  {
+    id: 13,
+    name: 'DevOps'
+  },
 ]
-
 const areaDatas = [
     {
       id: -1,
@@ -164,20 +155,17 @@ const areaDatas = [
 const bgColor = {
     'all': '#FF0000',
     'Admin': '#002BFF',
-    'BA': '#FF9933',
-    'DB': '#0080FF',
-    'DBA': '#cc0066',
-    'Design': '#6C1AD7',
-    'Director': '#0C3E69',
-    'Finance': '#0C6944',
-    'Front-end': '#22690C',
-    'Graphic Designer': '#57690C',
-    'HR': '#695D0C',
-    'IS': '#69470C',
-    'IT': '#69370C',
-    'PM': '#69150C',
-    'PMO': '#690C0C',
-    'QC': '#0C2269',
+    'PMO': '#FF9933',
+    'SQL Developer': '#0080FF',
+    'QC': '#cc0066',
+    'BA': '#6C1AD7',
+    'HR': '#0C3E69',
+    'SM': '#0C6944',
+    'IT': '#22690C',
+    'Design': '#57690C',
+    'Frontend Developer': '#695D0C',
+    'DBA': '#69470C',
+    'DevOps': '#69370C'
 }
 
 export default {
