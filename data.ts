@@ -56,6 +56,7 @@ const departmentDatas = [
     name: 'DevOps'
   },
 ]
+
 const areaDatas = [
     {
       id: -1,
@@ -169,7 +170,7 @@ const bgColor = {
 }
 
 export default {
-    bgColor,
-    departmentDatas,
-    areaDatas
+  bgColor,
+  departmentDatas,
+  areaDatas
 }

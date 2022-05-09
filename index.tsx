@@ -6,9 +6,14 @@ import MenuItem from '@mui/material/MenuItem';
 import { Button, Slider } from "@mui/material";
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
 import data from './data';
 import staffData from './staff4';
 import datatest from './convert-test';
+import buildA from "./buildA";
+import buildB from "./buildB";
 
 
 const render = (status: Status) => {
@@ -35,6 +40,7 @@ const App: React.VFC = () => {
 
   const [dataList, setDataList] = React.useState(staffData);
   const [year, setYear] = React.useState([0, 15]);
+  const [showOffice, setShowOffice] = React.useState(false);
 
   const [department, setDepartment] = React.useState('All');
   const handleChangeDepartment = (event: SelectChangeEvent) => {
@@ -48,6 +54,10 @@ const App: React.VFC = () => {
 
   const handleOnChangeYear = (e) => {
     setYear(e.target.value as number[]);
+  }
+
+  const handleChangeShowOffice = (e) => {
+    setShowOffice(!showOffice)
   }
 
   React.useEffect(() => {
@@ -136,11 +146,16 @@ const App: React.VFC = () => {
             </Select>
             </FormControl>
           </div>
-          <div style={{width: '280px', display: 'flex', alignItems: 'center'}}>
+          <div style={{width: '280px', display: 'flex', alignItems: 'center', marginRight: '60px'}}>
             <FormControl fullWidth>
               <Slider step={0.5} getAriaLabel={() => 'Year range'} defaultValue={1} aria-label="Default" valueLabelDisplay="auto" max={15} min={0} marks={marks} value={year} onChange={handleOnChangeYear} />
             </FormControl>
             {/* <Button onClick={handleRender1}>RENDER</Button> */}
+          </div>
+          <div style={{width: '280px', display: 'flex', alignItems: 'center', marginTop: '-24px'}}>
+            <FormGroup>
+              <FormControlLabel control={<Switch value={showOffice} onChange={handleChangeShowOffice} />} label="Avarible offices" />
+            </FormGroup>
           </div>
         </div>
       </div>
@@ -153,7 +168,25 @@ const App: React.VFC = () => {
             style={{ flexGrow: "1", height: "100%" }}
           >
             <Marker position={center}/>
-            {dataList && dataList.map((item, i) => {
+            {
+              showOffice && buildA.map((item, i) => {
+                return <Marker 
+                    key={i} 
+                    position={item.position}
+                    item={item}
+                    id={i}
+                  />})
+            }
+            {
+              showOffice && buildB.map((item, i) => {
+                return <Marker 
+                    key={i} 
+                    position={item.position}
+                    item={item}
+                    id={i}
+                  />})
+            }
+            {!showOffice && dataList && dataList.map((item, i) => {
               return <Marker 
                   key={i} 
                   position={item.position}
@@ -337,7 +370,8 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
     if (marker) {
       // geocodeAddress(options.item.address, options.id);
       // const colorFill = departments === '' || departments === 'All' ? "#FF0000" : data.bgColor[options.item.Department]
-      if(options.item) {
+
+      if(options.item && !options.item.office) {
         marker.setOptions({
           options,
           cursor: 'auto',
@@ -351,12 +385,23 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
             }
           }
         });
+      } else if(options.item && options.item.office){
+        marker.setOptions({
+          options,
+          ...{
+            icon: {
+              url: options.item.office === "A" ? "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" : "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+            }
+          }
+        });
       } else {
         marker.setOptions(options);
       }
 
+      let infowindow: any;
+      let infoContent: any;
       if(!options?.item) {
-        const apriaContent =
+        infoContent =
           '<div id="content">' +
           '<div id="siteNotice">' +
           "</div>" +
@@ -367,10 +412,51 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
           "</p>" +
           "</div>" +
           "</div>";
+      }
 
-        const infowindow = new google.maps.InfoWindow({
-          content: apriaContent
-        });
+      
+      if(options.item &&  options.item.office) {
+        infoContent =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h3 id="firstHeading" class="firstHeading">' + options.item.BuildingName +
+          '</h3>' +
+          '<div id="bodyContent">' +
+          "<p><b>Premises:</b> "
+          + options.item.Premises +
+          "</p>" +
+          "<p><b>Floor:</b> "
+          + options.item.Floor +
+          "</p>" +
+          "<p><b>Vacant Status:</b> "
+          + options.item.VacantStatus +
+          "</p>" +
+          "<p><b>Asking Rent:</b> "
+          + options.item.AskingRent +
+          "</p>" +
+          "<p><b>Gross Rent:</b> "
+          + options.item.GrossRent +
+          "</p>" +
+          "<p><b>Service Charge:</b> "
+          + options.item.ServiceCharge +
+          "</p>" +
+          "<p><b>Total Amount:</b> "
+          + options.item.TotalAmount +
+          "</p>" +
+          "<p><b>Address:</b> "
+          + options.item.Address +
+          "</p>" +
+          "</div>" +
+          "</div>";
+
+        
+      }
+
+      infowindow = new google.maps.InfoWindow({
+        content: infoContent
+      });
+      if(infowindow && (!options?.item || options.item && options.item.office)) {
         marker.addListener('mouseover', function() {
           infowindow.open({
             anchor: marker,
