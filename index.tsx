@@ -421,6 +421,7 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
           '<div id="siteNotice">' +
           "</div>" +
           '<h3 id="firstHeading" class="firstHeading">' + options.item.BuildingName +
+          ' - Grade ' + options.item.office +
           '</h3>' +
           '<div id="bodyContent">' +
           "<p><b>Premises:</b> "
