@@ -432,16 +432,16 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
           "<p><b>Vacant Status:</b> "
           + options.item.VacantStatus +
           "</p>" +
-          "<p><b>Asking Rent:</b> "
+          "<p><b>Asking Rent (VAT excluded):</b> "
           + options.item.AskingRent +
           "</p>" +
-          "<p><b>Gross Rent:</b> "
+          "<p><b>Gross Rent (VAT excluded):</b> "
           + options.item.GrossRent +
           "</p>" +
-          "<p><b>Service Charge:</b> "
+          "<p><b>Service Charge (VAT excluded):</b> "
           + options.item.ServiceCharge +
           "</p>" +
-          "<p><b>Total Amount:</b> "
+          "<p><b>Total Amount (VAT excluded):</b> "
           + options.item.TotalAmount +
           "</p>" +
           "<p><b>Address:</b> "
