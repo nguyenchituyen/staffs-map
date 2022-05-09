@@ -154,7 +154,7 @@ const App: React.VFC = () => {
           </div>
           <div style={{width: '280px', display: 'flex', alignItems: 'center', marginTop: '-24px'}}>
             <FormGroup>
-              <FormControlLabel control={<Switch value={showOffice} onChange={handleChangeShowOffice} />} label="Avarible offices" />
+              <FormControlLabel control={<Switch value={showOffice} onChange={handleChangeShowOffice} />} label="Available Offices" />
             </FormGroup>
           </div>
         </div>
