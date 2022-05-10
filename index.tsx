@@ -186,7 +186,7 @@ const App: React.VFC = () => {
                     id={i}
                   />})
             }
-            {!showOffice && dataList && dataList.map((item, i) => {
+            {dataList && dataList.map((item, i) => {
               return <Marker 
                   key={i} 
                   position={item.position}
