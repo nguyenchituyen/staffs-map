@@ -378,11 +378,11 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
-              scale: 8.5,
+              scale: 5,
               fillColor: data.bgColor[options.item?.Department],
               fillOpacity: 0.8,
               strokeWeight: 0.4
-            }
+            },
           }
         });
       } else if(options.item && options.item.office){
