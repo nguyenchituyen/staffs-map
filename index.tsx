@@ -459,7 +459,7 @@ const Map: React.FC<MapProps> = ({
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "on"
+                "visibility": "off"
             }
         ]
     },
@@ -468,7 +468,7 @@ const Map: React.FC<MapProps> = ({
       "elementType": "all",
       "stylers": [
           {
-              "visibility": "on"
+              "visibility": "off"
           }
       ]
     },
@@ -477,7 +477,7 @@ const Map: React.FC<MapProps> = ({
       "elementType": "all",
       "stylers": [
           {
-              "visibility": "on"
+              "visibility": "off"
           }
       ]
     },
@@ -495,7 +495,7 @@ const Map: React.FC<MapProps> = ({
       "elementType": "all",
       "stylers": [
           {
-              "visibility": "on"
+              "visibility": "off"
           }
       ]
     },
@@ -504,7 +504,7 @@ const Map: React.FC<MapProps> = ({
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "on"
+                "visibility": "off"
             }
         ]
     },
@@ -641,8 +641,9 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
-              scale: 5,
-              fillColor: data.bgColor[options.item?.Department],
+              scale: 8,
+              // fillColor: data.bgColor[options.item?.Department],
+              fillColor: '#002BFF',
               fillOpacity: 0.8,
               strokeWeight: 0.4
             },
