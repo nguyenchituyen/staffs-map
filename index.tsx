@@ -10,11 +10,9 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import data from './data';
-import staffData from './staff4';
-import datatest from './convert-test';
+import staffData from './staff';
 import buildA from "./buildA";
 import buildB from "./buildB";
-import districtData from './districtData'
 import district from './district'
 import positionCenter from './districtCenter'
 

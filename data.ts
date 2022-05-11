@@ -64,91 +64,91 @@ const areaDatas = [
     },
     {
       id: 0,
-      name: 'Quận 1'
+      name: 'DISTRICT 1'
     },
-    // {
-    //   id: 1,
-    //   name: 'Quận 2'
-    // },
+    {
+      id: 1,
+      name: 'DISTRICT 2'
+    },
     {
       id: 2,
-      name: 'Quận 3'
+      name: 'DISTRICT 3'
     },
     {
       id: 3,
-      name: 'Quận 4'
+      name: 'DISTRICT 4'
     },
     {
       id: 4,
-      name: 'Quận 5'
+      name: 'DISTRICT 5'
     },
     {
       id: 5,
-      name: 'Quận 6'
+      name: 'DISTRICT 6'
     },
     {
       id: 6,
-      name: 'Quận 7'
+      name: 'DISTRICT 7'
     },
     {
       id: 7,
-      name: 'Quận 8'
+      name: 'DISTRICT 8'
     },
-    // {
-    //   id: 8,
-    //   name: 'Quận 9'
-    // },
+    {
+      id: 8,
+      name: 'DISTRICT 9'
+    },
     {
       id: 9,
-      name: 'Quận 10'
+      name: 'DISTRICT 10'
     },
     {
       id: 10,
-      name: 'Quận 11'
+      name: 'DISTRICT 11'
     },
     {
       id: 11,
-      name: 'Quận 12'
+      name: 'DISTRICT 12'
     },
     {
       id: 12,
-      name: 'Thủ Đức'
+      name: 'THU DUC'
     },
     {
       id: 13,
-      name: 'Bình Thạnh'
+      name: 'BINH THANH'
     },
     {
       id: 14,
-      name: 'Gò Vấp'
+      name: 'GO VAP'
     },
     {
       id: 15,
-      name: 'Bình Tân'
+      name: 'BINH TAN'
     },
     {
       id: 16,
-      name: 'Tân Bình'
+      name: 'TAN BINH'
     },
     {
       id: 17,
-      name: 'Tân Phú'
+      name: 'TAN PHU'
     },
     {
       id: 18,
-      name: 'Phú Nhuận'
+      name: 'PHU NHUAN'
     },
     {
       id: 19,
-      name: 'Đồng Nai'
+      name: 'DONG NAI'
     },
     {
       id: 20,
-      name: 'Hóc Môn'
+      name: 'HOC MON'
     },
     {
       id: 21,
-      name: 'Bình Dương'
+      name: 'BINH DUONG'
     }
 
 ];
