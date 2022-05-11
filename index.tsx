@@ -16,10 +16,38 @@ import buildA from "./buildA";
 import buildB from "./buildB";
 import districtData from './districtData'
 import district from './district'
+import positionCenter from './districtCenter'
 
 const render = (status: Status) => {
   return <h1>{status}</h1>;
 };
+
+// Define the LatLng coordinates for the polygon.
+const vnm__ho_chi_minh__quan_1 = district.vnm__ho_chi_minh__quan_1
+const vnm__ho_chi_minh__quan_2 = district.vnm__ho_chi_minh__quan_2
+const vnm__ho_chi_minh__quan_3 = district.vnm__ho_chi_minh__quan_3
+const vnm__ho_chi_minh__quan_4 = district.vnm__ho_chi_minh__quan_4
+const vnm__ho_chi_minh__quan_5 = district.vnm__ho_chi_minh__quan_5
+const vnm__ho_chi_minh__quan_6 = district.vnm__ho_chi_minh__quan_6
+const vnm__ho_chi_minh__quan_7 = district.vnm__ho_chi_minh__quan_7
+const vnm__ho_chi_minh__quan_8 = district.vnm__ho_chi_minh__quan_8
+const vnm__ho_chi_minh__quan_9 = district.vnm__ho_chi_minh__quan_9
+const vnm__ho_chi_minh__quan_10 = district.vnm__ho_chi_minh__quan_10
+const vnm__ho_chi_minh__quan_11 = district.vnm__ho_chi_minh__quan_11
+const vnm__ho_chi_minh__quan_12 = district.vnm__ho_chi_minh__quan_12
+
+const vnm__ho_chi_minh__binh_chanh = district.vnm__ho_chi_minh__binh_chanh
+const vnm__ho_chi_minh__binh_tan = district.vnm__ho_chi_minh__binh_tan
+const vnm__ho_chi_minh__binh_thanh = district.vnm__ho_chi_minh__binh_thanh
+const vnm__ho_chi_minh__can_gio = district.vnm__ho_chi_minh__can_gio
+const vnm__ho_chi_minh__cu_chi = district.vnm__ho_chi_minh__cu_chi
+const vnm__ho_chi_minh__go_vap = district.vnm__ho_chi_minh__go_vap
+const vnm__ho_chi_minh__hoc_mon = district.vnm__ho_chi_minh__hoc_mon
+const vnm__ho_chi_minh__phu_nhuan = district.vnm__ho_chi_minh__phu_nhuan
+const vnm__ho_chi_minh__tan_binh = district.vnm__ho_chi_minh__tan_binh
+const vnm__ho_chi_minh__tan_phu = district.vnm__ho_chi_minh__tan_phu
+const vnm__ho_chi_minh__thu_duc = district.vnm__ho_chi_minh__thu_duc
+const vnm__ho_chi_minh__nha_be = district.vnm__ho_chi_minh__nha_be
 
 const marks = [
   {
@@ -121,6 +149,12 @@ const App: React.VFC = () => {
     // localStorage.setItem('vnm__ho_chi_minh__nha_be', JSON.stringify(dt))
   }
 
+  const posi = {
+    "lat": 10.773781,
+    "lng": 106.7017085
+  }
+
+
   return (
     <>
       <div style={{margin: '24px'}}>
@@ -176,6 +210,32 @@ const App: React.VFC = () => {
             style={{ flexGrow: "1", height: "100%" }}
           >
             <Marker position={center}/>
+            <Marker position={positionCenter.district1} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 1"}} />
+            <Marker position={positionCenter.district2} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 2"}}/>
+            <Marker position={positionCenter.district3} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 3"}}/>
+            <Marker position={positionCenter.district4} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 4"}}/>
+            <Marker position={positionCenter.district5} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 5"}}/>
+            <Marker position={positionCenter.district6} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 6"}}/>
+            <Marker position={positionCenter.district7} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 7"}}/>
+            <Marker position={positionCenter.district8} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 8"}}/>
+            <Marker position={positionCenter.district9} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 9"}}/>
+            <Marker position={positionCenter.district10} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 10"}}/>
+            <Marker position={positionCenter.district11} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 11"}}/>
+            <Marker position={positionCenter.district12} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 12"}}/>
+
+            <Marker position={positionCenter.binhChanhDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"BINH CHANH"}}/>
+            <Marker position={positionCenter.binhTanDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"BINH TAN DISTRICT"}}/>
+            <Marker position={positionCenter.binhThanhDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"BINH THANH DISTRICT"}}/>
+            <Marker position={positionCenter.cangioDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"CAN GIO"}}/>
+            <Marker position={positionCenter.cuChiDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"CU CHI"}}/>
+            <Marker position={positionCenter.goVapDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"GO VAP DISTRICT"}}/>
+            <Marker position={positionCenter.hocMonDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"HOC MON"}}/>
+            <Marker position={positionCenter.phuNhuanDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"PHU NHUAN DISTRICT"}}/>
+            <Marker position={positionCenter.tanBinhDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"TAN BINH DISTRICT"}}/>
+            <Marker position={positionCenter.tanPhuDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"TAN PHU DISTRICT"}}/>
+            <Marker position={positionCenter.thuDucDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"THU DUC DISTRICT"}}/>
+            <Marker position={positionCenter.nhaBeDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"NHA BE"}}/>
+            
             {
               showOffice && buildA.map((item, i) => {
                 return <Marker 
@@ -210,6 +270,7 @@ const App: React.VFC = () => {
     </>
   );
 };
+
 interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string };
 }
@@ -221,35 +282,6 @@ const Map: React.FC<MapProps> = ({
 }) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const [map, setMap] = React.useState<google.maps.Map>();
-
-  // Define the LatLng coordinates for the polygon.
-  const vnm__ho_chi_minh__quan_1 = district.vnm__ho_chi_minh__quan_1
-  const vnm__ho_chi_minh__quan_2 = district.vnm__ho_chi_minh__quan_2
-  const vnm__ho_chi_minh__quan_3 = district.vnm__ho_chi_minh__quan_3
-  const vnm__ho_chi_minh__quan_4 = district.vnm__ho_chi_minh__quan_4
-  const vnm__ho_chi_minh__quan_5 = district.vnm__ho_chi_minh__quan_5
-  const vnm__ho_chi_minh__quan_6 = district.vnm__ho_chi_minh__quan_6
-  const vnm__ho_chi_minh__quan_7 = district.vnm__ho_chi_minh__quan_7
-  const vnm__ho_chi_minh__quan_8 = district.vnm__ho_chi_minh__quan_8
-  const vnm__ho_chi_minh__quan_9 = district.vnm__ho_chi_minh__quan_9
-  const vnm__ho_chi_minh__quan_10 = district.vnm__ho_chi_minh__quan_10
-  const vnm__ho_chi_minh__quan_11 = district.vnm__ho_chi_minh__quan_11
-  const vnm__ho_chi_minh__quan_12 = district.vnm__ho_chi_minh__quan_12
-
-  const vnm__ho_chi_minh__binh_chanh = district.vnm__ho_chi_minh__binh_chanh
-  const vnm__ho_chi_minh__binh_tan = district.vnm__ho_chi_minh__binh_tan
-  const vnm__ho_chi_minh__binh_thanh = district.vnm__ho_chi_minh__binh_thanh
-  const vnm__ho_chi_minh__can_gio = district.vnm__ho_chi_minh__can_gio
-  const vnm__ho_chi_minh__cu_chi = district.vnm__ho_chi_minh__cu_chi
-  const vnm__ho_chi_minh__go_vap = district.vnm__ho_chi_minh__go_vap
-  const vnm__ho_chi_minh__hoc_mon = district.vnm__ho_chi_minh__hoc_mon
-  const vnm__ho_chi_minh__phu_nhuan = district.vnm__ho_chi_minh__phu_nhuan
-  const vnm__ho_chi_minh__tan_binh = district.vnm__ho_chi_minh__tan_binh
-  const vnm__ho_chi_minh__tan_phu = district.vnm__ho_chi_minh__tan_phu
-  const vnm__ho_chi_minh__thu_duc = district.vnm__ho_chi_minh__thu_duc
-  const vnm__ho_chi_minh__nha_be = district.vnm__ho_chi_minh__nha_be
-
-
 
   // Construct the polygon.
   const district1 = new google.maps.Polygon({
@@ -455,6 +487,15 @@ const Map: React.FC<MapProps> = ({
 
   const myStyles =[
     {
+      "featureType": "administrative",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+    },
+    {
         "featureType": "administrative.country",
         "elementType": "all",
         "stylers": [
@@ -527,7 +568,7 @@ const Map: React.FC<MapProps> = ({
         ]
     },
     {
-      "featureType": "road.highway",
+      "featureType": "road",
       "elementType": "all",
       "stylers": [
         { 
@@ -658,8 +699,22 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
             }
           }
         });
+      } else if(options.label) {
+        marker.setOptions({
+          options,
+          cursor: 'auto',
+          ...{
+            icon: {
+              path: google.maps.SymbolPath.CIRCLE,
+              scale: 0,
+              fillColor: '#ecedf2',
+              fillOpacity: 0,
+              strokeWeight: 0
+            },
+          }
+        });
       } else {
-        marker.setOptions(options);
+         marker.setOptions(options);
       }
 
       let infowindow: any;
