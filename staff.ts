@@ -235,7 +235,7 @@ const data4 = [
       "lat": 10.8441842,
       "lng": 106.7854802
     },
-    "District": "THU DUC"
+    "District": "DISTRICT 9"
   },
   {
     "Department": "Software Developer",
@@ -1103,7 +1103,7 @@ const data4 = [
       "lat": 10.8160586,
       "lng": 106.7010047
     },
-    "District": "DISTRICT 12"
+    "District": "BINH THANH"
   },
   {
     "Department": "SQL Developer",
@@ -1649,7 +1649,7 @@ const data4 = [
       "lat": 10.815118,
       "lng": 106.695595
     },
-    "District": "TAN BINH"
+    "District": "BINH THANH"
   },
   {
     "Department": "QC",
@@ -1817,7 +1817,7 @@ const data4 = [
       "lat": 10.7848699,
       "lng": 106.730263
     },
-    "District": "THU DUC"
+    "District": "DISTRICT 2"
   },
   {
     "Department": "Design",
@@ -2559,7 +2559,7 @@ const data4 = [
       "lat": 10.7942292,
       "lng": 106.7360159
     },
-    "District": "THU DUC"
+    "District": "DISTRICT 2"
   },
   {
     "Department": "Frontend Developer",
@@ -3399,7 +3399,7 @@ const data4 = [
       "lat": 10.7992119,
       "lng": 106.6393425
     },
-    "District": "DISTRICT 11"
+    "District": "TAN BINH"
   },
   {
     "Department": "Software Developer",
@@ -3497,7 +3497,7 @@ const data4 = [
       "lat": 10.7886421,
       "lng": 106.7505261
     },
-    "District": "THU DUC"
+    "District": "DISTRICT 2"
   },
   {
     "Department": "BA",
@@ -3567,7 +3567,7 @@ const data4 = [
       "lat": 10.8239366,
       "lng": 106.624743
     },
-    "District": "BINH THANH"
+    "District": "DISTRICT 12"
   },
   {
     "Department": "Design",
@@ -4127,7 +4127,7 @@ const data4 = [
       "lat": 10.8638188,
       "lng": 106.8105505
     },
-    "District": "THU DUC"
+    "District": "DISTRICT 9"
   },
   {
     "Department": "Design",
