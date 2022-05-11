@@ -210,31 +210,31 @@ const App: React.VFC = () => {
             style={{ flexGrow: "1", height: "100%" }}
           >
             <Marker position={center}/>
-            <Marker position={positionCenter.district1} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 1"}} />
-            <Marker position={positionCenter.district2} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 2"}}/>
-            <Marker position={positionCenter.district3} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 3"}}/>
-            <Marker position={positionCenter.district4} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 4"}}/>
-            <Marker position={positionCenter.district5} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 5"}}/>
-            <Marker position={positionCenter.district6} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 6"}}/>
-            <Marker position={positionCenter.district7} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 7"}}/>
-            <Marker position={positionCenter.district8} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 8"}}/>
-            <Marker position={positionCenter.district9} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 9"}}/>
-            <Marker position={positionCenter.district10} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 10"}}/>
-            <Marker position={positionCenter.district11} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 11"}}/>
-            <Marker position={positionCenter.district12} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"DISTRICT 12"}}/>
+            <Marker position={positionCenter.district1} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 1"}} />
+            <Marker position={positionCenter.district2} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 2"}}/>
+            <Marker position={positionCenter.district3} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 3"}}/>
+            <Marker position={positionCenter.district4} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 4"}}/>
+            <Marker position={positionCenter.district5} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 5"}}/>
+            <Marker position={positionCenter.district6} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 6"}}/>
+            <Marker position={positionCenter.district7} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 7"}}/>
+            <Marker position={positionCenter.district8} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 8"}}/>
+            <Marker position={positionCenter.district9} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 9"}}/>
+            <Marker position={positionCenter.district10} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 10"}}/>
+            <Marker position={positionCenter.district11} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 11"}}/>
+            <Marker position={positionCenter.district12} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 12"}}/>
 
-            <Marker position={positionCenter.binhChanhDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"BINH CHANH"}}/>
-            <Marker position={positionCenter.binhTanDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"BINH TAN DISTRICT"}}/>
-            <Marker position={positionCenter.binhThanhDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"BINH THANH DISTRICT"}}/>
-            <Marker position={positionCenter.cangioDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"CAN GIO"}}/>
-            <Marker position={positionCenter.cuChiDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"CU CHI"}}/>
-            <Marker position={positionCenter.goVapDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"GO VAP DISTRICT"}}/>
-            <Marker position={positionCenter.hocMonDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"HOC MON"}}/>
-            <Marker position={positionCenter.phuNhuanDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"PHU NHUAN DISTRICT"}}/>
-            <Marker position={positionCenter.tanBinhDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"TAN BINH DISTRICT"}}/>
-            <Marker position={positionCenter.tanPhuDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"TAN PHU DISTRICT"}}/>
-            <Marker position={positionCenter.thuDucDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"THU DUC DISTRICT"}}/>
-            <Marker position={positionCenter.nhaBeDistrict} label={{color: "#000000", fontSize: "36", fontWeight: "600", text:"NHA BE"}}/>
+            <Marker position={positionCenter.binhChanhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH CHANH"}}/>
+            <Marker position={positionCenter.binhTanDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH TAN"}}/>
+            <Marker position={positionCenter.binhThanhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH THANH"}}/>
+            <Marker position={positionCenter.cangioDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"CAN GIO"}}/>
+            <Marker position={positionCenter.cuChiDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"CU CHI"}}/>
+            <Marker position={positionCenter.goVapDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"GO VAP"}}/>
+            <Marker position={positionCenter.hocMonDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"HOC MON"}}/>
+            <Marker position={positionCenter.phuNhuanDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"PHU NHUAN"}}/>
+            <Marker position={positionCenter.tanBinhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"TAN BINH"}}/>
+            <Marker position={positionCenter.tanPhuDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"TAN PHU"}}/>
+            <Marker position={positionCenter.thuDucDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"THU DUC"}}/>
+            <Marker position={positionCenter.nhaBeDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"NHA BE"}}/>
             
             {
               showOffice && buildA.map((item, i) => {
