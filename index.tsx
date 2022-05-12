@@ -147,16 +147,10 @@ const App: React.VFC = () => {
     // localStorage.setItem('vnm__ho_chi_minh__nha_be', JSON.stringify(dt))
   }
 
-  const posi = {
-    "lat": 10.773781,
-    "lng": 106.7017085
-  }
-
-
   return (
     <>
-      <div style={{margin: '24px'}}>
-        <h1 style={{fontSize: '24px', lineHeight: '36px', letterSpacing: '2.5px', fontWeight: '700',  color: '#18181d'}}>Aperia Staff Map </h1>
+      <div style={{margin: '8px', height: '10%'}}>
+        <h3 style={{fontSize: '24px', lineHeight: '36px', letterSpacing: '2.5px', fontWeight: '700',  color: '#18181d'}}>Aperia Staff Map </h3>
         <div style={{display: 'flex', marginBottom: '24px'}}>
           <div style={{width: '280px', marginRight: '24px'}}>
             <FormControl fullWidth>
@@ -199,41 +193,91 @@ const App: React.VFC = () => {
           </div>
         </div>
       </div>
-      <div style={{ display: "flex", height: "100%" }}>
+      <div style={{ display: "flex", height: "90%" }}>
         <div id="marker-tooltip"></div>
         <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!} render={render}>
           <Map
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
+            areas={area}
           >
             <Marker position={center}/>
-            <Marker position={positionCenter.district1} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 1"}} />
-            <Marker position={positionCenter.district2} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 2"}}/>
-            <Marker position={positionCenter.district3} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 3"}}/>
-            <Marker position={positionCenter.district4} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 4"}}/>
-            <Marker position={positionCenter.district5} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 5"}}/>
-            <Marker position={positionCenter.district6} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 6"}}/>
-            <Marker position={positionCenter.district7} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 7"}}/>
-            <Marker position={positionCenter.district8} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 8"}}/>
-            <Marker position={positionCenter.district9} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 9"}}/>
-            <Marker position={positionCenter.district10} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 10"}}/>
-            <Marker position={positionCenter.district11} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 11"}}/>
-            <Marker position={positionCenter.district12} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 12"}}/>
+            {
+              (area === 'All' || area === 'DISTRICT 1') && <Marker position={positionCenter.district1} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 1"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 2') && <Marker position={positionCenter.district2} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 2"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 3') && <Marker position={positionCenter.district3} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 3"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 4') && <Marker position={positionCenter.district4} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 4"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 5') && <Marker position={positionCenter.district5} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 5"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 6') && <Marker position={positionCenter.district6} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 6"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 7') && <Marker position={positionCenter.district7} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 7"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 8') && <Marker position={positionCenter.district8} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 8"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 9') && <Marker position={positionCenter.district9} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 9"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 10') && <Marker position={positionCenter.district10} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 10"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 11') && <Marker position={positionCenter.district11} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 11"}} />
+            }
+            {
+              (area === 'All' || area === 'DISTRICT 12') && <Marker position={positionCenter.district12} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"DISTRICT 12"}} />
+            }
 
-            <Marker position={positionCenter.binhChanhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH CHANH"}}/>
-            <Marker position={positionCenter.binhTanDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH TAN"}}/>
-            <Marker position={positionCenter.binhThanhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH THANH"}}/>
-            <Marker position={positionCenter.cangioDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"CAN GIO"}}/>
-            <Marker position={positionCenter.cuChiDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"CU CHI"}}/>
-            <Marker position={positionCenter.goVapDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"GO VAP"}}/>
-            <Marker position={positionCenter.hocMonDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"HOC MON"}}/>
-            <Marker position={positionCenter.phuNhuanDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"PHU NHUAN"}}/>
-            <Marker position={positionCenter.tanBinhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"TAN BINH"}}/>
-            <Marker position={positionCenter.tanPhuDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"TAN PHU"}}/>
-            <Marker position={positionCenter.thuDucDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"THU DUC"}}/>
-            <Marker position={positionCenter.nhaBeDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"NHA BE"}}/>
-            
+
+            {
+              (area === 'All' || area === 'BINH CHANH') && <Marker position={positionCenter.binhChanhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH CHANH"}}/>
+            }
+            {
+              (area === 'All' || area === 'BINH TAN') && <Marker position={positionCenter.binhTanDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH TAN"}}/>
+            }
+            {
+              (area === 'All' || area === 'BINH THANH') && <Marker position={positionCenter.binhThanhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"BINH THANH"}}/>
+            }
+            {
+              (area === 'All' || area === 'CAN GIO') && <Marker position={positionCenter.cangioDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"CAN GIO"}}/>
+            }
+            {
+              (area === 'All' || area === 'CU CHI') && <Marker position={positionCenter.cuChiDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"CU CHI"}}/>
+            }
+            {
+              (area === 'All' || area === 'GO VAP') && <Marker position={positionCenter.goVapDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"GO VAP"}}/>
+            }
+            {
+              (area === 'All' || area === 'HOC MON') && <Marker position={positionCenter.hocMonDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"HOC MON"}}/>
+            }
+            {
+              (area === 'All' || area === 'PHU NHUAN') && <Marker position={positionCenter.phuNhuanDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"PHU NHUAN"}}/>
+            }
+            {
+              (area === 'All' || area === 'TAN BINH') && <Marker position={positionCenter.tanBinhDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"TAN BINH"}}/>
+            }
+            {
+              (area === 'All' || area === 'TAN PHU') && <Marker position={positionCenter.tanPhuDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"TAN PHU"}}/>
+            }
+            {
+              (area === 'All' || area === 'THU DUC') && <Marker position={positionCenter.thuDucDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"THU DUC"}}/>
+            }
+            {
+              (area === 'All' || area === 'NHA BE') && <Marker position={positionCenter.nhaBeDistrict} label={{color: "#000000", fontSize: "16px", fontWeight: "600", text:"NHA BE"}}/>
+            }
+
             {
               showOffice && buildA.map((item, i) => {
                 return <Marker 
@@ -254,7 +298,7 @@ const App: React.VFC = () => {
             }
             {dataList && dataList.map((item, i) => {
               return <Marker 
-                  key={i} 
+                  key={i}
                   position={item.position}
                   item={item}
                   id={i}
@@ -271,11 +315,13 @@ const App: React.VFC = () => {
 
 interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string };
+  areas: string;
 }
 
 const Map: React.FC<MapProps> = ({
   children,
   style,
+  areas,
   ...options
 }) => {
   const ref = React.useRef<HTMLDivElement>(null);
@@ -570,7 +616,7 @@ const Map: React.FC<MapProps> = ({
       "elementType": "all",
       "stylers": [
         { 
-          "visibility": "off"
+          "visibility": "on"
         }
       ]
     },
@@ -586,7 +632,7 @@ const Map: React.FC<MapProps> = ({
   ];
 
   React.useEffect(() => {
-    if (map) {
+    if (map && areas === 'All') {
       district1.setMap(map);
       district2.setMap(map);
       district3.setMap(map);
@@ -612,16 +658,89 @@ const Map: React.FC<MapProps> = ({
       tanPhuDistrict.setMap(map);
       thuDucDistrict.setMap(map);
       nhaBeDistrict.setMap(map);
+    } else if(map) {
+        switch(areas) {
+        case 'DISTRICT 1':
+          district1.setMap(map);
+          break;
+        case 'DISTRICT 2':
+          district2.setMap(map);
+          break;
+        case 'DISTRICT 3':
+          district3.setMap(map);
+        break;
+        case 'DISTRICT 4':
+          district4.setMap(map);
+        break;
+        case 'DISTRICT 5':
+          district5.setMap(map);
+        break;
+        case 'DISTRICT 6':
+          district6.setMap(map);
+        break;
+        case 'DISTRICT 7':
+          district7.setMap(map);
+        break;
+        case 'DISTRICT 8':
+          district8.setMap(map);
+        break;
+        case 'DISTRICT 9':
+          district9.setMap(map);
+        break;
+        case 'DISTRICT 10':
+          district10.setMap(map);
+        break;
+        case 'DISTRICT 11':
+          district11.setMap(map);
+        break;
+        case 'DISTRICT 12':
+          district12.setMap(map);
+        break;
+        case 'THU DUC':
+          thuDucDistrict.setMap(map);
+        break;
+        case 'BINH THANH':
+          binhThanhDistrict.setMap(map);
+        break;
+        case 'GO VAP':
+          goVapDistrict.setMap(map);
+        break;
+        case 'BINH TAN':
+          binhTanDistrict.setMap(map);
+        break;
+        case 'TAN BINH':
+          tanBinhDistrict.setMap(map);
+        break;
+        case 'TAN PHU':
+          tanPhuDistrict.setMap(map);
+        break;
+        case 'PHU NHUAN':
+          phuNhuanDistrict.setMap(map);
+        break;
+        case 'DONG NAI':
+        break;
+        case 'HOC MON':
+          hocMonDistrict.setMap(map);
+        break;
+        case 'BINH DUONG':
+        break;
+      }
     }
-  }, [map]);
+  }, [map, areas]);
 
+  React.useEffect(() => {
+    if (areas !== 'All') {
+      setMap(null);
+    }
+  }, [areas]);
 
   React.useEffect(() => {
     if (map) {
       map.setOptions({
         options,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: myStyles
+        styles: myStyles,
+        zoom: map.getZoom() || options.zoom
       });
     }
   }, [map, options]);
@@ -685,7 +804,7 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
               fillColor: '#002BFF',
               fillOpacity: 0.8,
               strokeWeight: 0.4
-            },
+            }
           }
         });
       } else if(options.item && options.item.office){

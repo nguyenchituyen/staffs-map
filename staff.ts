@@ -4001,7 +4001,7 @@ const data4 = [
       "lat": 10.7922593,
       "lng": 106.6822192
     },
-    "District": "BINH THANH"
+    "District": "DISTRICT 3"
   },
   {
     "Department": "Software Developer",
