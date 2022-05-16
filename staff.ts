@@ -258,7 +258,7 @@ const data = [
       "lat": 10.8032792,
       "lng": 106.6120286
     },
-    "District": "BINH THANH",
+    "District": "TAN PHU",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Phú",
     "Ward": "Phường Sơn Kỳ",
@@ -372,7 +372,7 @@ const data = [
       "lat": 10.8804218,
       "lng": 106.6486109
     },
-    "District": "BINH THANH",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Hiệp Thành",
@@ -448,7 +448,7 @@ const data = [
       "lat": 10.8379033,
       "lng": 106.6400218
     },
-    "District": "TAN BINH",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 12",
@@ -619,7 +619,7 @@ const data = [
       "lat": 10.8516414,
       "lng": 106.6565433
     },
-    "District": "TAN BINH",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 14",
@@ -638,7 +638,7 @@ const data = [
       "lat": 10.8200502,
       "lng": 106.7620173
     },
-    "District": "BINH DUONG",
+    "District": "DISTRICT 9",
     "City": "Thủ Đức",
     "NewDistrict": "Quận 9",
     "Ward": "Phường Phước Long A",
@@ -771,7 +771,7 @@ const data = [
       "lat": 10.8370442,
       "lng": 106.7238174
     },
-    "District": "TAN BINH",
+    "District": "THU DUC",
     "City": "Thủ Đức",
     "NewDistrict": "Quận Thủ Đức",
     "Ward": "Phường Bình Chánh",
@@ -904,7 +904,7 @@ const data = [
       "lat": 10.8641998,
       "lng": 106.7346583
     },
-    "District": "GO VAP",
+    "District": "THU DUC",
     "City": "Thủ Đức",
     "NewDistrict": "Quận Thủ Đức",
     "Ward": "Phường Tam Bình",
@@ -1246,7 +1246,7 @@ const data = [
       "lat": 10.7889188,
       "lng": 106.6358004
     },
-    "District": "HOC MON",
+    "District": "TAN PHU",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Phú",
     "Ward": "Phường Tân Thành",
@@ -1265,7 +1265,7 @@ const data = [
       "lat": 10.8520871,
       "lng": 106.6905746
     },
-    "District": "BINH THANH",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường An Phú Đông",
@@ -1474,7 +1474,7 @@ const data = [
       "lat": 10.825875,
       "lng": 106.703098
     },
-    "District": "TAN BINH",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 13",
@@ -1531,7 +1531,7 @@ const data = [
       "lat": 10.8399253,
       "lng": 106.6530966
     },
-    "District": "THU DUC",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 8",
@@ -1550,7 +1550,7 @@ const data = [
       "lat": 10.8312258,
       "lng": 106.6119672
     },
-    "District": "TAN BINH",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Thới Nhất",
@@ -1721,7 +1721,7 @@ const data = [
       "lat": 10.807541,
       "lng": 106.666532
     },
-    "District": "GO VAP",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 2",
@@ -1835,7 +1835,7 @@ const data = [
       "lat": 10.8503191,
       "lng": 106.6536426
     },
-    "District": "TAN PHU",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 14",
@@ -1873,7 +1873,7 @@ const data = [
       "lat": 10.8310819,
       "lng": 106.6214991
     },
-    "District": "GO VAP",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Thới Nhất",
@@ -1892,7 +1892,7 @@ const data = [
       "lat": 10.8085588,
       "lng": 106.6649849
     },
-    "District": "Quận 10",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 4",
@@ -1968,7 +1968,7 @@ const data = [
       "lat": 10.8721052,
       "lng": 106.6386056
     },
-    "District": "TAN BINH",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Hiệp Thành",
@@ -2025,7 +2025,7 @@ const data = [
       "lat": 10.8113971,
       "lng": 106.6784239
     },
-    "District": "BINH THANH",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 3",
@@ -2044,7 +2044,7 @@ const data = [
       "lat": 10.815012,
       "lng": 106.71798
     },
-    "District": "DISTRICT 8",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 27",
@@ -2196,7 +2196,7 @@ const data = [
       "lat": 10.8061559,
       "lng": 106.6665255
     },
-    "District": "TAN PHU",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 2",
@@ -2215,7 +2215,7 @@ const data = [
       "lat": 10.8076477,
       "lng": 106.6643049
     },
-    "District": "DISTRICT 8",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 4",
@@ -2462,7 +2462,7 @@ const data = [
       "lat": 10.9573596,
       "lng": 106.5090539
     },
-    "District": "HOC MON",
+    "District": "CU CHI",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Củ Chi",
     "Ward": "Xã Tân Thông Hội",
@@ -2481,7 +2481,7 @@ const data = [
       "lat": 10.8026679,
       "lng": 106.6595782
     },
-    "District": "BINH THANH",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 4",
@@ -2500,7 +2500,7 @@ const data = [
       "lat": 10.8234239,
       "lng": 106.6357573
     },
-    "District": "DISTRICT 7",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 15",
@@ -2519,7 +2519,7 @@ const data = [
       "lat": 10.8722638,
       "lng": 106.6600127
     },
-    "District": "GO VAP",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Thới An",
@@ -2538,7 +2538,7 @@ const data = [
       "lat": 10.7190464,
       "lng": 106.6298787
     },
-    "District": "BINH THANH",
+    "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 8",
     "Ward": "Phường 15",
@@ -2595,7 +2595,7 @@ const data = [
       "lat": 10.8367531,
       "lng": 106.764318
     },
-    "District": "DISTRICT 3",
+    "District": "THU DUC",
     "City": "Thủ Đức",
     "NewDistrict": "Quận Thủ Đức",
     "Ward": "Phường Trường Thọ",
@@ -2709,7 +2709,7 @@ const data = [
       "lat": 10.8260603,
       "lng": 106.723013
     },
-    "District": "BINH THANH",
+    "District": "THU DUC",
     "City": "Thủ Đức",
     "NewDistrict": "Quận Thủ Đức",
     "Ward": "Phường Hiệp Bình Chánh",
@@ -2899,7 +2899,7 @@ const data = [
       "lat": 10.7324695,
       "lng": 106.6534818
     },
-    "District": "PHU NHUAN",
+    "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 8",
     "Ward": "Phường 6",
@@ -3146,7 +3146,7 @@ const data = [
       "lat": 10.9167274,
       "lng": 106.5482499
     },
-    "District": "DISTRICT 11",
+    "District": "CU CHI",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Củ Chi",
     "Ward": "Xã Tân Phú Trung",
@@ -3241,7 +3241,7 @@ const data = [
       "lat": 10.9058407,
       "lng": 106.761872
     },
-    "District": "DISTRICT 9",
+    "District": "BINH DUONG",
     "City": "Bình Dương",
     "NewDistrict": "Thành phố Dĩ An ",
     "Ward": "Phường Dĩ An",
@@ -3355,7 +3355,7 @@ const data = [
       "lat": 10.8012136,
       "lng": 106.701444
     },
-    "District": "GO VAP",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 2",
@@ -3374,7 +3374,7 @@ const data = [
       "lat": 10.7882253,
       "lng": 106.6497163
     },
-    "District": "DISTRICT 3",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 11",
@@ -3754,7 +3754,7 @@ const data = [
       "lat": 10.844706,
       "lng": 106.7275805
     },
-    "District": "GO VAP",
+    "District": "THU DUC",
     "City": "Thủ Đức",
     "NewDistrict": "Quận Thủ Đức",
     "Ward": "Phường Hiệp Bình Chánh",
@@ -3830,7 +3830,7 @@ const data = [
       "lat": 10.8319843,
       "lng": 106.6866351
     },
-    "District": "DONG NAI",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 5",
@@ -3963,7 +3963,7 @@ const data = [
       "lat": 10.8187868,
       "lng": 106.6333219
     },
-    "District": "BINH TAN",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 15",
@@ -4001,7 +4001,7 @@ const data = [
       "lat": 10.8336604,
       "lng": 106.7003146
     },
-    "District": "TAN BINH",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 13",
@@ -4115,7 +4115,7 @@ const data = [
       "lat": 10.7745024,
       "lng": 106.6193403
     },
-    "District": "DISTRICT 12",
+    "District": "BINH TAN",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Tân",
     "Ward": "Phường  Bình Trị Đông",
@@ -4134,7 +4134,7 @@ const data = [
       "lat": 10.8067266,
       "lng": 106.6780829
     },
-    "District": "DISTRICT 9",
+    "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Phú Nhuận",
     "Ward": "Phường 9",
@@ -4286,7 +4286,7 @@ const data = [
       "lat": 10.883285,
       "lng": 106.6740259
     },
-    "District": "TAN BINH",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Thạnh Xuân",
@@ -4400,7 +4400,7 @@ const data = [
       "lat": 10.8063531,
       "lng": 106.6787103
     },
-    "District": "DISTRICT 2",
+    "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Phú Nhuận",
     "Ward": "Phường 4",
@@ -4533,7 +4533,7 @@ const data = [
       "lat": 10.8486919,
       "lng": 106.6553467
     },
-    "District": "DISTRICT 12",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 9",
@@ -4742,7 +4742,7 @@ const data = [
       "lat": 10.8384987,
       "lng": 106.8299253
     },
-    "District": "THU DUC",
+    "District": "DISTRICT 9",
     "City": "Thủ Đức",
     "NewDistrict": "Quận 9",
     "Ward": "Phường Long Thạnh Mỹ",
@@ -5198,7 +5198,7 @@ const data = [
       "lat": 10.8036346,
       "lng": 106.6664144
     },
-    "District": "BINH THANH",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 2",
@@ -5236,7 +5236,7 @@ const data = [
       "lat": 10.8049112,
       "lng": 106.6667395
     },
-    "District": "TAN PHU",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 2",
@@ -5443,7 +5443,7 @@ const data = [
       "lat": 10.7957817,
       "lng": 106.6926527
     },
-    "District": "DISTRICT 5",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 3",
@@ -5538,7 +5538,7 @@ const data = [
       "lat": 10.8262867,
       "lng": 106.6406665
     },
-    "District": "DISTRICT 2",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 15",
