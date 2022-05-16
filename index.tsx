@@ -112,40 +112,70 @@ const App: React.VFC = () => {
     }
   }, [year, department, area])
 
-  const handleRender = () => {
-    let arrDatas = [];
-    for(let i = 0; i < 305; i ++) {
-      const item = localStorage.getItem(`test-data-${i}`);
-      arrDatas.push(item)
-      localStorage.setItem('total-data', JSON.stringify(arrDatas))
-    }
-  }
+  // const handleRender = () => {
+  //   let arrDatas = [];
+  //   let arrFailed = [];
+  //   dtFaild.map((item) => {
+  //     const obj = localStorage.getItem(`new-data-${item.Nickname}`);
+  //     if(!obj) {
+  //       arrFailed.push(item)
+  //     } else {
+  //       arrDatas.push(obj)
+  //     }
+  //   })
+   
+  //   localStorage.setItem('total-data', JSON.stringify(arrDatas))
+  //   localStorage.setItem('total-data-failed', JSON.stringify(arrFailed))
+  // }
 
-  const handleRender1 =() => {
-    // const dt = datatest.map((ite) => {
-    //   const item = dataList.filter((item) => item.Nickname === ite.Nickname)
-    //   let district = "";
-    //   let position = null;
-    //   if(item) {
-    //     district = item[0].District;
-    //     position = item[0].position;
-    //   }
-    //   return {
-    //     ...ite,
-    //     District: district,
-    //     position
-    //   }
-    // })
+  // const handleRender1 =() => {
+  //   const dt = dataList.map((ite) => {
+  //     const item = newData.filter((item) => item.Name.toLowerCase().trim() === ite.Nickname.toLowerCase().trim())
+  //     let city = "";
+  //     let newDistrict = "";
+  //     let ward = "";
+  //     let street = "";
+  //     let fullAddress = "";
 
-    // const dt = districtData.vnm__ho_chi_minh__nha_be.geometry.coordinates[0][0].map((ite) => {
-    //   return {
-    //     'lat': ite[1],
-    //     'lng': ite[0]
-    //   }
-    // })
+  //     if(item && item.length > 0 && item[0].Ward) {
+  //       city = item[0].City;
+  //       newDistrict = item[0].NewDistrict;
+  //       ward = item[0].Ward;
+  //       street = item[0].Street;
+  //       fullAddress = `${street} ${ward} ${newDistrict} ${city}`
+  //     } else if(item && item.length > 0 && item[0].FullAddress) {
+  //       fullAddress = item[0].FullAddress
+  //     }
 
-    // localStorage.setItem('vnm__ho_chi_minh__nha_be', JSON.stringify(dt))
-  }
+  //     return {
+  //       ...ite,
+  //       City: city,
+  //       NewDistrict: newDistrict,
+  //       Ward: ward,
+  //       Street: street,
+  //       FullAddress: fullAddress
+  //     }
+  //   })
+
+  //   localStorage.setItem('new-data', JSON.stringify(dt)) 
+
+  //   // Convert address to Lat-Lng
+  //   dtFaild.map((item) => {
+  //     if(item.FullAddress !== '') {
+  //       fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBQBHVcGXFXM9fp5k2PBLdRHntT5Y2miSQ&address=${item.FullAddress}`)
+  //       .then((response) => response.json())
+  //       .then((responseJson) => {
+  //         if(responseJson.status === 'OK') {
+  //           let obj = {
+  //             ...item,
+  //             position: responseJson.results[0].geometry.location
+  //           }
+  //           localStorage.setItem(`new-data-${item.Nickname}`, JSON.stringify(obj));
+  //         }
+  //       })   
+  //     }
+  //   })
+  // }
 
   return (
     <>
@@ -184,7 +214,8 @@ const App: React.VFC = () => {
             <FormControl fullWidth>
               <Slider step={0.5} getAriaLabel={() => 'Year range'} defaultValue={1} aria-label="Default" valueLabelDisplay="auto" max={15} min={0} marks={marks} value={year} onChange={handleOnChangeYear} />
             </FormControl>
-            {/* <Button onClick={handleRender1}>RENDER</Button> */}
+            {/* <Button onClick={handleRender1}>RENDER</Button>
+            <Button onClick={handleRender}>Export</Button> */}
           </div>
           <div style={{width: '280px', display: 'flex', alignItems: 'center', marginTop: '-24px'}}>
             <FormGroup>
@@ -774,23 +805,8 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
     };
   }, [marker]);
   
-  // const geocodeAddress = (address, id) => {
-  //   fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDhC3MaEgg0iXTbzFsHfEaTtz9NVD-mxOI&address=${address}`)
-  //       .then((response) => response.json())
-  //       .then((responseJson) => {
-  //         if(responseJson.status === 'OK') {
-  //           localStorage.setItem(`test-data-${id}`, JSON.stringify({
-  //             ...options.item,
-  //             potision: responseJson.results[0].geometry.location
-  //           }));
-  //         }
-  //       })   
-  // }
-
   React.useEffect(() => {
     if (marker) {
-      // geocodeAddress(options.item.address, options.id);
-      // const colorFill = departments === '' || departments === 'All' ? "#FF0000" : data.bgColor[options.item.Department]
 
       if(options.item && !options.item.office) {
         marker.setOptions({
@@ -800,7 +816,6 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
               scale: 8,
-              // fillColor: data.bgColor[options.item?.Department],
               fillColor: '#002BFF',
               fillOpacity: 0.8,
               strokeWeight: 0.4
