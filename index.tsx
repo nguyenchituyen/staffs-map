@@ -810,12 +810,22 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
       } else if(options.item && options.item.office){
         marker.setOptions({
           options,
+          zIndex: 90000000000,
           ...{
             icon: {
               url: options.item.office === "A" ? "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" : "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
             }
           }
         });
+        console.log('==========', {
+          options,
+          zIndex: 90000000000,
+          ...{
+            icon: {
+              url: options.item.office === "A" ? "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" : "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+            }
+          }
+        })
       } else if(options.label) {
         marker.setOptions({
           options,
