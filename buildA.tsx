@@ -11,8 +11,8 @@ const buildA = [
         "TotalAmount": "162969 usd",
         "Address": "72 Le Thanh Ton street, Ben Nghe ward, District 1",
         "position": {
-          "lat": 10.7780127, 
-          "lng": 106.6972996
+          "lat": 10.777997, 
+          "lng": 106.702067
         },
     },
     {
@@ -28,7 +28,7 @@ const buildA = [
         "Address": "106 Nguyen Van Troi, Ward 8, Phu Nhuan District",
         "position": {
           "lat": 10.7973397, 
-          "lng": 106.6688763
+          "lng": 106.6733663
         },
     },
   // {
