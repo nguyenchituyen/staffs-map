@@ -204,8 +204,8 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
           strokeColor: "#FF0000",
           strokeOpacity: 0.5,
           strokeWeight: 0.5,
-          fillColor: "#FF0000",
-          fillOpacity: 0,
+          fillColor: "#F5EF01",
+          fillOpacity: 0.2,
         }),
       }));
       setArrPolygon(arr);
@@ -225,11 +225,14 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
 
         map?.setCenter(bounds.getCenter());
         map?.setZoom(13);
+
+        
       });
 
       p.polygon.addListener("mouseover", (e) => {
         p.polygon.setOptions({
-          fillOpacity: 0.1,
+          fillColor:"#FF0000",
+          fillOpacity: 0.1
         });
 
         infowindow.setContent(p.name);
@@ -247,7 +250,8 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
       });
       p.polygon.addListener("mouseout", () => {
         p.polygon.setOptions({
-          fillOpacity: 0,
+          fillColor:"#F5EF01",
+          fillOpacity: 0.1
         });
 
         infowindow.close();
