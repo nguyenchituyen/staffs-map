@@ -15,14 +15,39 @@ import Marker from "./components/Marker";
 import { buildA, buildB, staffs } from "./data";
 import * as data from "./data";
 
+import { arrPolygonPath } from "./components/Map";
+
 const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
 
-const inOfHcmStaffsAll = staffs
+function calCenter(paths) {
+  const lats = paths.map((x) => x.lat);
+  const lngs = paths.map((x) => x.lng);
+  return {
+    lat: (Math.max(...lats) + Math.min(...lats)) / 2,
+    lng: (Math.max(...lngs) + Math.min(...lngs)) / 2,
+  };
+}
+
+const inOfHcmStaffsObTemp = staffs
   .filter((x) => hcmCitys.includes(x.City))
   .reduce((a, b) => {
     a[b.District] = [...(a[b.District] || []), b];
     return a;
   }, {});
+
+const inOfHcmStaffsAll = Object.keys(inOfHcmStaffsObTemp).map((key) => {
+  let center = arrPolygonPath[key].center;
+  if (!center.lat) {
+    center = calCenter(arrPolygonPath[key].paths);
+  }
+
+  return {
+    name: key,
+    staffs: inOfHcmStaffsObTemp[key],
+    position: center,
+  };
+});
+
 const outOfHcmStaffsAll = staffs.filter((x) => !hcmCitys.includes(x.City));
 
 const render = (status: Status) => {
@@ -228,32 +253,54 @@ const App: React.VFC = () => {
             style={{ flexGrow: "1", height: "100%" }}
             areas={area}
           >
-            <Marker position={center} />
+            <Marker position={center} type={'main office'}/>
 
             {showOffice &&
               buildA.map((item, i) => {
                 return (
-                  <Marker key={i} position={item.position} item={item} id={i} />
+                  <Marker
+                    key={i}
+                    id={i}
+                    position={item.position}
+                    type={'sub office'}
+                    item={item}
+                  />
                 );
               })}
 
             {showOffice &&
               buildB.map((item, i) => {
                 return (
-                  <Marker key={i} position={item.position} item={item} id={i} />
+                  <Marker
+                    key={i}
+                    id={i}
+                    position={item.position}
+                    type={'sub office'}
+                    item={item}
+                  />
                 );
               })}
 
             {outOfHcmStaffs.map((item, i) => {
               return (
                 <Marker
-                  key={i}
+                  key={"outOfHcmStaffs" + i}
                   position={item.position}
                   item={item}
                   id={i}
-                  areas={area}
-                  departments={department}
-                  isHcm={true}
+                  type={'out hcm'}
+                />
+              );
+            })}
+
+            {inOfHcmStaffs.map((item, i) => {
+              return (
+                <Marker
+                  key={"inOfHcmStaffs" + i + 10000}
+                  position={item.position}
+                  id={i + 10000}
+                  type={'in hcm'}
+                  staffs={item.staffs}
                 />
               );
             })}

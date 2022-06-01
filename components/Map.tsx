@@ -6,31 +6,175 @@ interface PolygonCustom {
   polygon: google.maps.Polygon;
 }
 
-const arrL = {
-  "DISTRICT 1": district.hcm_d_1,
-  "DISTRICT 2": district.hcm_d_2,
-  "DISTRICT 3": district.hcm_d_3,
-  "DISTRICT 4": district.hcm_d_4,
-  "DISTRICT 5": district.hcm_d_5,
-  "DISTRICT 6": district.hcm_d_6,
-  "DISTRICT 7": district.hcm_d_7,
-  "DISTRICT 8": district.hcm_d_8,
-  "DISTRICT 9": district.hcm_d_9,
-  "DISTRICT 10": district.hcm_d_10,
-  "DISTRICT 11": district.hcm_d_11,
-  "DISTRICT 12": district.hcm_d_12,
-  "BINH CHANH": district.hcm_d_binhchanh,
-  "BINH TAN": district.hcm_d_binhtan,
-  "BINH THANH": district.hcm_d_binhthanh,
-  "CAN GIO": district.hcm_d_cangio,
-  "CU CHI": district.hcm_d_cuchi,
-  "GO VAP": district.hcm_d_govap,
-  "HOC MON": district.hcm_d_hoocmon,
-  "PHU NHUAN": district.hcm_d_phunhuan,
-  "TAN BINH": district.hcm_d_tanbinh,
-  "TAN PHU": district.hcm_d_tanphu,
-  "THU DUC": district.hcm_d_thuduc,
-  "NHA BE": district.hcm_d_nhabe,
+export const arrPolygonPath = {
+  "DISTRICT 1": {
+    paths: district.hcm_d_1,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 2": {
+    paths: district.hcm_d_2,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 3": {
+    paths: district.hcm_d_3,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 4": {
+    paths: district.hcm_d_4,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 5": {
+    paths: district.hcm_d_5,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 6": {
+    paths: district.hcm_d_6,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 7": {
+    paths: district.hcm_d_7,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 8": {
+    paths: district.hcm_d_8,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 9": {
+    paths: district.hcm_d_9,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 10": {
+    paths: district.hcm_d_10,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 11": {
+    paths: district.hcm_d_11,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "DISTRICT 12": {
+    paths: district.hcm_d_12,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "BINH CHANH": {
+    paths: district.hcm_d_binhchanh,
+    center: {
+      lat: 10.7436552,
+      lng: 106.5222933,
+    },
+  },
+  "BINH TAN": {
+    paths: district.hcm_d_binhtan,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "BINH THANH": {
+    paths: district.hcm_d_binhthanh,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "CAN GIO": {
+    paths: district.hcm_d_cangio,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "CU CHI": {
+    paths: district.hcm_d_cuchi,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "GO VAP": {
+    paths: district.hcm_d_govap,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "HOC MON": {
+    paths: district.hcm_d_hoocmon,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "PHU NHUAN": {
+    paths: district.hcm_d_phunhuan,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "TAN BINH": {
+    paths: district.hcm_d_tanbinh,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "TAN PHU": {
+    paths: district.hcm_d_tanphu,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "THU DUC": {
+    paths: district.hcm_d_thuduc,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
+  "NHA BE": {
+    paths: district.hcm_d_nhabe,
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+  },
 };
 
 interface MapProps extends google.maps.MapOptions {
@@ -53,10 +197,10 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         })
       );
 
-      const arr = Object.keys(arrL).map((key) => ({
+      const arr = Object.keys(arrPolygonPath).map((key) => ({
         name: key,
         polygon: new google.maps.Polygon({
-          paths: arrL[key],
+          paths: arrPolygonPath[key].paths,
           strokeColor: "#FF0000",
           strokeOpacity: 0.5,
           strokeWeight: 0.5,

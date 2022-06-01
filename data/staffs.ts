@@ -1170,7 +1170,7 @@ export const staffs = [
       "lat": 10.7233362,
       "lng": 106.6230941
     },
-    "District": "BINH DUONG",
+    "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 8",
     "Ward": "Phường 16",
@@ -5348,7 +5348,7 @@ export const staffs = [
       "lat": 10.8148225,
       "lng": 106.6934448
     },
-    "District": "BINH DUONG",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 11",

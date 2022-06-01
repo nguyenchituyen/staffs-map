@@ -1,39 +1,40 @@
 import * as React from "react";
 
+export interface MarkerItemInfo {
+  office?: string;
+  BuildingName?: string;
+  Premises?: string;
+  Floor?: string;
+  VacantStatus?: string;
+  AskingRent?: string;
+  ServiceCharge?: string;
+  GrossRent?: string;
+  TotalAmount?: string;
+  Address?: string;
+  position?: {
+    lat: number;
+    lng: number;
+  };
+
+  Department?: string;
+  Nickname?: string;
+  VietnameseName?: string;
+  StartDate?: string;
+  "24-Apr-2022"?: string;
+  Seniorty?: string;
+  District?: string;
+  City?: string;
+  NewDistrict?: string;
+  Ward?: string;
+  Street?: string;
+  FullAddress?: string;
+}
+
 export interface MarkerOptionsCustom extends google.maps.MarkerOptions {
   id?: number;
-  areas?: string;
-  departments?: string;
-  isHcm?: boolean;
-  item?: {
-    office?: string;
-    BuildingName?: string;
-    Premises?: string;
-    Floor?: string;
-    VacantStatus?: string;
-    AskingRent?: string;
-    ServiceCharge?: string;
-    GrossRent?: string;
-    TotalAmount?: string;
-    Address?: string;
-    position?: {
-      lat: number;
-      lng: number;
-    };
-
-    Department?: string;
-    Nickname?: string;
-    VietnameseName?: string;
-    StartDate?: string;
-    "24-Apr-2022"?: string;
-    Seniorty?: string;
-    District?: string;
-    City?: string;
-    NewDistrict?: string;
-    Ward?: string;
-    Street?: string;
-    FullAddress?: string;
-  };
+  type: "main office" | "sub office" | "in hcm" | "out hcm";
+  item?: MarkerItemInfo;
+  staffs?: MarkerItemInfo[];
 }
 
 const Marker: React.FC<MarkerOptionsCustom> = (options) => {
@@ -54,7 +55,9 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
 
   React.useEffect(() => {
     if (marker) {
-      if (options.item && !options.item.office) {
+      if (options.type === "main office") {
+        marker.setOptions({ ...options, zIndex: 90000000000 });
+      } else if (options.type === "in hcm" || options.type === "out hcm") {
         marker.setOptions({
           ...options,
           cursor: "auto",
@@ -62,45 +65,29 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
               scale: 8,
-              fillColor: options.isHcm ? "#002BFF": "#F5EF01",
+              fillColor: options.type === "in hcm" ? "#002BFF" : "#F5EF01",
               fillOpacity: 0.8,
               strokeWeight: 0.4,
             },
           },
         });
-      } else if (options.item && options.item.office) {
+      } else if (options.type === "sub office") {
         marker.setOptions({
           ...options,
           zIndex: 90000000000,
           ...{
             icon: {
               url:
-                options.item.office === "A"
+                options.item?.office === "A"
                   ? "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
                   : "http://maps.google.com/mapfiles/ms/icons/pink-dot.png",
             },
           },
         });
-      } else if (options.label) {
-        marker.setOptions({
-          ...options,
-          cursor: "auto",
-          ...{
-            icon: {
-              path: google.maps.SymbolPath.CIRCLE,
-              scale: 0,
-              fillColor: "#ecedf2",
-              fillOpacity: 0,
-              strokeWeight: 0,
-            },
-          },
-        });
-      } else {
-        marker.setOptions(options);
       }
 
-      let infoContent: any;
-      if (!options?.item) {
+      let infoContent = "";
+      if (options.type === "main office") {
         infoContent =
           '<div id="content">' +
           '<div id="siteNotice">' +
@@ -112,9 +99,11 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           "</p>" +
           "</div>" +
           "</div>";
+      } else if (options.type === "in hcm") {
+      } else if (options.type === "out hcm") {
       }
-
-      if (options.item && options.item.office) {
+      // normal office
+      else if (options.type === "sub office" && options.item) {
         infoContent =
           '<div id="content">' +
           '<div id="siteNotice">' +
@@ -153,13 +142,11 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           "</div>";
       }
 
-      const infowindow = new google.maps.InfoWindow({
-        content: infoContent,
-      });
-      if (
-        infowindow &&
-        (!options?.item || (options.item && options.item.office))
-      ) {
+      
+      if (infoContent) {
+        const infowindow = new google.maps.InfoWindow({
+          content: infoContent,
+        });
         marker.addListener("mouseover", function () {
           infowindow.open({
             anchor: marker,
