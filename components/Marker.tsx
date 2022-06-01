@@ -4,6 +4,7 @@ export interface MarkerOptionsCustom extends google.maps.MarkerOptions {
   id?: number;
   areas?: string;
   departments?: string;
+  isHcm?: boolean;
   item?: {
     office?: string;
     BuildingName?: string;
@@ -55,13 +56,13 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
     if (marker) {
       if (options.item && !options.item.office) {
         marker.setOptions({
-          options,
+          ...options,
           cursor: "auto",
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
               scale: 8,
-              fillColor: "#002BFF",
+              fillColor: options.isHcm ? "#002BFF": "#F5EF01",
               fillOpacity: 0.8,
               strokeWeight: 0.4,
             },
@@ -69,19 +70,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
         });
       } else if (options.item && options.item.office) {
         marker.setOptions({
-          options,
-          zIndex: 90000000000,
-          ...{
-            icon: {
-              url:
-                options.item.office === "A"
-                  ? "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-                  : "http://maps.google.com/mapfiles/ms/icons/pink-dot.png",
-            },
-          },
-        });
-        console.log("==========", {
-          options,
+          ...options,
           zIndex: 90000000000,
           ...{
             icon: {
@@ -94,7 +83,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
         });
       } else if (options.label) {
         marker.setOptions({
-          options,
+          ...options,
           cursor: "auto",
           ...{
             icon: {
@@ -174,7 +163,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
         marker.addListener("mouseover", function () {
           infowindow.open({
             anchor: marker,
-            map: marker.map,
+            map: (marker as any).map,
             shouldFocus: false,
           });
         });

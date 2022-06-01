@@ -253,6 +253,7 @@ const App: React.VFC = () => {
                   id={i}
                   areas={area}
                   departments={department}
+                  isHcm={true}
                 />
               );
             })}
