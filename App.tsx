@@ -9,13 +9,11 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 
-import Map from './components/Map';
-import Marker from './components/Marker';
+import Map from "./components/Map";
+import Marker from "./components/Marker";
 
-
-
-import { buildA, buildB, staffs,  }  from "./data";
-import * as data from './data';
+import { buildA, buildB, staffs } from "./data";
+import * as data from "./data";
 
 const render = (status: Status) => {
   return <h1>{status}</h1>;
@@ -79,7 +77,9 @@ const App: React.VFC = () => {
 
       if (year[0] !== 0 || year[1] !== 15) {
         dataFilter = dataFilter.filter((ite) => {
-          return +(ite.Seniorty || 0) >= year[0] && +(ite.Seniorty || 0) <= year[1];
+          return (
+            +(ite.Seniorty || 0) >= year[0] && +(ite.Seniorty || 0) <= year[1]
+          );
         });
       }
       setDataList(dataFilter);
@@ -96,8 +96,12 @@ const App: React.VFC = () => {
   }, [year, department, area]);
 
   return (
-    <>
-      <div style={{ margin: "8px", height: "10%" }}>
+    <div style={{
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column'
+    }}>
+      <div style={{ margin: "12px" }}>
         <h3
           style={{
             fontSize: "24px",
@@ -109,7 +113,7 @@ const App: React.VFC = () => {
         >
           Aperia Staff Map{" "}
         </h3>
-        <div style={{ display: "flex", marginBottom: "24px" }}>
+        <div style={{ display: "flex" }}>
           <div style={{ width: "280px", marginRight: "24px" }}>
             <FormControl fullWidth>
               <InputLabel id="select-label-department">Department</InputLabel>
@@ -193,7 +197,8 @@ const App: React.VFC = () => {
           </div>
         </div>
       </div>
-      <div style={{ display: "flex", height: "90%" }}>
+
+      <div style={{ flexGrow: 1, margin: "12px" }}>
         <Wrapper
           apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}
           render={render}
@@ -205,15 +210,14 @@ const App: React.VFC = () => {
             areas={area}
           >
             <Marker position={center} />
-            
 
-            {showOffice && 
+            {showOffice &&
               buildA.map((item, i) => {
                 return (
                   <Marker key={i} position={item.position} item={item} id={i} />
                 );
               })}
-              
+
             {showOffice &&
               buildB.map((item, i) => {
                 return (
@@ -236,7 +240,7 @@ const App: React.VFC = () => {
           </Map>
         </Wrapper>
       </div>
-    </>
+    </div>
   );
 };
 
