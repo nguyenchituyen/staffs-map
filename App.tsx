@@ -15,6 +15,16 @@ import Marker from "./components/Marker";
 import { buildA, buildB, staffs } from "./data";
 import * as data from "./data";
 
+const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
+
+const inOfHcmStaffsAll = staffs
+  .filter((x) => hcmCitys.includes(x.City))
+  .reduce((a, b) => {
+    a[b.District] = [...(a[b.District] || []), b];
+    return a;
+  }, {});
+const outOfHcmStaffsAll = staffs.filter((x) => !hcmCitys.includes(x.City));
+
 const render = (status: Status) => {
   return <h1>{status}</h1>;
 };
@@ -37,7 +47,14 @@ const App: React.VFC = () => {
     lng: 106.6660986,
   });
 
-  const [dataList, setDataList] = React.useState(staffs);
+  const [inOfHcmStaffs, setInOfHcmStaffs] = React.useState(inOfHcmStaffsAll);
+  const [outOfHcmStaffs, setOutOfHcmStaffs] = React.useState(outOfHcmStaffsAll);
+
+  function setFilter(arr) {
+    const outOfHcmStaffs = arr.filter((x) => !hcmCitys.includes(x.City));
+    setOutOfHcmStaffs(outOfHcmStaffs);
+  }
+
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
 
@@ -82,25 +99,27 @@ const App: React.VFC = () => {
           );
         });
       }
-      setDataList(dataFilter);
+      setFilter(dataFilter);
     } else if (
       department === "All" &&
       area === "All" &&
       year[0] === 0 &&
       year[1] === 15
     ) {
-      setDataList(staffs);
+      setFilter(staffs);
     } else {
-      setDataList([]);
+      setFilter([]);
     }
   }, [year, department, area]);
 
   return (
-    <div style={{
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column'
-    }}>
+    <div
+      style={{
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <div style={{ margin: "12px" }}>
         <h3
           style={{
@@ -224,19 +243,19 @@ const App: React.VFC = () => {
                   <Marker key={i} position={item.position} item={item} id={i} />
                 );
               })}
-            {dataList &&
-              dataList.map((item, i) => {
-                return (
-                  <Marker
-                    key={i}
-                    position={item.position}
-                    item={item}
-                    id={i}
-                    areas={area}
-                    departments={department}
-                  />
-                );
-              })}
+
+            {outOfHcmStaffs.map((item, i) => {
+              return (
+                <Marker
+                  key={i}
+                  position={item.position}
+                  item={item}
+                  id={i}
+                  areas={area}
+                  departments={department}
+                />
+              );
+            })}
           </Map>
         </Wrapper>
       </div>

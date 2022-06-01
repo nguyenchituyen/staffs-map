@@ -68,7 +68,7 @@ export const staffs = [
       "lat": 10.8122907,
       "lng": 106.6261831
     },
-    "District": "Tân Phú",
+    "District": "TAN PHU",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Phú",
     "Ward": "Phường Tây Thạnh",
@@ -125,7 +125,7 @@ export const staffs = [
       "lat": 10.795616,
       "lng": 106.684242
     },
-    "District": "Tân Bình",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Phú Nhuận",
     "Ward": "Phường 2",
@@ -163,7 +163,7 @@ export const staffs = [
       "lat": 10.8310819,
       "lng": 106.6214991
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Thới Nhất",
@@ -182,7 +182,7 @@ export const staffs = [
       "lat": 10.880155,
       "lng": 106.638935
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Hiệp Thành",
@@ -220,7 +220,7 @@ export const staffs = [
       "lat": 10.6256995,
       "lng": 106.5320263
     },
-    "District": "Long An",
+    "District": "LONG AN",
     "City": "Long An",
     "NewDistrict": "Huyện Bến Lức",
     "Ward": "Xã Long Hiệp",
@@ -391,7 +391,7 @@ export const staffs = [
       "lat": 10.7059938,
       "lng": 106.6436831
     },
-    "District": "Bình Chánh",
+    "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Bình Chánh",
     "Ward": "Xã Phong Phú",
@@ -429,7 +429,7 @@ export const staffs = [
       "lat": 10.8815107,
       "lng": 106.6773255
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Thạnh Xuân",
@@ -505,7 +505,7 @@ export const staffs = [
       "lat": 10.8665581,
       "lng": 106.6377608
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường  Tân Thới Hiệp",
@@ -657,7 +657,7 @@ export const staffs = [
       "lat": 10.803841,
       "lng": 106.640447
     },
-    "District": "Tân Bình",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 13",
@@ -809,7 +809,7 @@ export const staffs = [
       "lat": 10.8319314,
       "lng": 106.6275672
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Đông Hưng Thuận",
@@ -923,7 +923,7 @@ export const staffs = [
       "lat": 10.6785067,
       "lng": 106.7410408
     },
-    "District": "Nhà Bè",
+    "District": "NHA BE",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Nhà Bè",
     "Ward": "Xã Phú Xuân",
@@ -1000,7 +1000,7 @@ export const staffs = [
       "lng": 105.7579572
     },
     "District": "TAN BINH",
-    "City": "",
+    "City": "Hồ Chí Minh",
     "NewDistrict": "",
     "Ward": "",
     "Street": "",
@@ -1018,7 +1018,7 @@ export const staffs = [
       "lat": 10.8357308,
       "lng": 106.6201058
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Hưng Thuận",
@@ -1037,7 +1037,7 @@ export const staffs = [
       "lat": 10.8216138,
       "lng": 106.6887995
     },
-    "District": "Gò Vấp",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 5",
@@ -1056,7 +1056,7 @@ export const staffs = [
       "lat": 10.8654473,
       "lng": 106.6193907
     },
-    "District": "Hóc Môn",
+    "District": "HOC MON",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Chánh Hiệp",
@@ -1075,7 +1075,7 @@ export const staffs = [
       "lat": 10.8095244,
       "lng": 106.6937269
     },
-    "District": "Bình Thạnh",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 11",
@@ -1094,7 +1094,7 @@ export const staffs = [
       "lat": 10.797177,
       "lng": 106.676401
     },
-    "District": "Phú Nhuận",
+    "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Phú Nhuận",
     "Ward": "Phường 8",
@@ -1113,7 +1113,7 @@ export const staffs = [
       "lat": 10.7678169,
       "lng": 106.6753512
     },
-    "District": "quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 10",
@@ -1132,7 +1132,7 @@ export const staffs = [
       "lat": 10.8349815,
       "lng": 106.7257698
     },
-    "District": "Thủ Đức",
+    "District": "THU DUC",
     "City": "Thủ Đức",
     "NewDistrict": "Quận Thủ Đức",
     "Ward": "Phường Hiệp Bình Chánh",
@@ -1151,7 +1151,7 @@ export const staffs = [
       "lat": 10.794675,
       "lng": 106.6886829
     },
-    "District": "Gò Vấp",
+    "District": "GO VAP",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 1",
     "Ward": "Phường Tân Định",
@@ -1170,7 +1170,7 @@ export const staffs = [
       "lat": 10.7233362,
       "lng": 106.6230941
     },
-    "District": "Bình Dương",
+    "District": "BINH DUONG",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 8",
     "Ward": "Phường 16",
@@ -1208,7 +1208,7 @@ export const staffs = [
       "lat": 10.8015214,
       "lng": 106.6157189
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Phú",
     "Ward": "Phường Sơn Kỳ",
@@ -1284,7 +1284,7 @@ export const staffs = [
       "lat": 10.7639642,
       "lng": 106.6349409
     },
-    "District": "Tân Bình",
+    "District": "TAN BINH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Phú",
     "Ward": "Phường Tân Thới Hòa",
@@ -1930,7 +1930,7 @@ export const staffs = [
       "lat": 10.8301426,
       "lng": 106.6184344
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Thới Nhất",
@@ -2234,7 +2234,7 @@ export const staffs = [
       "lat": 10.8269414,
       "lng": 106.6108474
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Thới Nhất",
@@ -2272,7 +2272,7 @@ export const staffs = [
       "lat": 10.8620815,
       "lng": 106.6481904
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường  Tân Thới Hiệp",
@@ -2367,7 +2367,7 @@ export const staffs = [
       "lat": 10.7597214,
       "lng": 106.6656111
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 5",
@@ -2766,7 +2766,7 @@ export const staffs = [
       "lat": 10.8592588,
       "lng": 106.5972465
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Hóc Môn",
     "Ward": "Xã Xuân Thới Thượng",
@@ -3317,7 +3317,7 @@ export const staffs = [
       "lat": 10.857027,
       "lng": 106.623316
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Chánh Hiệp",
@@ -3337,7 +3337,7 @@ export const staffs = [
       "lng": 109.1948525
     },
     "District": "DISTRICT 5",
-    "City": "",
+    "City": "Hồ Chí Minh",
     "NewDistrict": "",
     "Ward": "",
     "Street": "",
@@ -3488,7 +3488,7 @@ export const staffs = [
       "lat": 10.7753892,
       "lng": 106.6815661
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 11",
@@ -3697,7 +3697,7 @@ export const staffs = [
       "lat": 10.8588807,
       "lng": 106.6304778
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Chánh Hiệp",
@@ -3735,7 +3735,7 @@ export const staffs = [
       "lat": 10.7752784,
       "lng": 106.6591656
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 14",
@@ -3811,7 +3811,7 @@ export const staffs = [
       "lat": 10.8115582,
       "lng": 106.6692217
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 2",
@@ -4077,7 +4077,7 @@ export const staffs = [
       "lat": 10.8399361,
       "lng": 106.622944
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Tân Thới Nhất",
@@ -4172,7 +4172,7 @@ export const staffs = [
       "lat": 10.8257049,
       "lng": 106.686365
     },
-    "District": "Bình Thạnh",
+    "District": "BINH THANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Gò Vấp",
     "Ward": "Phường 7",
@@ -4362,7 +4362,7 @@ export const staffs = [
       "lat": 10.7303494,
       "lng": 106.5812485
     },
-    "District": "Bình Chánh",
+    "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Bình Chánh",
     "Ward": "Xã Tân Kiên",
@@ -4590,7 +4590,7 @@ export const staffs = [
       "lat": 10.8098888,
       "lng": 106.668623
     },
-    "District": "Nhà Bè",
+    "District": "NHA BE",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Bình",
     "Ward": "Phường 2",
@@ -4704,7 +4704,7 @@ export const staffs = [
       "lat": 10.8094754,
       "lng": 106.6330563
     },
-    "District": "Bình Chánh",
+    "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Tân Phú",
     "Ward": "Phường Tây Thạnh",
@@ -4780,7 +4780,7 @@ export const staffs = [
       "lat": 10.7626049,
       "lng": 106.6774003
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 1",
@@ -4799,7 +4799,7 @@ export const staffs = [
       "lat": 10.7069661,
       "lng": 106.6240993
     },
-    "District": "",
+    "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 8",
     "Ward": "Phường 7",
@@ -4818,7 +4818,7 @@ export const staffs = [
       "lat": 10.7122925,
       "lng": 106.7051223
     },
-    "District": "Nhà Bè",
+    "District": "NHA BE",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Nhà Bè",
     "Ward": "Xã Phước Kiển",
@@ -4875,7 +4875,7 @@ export const staffs = [
       "lat": 11.5483314,
       "lng": 109.0210855
     },
-    "District": "Ninh Thuận",
+    "District": "NINH THUAN",
     "City": "",
     "NewDistrict": "",
     "Ward": "",
@@ -5065,7 +5065,7 @@ export const staffs = [
       "lat": 10.7673871,
       "lng": 106.6609392
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 14",
@@ -5122,7 +5122,7 @@ export const staffs = [
       "lat": 10.7709337,
       "lng": 106.6600791
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 14",
@@ -5160,7 +5160,7 @@ export const staffs = [
       "lat": 10.7626186,
       "lng": 106.6586858
     },
-    "District": "Quận 11",
+    "District": "DISTRICT 11",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 11",
     "Ward": "Phường 15",
@@ -5255,7 +5255,7 @@ export const staffs = [
       "lat": 10.8299696,
       "lng": 106.6284279
     },
-    "District": "Quận 12",
+    "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 12",
     "Ward": "Phường Đông Hưng Thuận",
@@ -5348,7 +5348,7 @@ export const staffs = [
       "lat": 10.8148225,
       "lng": 106.6934448
     },
-    "District": "Bình Dương",
+    "District": "BINH DUONG",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận Bình Thạnh",
     "Ward": "Phường 11",
@@ -5405,7 +5405,7 @@ export const staffs = [
       "lat": 10.7753466,
       "lng": 106.6780884
     },
-    "District": "Quận 10",
+    "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Quận 10",
     "Ward": "Phường 12",
@@ -5519,7 +5519,7 @@ export const staffs = [
       "lat": 10.7290993,
       "lng": 106.6767718
     },
-    "District": "Bình Chánh",
+    "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
     "NewDistrict": "Huyện Bình Chánh",
     "Ward": "Xã Bình Hưng ",

@@ -57,9 +57,9 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         name: key,
         polygon: new google.maps.Polygon({
           paths: arrL[key],
-          strokeColor: "FF0000",
-          strokeOpacity: 1,
-          strokeWeight: 1,
+          strokeColor: "#FF0000",
+          strokeOpacity: 0.5,
+          strokeWeight: 0.5,
           fillColor: "#FF0000",
           fillOpacity: 0,
         }),
