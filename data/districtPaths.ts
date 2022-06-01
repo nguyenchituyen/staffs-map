@@ -1,4 +1,4 @@
-export const vnm__ho_chi_minh__quan_1 = {
+export const hcm_d_1 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 1",
@@ -10,7 +10,7 @@ export const vnm__ho_chi_minh__quan_1 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_2 = {
+export const hcm_d_2 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 2",
@@ -22,7 +22,7 @@ export const vnm__ho_chi_minh__quan_2 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_3 = {
+export const hcm_d_3 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 3",
@@ -34,7 +34,7 @@ export const vnm__ho_chi_minh__quan_3 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_4 = {
+export const hcm_d_4 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 4",
@@ -46,7 +46,7 @@ export const vnm__ho_chi_minh__quan_4 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_5 = {
+export const hcm_d_5 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 5",
@@ -58,7 +58,7 @@ export const vnm__ho_chi_minh__quan_5 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_6 = {
+export const hcm_d_6 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 6",
@@ -70,7 +70,7 @@ export const vnm__ho_chi_minh__quan_6 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_7 = {
+export const hcm_d_7 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 7",
@@ -82,7 +82,7 @@ export const vnm__ho_chi_minh__quan_7 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_8 = {
+export const hcm_d_8 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 8",
@@ -94,7 +94,7 @@ export const vnm__ho_chi_minh__quan_8 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_9 = {
+export const hcm_d_9 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 9",
@@ -106,7 +106,7 @@ export const vnm__ho_chi_minh__quan_9 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_10 = {
+export const hcm_d_10 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 10",
@@ -118,7 +118,7 @@ export const vnm__ho_chi_minh__quan_10 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_11 = {
+export const hcm_d_11 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 11",
@@ -130,7 +130,7 @@ export const vnm__ho_chi_minh__quan_11 = {
 };
 
 
-export const vnm__ho_chi_minh__quan_12 = {
+export const hcm_d_12 = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận 12",
@@ -142,7 +142,7 @@ export const vnm__ho_chi_minh__quan_12 = {
 };
 
 
-export const vnm__ho_chi_minh__binh_tan = {
+export const hcm_d_binhtan = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận Bình Tân",
@@ -154,7 +154,7 @@ export const vnm__ho_chi_minh__binh_tan = {
 };
 
 
-export const vnm__ho_chi_minh__binh_thanh = {
+export const hcm_d_binhthanh = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận Bình Thạnh",
@@ -166,7 +166,7 @@ export const vnm__ho_chi_minh__binh_thanh = {
 };
 
 
-export const vnm__ho_chi_minh__go_vap = {
+export const hcm_d_govap = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận Gò Vấp",
@@ -178,7 +178,7 @@ export const vnm__ho_chi_minh__go_vap = {
 };
 
 
-export const vnm__ho_chi_minh__phu_nhuan = {
+export const hcm_d_phunhuan = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận Phú Nhuận",
@@ -190,7 +190,7 @@ export const vnm__ho_chi_minh__phu_nhuan = {
 };
 
 
-export const vnm__ho_chi_minh__tan_binh = {
+export const hcm_d_tanbinh = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận Tân Bình",
@@ -202,7 +202,7 @@ export const vnm__ho_chi_minh__tan_binh = {
 };
 
 
-export const vnm__ho_chi_minh__tan_phu = {
+export const hcm_d_tanphu = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận Tân Phú",
@@ -214,7 +214,7 @@ export const vnm__ho_chi_minh__tan_phu = {
 };
 
 
-export const vnm__ho_chi_minh__thu_duc = {
+export const hcm_d_thuduc = {
   "type": "Feature",
   "properties": {
       "popupContent":"Quận Thủ Đức",
@@ -226,7 +226,7 @@ export const vnm__ho_chi_minh__thu_duc = {
 };
 
 
-export const vnm__ho_chi_minh__binh_chanh = {
+export const hcm_d_binhchanh = {
   "type": "Feature",
   "properties": {
       "popupContent":"Huyện Bình Chánh",
@@ -238,7 +238,7 @@ export const vnm__ho_chi_minh__binh_chanh = {
 };
 
 
-export const vnm__ho_chi_minh__can_gio = {
+export const hcm_d_cangio = {
   "type": "Feature",
   "properties": {
       "popupContent":"Huyện Cần Giờ",
@@ -250,7 +250,7 @@ export const vnm__ho_chi_minh__can_gio = {
 };
 
 
-export const vnm__ho_chi_minh__cu_chi = {
+export const hcm_d_cuchi = {
   "type": "Feature",
   "properties": {
       "popupContent":"Huyện Củ Chi",
@@ -262,7 +262,7 @@ export const vnm__ho_chi_minh__cu_chi = {
 };
 
 
-export const vnm__ho_chi_minh__hoc_mon = {
+export const hcm_d_hoocmon = {
   "type": "Feature",
   "properties": {
       "popupContent":"Huyện Hóc Môn",
@@ -274,7 +274,7 @@ export const vnm__ho_chi_minh__hoc_mon = {
 };
 
 
-export const vnm__ho_chi_minh__nha_be = {
+export const hcm_d_nhabe = {
   "type": "Feature",
   "properties": {
       "popupContent":"Huyện Nhà Bè",
@@ -287,28 +287,28 @@ export const vnm__ho_chi_minh__nha_be = {
 
 
 export default {
-  vnm__ho_chi_minh__quan_1,
-  vnm__ho_chi_minh__quan_2,
-  vnm__ho_chi_minh__quan_3,
-  vnm__ho_chi_minh__quan_4,
-  vnm__ho_chi_minh__quan_5,
-  vnm__ho_chi_minh__quan_6,
-  vnm__ho_chi_minh__quan_7,
-  vnm__ho_chi_minh__quan_8,
-  vnm__ho_chi_minh__quan_9,
-  vnm__ho_chi_minh__quan_10,
-  vnm__ho_chi_minh__quan_11,
-  vnm__ho_chi_minh__quan_12,
-  vnm__ho_chi_minh__binh_chanh,
-  vnm__ho_chi_minh__binh_tan,
-  vnm__ho_chi_minh__binh_thanh,
-  vnm__ho_chi_minh__can_gio,
-  vnm__ho_chi_minh__cu_chi,
-  vnm__ho_chi_minh__go_vap,
-  vnm__ho_chi_minh__hoc_mon,
-  vnm__ho_chi_minh__phu_nhuan,
-  vnm__ho_chi_minh__tan_binh,
-  vnm__ho_chi_minh__tan_phu,
-  vnm__ho_chi_minh__thu_duc,
-  vnm__ho_chi_minh__nha_be
+  hcm_d_1,
+  hcm_d_2,
+  hcm_d_3,
+  hcm_d_4,
+  hcm_d_5,
+  hcm_d_6,
+  hcm_d_7,
+  hcm_d_8,
+  hcm_d_9,
+  hcm_d_10,
+  hcm_d_11,
+  hcm_d_12,
+  hcm_d_binhchanh,
+  hcm_d_binhtan,
+  hcm_d_binhthanh,
+  hcm_d_cangio,
+  hcm_d_cuchi,
+  hcm_d_govap,
+  hcm_d_hoocmon,
+  hcm_d_phunhuan,
+  hcm_d_tanbinh,
+  hcm_d_tanphu,
+  hcm_d_thuduc,
+  hcm_d_nhabe
 }

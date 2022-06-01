@@ -1,4 +1,4 @@
-export const vnm__ho_chi_minh__quan_1 = [
+export const hcm_d_1 = [
   {
     "lat": 10.75829124,
     "lng": 106.69268036
@@ -174,7 +174,7 @@ export const vnm__ho_chi_minh__quan_1 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_2 = [
+export const hcm_d_2 = [
   {
     "lat": 10.74192715,
     "lng": 106.76773834
@@ -466,7 +466,7 @@ export const vnm__ho_chi_minh__quan_2 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_3 = [
+export const hcm_d_3 = [
   {
     "lat": 10.77784157,
     "lng": 106.68162537
@@ -602,7 +602,7 @@ export const vnm__ho_chi_minh__quan_3 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_4 = [
+export const hcm_d_4 = [
   {
     "lat": 10.75217438,
     "lng": 106.69048309
@@ -714,7 +714,7 @@ export const vnm__ho_chi_minh__quan_4 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_5 = [
+export const hcm_d_5 = [
   {
     "lat": 10.74865627,
     "lng": 106.66051483
@@ -850,7 +850,7 @@ export const vnm__ho_chi_minh__quan_5 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_6 = [
+export const hcm_d_6 = [
   {
     "lat": 10.73354244,
     "lng": 106.63439941
@@ -994,7 +994,7 @@ export const vnm__ho_chi_minh__quan_6 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_7 = [
+export const hcm_d_7 = [
   {
     "lat": 10.71372795,
     "lng": 106.75095367
@@ -1266,7 +1266,7 @@ export const vnm__ho_chi_minh__quan_7 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_8 = [
+export const hcm_d_8 = [
   {
     "lat": 10.70182419,
     "lng": 106.59780884
@@ -1518,7 +1518,7 @@ export const vnm__ho_chi_minh__quan_8 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_9 = [
+export const hcm_d_9 = [
   {
     "lat": 10.7733078,
     "lng": 106.84033966
@@ -1882,7 +1882,7 @@ export const vnm__ho_chi_minh__quan_9 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_10 = [
+export const hcm_d_10 = [
   {
     "lat": 10.75985527,
     "lng": 106.66889954
@@ -1978,7 +1978,7 @@ export const vnm__ho_chi_minh__quan_10 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_11 = [
+export const hcm_d_11 = [
   {
     "lat": 10.7535038,
     "lng": 106.64978027
@@ -2098,7 +2098,7 @@ export const vnm__ho_chi_minh__quan_11 = [
 ];
 
 
-export const vnm__ho_chi_minh__quan_12 = [
+export const hcm_d_12 = [
   {
     "lat": 10.87129593,
     "lng": 106.69688416
@@ -2546,7 +2546,7 @@ export const vnm__ho_chi_minh__quan_12 = [
 ];
 
 
-export const vnm__ho_chi_minh__binh_tan = [
+export const hcm_d_binhtan = [
   {
     "lat": 10.74506092,
     "lng": 106.62306213
@@ -2874,7 +2874,7 @@ export const vnm__ho_chi_minh__binh_tan = [
 ];
 
 
-export const vnm__ho_chi_minh__binh_thanh = [
+export const hcm_d_binhthanh = [
   {
     "lat": 10.78782082,
     "lng": 106.71240997
@@ -3198,7 +3198,7 @@ export const vnm__ho_chi_minh__binh_thanh = [
 ];
 
 
-export const vnm__ho_chi_minh__go_vap = [
+export const hcm_d_govap = [
   {
     "lat": 10.83734322,
     "lng": 106.64633179
@@ -3582,7 +3582,7 @@ export const vnm__ho_chi_minh__go_vap = [
 ];
 
 
-export const vnm__ho_chi_minh__phu_nhuan = [
+export const hcm_d_phunhuan = [
   {
     "lat": 10.79012012,
     "lng": 106.67389679
@@ -3794,7 +3794,7 @@ export const vnm__ho_chi_minh__phu_nhuan = [
 ];
 
 
-export const vnm__ho_chi_minh__tan_binh = [
+export const hcm_d_tanbinh = [
   {
     "lat": 10.77324486,
     "lng": 106.64907074
@@ -4058,7 +4058,7 @@ export const vnm__ho_chi_minh__tan_binh = [
 ];
 
 
-export const vnm__ho_chi_minh__tan_phu = [
+export const hcm_d_tanphu = [
   {
     "lat": 10.76957226,
     "lng": 106.63568878
@@ -4210,7 +4210,7 @@ export const vnm__ho_chi_minh__tan_phu = [
 ];
 
 
-export const vnm__ho_chi_minh__thu_duc = [
+export const hcm_d_thuduc = [
   {
     "lat": 10.81312275,
     "lng": 106.7569809
@@ -4702,7 +4702,7 @@ export const vnm__ho_chi_minh__thu_duc = [
 ];
 
 
-export const vnm__ho_chi_minh__binh_chanh = [
+export const hcm_d_binhchanh = [
   {
     "lat": 10.65239429,
     "lng": 106.55529022
@@ -5750,7 +5750,7 @@ export const vnm__ho_chi_minh__binh_chanh = [
 ];
 
 
-export const vnm__ho_chi_minh__can_gio = [
+export const hcm_d_cangio = [
   {
     "lat": 10.43849468,
     "lng": 106.96268463
@@ -6362,7 +6362,7 @@ export const vnm__ho_chi_minh__can_gio = [
 ];
 
 
-export const vnm__ho_chi_minh__cu_chi = [
+export const hcm_d_cuchi = [
   {
     "lat": 10.99404144,
     "lng": 106.61668396
@@ -7134,7 +7134,7 @@ export const vnm__ho_chi_minh__cu_chi = [
 ];
 
 
-export const vnm__ho_chi_minh__hoc_mon = [
+export const hcm_d_hoocmon = [
   {
     "lat": 10.85532093,
     "lng": 106.60723114
@@ -7462,7 +7462,7 @@ export const vnm__ho_chi_minh__hoc_mon = [
 ];
 
 
-export const vnm__ho_chi_minh__nha_be = [
+export const hcm_d_nhabe = [
   {
     "lat": 10.59109592,
     "lng": 106.72357178
