@@ -30,3 +30,19 @@ input {
 .MuiMenu-paper {
   max-height: 320px !important;
 }
+
+.gm-style .gm-style-iw-t::after {
+  background: linear-gradient(45deg,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%) #fff;
+  box-shadow: -2px 2px 2px 0rgba(178,178,178,.4);
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%,-50%) rotate(-45deg);
+  width: 10px;
+}
+
+.gm-ui-hover-effect {
+  display: none !important;
+}
