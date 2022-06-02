@@ -24,8 +24,8 @@ export const arrPolygonPath = {
   "DISTRICT 3": {
     paths: district.hcm_d_3,
     center: {
-      lat: 0,
-      lng: 0,
+      lat: 10.7843695,
+      lng: 106.6844089,
     },
   },
   "DISTRICT 4": {
@@ -59,8 +59,8 @@ export const arrPolygonPath = {
   "DISTRICT 8": {
     paths: district.hcm_d_8,
     center: {
-      lat: 0,
-      lng: 0,
+      lat: 10.7285473,
+      lng: 106.6364885,
     },
   },
   "DISTRICT 9": {
@@ -87,8 +87,8 @@ export const arrPolygonPath = {
   "DISTRICT 12": {
     paths: district.hcm_d_12,
     center: {
-      lat: 0,
-      lng: 0,
+      lat: 10.8771531,
+      lng: 106.6713322,
     },
   },
   "BINH CHANH": {
@@ -108,8 +108,8 @@ export const arrPolygonPath = {
   "BINH THANH": {
     paths: district.hcm_d_binhthanh,
     center: {
-      lat: 0,
-      lng: 0,
+      lat: 10.8105831,
+      lng: 106.7091422,
     },
   },
   "CAN GIO": {
@@ -122,15 +122,15 @@ export const arrPolygonPath = {
   "CU CHI": {
     paths: district.hcm_d_cuchi,
     center: {
-      lat: 0,
-      lng: 0,
+      lat: 10.992192,
+      lng: 106.5265434,
     },
   },
   "GO VAP": {
     paths: district.hcm_d_govap,
     center: {
-      lat: 0,
-      lng: 0,
+      lat: 10.8446779,
+      lng: 106.6652904,
     },
   },
   "HOC MON": {
@@ -183,6 +183,108 @@ interface MapProps extends google.maps.MapOptions {
   children: any;
 }
 
+const styleMap = [
+  {
+    featureType: "administrative",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "administrative.country",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "administrative.land_parcel",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "administrative.locality",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "administrative.neighborhood",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "administrative.province",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "landscape",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "poi",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "transit",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "road",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "on",
+      },
+    ],
+  },
+  {
+    featureType: "road.highway.controlled_access",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+];
+
 const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const [map, setMap] = React.useState<google.maps.Map>();
@@ -194,6 +296,7 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         new window.google.maps.Map(ref.current, {
           center: options.center,
           zoom: options.zoom,
+          styles: styleMap,
         })
       );
 
@@ -204,8 +307,8 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
           strokeColor: "#FF0000",
           strokeOpacity: 0.5,
           strokeWeight: 0.5,
-          fillColor: "#F5EF01",
-          fillOpacity: 0.2,
+          fillColor: "#51F50A",
+          fillOpacity: 0.1,
         }),
       }));
       setArrPolygon(arr);
@@ -225,14 +328,12 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
 
         map?.setCenter(bounds.getCenter());
         map?.setZoom(13);
-
-        
       });
 
       p.polygon.addListener("mouseover", (e) => {
         p.polygon.setOptions({
-          fillColor:"#FF0000",
-          fillOpacity: 0.1
+          fillColor: "#FF0000",
+          fillOpacity: 0.1,
         });
 
         infowindow.setContent(p.name);
@@ -240,6 +341,7 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
           lat: e.latLng.lat(),
           lng: e.latLng.lng(),
         });
+        infowindow.setZIndex(9998);
         infowindow.open(map);
       });
       p.polygon.addListener("mousemove", (e) => {
@@ -250,8 +352,8 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
       });
       p.polygon.addListener("mouseout", () => {
         p.polygon.setOptions({
-          fillColor:"#F5EF01",
-          fillOpacity: 0.1
+          fillColor: "#51F50A",
+          fillOpacity: 0.1,
         });
 
         infowindow.close();

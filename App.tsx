@@ -35,6 +35,8 @@ const inOfHcmStaffsObTemp = staffs
     return a;
   }, {});
 
+  
+
 const inOfHcmStaffsAll = Object.keys(inOfHcmStaffsObTemp).map((key) => {
   let center = arrPolygonPath[key].center;
   if (!center.lat) {
@@ -49,6 +51,7 @@ const inOfHcmStaffsAll = Object.keys(inOfHcmStaffsObTemp).map((key) => {
 });
 
 const outOfHcmStaffsAll = staffs.filter((x) => !hcmCitys.includes(x.City));
+
 
 const render = (status: Status) => {
   return <h1>{status}</h1>;
@@ -138,27 +141,11 @@ const App: React.VFC = () => {
   }, [year, department, area]);
 
   return (
-    <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-      <div style={{ margin: "12px" }}>
-        <h3
-          style={{
-            fontSize: "24px",
-            lineHeight: "36px",
-            letterSpacing: "2.5px",
-            fontWeight: "700",
-            color: "#18181d",
-          }}
-        >
-          Aperia Staff Map{" "}
-        </h3>
-        <div style={{ display: "flex" }}>
-          <div style={{ width: "280px", marginRight: "24px" }}>
+    <div className="d-flex flex-column h-100">
+      <div className="m-12">
+        <h3>Aperia Staff Map</h3>
+        <div className="d-flex align-items-center">
+          <div className="w-240 mr-24">
             <FormControl fullWidth>
               <InputLabel id="select-label-department">Department</InputLabel>
               <Select
@@ -176,7 +163,7 @@ const App: React.VFC = () => {
               </Select>
             </FormControl>
           </div>
-          <div style={{ width: "280px", marginRight: "38px" }}>
+          <div className="w-240 mr-48">
             <FormControl fullWidth>
               <InputLabel id="select-label-area">Area</InputLabel>
               <Select
@@ -194,14 +181,7 @@ const App: React.VFC = () => {
               </Select>
             </FormControl>
           </div>
-          <div
-            style={{
-              width: "280px",
-              display: "flex",
-              alignItems: "center",
-              marginRight: "60px",
-            }}
-          >
+          <div className="w-280 d-flex mr-48">
             <FormControl fullWidth>
               <Slider
                 step={0.5}
@@ -219,14 +199,7 @@ const App: React.VFC = () => {
             {/* <Button onClick={handleRender1}>RENDER</Button>
             <Button onClick={handleRender}>Export</Button> */}
           </div>
-          <div
-            style={{
-              width: "280px",
-              display: "flex",
-              alignItems: "center",
-              marginTop: "-24px",
-            }}
-          >
+          <div className="d-flex w-240">
             <FormGroup>
               <FormControlLabel
                 control={
@@ -242,7 +215,7 @@ const App: React.VFC = () => {
         </div>
       </div>
 
-      <div style={{ flexGrow: 1, margin: "12px" }}>
+      <div className="flex-grow-1">
         <Wrapper
           apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}
           render={render}
@@ -253,7 +226,7 @@ const App: React.VFC = () => {
             style={{ flexGrow: "1", height: "100%" }}
             areas={area}
           >
-            <Marker position={center} type={'main office'}/>
+            <Marker position={center} type={"main office"} />
 
             {showOffice &&
               buildA.map((item, i) => {
@@ -262,7 +235,7 @@ const App: React.VFC = () => {
                     key={i}
                     id={i}
                     position={item.position}
-                    type={'sub office'}
+                    type={"sub office"}
                     item={item}
                   />
                 );
@@ -275,7 +248,7 @@ const App: React.VFC = () => {
                     key={i}
                     id={i}
                     position={item.position}
-                    type={'sub office'}
+                    type={"sub office"}
                     item={item}
                   />
                 );
@@ -288,7 +261,7 @@ const App: React.VFC = () => {
                   position={item.position}
                   item={item}
                   id={i}
-                  type={'out hcm'}
+                  type={"out hcm"}
                 />
               );
             })}
@@ -299,7 +272,7 @@ const App: React.VFC = () => {
                   key={"inOfHcmStaffs" + i + 10000}
                   position={item.position}
                   id={i + 10000}
-                  type={'in hcm'}
+                  type={"in hcm"}
                   staffs={item.staffs}
                 />
               );
