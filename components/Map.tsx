@@ -185,104 +185,194 @@ interface MapProps extends google.maps.MapOptions {
 
 const styleMap = [
   {
-    featureType: "administrative",
-    elementType: "all",
-    stylers: [
+    "featureType": "all",
+    "elementType": "labels.text",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#878787"
+      }
+    ]
   },
   {
-    featureType: "administrative.country",
-    elementType: "all",
-    stylers: [
+    "featureType": "all",
+    "elementType": "labels.text.stroke",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "visibility": "off"
+      }
+    ]
   },
   {
-    featureType: "administrative.land_parcel",
-    elementType: "all",
-    stylers: [
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#f9f5ed"
+      }
+    ]
   },
   {
-    featureType: "administrative.locality",
-    elementType: "all",
-    stylers: [
+    "featureType": "landscape",
+    "elementType": "labels",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "visibility": "on"
+      }
+    ]
   },
   {
-    featureType: "administrative.neighborhood",
-    elementType: "all",
-    stylers: [
+    "featureType": "poi",
+    "elementType": "labels",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "visibility": "off"
+      }
+    ]
   },
   {
-    featureType: "administrative.province",
-    elementType: "all",
-    stylers: [
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "visibility": "off"
+      }
+    ]
   },
   {
-    featureType: "landscape",
-    elementType: "all",
-    stylers: [
+    "featureType": "road.highway",
+    "elementType": "all",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#f5f5f5"
+      }
+    ]
   },
   {
-    featureType: "poi",
-    elementType: "all",
-    stylers: [
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#c9c9c9"
+      }
+    ]
   },
   {
-    featureType: "transit",
-    elementType: "all",
-    stylers: [
+    "featureType": "road.highway",
+    "elementType": "labels",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "visibility": "off"
+      }
+    ]
   },
   {
-    featureType: "road",
-    elementType: "all",
-    stylers: [
+    "featureType": "road.highway",
+    "elementType": "labels.text",
+    "stylers": [
       {
-        visibility: "on",
-      },
-    ],
+        "visibility": "off"
+      }
+    ]
   },
   {
-    featureType: "road.highway.controlled_access",
-    elementType: "all",
-    stylers: [
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "visibility": "off"
+      }
+    ]
   },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "all",
+    "stylers": [
+      {
+        "color": "#aee0f4"
+      }
+    ]
+  }
 ];
 
 const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
@@ -330,33 +420,37 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         map?.setZoom(13);
       });
 
+      p.polygon.setValues({
+
+      })
+
       p.polygon.addListener("mouseover", (e) => {
         p.polygon.setOptions({
           fillColor: "#FF0000",
           fillOpacity: 0.1,
         });
 
-        infowindow.setContent(p.name);
-        infowindow.setPosition({
-          lat: e.latLng.lat(),
-          lng: e.latLng.lng(),
-        });
-        infowindow.setZIndex(9998);
-        infowindow.open(map);
+        // infowindow.setContent(p.name);
+        // infowindow.setPosition({
+        //   lat: e.latLng.lat(),
+        //   lng: e.latLng.lng(),
+        // });
+        // infowindow.setZIndex(9998);
+        // infowindow.open(map);
       });
-      p.polygon.addListener("mousemove", (e) => {
-        infowindow.setPosition({
-          lat: e.latLng.lat() + 0.002,
-          lng: e.latLng.lng(),
-        });
-      });
+      // p.polygon.addListener("mousemove", (e) => {
+      //   infowindow.setPosition({
+      //     lat: e.latLng.lat() + 0.002,
+      //     lng: e.latLng.lng(),
+      //   });
+      // });
       p.polygon.addListener("mouseout", () => {
         p.polygon.setOptions({
           fillColor: "#51F50A",
           fillOpacity: 0.1,
         });
 
-        infowindow.close();
+        // infowindow.close();
       });
     }
   };

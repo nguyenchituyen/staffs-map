@@ -4824,6 +4824,7 @@ export const staffs = [
     "Nickname": "Tien Nguyen",
     "VietnameseName": "Nguyễn Ngọc Tiên",
     "StartDate": "7-Apr-2020",
+    "Seniorty": "8.83",
     "Address": "Chung cư BIWASE, Số 400, Đường Trần Quang Diệu, Phường An Phú, Tp Thuận An, Tỉnh Bình Dương",
     "position": {
       "lat": 10.9596314,

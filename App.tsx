@@ -8,54 +8,14 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
+import Header from './components/Header';
 
 import Map from "./components/Map";
 import Marker from "./components/Marker";
 
-import { buildA, buildB, staffs } from "./data";
+import { buildA, buildB, staffs, districtCenter } from "./data";
 import * as data from "./data";
-
-import { arrPolygonPath } from "./components/Map";
-
-const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
-
-function calCenter(paths) {
-  const lats = paths.map((x) => x.lat);
-  const lngs = paths.map((x) => x.lng);
-  return {
-    lat: (Math.max(...lats) + Math.min(...lats)) / 2,
-    lng: (Math.max(...lngs) + Math.min(...lngs)) / 2,
-  };
-}
-
-const inOfHcmStaffsObTemp = staffs
-  .filter((x) => hcmCitys.includes(x.City))
-  .reduce((a, b) => {
-    a[b.District] = [...(a[b.District] || []), b];
-    return a;
-  }, {});
-
-  
-
-const inOfHcmStaffsAll = Object.keys(inOfHcmStaffsObTemp).map((key) => {
-  let center = arrPolygonPath[key].center;
-  if (!center.lat) {
-    center = calCenter(arrPolygonPath[key].paths);
-  }
-
-  return {
-    name: key,
-    staffs: inOfHcmStaffsObTemp[key],
-    position: center,
-  };
-});
-
-const outOfHcmStaffsAll = staffs.filter((x) => !hcmCitys.includes(x.City));
-
-
-const render = (status: Status) => {
-  return <h1>{status}</h1>;
-};
+import { inOfHcmStaffsAll, outOfHcmStaffsAll, calCenter } from './components/util';
 
 const marks = [
   {
@@ -69,19 +29,24 @@ const marks = [
 ];
 
 const App: React.VFC = () => {
-  const [zoom, setZoom] = React.useState(12);
+  const [zoom, setZoom] = React.useState(13);
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 10.8092805, //IBM Building location
     lng: 106.6660986,
   });
 
-  const [inOfHcmStaffs, setInOfHcmStaffs] = React.useState(inOfHcmStaffsAll);
-  const [outOfHcmStaffs, setOutOfHcmStaffs] = React.useState(outOfHcmStaffsAll);
+  const [inOfHcmStaffs, setInOfHcmStaffs] = React.useState(inOfHcmStaffsAll(staffs));
+  const [outOfHcmStaffs, setOutOfHcmStaffs] = React.useState(outOfHcmStaffsAll(staffs));
 
   function setFilter(arr) {
-    const outOfHcmStaffs = arr.filter((x) => !hcmCitys.includes(x.City));
+
+    const outOfHcmStaffs = outOfHcmStaffsAll(arr);
     setOutOfHcmStaffs(outOfHcmStaffs);
+
+    const inOfHcmStaffs = inOfHcmStaffsAll(arr);
+    setInOfHcmStaffs(inOfHcmStaffs);
   }
+
 
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
@@ -104,6 +69,7 @@ const App: React.VFC = () => {
     setShowOffice(!showOffice);
   };
 
+
   React.useEffect(() => {
     let dataFilter = staffs;
     if (
@@ -114,6 +80,7 @@ const App: React.VFC = () => {
     ) {
       if (department !== "All") {
         dataFilter = dataFilter.filter((ite) => ite.Department === department);
+
       }
 
       if (area !== "All") {
@@ -143,7 +110,7 @@ const App: React.VFC = () => {
   return (
     <div className="d-flex flex-column h-100">
       <div className="m-12">
-        <h3>Aperia Staff Map</h3>
+        <Header />
         <div className="d-flex align-items-center">
           <div className="w-240 mr-24">
             <FormControl fullWidth>
@@ -196,8 +163,6 @@ const App: React.VFC = () => {
                 onChange={handleOnChangeYear}
               />
             </FormControl>
-            {/* <Button onClick={handleRender1}>RENDER</Button>
-            <Button onClick={handleRender}>Export</Button> */}
           </div>
           <div className="d-flex w-240">
             <FormGroup>
@@ -218,7 +183,6 @@ const App: React.VFC = () => {
       <div className="flex-grow-1">
         <Wrapper
           apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}
-          render={render}
         >
           <Map
             center={center}
@@ -226,8 +190,16 @@ const App: React.VFC = () => {
             style={{ flexGrow: "1", height: "100%" }}
             areas={area}
           >
+
             <Marker position={center} type={"main office"} />
 
+            {districtCenter.map((item) => {
+              return (
+                <Marker position={item.position} label={{ color: "#333", fontSize: "14px", fontWeight: '500', text: item.labelText }} />
+              )
+            })
+
+            }
             {showOffice &&
               buildA.map((item, i) => {
                 return (
@@ -274,6 +246,7 @@ const App: React.VFC = () => {
                   id={i + 10000}
                   type={"in hcm"}
                   staffs={item.staffs}
+                  label={{ text: Object.keys(item.staffs).length.toString() }}
                 />
               );
             })}
