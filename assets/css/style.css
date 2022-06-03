@@ -1,0 +1,85 @@
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+label, h3 {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  font-size: larger;
+}
+
+.gm-style .gm-style-iw-t::after {
+
+  background: linear-gradient(45deg,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%) #fff;
+  box-shadow: -2px 2px 2px 0rgba(178,178,178,.4);
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%,-50%) rotate(-45deg);
+  width: 10px;
+}
+
+/* .gm-ui-hover-effect {
+  display: none !important;
+} */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.m-12 {
+  margin: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
+.w-240 {
+  width: 240px;
+}
+
+.w-280 {
+  width: 280px;
+}
+
+.h-100 {
+  height: 100%;
+}

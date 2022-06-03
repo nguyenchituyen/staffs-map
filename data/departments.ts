@@ -1,4 +1,4 @@
-const departmentDatas = [
+export const departmentDatas = [
   {
     id: 0,
     name: 'All'
@@ -57,7 +57,7 @@ const departmentDatas = [
   },
 ]
 
-const areaDatas = [
+export const areaDatas = [
     {
       id: -1,
       name: 'All'
@@ -153,7 +153,7 @@ const areaDatas = [
 
 ];
 
-const bgColor = {
+export const bgColor = {
     'all': '#FF0000',
     'Admin': '#002BFF',
     'PMO': '#FF9933',
@@ -167,10 +167,4 @@ const bgColor = {
     'Frontend Developer': '#695D0C',
     'DBA': '#69470C',
     'DevOps': '#69370C'
-}
-
-export default {
-  bgColor,
-  departmentDatas,
-  areaDatas
 }
