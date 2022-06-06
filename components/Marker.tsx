@@ -83,7 +83,6 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
         '<div id="siteNotice">' +
         "</div>" +
         '<h3 id="firstHeading" class="firstHeading">' + options.item.BuildingName +
-        ' - Grade ' + options.item.office +
         '</h3>' +
         '<div id="bodyContent">' +
         "<p><b>Premises:</b> "
@@ -120,7 +119,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
-              scale: 12,
+              scale: 11,
               fillColor: options.type === "in hcm" ? "#002BFF" : "#F5EF01",
               fillOpacity: 0.5,
               strokeWeight: 0,
@@ -191,7 +190,6 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
       }
     }
   }, [marker, options]);
-  
 
   return null;
 };

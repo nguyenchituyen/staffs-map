@@ -12,7 +12,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 11",
     "Street": "656/68/106D",
     "FullAddress": "656/68/106D Phường 11 Quận Gò Vấp Hồ Chí Minh"
@@ -30,7 +30,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tân Quý",
     "Street": "415/44 Tân Hương",
     "FullAddress": "415/44 Tân Hương Phường Tân Quý Quận Tân Phú Hồ Chí Minh"
@@ -48,7 +48,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 1",
     "Street": "A10.05 Chung cư 26 Nguyễn Thượng Hiền",
     "FullAddress": "A10.05 Chung cư 26 Nguyễn Thượng Hiền Phường 1 Quận Gò Vấp Hồ Chí Minh"
@@ -66,7 +66,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tây Thạnh",
     "Street": "63 T5",
     "FullAddress": "63 T5 Phường Tây Thạnh Quận Tân Phú Hồ Chí Minh"
@@ -84,7 +84,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Chánh",
     "Street": "B03.09 Opal Riverside, Duong so 10",
     "FullAddress": "B03.09 Opal Riverside, Duong so 10 Phường Hiệp Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -102,7 +102,7 @@ export const staffs = [
     },
     "District": "DISTRICT 1",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 1",
+    "NewDistrict": "DISTRICT 1",
     "Ward": "Phường Đa Kao",
     "Street": "10F2 Nguyễn Thị Minh Khai",
     "FullAddress": "10F2 Nguyễn Thị Minh Khai Phường Đa Kao Quận 1 Hồ Chí Minh"
@@ -120,7 +120,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 2",
     "Street": "255 Co Giang",
     "FullAddress": "255 Co Giang Phường 2 Quận Phú Nhuận Hồ Chí Minh"
@@ -138,7 +138,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tân Quý",
     "Street": "90/62, Đỗ Thừa Luông",
     "FullAddress": "90/62, Đỗ Thừa Luông Phường Tân Quý Quận Tân Phú Hồ Chí Minh"
@@ -156,7 +156,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Thới Nhất",
     "Street": "163A Trường Chinh",
     "FullAddress": "163A Trường Chinh Phường Tân Thới Nhất Quận 12 Hồ Chí Minh"
@@ -173,7 +173,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Hiệp Thành",
     "Street": "362/34/4 HT13",
     "FullAddress": "362/34/4 HT13 Phường Hiệp Thành Quận 12 Hồ Chí Minh"
@@ -190,7 +190,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Hưng Hoà B",
     "Street": "A2.307 CC Green Town Bình Tân, đường số 1",
     "FullAddress": "A2.307 CC Green Town Bình Tân, đường số 1 Phường Bình Hưng Hoà B Quận Bình Tân Hồ Chí Minh"
@@ -224,7 +224,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Hiệp Tân",
     "Street": "237/32/39 Hoa Binh",
     "FullAddress": "237/32/39 Hoa Binh Phường Hiệp Tân Quận Tân Phú Hồ Chí Minh"
@@ -241,7 +241,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "Chung Cư Emerald, Số 2 đường N4",
     "FullAddress": "Chung Cư Emerald, Số 2 đường N4 Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -258,7 +258,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "Chung cư  Emerald, Số 2 Đường N4",
     "FullAddress": "Chung cư  Emerald, Số 2 Đường N4 Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -275,7 +275,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Bình Phước",
     "Street": "B0504 Chung cư Sunview Town, đường Gò Dưa",
     "FullAddress": "B0504 Chung cư Sunview Town, đường Gò Dưa Phường Bình Phước Quận Thủ Đức Thủ Đức"
@@ -292,7 +292,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Tăng Nhơn Phú B",
     "Street": "63/2/6 đường số 2",
     "FullAddress": "63/2/6 đường số 2 Phường Tăng Nhơn Phú B Quận 9 Thủ Đức"
@@ -309,7 +309,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 12",
     "Street": "256/126/29A Phan Huy Ích",
     "FullAddress": "256/126/29A Phan Huy Ích Phường 12 Quận Gò Vấp Hồ Chí Minh"
@@ -326,7 +326,7 @@ export const staffs = [
     },
     "District": "DISTRICT 11",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 11",
+    "NewDistrict": "DISTRICT 11",
     "Ward": "Phường 7",
     "Street": "610 Nguyễn Chí Thanh",
     "FullAddress": "610 Nguyễn Chí Thanh Phường 7 Quận 11 Hồ Chí Minh"
@@ -343,7 +343,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Hiệp Thành",
     "Street": "387A Lê Văn Khương",
     "FullAddress": "387A Lê Văn Khương Phường Hiệp Thành Quận 12 Hồ Chí Minh"
@@ -360,7 +360,7 @@ export const staffs = [
     },
     "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Bình Chánh",
+    "NewDistrict": "BINH CHANH",
     "Ward": "Xã Phong Phú",
     "Street": "Chung Cu Terra Rosa - duong so 7 - 13E Nguyen Van Linh",
     "FullAddress": "Chung Cu Terra Rosa - duong so 7 - 13E Nguyen Van Linh Xã Phong Phú Huyện Bình Chánh Hồ Chí Minh"
@@ -377,7 +377,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 10",
     "Street": "383/3/112 Quang Trung",
     "FullAddress": "383/3/112 Quang Trung Phường 10 Quận Gò Vấp Hồ Chí Minh"
@@ -394,7 +394,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Thạnh Xuân",
     "Street": "56/13 khu phố 2, đường TX 25",
     "FullAddress": "56/13 khu phố 2, đường TX 25 Phường Thạnh Xuân Quận 12 Hồ Chí Minh"
@@ -411,7 +411,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 12",
     "Street": "256/126/29A Phan Huy Ích",
     "FullAddress": "256/126/29A Phan Huy Ích Phường 12 Quận Gò Vấp Hồ Chí Minh"
@@ -428,7 +428,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 24",
     "Street": "8/20 B1 Nguyễn Thiện Thuật",
     "FullAddress": "8/20 B1 Nguyễn Thiện Thuật Phường 24 Quận Bình Thạnh Hồ Chí Minh"
@@ -445,7 +445,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Long Trường",
     "Street": "124/10 Võ Văn Hát",
     "FullAddress": "124/10 Võ Văn Hát Phường Long Trường Quận 9 Thủ Đức"
@@ -462,7 +462,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường  Tân Thới Hiệp",
     "Street": "10G Hẻm 107 Tân Thới Hiệp 14 (số cũ: 479/44/3/12 KP3A)",
     "FullAddress": "10G Hẻm 107 Tân Thới Hiệp 14 (số cũ: 479/44/3/12 KP3A) Phường  Tân Thới Hiệp Quận 12 Hồ Chí Minh"
@@ -479,7 +479,7 @@ export const staffs = [
     },
     "District": "DISTRICT 4",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 4",
+    "NewDistrict": "DISTRICT 4",
     "Ward": "Phường 2",
     "Street": "283 Bến Vân Đồn",
     "FullAddress": "283 Bến Vân Đồn Phường 2 Quận 4 Hồ Chí Minh"
@@ -513,7 +513,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Phước Long B",
     "Street": "Chung cư Gia Hòa - 523A Đỗ Xuân Hợp",
     "FullAddress": "Chung cư Gia Hòa - 523A Đỗ Xuân Hợp Phường Phước Long B Quận 9 Thủ Đức"
@@ -530,7 +530,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 26",
     "Street": "188 Nguyễn Xí",
     "FullAddress": "188 Nguyễn Xí Phường 26 Quận Bình Thạnh Hồ Chí Minh"
@@ -564,7 +564,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 14",
     "Street": "237/32/99 Phạm Văn Chiêu",
     "FullAddress": "237/32/99 Phạm Văn Chiêu Phường 14 Quận Gò Vấp Hồ Chí Minh"
@@ -581,7 +581,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Phước Long A",
     "Street": "chung cư Him Lam Phú An, 32 Thủy Lợi",
     "FullAddress": "chung cư Him Lam Phú An, 32 Thủy Lợi Phường Phước Long A Quận 9 Thủ Đức"
@@ -598,7 +598,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 13",
     "Street": "14/9 Nhất Chi Mai",
     "FullAddress": "14/9 Nhất Chi Mai Phường 13 Quận Tân Bình Hồ Chí Minh"
@@ -615,7 +615,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Bình Thọ",
     "Street": "Căn Hộ B5-09 102 Đặng Văn Bi",
     "FullAddress": "Căn Hộ B5-09 102 Đặng Văn Bi Phường Bình Thọ Quận Thủ Đức Thủ Đức"
@@ -632,7 +632,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "Số 2, đường N4",
     "FullAddress": "Số 2, đường N4 Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -649,7 +649,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Phú Thọ Hòa",
     "Street": "2/4/31/41 Lê Thúc Hoạch",
     "FullAddress": "2/4/31/41 Lê Thúc Hoạch Phường Phú Thọ Hòa Quận Tân Phú Hồ Chí Minh"
@@ -666,7 +666,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường An Lạc",
     "Street": "AK6 10.17 chung cư Akari, 77 Võ Văn Kiệt",
     "FullAddress": "AK6 10.17 chung cư Akari, 77 Võ Văn Kiệt Phường An Lạc Quận Bình Tân Hồ Chí Minh"
@@ -683,7 +683,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Long Bình",
     "Street": "Số 15, Đường 13, KP Giãn Dân",
     "FullAddress": "Số 15, Đường 13, KP Giãn Dân Phường Long Bình Quận 9 Thủ Đức"
@@ -700,7 +700,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Bình Chánh",
     "Street": "52G, đường số 18",
     "FullAddress": "52G, đường số 18 Phường Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -734,7 +734,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Đông Hưng Thuận",
     "Street": "54 KP3A, ĐHT26",
     "FullAddress": "54 KP3A, ĐHT26 Phường Đông Hưng Thuận Quận 12 Hồ Chí Minh"
@@ -751,7 +751,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "159/1/2 Bạch Đằng",
     "FullAddress": "159/1/2 Bạch Đằng Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -768,7 +768,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường An Lạc",
     "Street": "A1-809, Block A1, Chung Cư eHome 3, 141 Hồ Học Lãm",
     "FullAddress": "A1-809, Block A1, Chung Cư eHome 3, 141 Hồ Học Lãm Phường An Lạc Quận Bình Tân Hồ Chí Minh"
@@ -785,7 +785,7 @@ export const staffs = [
     },
     "District": "DISTRICT 4",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 4",
+    "NewDistrict": "DISTRICT 4",
     "Ward": "Phường 15",
     "Street": "263/19 Xom Chieu",
     "FullAddress": "263/19 Xom Chieu Phường 15 Quận 4 Hồ Chí Minh"
@@ -802,7 +802,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Hưng Hoà A",
     "Street": "23M Đường số 25",
     "FullAddress": "23M Đường số 25 Phường Bình Hưng Hoà A Quận Bình Tân Hồ Chí Minh"
@@ -819,7 +819,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Tam Bình",
     "Street": "SaiGon Avenue, Đường 11",
     "FullAddress": "SaiGon Avenue, Đường 11 Phường Tam Bình Quận Thủ Đức Thủ Đức"
@@ -836,7 +836,7 @@ export const staffs = [
     },
     "District": "NHA BE",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Nhà Bè",
+    "NewDistrict": "NHA BE",
     "Ward": "Xã Phú Xuân",
     "Street": "100 Khu dân cư Phú Xuân (cc Phú Gia)",
     "FullAddress": "100 Khu dân cư Phú Xuân (cc Phú Gia) Xã Phú Xuân Huyện Nhà Bè Hồ Chí Minh"
@@ -853,7 +853,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 6",
     "Street": "2050 Phạm Thế Hiển",
     "FullAddress": "2050 Phạm Thế Hiển Phường 6 Quận 8 Hồ Chí Minh"
@@ -870,7 +870,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 22",
     "Street": "208 Nguyễn Hữu Cảnh",
     "FullAddress": "208 Nguyễn Hữu Cảnh Phường 22 Quận Bình Thạnh Hồ Chí Minh"
@@ -887,7 +887,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 7",
     "Street": "10 Chử Đồng Tử",
     "FullAddress": "10 Chử Đồng Tử Phường 7 Quận Tân Bình Hồ Chí Minh"
@@ -921,7 +921,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Hưng Thuận",
     "Street": "128/9 đht 32, Kp2 ",
     "FullAddress": "128/9 đht 32, Kp2  Phường Tân Hưng Thuận Quận 12 Hồ Chí Minh"
@@ -938,7 +938,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 5",
     "Street": "84/28 Nguyễn Văn Nghi",
     "FullAddress": "84/28 Nguyễn Văn Nghi Phường 5 Quận Gò Vấp Hồ Chí Minh"
@@ -955,7 +955,7 @@ export const staffs = [
     },
     "District": "HOC MON",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Chánh Hiệp",
     "Street": "105 TCH 18",
     "FullAddress": "105 TCH 18 Phường Tân Chánh Hiệp Quận 12 Hồ Chí Minh"
@@ -972,7 +972,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 11",
     "Street": "482/51/10 Lê Quang Định",
     "FullAddress": "482/51/10 Lê Quang Định Phường 11 Quận Bình Thạnh Hồ Chí Minh"
@@ -989,7 +989,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 8",
     "Street": "10d Nguyễn Thị Huỳnh",
     "FullAddress": "10d Nguyễn Thị Huỳnh Phường 8 Quận Phú Nhuận Hồ Chí Minh"
@@ -1006,7 +1006,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 10",
     "Street": "458/ 32 Lý Thái Tổ",
     "FullAddress": "458/ 32 Lý Thái Tổ Phường 10 Quận 10 Hồ Chí Minh"
@@ -1023,7 +1023,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Chánh",
     "Street": "12 khu phố 6, đường 48",
     "FullAddress": "12 khu phố 6, đường 48 Phường Hiệp Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -1040,7 +1040,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 1",
+    "NewDistrict": "DISTRICT 1",
     "Ward": "Phường Tân Định",
     "Street": "Chung cư 10A Trần Nhật Duật",
     "FullAddress": "Chung cư 10A Trần Nhật Duật Phường Tân Định Quận 1 Hồ Chí Minh"
@@ -1057,7 +1057,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 16",
     "Street": "chung cư Mỹ Phúc, 192 Phạm Đức Sơn",
     "FullAddress": "chung cư Mỹ Phúc, 192 Phạm Đức Sơn Phường 16 Quận 8 Hồ Chí Minh"
@@ -1074,7 +1074,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 6",
     "Street": "149/42 Đất Thánh",
     "FullAddress": "149/42 Đất Thánh Phường 6 Quận Tân Bình Hồ Chí Minh"
@@ -1091,7 +1091,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "Chung cư Emeral, đường N4",
     "FullAddress": "Chung cư Emeral, đường N4 Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -1108,7 +1108,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 14",
     "Street": "415/19 Trường Chinh",
     "FullAddress": "415/19 Trường Chinh Phường 14 Quận Tân Bình Hồ Chí Minh"
@@ -1125,7 +1125,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tân Thành",
     "Street": "86 đường 30 tháng 4",
     "FullAddress": "86 đường 30 tháng 4 Phường Tân Thành Quận Tân Phú Hồ Chí Minh"
@@ -1142,7 +1142,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường An Phú Đông",
     "Street": "chung cư An Phú Đông",
     "FullAddress": "chung cư An Phú Đông Phường An Phú Đông Quận 12 Hồ Chí Minh"
@@ -1159,7 +1159,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tân Thới Hòa",
     "Street": "23A Lê Quát",
     "FullAddress": "23A Lê Quát Phường Tân Thới Hòa Quận Tân Phú Hồ Chí Minh"
@@ -1176,7 +1176,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Chánh",
     "Street": "75/34 Đường 48",
     "FullAddress": "75/34 Đường 48 Phường Hiệp Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -1193,7 +1193,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 12",
     "Street": "217/17/6 Nơ Trang Long",
     "FullAddress": "217/17/6 Nơ Trang Long Phường 12 Quận Bình Thạnh Hồ Chí Minh"
@@ -1210,7 +1210,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 11",
     "Street": "230/9 Tùng Thiện Vương",
     "FullAddress": "230/9 Tùng Thiện Vương Phường 11 Quận 8 Hồ Chí Minh"
@@ -1227,7 +1227,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Phước Long B",
     "Street": "Chung cư Flora Fuji, Đường D1",
     "FullAddress": "Chung cư Flora Fuji, Đường D1 Phường Phước Long B Quận 9 Thủ Đức"
@@ -1244,7 +1244,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 21",
     "Street": "12.D2 Chung cư Mỹ Đức, 220 Xô Viết Nghệ Tĩnh",
     "FullAddress": "12.D2 Chung cư Mỹ Đức, 220 Xô Viết Nghệ Tĩnh Phường 21 Quận Bình Thạnh Hồ Chí Minh"
@@ -1261,7 +1261,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 12",
     "Street": "4 Phan Chu Trinh",
     "FullAddress": "4 Phan Chu Trinh Phường 12 Quận Bình Thạnh Hồ Chí Minh"
@@ -1278,7 +1278,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Phú Thuận",
     "Street": "965A Huỳnh Tấn Phát",
     "FullAddress": "965A Huỳnh Tấn Phát Phường Phú Thuận Quận 7 Hồ Chí Minh"
@@ -1295,7 +1295,7 @@ export const staffs = [
     },
     "District": "DISTRICT 6",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 6",
+    "NewDistrict": "DISTRICT 6",
     "Ward": "Phường 12",
     "Street": "33 Kinh Dương Vương",
     "FullAddress": "33 Kinh Dương Vương Phường 12 Quận 6 Hồ Chí Minh"
@@ -1312,7 +1312,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 6",
     "Street": "28 Giải Phóng",
     "FullAddress": "28 Giải Phóng Phường 6 Quận Tân Bình Hồ Chí Minh"
@@ -1329,7 +1329,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 13",
     "Street": "306/13 Đặng Thùy Trâm",
     "FullAddress": "306/13 Đặng Thùy Trâm Phường 13 Quận Bình Thạnh Hồ Chí Minh"
@@ -1346,7 +1346,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 12",
     "Street": "755 Quang Trung",
     "FullAddress": "755 Quang Trung Phường 12 Quận Gò Vấp Hồ Chí Minh"
@@ -1363,7 +1363,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 9",
     "Street": "380/37/8 Phạm Văn Chiêu",
     "FullAddress": "380/37/8 Phạm Văn Chiêu Phường 9 Quận Gò Vấp Hồ Chí Minh"
@@ -1380,7 +1380,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 8",
     "Street": "872/51/12 Quang Trung",
     "FullAddress": "872/51/12 Quang Trung Phường 8 Quận Gò Vấp Hồ Chí Minh"
@@ -1397,7 +1397,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Thới Nhất",
     "Street": "22/14 Phan Văn Hơn",
     "FullAddress": "22/14 Phan Văn Hơn Phường Tân Thới Nhất Quận 12 Hồ Chí Minh"
@@ -1414,7 +1414,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 12",
     "Street": "56 Nguyễn Bá Tuyển",
     "FullAddress": "56 Nguyễn Bá Tuyển Phường 12 Quận Tân Bình Hồ Chí Minh"
@@ -1431,7 +1431,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 7",
     "Street": "33 Phan Tây Hồ",
     "FullAddress": "33 Phan Tây Hồ Phường 7 Quận Phú Nhuận Hồ Chí Minh"
@@ -1448,7 +1448,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Trường Thọ",
     "Street": "Đường số 8",
     "FullAddress": "Đường số 8 Phường Trường Thọ Quận Thủ Đức Thủ Đức"
@@ -1465,7 +1465,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Phú Thạnh",
     "Street": "343/33A Trần Thủ Độ",
     "FullAddress": "343/33A Trần Thủ Độ Phường Phú Thạnh Quận Tân Phú Hồ Chí Minh"
@@ -1482,7 +1482,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Hưng Hoà",
     "Street": "34/17 Đình Nghi Xuân",
     "FullAddress": "34/17 Đình Nghi Xuân Phường Bình Hưng Hoà Quận Bình Tân Hồ Chí Minh"
@@ -1499,7 +1499,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tân Quý",
     "Street": "Chung cư Khang Gia, 377 Tân Hương",
     "FullAddress": "Chung cư Khang Gia, 377 Tân Hương Phường Tân Quý Quận Tân Phú Hồ Chí Minh"
@@ -1516,7 +1516,7 @@ export const staffs = [
     },
     "District": "DISTRICT 11",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 11",
+    "NewDistrict": "DISTRICT 11",
     "Ward": "Phường 14",
     "Street": "86/88 Ông Ích Khiêm F14 Q11",
     "FullAddress": "86/88 Ông Ích Khiêm F14 Q11 Phường 14 Quận 11 Hồ Chí Minh"
@@ -1533,7 +1533,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Phước",
     "Street": "32 đường số 5, KDC Hồng Long",
     "FullAddress": "32 đường số 5, KDC Hồng Long Phường Hiệp Bình Phước Quận Thủ Đức Thủ Đức"
@@ -1550,7 +1550,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "38/8 Lam Sơn",
     "FullAddress": "38/8 Lam Sơn Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -1567,7 +1567,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 3",
+    "NewDistrict": "DISTRICT 3",
     "Ward": "Phường 12",
     "Street": "22.04C, Cao ốc Screc, 974A Trường Sa",
     "FullAddress": "22.04C, Cao ốc Screc, 974A Trường Sa Phường 12 Quận 3 Hồ Chí Minh"
@@ -1584,7 +1584,7 @@ export const staffs = [
     },
     "District": "DISTRICT 5",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 5",
+    "NewDistrict": "DISTRICT 5",
     "Ward": "Phường 4",
     "Street": "87 Hùng Vương",
     "FullAddress": "87 Hùng Vương Phường 4 Quận 5 Hồ Chí Minh"
@@ -1601,7 +1601,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "108 Hồng Hà",
     "FullAddress": "108 Hồng Hà Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -1618,7 +1618,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Chánh",
     "Street": "6/2 đường 52",
     "FullAddress": "6/2 đường 52 Phường Hiệp Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -1635,7 +1635,7 @@ export const staffs = [
     },
     "District": "DISTRICT 1",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 1",
+    "NewDistrict": "DISTRICT 1",
     "Ward": "Phường Tân Định",
     "Street": "76 Nguyễn Phi Khanh",
     "FullAddress": "76 Nguyễn Phi Khanh Phường Tân Định Quận 1 Hồ Chí Minh"
@@ -1652,7 +1652,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 14",
     "Street": "59/1D Phạm Văn Chiêu",
     "FullAddress": "59/1D Phạm Văn Chiêu Phường 14 Quận Gò Vấp Hồ Chí Minh"
@@ -1669,7 +1669,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 8",
     "Street": "872/51/12 Quang Trung",
     "FullAddress": "872/51/12 Quang Trung Phường 8 Quận Gò Vấp Hồ Chí Minh"
@@ -1686,7 +1686,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Thới Nhất",
     "Street": "163A Trường Chinh",
     "FullAddress": "163A Trường Chinh Phường Tân Thới Nhất Quận 12 Hồ Chí Minh"
@@ -1703,7 +1703,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 4",
     "Street": "21/24 Trường Sơn",
     "FullAddress": "21/24 Trường Sơn Phường 4 Quận Tân Bình Hồ Chí Minh"
@@ -1720,7 +1720,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Phước Long B",
     "Street": "28 đường số 2",
     "FullAddress": "28 đường số 2 Phường Phước Long B Quận 9 Thủ Đức"
@@ -1737,7 +1737,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Thới Nhất",
     "Street": "Chung cư Prosper Plazar,  22/14 Phan Văn Hớn",
     "FullAddress": "Chung cư Prosper Plazar,  22/14 Phan Văn Hớn Phường Tân Thới Nhất Quận 12 Hồ Chí Minh"
@@ -1754,7 +1754,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Phước",
     "Street": "87/58/12 Quốc lộ 1",
     "FullAddress": "87/58/12 Quốc lộ 1 Phường Hiệp Bình Phước Quận Thủ Đức Thủ Đức"
@@ -1771,7 +1771,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Hiệp Thành",
     "Street": "37B/1 Nguyễn Thị Tràng",
     "FullAddress": "37B/1 Nguyễn Thị Tràng Phường Hiệp Thành Quận 12 Hồ Chí Minh"
@@ -1788,7 +1788,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 1",
     "Street": "270/25/12 Phan Đình Phùng",
     "FullAddress": "270/25/12 Phan Đình Phùng Phường 1 Quận Phú Nhuận Hồ Chí Minh"
@@ -1805,7 +1805,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 26",
     "Street": "175 Quốc Lộ 13",
     "FullAddress": "175 Quốc Lộ 13 Phường 26 Quận Bình Thạnh Hồ Chí Minh"
@@ -1822,7 +1822,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 3",
     "Street": "2A Nguyễn Kiệm",
     "FullAddress": "2A Nguyễn Kiệm Phường 3 Quận Gò Vấp Hồ Chí Minh"
@@ -1839,7 +1839,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 27",
     "Street": "117/1B Bình Quới",
     "FullAddress": "117/1B Bình Quới Phường 27 Quận Bình Thạnh Hồ Chí Minh"
@@ -1856,7 +1856,7 @@ export const staffs = [
     },
     "District": "DISTRICT 2",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 2",
+    "NewDistrict": "DISTRICT 2",
     "Ward": "Phường An Khánh",
     "Street": "30 đường số 19B",
     "FullAddress": "30 đường số 19B Phường An Khánh Quận 2 Thủ Đức"
@@ -1873,7 +1873,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 27",
     "Street": "Thanh đa",
     "FullAddress": "Thanh đa Phường 27 Quận Bình Thạnh Hồ Chí Minh"
@@ -1890,7 +1890,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 3",
     "Street": "862 Nguyễn Kiệm",
     "FullAddress": "862 Nguyễn Kiệm Phường 3 Quận Gò Vấp Hồ Chí Minh"
@@ -1907,7 +1907,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 12",
     "Street": "246/9F Phan Văn Trị",
     "FullAddress": "246/9F Phan Văn Trị Phường 12 Quận Bình Thạnh Hồ Chí Minh"
@@ -1924,7 +1924,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 11",
     "Street": "637/61/59 Quang Trung",
     "FullAddress": "637/61/59 Quang Trung Phường 11 Quận Gò Vấp Hồ Chí Minh"
@@ -1941,7 +1941,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 13",
     "Street": "230/18/36 Trường Chinh",
     "FullAddress": "230/18/36 Trường Chinh Phường 13 Quận Tân Bình Hồ Chí Minh"
@@ -1958,7 +1958,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Linh Xuân",
     "Street": "108/11 Đường 11 ",
     "FullAddress": "108/11 Đường 11  Phường Linh Xuân Quận Thủ Đức Thủ Đức"
@@ -1975,7 +1975,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "Căn hộ 301- Tòa nhà Sky Center - Số 5B Đường Phổ Quang",
     "FullAddress": "Căn hộ 301- Tòa nhà Sky Center - Số 5B Đường Phổ Quang Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -1992,7 +1992,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 4",
     "Street": "25/5 Hậu Giang",
     "FullAddress": "25/5 Hậu Giang Phường 4 Quận Tân Bình Hồ Chí Minh"
@@ -2009,7 +2009,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Thới Nhất",
     "Street": "Chung cư Tín Phong, đường Tân Thới Nhất 8",
     "FullAddress": "Chung cư Tín Phong, đường Tân Thới Nhất 8 Phường Tân Thới Nhất Quận 12 Hồ Chí Minh"
@@ -2026,7 +2026,7 @@ export const staffs = [
     },
     "District": "DISTRICT 6",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 6",
+    "NewDistrict": "DISTRICT 6",
     "Ward": "Phường 13",
     "Street": "269/19 Bà Hom P13, Q6 TPCHM",
     "FullAddress": "269/19 Bà Hom P13, Q6 TPCHM Phường 13 Quận 6 Hồ Chí Minh"
@@ -2043,7 +2043,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường  Tân Thới Hiệp",
     "Street": "33/15 Tân thới hiệp 7",
     "FullAddress": "33/15 Tân thới hiệp 7 Phường  Tân Thới Hiệp Quận 12 Hồ Chí Minh"
@@ -2060,7 +2060,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Chánh Hiệp",
     "Street": "340/17/14/2 Tân Chánh Hiệp 10",
     "FullAddress": "340/17/14/2 Tân Chánh Hiệp 10 Phường Tân Chánh Hiệp Quận 12 Hồ Chí Minh"
@@ -2077,7 +2077,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "108 đường DC11",
     "FullAddress": "108 đường DC11 Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -2094,7 +2094,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 15",
     "Street": "104/72 Phạm Văn Bạch",
     "FullAddress": "104/72 Phạm Văn Bạch Phường 15 Quận Tân Bình Hồ Chí Minh"
@@ -2111,7 +2111,7 @@ export const staffs = [
     },
     "District": "DISTRICT 2",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 2",
+    "NewDistrict": "DISTRICT 2",
     "Ward": "Phường An Khánh",
     "Street": "16 - 18 Đường Số 1, Lương Đình Của",
     "FullAddress": "16 - 18 Đường Số 1, Lương Đình Của Phường An Khánh Quận 2 Thủ Đức"
@@ -2128,7 +2128,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 5",
     "Street": "138/18 Ngô Quyền",
     "FullAddress": "138/18 Ngô Quyền Phường 5 Quận 10 Hồ Chí Minh"
@@ -2145,7 +2145,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 13",
     "Street": "624 Lê Văn Thọ",
     "FullAddress": "624 Lê Văn Thọ Phường 13 Quận Gò Vấp Hồ Chí Minh"
@@ -2162,7 +2162,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 14",
     "Street": "405/13 Trường Chinh",
     "FullAddress": "405/13 Trường Chinh Phường 14 Quận Tân Bình Hồ Chí Minh"
@@ -2179,7 +2179,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 13",
     "Street": "624 Lê Văn Thọ",
     "FullAddress": "624 Lê Văn Thọ Phường 13 Quận Gò Vấp Hồ Chí Minh"
@@ -2213,7 +2213,7 @@ export const staffs = [
     },
     "District": "CU CHI",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Củ Chi",
+    "NewDistrict": "CU CHI",
     "Ward": "Xã Tân Thông Hội",
     "Street": "284 Quốc Lộ 22, ấp Tân Định",
     "FullAddress": "284 Quốc Lộ 22, ấp Tân Định Xã Tân Thông Hội Huyện Củ Chi Hồ Chí Minh"
@@ -2230,7 +2230,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 4",
     "Street": "28 Giải Phóng",
     "FullAddress": "28 Giải Phóng Phường 4 Quận Tân Bình Hồ Chí Minh"
@@ -2247,7 +2247,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 15",
     "Street": "40/2 Hoàng Bật Đạt",
     "FullAddress": "40/2 Hoàng Bật Đạt Phường 15 Quận Tân Bình Hồ Chí Minh"
@@ -2264,7 +2264,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Thới An",
     "Street": "7.13 chung cư hà đô RiverSide, đường Lê thị riêng",
     "FullAddress": "7.13 chung cư hà đô RiverSide, đường Lê thị riêng Phường Thới An Quận 12 Hồ Chí Minh"
@@ -2281,7 +2281,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 15",
     "Street": "5/8A1 Mai Hắc Đế",
     "FullAddress": "5/8A1 Mai Hắc Đế Phường 15 Quận 8 Hồ Chí Minh"
@@ -2298,7 +2298,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 15",
     "Street": "40/6 Nguyễn Sỹ Sách",
     "FullAddress": "40/6 Nguyễn Sỹ Sách Phường 15 Quận Tân Bình Hồ Chí Minh"
@@ -2315,7 +2315,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Phước Long A",
     "Street": "1/24 - Street 74",
     "FullAddress": "1/24 - Street 74 Phường Phước Long A Quận 9 Thủ Đức"
@@ -2332,7 +2332,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Trường Thọ",
     "Street": "Chung cư Lavita Charm, đường số 1",
     "FullAddress": "Chung cư Lavita Charm, đường số 1 Phường Trường Thọ Quận Thủ Đức Thủ Đức"
@@ -2349,7 +2349,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 15",
     "Street": "688/13A Lê Đức Thọ",
     "FullAddress": "688/13A Lê Đức Thọ Phường 15 Quận Gò Vấp Hồ Chí Minh"
@@ -2366,7 +2366,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Tân Kiểng",
     "Street": "66A Đường 77 P Tân Quy",
     "FullAddress": "66A Đường 77 P Tân Quy Phường Tân Kiểng Quận 7 Hồ Chí Minh"
@@ -2383,7 +2383,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 17",
     "Street": "7 Huỳnh Văn Bánh",
     "FullAddress": "7 Huỳnh Văn Bánh Phường 17 Quận Phú Nhuận Hồ Chí Minh"
@@ -2400,7 +2400,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 16",
     "Street": "467/137 Le Duc Tho ",
     "FullAddress": "467/137 Le Duc Tho  Phường 16 Quận Gò Vấp Hồ Chí Minh"
@@ -2417,7 +2417,7 @@ export const staffs = [
     },
     "District": "DISTRICT 6",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 6",
+    "NewDistrict": "DISTRICT 6",
     "Ward": "Phường 6",
     "Street": "299/30A/9 Lê Quang Sung",
     "FullAddress": "299/30A/9 Lê Quang Sung Phường 6 Quận 6 Hồ Chí Minh"
@@ -2434,7 +2434,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Chánh",
     "Street": "Đường số 20",
     "FullAddress": "Đường số 20 Phường Hiệp Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -2451,7 +2451,7 @@ export const staffs = [
     },
     "District": "HOC MON",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Hóc Môn",
+    "NewDistrict": "HOC MON",
     "Ward": "Xã Đông Thạnh",
     "Street": "79/53 Đông Thạnh",
     "FullAddress": "79/53 Đông Thạnh Xã Đông Thạnh Huyện Hóc Môn Hồ Chí Minh"
@@ -2468,7 +2468,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 27",
     "Street": "235 Lô P cư xá Thanh Đa",
     "FullAddress": "235 Lô P cư xá Thanh Đa Phường 27 Quận Bình Thạnh Hồ Chí Minh"
@@ -2485,7 +2485,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Hóc Môn",
+    "NewDistrict": "HOC MON",
     "Ward": "Xã Xuân Thới Thượng",
     "Street": "104/18/11 tổ 30 ấp 3",
     "FullAddress": "104/18/11 tổ 30 ấp 3 Xã Xuân Thới Thượng Huyện Hóc Môn Hồ Chí Minh"
@@ -2502,7 +2502,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 25",
     "Street": "441/14/19 Điện Biên Phủ",
     "FullAddress": "441/14/19 Điện Biên Phủ Phường 25 Quận Bình Thạnh Hồ Chí Minh"
@@ -2519,7 +2519,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 7",
     "Street": "94 Nguyễn Du",
     "FullAddress": "94 Nguyễn Du Phường 7 Quận Gò Vấp Hồ Chí Minh"
@@ -2536,7 +2536,7 @@ export const staffs = [
     },
     "District": "DISTRICT 2",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 2",
+    "NewDistrict": "DISTRICT 2",
     "Ward": "Phường Bình Trưng Đông",
     "Street": "29/2 Đường 41",
     "FullAddress": "29/2 Đường 41 Phường Bình Trưng Đông Quận 2 Thủ Đức"
@@ -2553,7 +2553,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 6",
     "Street": "496/46/17 Dương Quảng Hàm",
     "FullAddress": "496/46/17 Dương Quảng Hàm Phường 6 Quận Gò Vấp Hồ Chí Minh"
@@ -2570,7 +2570,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 4",
     "Street": "75 Nguyễn Đình Khơi",
     "FullAddress": "75 Nguyễn Đình Khơi Phường 4 Quận Tân Bình Hồ Chí Minh"
@@ -2587,7 +2587,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 17",
     "Street": "118 Lê Thị Hồng",
     "FullAddress": "118 Lê Thị Hồng Phường 17 Quận Gò Vấp Hồ Chí Minh"
@@ -2604,7 +2604,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 6",
     "Street": "Chung cư Tara Residence, 1-1A Tạ Quang Bửu",
     "FullAddress": "Chung cư Tara Residence, 1-1A Tạ Quang Bửu Phường 6 Quận 8 Hồ Chí Minh"
@@ -2621,7 +2621,7 @@ export const staffs = [
     },
     "District": "DISTRICT 5",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 5",
+    "NewDistrict": "DISTRICT 5",
     "Ward": "Phường 14",
     "Street": "18 Nguyễn Thị Nhỏ",
     "FullAddress": "18 Nguyễn Thị Nhỏ Phường 14 Quận 5 Hồ Chí Minh"
@@ -2638,7 +2638,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Củ Chi",
+    "NewDistrict": "CU CHI",
     "Ward": "Xã Phú Hòa Đông",
     "Street": "1115 Nguyễn Văn Khạ",
     "FullAddress": "1115 Nguyễn Văn Khạ Xã Phú Hòa Đông Huyện Củ Chi Hồ Chí Minh"
@@ -2655,7 +2655,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 3",
     "Street": "Chung Cư Miếu Nổi, Lô C ",
     "FullAddress": "Chung Cư Miếu Nổi, Lô C  Phường 3 Quận Bình Thạnh Hồ Chí Minh"
@@ -2672,7 +2672,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 7",
     "Street": "56D Le Truc",
     "FullAddress": "56D Le Truc Phường 7 Quận Bình Thạnh Hồ Chí Minh"
@@ -2689,7 +2689,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Hưng Thuận",
     "Street": "P.204, chung cư Đông Hưng 1, DN10",
     "FullAddress": "P.204, chung cư Đông Hưng 1, DN10 Phường Tân Hưng Thuận Quận 12 Hồ Chí Minh"
@@ -2706,7 +2706,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 12",
     "Street": "25/33/66 Bùi Quang Là",
     "FullAddress": "25/33/66 Bùi Quang Là Phường 12 Quận Gò Vấp Hồ Chí Minh"
@@ -2723,7 +2723,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 7",
     "Street": "Lô B Chung cư Nhiêu Tứ",
     "FullAddress": "Lô B Chung cư Nhiêu Tứ Phường 7 Quận Phú Nhuận Hồ Chí Minh"
@@ -2740,7 +2740,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 3",
     "Street": "13/8 Trần Kế Xương ",
     "FullAddress": "13/8 Trần Kế Xương  Phường 3 Quận Bình Thạnh Hồ Chí Minh"
@@ -2757,7 +2757,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Linh Đông",
     "Street": "65 Duong 30, Chung Cu 4S Linh Dong",
     "FullAddress": "65 Duong 30, Chung Cu 4S Linh Dong Phường Linh Đông Quận Thủ Đức Thủ Đức"
@@ -2774,7 +2774,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "32 Nguyễn Đình Khơi",
     "FullAddress": "32 Nguyễn Đình Khơi Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -2791,7 +2791,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Trung Mỹ Tây",
     "Street": "20/3B QL1A",
     "FullAddress": "20/3B QL1A Phường Trung Mỹ Tây Quận 12 Hồ Chí Minh"
@@ -2808,7 +2808,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Long Thạnh Mỹ",
     "Street": "26 Nguyễn Văn Thạnh",
     "FullAddress": "26 Nguyễn Văn Thạnh Phường Long Thạnh Mỹ Quận 9 Thủ Đức"
@@ -2825,7 +2825,7 @@ export const staffs = [
     },
     "District": "CU CHI",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Củ Chi",
+    "NewDistrict": "CU CHI",
     "Ward": "Xã Tân Phú Trung",
     "Street": "Đường 77 Ấp Đình, Xã Tân Phú Trung, Huyện Củ Chi",
     "FullAddress": "Đường 77 Ấp Đình, Xã Tân Phú Trung, Huyện Củ Chi Xã Tân Phú Trung Huyện Củ Chi Hồ Chí Minh"
@@ -2842,7 +2842,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 3",
     "Street": "124/32 Pham Van Dong",
     "FullAddress": "124/32 Pham Van Dong Phường 3 Quận Gò Vấp Hồ Chí Minh"
@@ -2859,7 +2859,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Hưng Thuận",
     "Street": "Số 19E4, đường DD4",
     "FullAddress": "Số 19E4, đường DD4 Phường Tân Hưng Thuận Quận 12 Hồ Chí Minh"
@@ -2876,7 +2876,7 @@ export const staffs = [
     },
     "District": "DISTRICT 2",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 2",
+    "NewDistrict": "DISTRICT 2",
     "Ward": "Phường An Khánh",
     "Street": "B17.12 Chung cư Bộ Công An",
     "FullAddress": "B17.12 Chung cư Bộ Công An Phường An Khánh Quận 2 Thủ Đức"
@@ -2893,7 +2893,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 13",
     "Street": "227 Hoàng Hoa Thám",
     "FullAddress": "227 Hoàng Hoa Thám Phường 13 Quận Tân Bình Hồ Chí Minh"
@@ -2927,7 +2927,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 10",
     "Street": "222 Quang Trung",
     "FullAddress": "222 Quang Trung Phường 10 Quận Gò Vấp Hồ Chí Minh"
@@ -2944,7 +2944,7 @@ export const staffs = [
     },
     "District": "DISTRICT 5",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 5",
+    "NewDistrict": "DISTRICT 5",
     "Ward": "Phường 9",
     "Street": "86B Hùng Vương",
     "FullAddress": "86B Hùng Vương Phường 9 Quận 5 Hồ Chí Minh"
@@ -2961,7 +2961,7 @@ export const staffs = [
     },
     "District": "DISTRICT 2",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 2",
+    "NewDistrict": "DISTRICT 2",
     "Ward": "Phường Thảo Điền",
     "Street": "159 Xa Lộ Hà Nội",
     "FullAddress": "159 Xa Lộ Hà Nội Phường Thảo Điền Quận 2 Thủ Đức"
@@ -2978,7 +2978,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Chánh Hiệp",
     "Street": "86/53/2 TCH 36, Phường tân chánh hiệp",
     "FullAddress": "86/53/2 TCH 36, Phường tân chánh hiệp Phường Tân Chánh Hiệp Quận 12 Hồ Chí Minh"
@@ -3012,7 +3012,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 2",
     "Street": "90/77 Vũ Tùng",
     "FullAddress": "90/77 Vũ Tùng Phường 2 Quận Bình Thạnh Hồ Chí Minh"
@@ -3029,7 +3029,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 11",
     "Street": "9 Pham Phu Thu",
     "FullAddress": "9 Pham Phu Thu Phường 11 Quận Tân Bình Hồ Chí Minh"
@@ -3046,7 +3046,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "15/44/14B Cầu xéo",
     "FullAddress": "15/44/14B Cầu xéo Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -3063,7 +3063,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 14",
     "Street": "50/2 Ba Vân",
     "FullAddress": "50/2 Ba Vân Phường 14 Quận Tân Bình Hồ Chí Minh"
@@ -3080,7 +3080,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 9",
     "Street": "373/197/8 Lý Thường Kiệt",
     "FullAddress": "373/197/8 Lý Thường Kiệt Phường 9 Quận Tân Bình Hồ Chí Minh"
@@ -3097,7 +3097,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 15",
     "Street": "221 Phan Đình Phùng",
     "FullAddress": "221 Phan Đình Phùng Phường 15 Quận Phú Nhuận Hồ Chí Minh"
@@ -3114,7 +3114,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 15",
     "Street": "688/13A Lê Đức Thọ",
     "FullAddress": "688/13A Lê Đức Thọ Phường 15 Quận Gò Vấp Hồ Chí Minh"
@@ -3131,7 +3131,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 11",
     "Street": "338/1/1 Dien Bien Phu",
     "FullAddress": "338/1/1 Dien Bien Phu Phường 11 Quận 10 Hồ Chí Minh"
@@ -3148,7 +3148,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Linh Chiểu",
     "Street": "24C/31 đường số 5",
     "FullAddress": "24C/31 đường số 5 Phường Linh Chiểu Quận Thủ Đức Thủ Đức"
@@ -3165,7 +3165,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tây Thạnh",
     "Street": "106/2 Lưu Chí Hiếu",
     "FullAddress": "106/2 Lưu Chí Hiếu Phường Tây Thạnh Quận Tân Phú Hồ Chí Minh"
@@ -3182,7 +3182,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 12",
     "Street": "160/43 Phan Huy Ích",
     "FullAddress": "160/43 Phan Huy Ích Phường 12 Quận Gò Vấp Hồ Chí Minh"
@@ -3199,7 +3199,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 13",
     "Street": "163/15/2 Tô Hiến Thành",
     "FullAddress": "163/15/2 Tô Hiến Thành Phường 13 Quận 10 Hồ Chí Minh"
@@ -3216,7 +3216,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Trị Đông A",
     "Street": "320/15 chiến lược",
     "FullAddress": "320/15 chiến lược Phường Bình Trị Đông A Quận Bình Tân Hồ Chí Minh"
@@ -3233,7 +3233,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 8",
     "Street": "207/16e Nguyễn Trọng Tuyển",
     "FullAddress": "207/16e Nguyễn Trọng Tuyển Phường 8 Quận Phú Nhuận Hồ Chí Minh"
@@ -3250,7 +3250,7 @@ export const staffs = [
     },
     "District": "HOC MON",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Hóc Môn",
+    "NewDistrict": "HOC MON",
     "Ward": "Xã Xuân Thới Đông ",
     "Street": "20/4 Tân Tiến 12",
     "FullAddress": "20/4 Tân Tiến 12 Xã Xuân Thới Đông  Huyện Hóc Môn Hồ Chí Minh"
@@ -3267,7 +3267,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Tân Phú",
     "Street": "Riviera Point Nguyễn Văn Tưởng",
     "FullAddress": "Riviera Point Nguyễn Văn Tưởng Phường Tân Phú Quận 7 Hồ Chí Minh"
@@ -3284,7 +3284,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Hưng Hoà A",
     "Street": "71/75 đường số 3",
     "FullAddress": "71/75 đường số 3 Phường Bình Hưng Hoà A Quận Bình Tân Hồ Chí Minh"
@@ -3301,7 +3301,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tân Quý",
     "Street": "207 Độc Lập",
     "FullAddress": "207 Độc Lập Phường Tân Quý Quận Tân Phú Hồ Chí Minh"
@@ -3318,7 +3318,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Chánh Hiệp",
     "Street": "Chung cư Hưng Ngân, 48a Dương Thị Mười",
     "FullAddress": "Chung cư Hưng Ngân, 48a Dương Thị Mười Phường Tân Chánh Hiệp Quận 12 Hồ Chí Minh"
@@ -3352,7 +3352,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 14",
     "Street": "90 Tam Đảo",
     "FullAddress": "90 Tam Đảo Phường 14 Quận 10 Hồ Chí Minh"
@@ -3369,7 +3369,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Chánh",
     "Street": "15/3 đường 37 Hiệp Bình",
     "FullAddress": "15/3 đường 37 Hiệp Bình Phường Hiệp Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -3386,7 +3386,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 3",
     "Street": "154/72 Phạm Văn Hai",
     "FullAddress": "154/72 Phạm Văn Hai Phường 3 Quận Tân Bình Hồ Chí Minh"
@@ -3403,7 +3403,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 4",
     "Street": "4/7/9 Hậu Giang",
     "FullAddress": "4/7/9 Hậu Giang Phường 4 Quận Tân Bình Hồ Chí Minh"
@@ -3420,7 +3420,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "60/24 Yên Thế",
     "FullAddress": "60/24 Yên Thế Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -3437,7 +3437,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 5",
     "Street": "364 Dương Quảng Hàm",
     "FullAddress": "364 Dương Quảng Hàm Phường 5 Quận Gò Vấp Hồ Chí Minh"
@@ -3454,7 +3454,7 @@ export const staffs = [
     },
     "District": "DISTRICT 3",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 11",
     "Street": "528/5/113 điện biên phủ",
     "FullAddress": "528/5/113 điện biên phủ Phường 11 Quận 10 Hồ Chí Minh"
@@ -3471,7 +3471,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 6",
     "Street": "35 Tứ Hải",
     "FullAddress": "35 Tứ Hải Phường 6 Quận Tân Bình Hồ Chí Minh"
@@ -3488,7 +3488,7 @@ export const staffs = [
     },
     "District": "HOC MON",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Hóc Môn",
+    "NewDistrict": "HOC MON",
     "Ward": "Xã Tân Thới Nhì",
     "Street": "68/5k Ấp Dân Thắng 1",
     "FullAddress": "68/5k Ấp Dân Thắng 1 Xã Tân Thới Nhì Huyện Hóc Môn Hồ Chí Minh"
@@ -3505,7 +3505,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Tân Phú",
     "Street": "1A Đường 249",
     "FullAddress": "1A Đường 249 Phường Tân Phú Quận 9 Thủ Đức"
@@ -3522,7 +3522,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 11",
     "Street": "405/46/40 Thống Nhất",
     "FullAddress": "405/46/40 Thống Nhất Phường 11 Quận Gò Vấp Hồ Chí Minh"
@@ -3539,7 +3539,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 6",
     "Street": "52/3 Nguyễn Văn Đậu",
     "FullAddress": "52/3 Nguyễn Văn Đậu Phường 6 Quận Bình Thạnh Hồ Chí Minh"
@@ -3556,7 +3556,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 15",
     "Street": "185/5 Nguyễn Sỹ Sách",
     "FullAddress": "185/5 Nguyễn Sỹ Sách Phường 15 Quận Tân Bình Hồ Chí Minh"
@@ -3573,7 +3573,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Tân Phú",
     "Street": "944/36 Huỳnh Tấn Phát",
     "FullAddress": "944/36 Huỳnh Tấn Phát Phường Tân Phú Quận 7 Hồ Chí Minh"
@@ -3590,7 +3590,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 13",
     "Street": "203/2/32 Đặng Thùy Trâm",
     "FullAddress": "203/2/32 Đặng Thùy Trâm Phường 13 Quận Bình Thạnh Hồ Chí Minh"
@@ -3607,7 +3607,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Phú Trung",
     "Street": "49/56/99 Trịnh Đình Trọng",
     "FullAddress": "49/56/99 Trịnh Đình Trọng Phường Phú Trung Quận Tân Phú Hồ Chí Minh"
@@ -3624,7 +3624,7 @@ export const staffs = [
     },
     "District": "DISTRICT 3",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 3",
+    "NewDistrict": "DISTRICT 3",
     "Ward": "Phường 12",
     "Street": "453/71 KA Le Van Sy",
     "FullAddress": "453/71 KA Le Van Sy Phường 12 Quận 3 Hồ Chí Minh"
@@ -3641,7 +3641,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Hưng Hoà A",
     "Street": "cc Ngọc Đông Dương, 119 Bình Long",
     "FullAddress": "cc Ngọc Đông Dương, 119 Bình Long Phường Bình Hưng Hoà A Quận Bình Tân Hồ Chí Minh"
@@ -3658,7 +3658,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Thới Nhất",
     "Street": "Chung Cư 2A, Khu Phố 3",
     "FullAddress": "Chung Cư 2A, Khu Phố 3 Phường Tân Thới Nhất Quận 12 Hồ Chí Minh"
@@ -3675,7 +3675,7 @@ export const staffs = [
     },
     "District": "DISTRICT 5",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 5",
+    "NewDistrict": "DISTRICT 5",
     "Ward": "Phường 1",
     "Street": "33/11 Trần Bình Trọng",
     "FullAddress": "33/11 Trần Bình Trọng Phường 1 Quận 5 Hồ Chí Minh"
@@ -3692,7 +3692,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường  Bình Trị Đông",
     "Street": "145/50 Lê văn quới",
     "FullAddress": "145/50 Lê văn quới Phường  Bình Trị Đông Quận Bình Tân Hồ Chí Minh"
@@ -3709,7 +3709,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 9",
     "Street": "54/12 Đào Duy Anh",
     "FullAddress": "54/12 Đào Duy Anh Phường 9 Quận Phú Nhuận Hồ Chí Minh"
@@ -3726,7 +3726,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 6",
     "Street": "69/1 Nghĩa Phát",
     "FullAddress": "69/1 Nghĩa Phát Phường 6 Quận Tân Bình Hồ Chí Minh"
@@ -3743,7 +3743,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 7",
     "Street": "25/10 A Đường Nguyễn Du",
     "FullAddress": "25/10 A Đường Nguyễn Du Phường 7 Quận Gò Vấp Hồ Chí Minh"
@@ -3760,7 +3760,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 3",
     "Street": "104 Nguyễn Văn Công",
     "FullAddress": "104 Nguyễn Văn Công Phường 3 Quận Gò Vấp Hồ Chí Minh"
@@ -3777,7 +3777,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 3",
     "Street": "842/1/30 Nguyễn Kiệm",
     "FullAddress": "842/1/30 Nguyễn Kiệm Phường 3 Quận Gò Vấp Hồ Chí Minh"
@@ -3794,7 +3794,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tân Quý",
     "Street": "6A, Phung Chi Kien",
     "FullAddress": "6A, Phung Chi Kien Phường Tân Quý Quận Tân Phú Hồ Chí Minh"
@@ -3811,7 +3811,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 22",
     "Street": "Toà Riverside 90 Nguyễn Hữu Cảnh",
     "FullAddress": "Toà Riverside 90 Nguyễn Hữu Cảnh Phường 22 Quận Bình Thạnh Hồ Chí Minh"
@@ -3828,7 +3828,7 @@ export const staffs = [
     },
     "District": "HOC MON",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Hóc Môn",
+    "NewDistrict": "HOC MON",
     "Ward": "Xã Đông Thạnh",
     "Street": "101/162/8/10 DT 7-5 ấp 4",
     "FullAddress": "101/162/8/10 DT 7-5 ấp 4 Xã Đông Thạnh Huyện Hóc Môn Hồ Chí Minh"
@@ -3845,7 +3845,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Thạnh Xuân",
     "Street": "124/36 - TX33",
     "FullAddress": "124/36 - TX33 Phường Thạnh Xuân Quận 12 Hồ Chí Minh"
@@ -3862,7 +3862,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 11",
+    "NewDistrict": "DISTRICT 11",
     "Ward": "Phường 14",
     "Street": "Can 608, Chung cu NOXH Thoi Binh, 49/52 Au Co",
     "FullAddress": "Can 608, Chung cu NOXH Thoi Binh, 49/52 Au Co Phường 14 Quận 11 Hồ Chí Minh"
@@ -3879,7 +3879,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 12",
     "Street": "146/1A Nguyễn Chế Nghĩa",
     "FullAddress": "146/1A Nguyễn Chế Nghĩa Phường 12 Quận 8 Hồ Chí Minh"
@@ -3896,7 +3896,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Hưng Hoà",
     "Street": "81/1 đường 12 ",
     "FullAddress": "81/1 đường 12  Phường Bình Hưng Hoà Quận Bình Tân Hồ Chí Minh"
@@ -3913,7 +3913,7 @@ export const staffs = [
     },
     "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Bình Chánh",
+    "NewDistrict": "BINH CHANH",
     "Ward": "Xã Tân Kiên",
     "Street": "1569 Nguyễn Cửu Phú",
     "FullAddress": "1569 Nguyễn Cửu Phú Xã Tân Kiên Huyện Bình Chánh Hồ Chí Minh"
@@ -3930,7 +3930,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Tân Kiểng",
     "Street": "503/1 Trần Xuân Soạn",
     "FullAddress": "503/1 Trần Xuân Soạn Phường Tân Kiểng Quận 7 Hồ Chí Minh"
@@ -3947,7 +3947,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 4",
     "Street": "640 Nguyễn Kiệm",
     "FullAddress": "640 Nguyễn Kiệm Phường 4 Quận Phú Nhuận Hồ Chí Minh"
@@ -3964,7 +3964,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 24",
     "Street": "194/50/8 Bạch Đằng",
     "FullAddress": "194/50/8 Bạch Đằng Phường 24 Quận Bình Thạnh Hồ Chí Minh"
@@ -3981,7 +3981,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Tân Thới Nhất",
     "Street": "7.24 CC Moscow Tower, Tổ 51, KP. 04",
     "FullAddress": "7.24 CC Moscow Tower, Tổ 51, KP. 04 Phường Tân Thới Nhất Quận 12 Hồ Chí Minh"
@@ -3998,7 +3998,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 6",
     "Street": "18 lô B Bùi Minh Trực",
     "FullAddress": "18 lô B Bùi Minh Trực Phường 6 Quận 8 Hồ Chí Minh"
@@ -4015,7 +4015,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "25/17/6 Đoàn Giỏi",
     "FullAddress": "25/17/6 Đoàn Giỏi Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -4032,7 +4032,7 @@ export const staffs = [
     },
     "District": "DISTRICT 5",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 5",
+    "NewDistrict": "DISTRICT 5",
     "Ward": "Phường 1",
     "Street": "28/34 Trần Bình Trọng",
     "FullAddress": "28/34 Trần Bình Trọng Phường 1 Quận 5 Hồ Chí Minh"
@@ -4049,7 +4049,7 @@ export const staffs = [
     },
     "District": "DISTRICT 3",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 3",
+    "NewDistrict": "DISTRICT 3",
     "Ward": "Phường 14",
     "Street": "136 Trần Quang Diệu ",
     "FullAddress": "136 Trần Quang Diệu  Phường 14 Quận 3 Hồ Chí Minh"
@@ -4066,7 +4066,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 9",
     "Street": "435 LE VAN THO",
     "FullAddress": "435 LE VAN THO Phường 9 Quận Gò Vấp Hồ Chí Minh"
@@ -4083,7 +4083,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 13",
     "Street": "14/23B Van Chung",
     "FullAddress": "14/23B Van Chung Phường 13 Quận Tân Bình Hồ Chí Minh"
@@ -4100,7 +4100,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 10",
     "Street": "417/49/44A Quang Trung",
     "FullAddress": "417/49/44A Quang Trung Phường 10 Quận Gò Vấp Hồ Chí Minh"
@@ -4117,7 +4117,7 @@ export const staffs = [
     },
     "District": "NHA BE",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "112B-114 Hong Ha",
     "FullAddress": "112B-114 Hong Ha Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -4134,7 +4134,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 11",
     "Street": "482/12/2E Lê Quang Định",
     "FullAddress": "482/12/2E Lê Quang Định Phường 11 Quận Bình Thạnh Hồ Chí Minh"
@@ -4151,7 +4151,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Tân Thuận Đông",
     "Street": "Số 8, đường 1",
     "FullAddress": "Số 8, đường 1 Phường Tân Thuận Đông Quận 7 Hồ Chí Minh"
@@ -4168,7 +4168,7 @@ export const staffs = [
     },
     "District": "DISTRICT 1",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 1",
+    "NewDistrict": "DISTRICT 1",
     "Ward": "Phường Nguyễn Cư Trinh",
     "Street": "214/129 Nguyễn Trãi",
     "FullAddress": "214/129 Nguyễn Trãi Phường Nguyễn Cư Trinh Quận 1 Hồ Chí Minh"
@@ -4185,7 +4185,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 13",
     "Street": "28/12 Nguyễn Hiến Lê",
     "FullAddress": "28/12 Nguyễn Hiến Lê Phường 13 Quận Tân Bình Hồ Chí Minh"
@@ -4202,7 +4202,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 15",
     "Street": "hẻm 854",
     "FullAddress": "hẻm 854 Phường 15 Quận Gò Vấp Hồ Chí Minh"
@@ -4219,7 +4219,7 @@ export const staffs = [
     },
     "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Tây Thạnh",
     "Street": "725/66/2D Trường Chinh",
     "FullAddress": "725/66/2D Trường Chinh Phường Tây Thạnh Quận Tân Phú Hồ Chí Minh"
@@ -4236,7 +4236,7 @@ export const staffs = [
     },
     "District": "TAN PHU",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Phú",
+    "NewDistrict": "TAN PHU",
     "Ward": "Phường Sơn Kỳ",
     "Street": "C10.08 Chung Cư Emerald, số 2 đường N4",
     "FullAddress": "C10.08 Chung Cư Emerald, số 2 đường N4 Phường Sơn Kỳ Quận Tân Phú Hồ Chí Minh"
@@ -4253,7 +4253,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Long Thạnh Mỹ",
     "Street": "512 NGUYỄN XIỂN",
     "FullAddress": "512 NGUYỄN XIỂN Phường Long Thạnh Mỹ Quận 9 Thủ Đức"
@@ -4270,7 +4270,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Hiệp Bình Phước",
     "Street": "389/5/22A Quốc lộ 13",
     "FullAddress": "389/5/22A Quốc lộ 13 Phường Hiệp Bình Phước Quận Thủ Đức Thủ Đức"
@@ -4287,7 +4287,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 1",
     "Street": "76 Hùng Vương",
     "FullAddress": "76 Hùng Vương Phường 1 Quận 10 Hồ Chí Minh"
@@ -4304,7 +4304,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 7",
     "Street": "1436 Trịnh Quang Nghị",
     "FullAddress": "1436 Trịnh Quang Nghị Phường 7 Quận 8 Hồ Chí Minh"
@@ -4321,7 +4321,7 @@ export const staffs = [
     },
     "District": "NHA BE",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Nhà Bè",
+    "NewDistrict": "NHA BE",
     "Ward": "Xã Phước Kiển",
     "Street": "915/74 đường C2",
     "FullAddress": "915/74 đường C2 Xã Phước Kiển Huyện Nhà Bè Hồ Chí Minh"
@@ -4338,7 +4338,7 @@ export const staffs = [
     },
     "District": "DISTRICT 8",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 8",
+    "NewDistrict": "DISTRICT 8",
     "Ward": "Phường 16",
     "Street": "31/1, Trương Đình Hội",
     "FullAddress": "31/1, Trương Đình Hội Phường 16 Quận 8 Hồ Chí Minh"
@@ -4355,7 +4355,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 14",
     "Street": "965/16/7 Quang Trung",
     "FullAddress": "965/16/7 Quang Trung Phường 14 Quận Gò Vấp Hồ Chí Minh"
@@ -4406,7 +4406,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Bình Chánh",
     "Street": "30/1 Đường 47",
     "FullAddress": "30/1 Đường 47 Phường Bình Chánh Quận Thủ Đức Thủ Đức"
@@ -4423,7 +4423,7 @@ export const staffs = [
     },
     "District": "DISTRICT 3",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 3",
+    "NewDistrict": "DISTRICT 3",
     "Ward": "Phường 4",
     "Street": "390/81 Nguyễn Đình Chiểu",
     "FullAddress": "390/81 Nguyễn Đình Chiểu Phường 4 Quận 3 Hồ Chí Minh"
@@ -4440,7 +4440,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 7",
     "Street": "7/2 đường số 7",
     "FullAddress": "7/2 đường số 7 Phường 7 Quận Gò Vấp Hồ Chí Minh"
@@ -4457,7 +4457,7 @@ export const staffs = [
     },
     "District": "BINH TAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Tân",
+    "NewDistrict": "BINH TAN",
     "Ward": "Phường Bình Hưng Hoà B",
     "Street": "686/43/2 Quốc Lộ 1A",
     "FullAddress": "686/43/2 Quốc Lộ 1A Phường Bình Hưng Hoà B Quận Bình Tân Hồ Chí Minh"
@@ -4474,7 +4474,7 @@ export const staffs = [
     },
     "District": "DISTRICT 3",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 17",
     "Street": "0121 chung cư B1, 06-10 Trường Sa ",
     "FullAddress": "0121 chung cư B1, 06-10 Trường Sa  Phường 17 Quận Bình Thạnh Hồ Chí Minh"
@@ -4491,7 +4491,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Tân Phú",
     "Street": "22 Đường số 1",
     "FullAddress": "22 Đường số 1 Phường Tân Phú Quận 7 Hồ Chí Minh"
@@ -4508,7 +4508,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Bình Thuận",
     "Street": "33/44 Đường số 1, Lý Phục Man",
     "FullAddress": "33/44 Đường số 1, Lý Phục Man Phường Bình Thuận Quận 7 Hồ Chí Minh"
@@ -4525,7 +4525,7 @@ export const staffs = [
     },
     "District": "THU DUC",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận Thủ Đức",
+    "NewDistrict": "THU DUC",
     "Ward": "Phường Bình Phước",
     "Street": "36/24/21 đường số 4",
     "FullAddress": "36/24/21 đường số 4 Phường Bình Phước Quận Thủ Đức Thủ Đức"
@@ -4542,7 +4542,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 14",
     "Street": "606/8 đường 3-2",
     "FullAddress": "606/8 đường 3-2 Phường 14 Quận 10 Hồ Chí Minh"
@@ -4559,7 +4559,7 @@ export const staffs = [
     },
     "District": "DISTRICT 6",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 6",
+    "NewDistrict": "DISTRICT 6",
     "Ward": "Phường 10",
     "Street": "52 đường 72",
     "FullAddress": "52 đường 72 Phường 10 Quận 6 Hồ Chí Minh"
@@ -4576,7 +4576,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 10",
     "Street": "95 Trương Quốc Dung",
     "FullAddress": "95 Trương Quốc Dung Phường 10 Quận Phú Nhuận Hồ Chí Minh"
@@ -4593,7 +4593,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 14",
     "Street": "486 3/2 street",
     "FullAddress": "486 3/2 street Phường 14 Quận 10 Hồ Chí Minh"
@@ -4610,7 +4610,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Tân Phú",
     "Street": "Chung cư Topaz Home 2, đường 154",
     "FullAddress": "Chung cư Topaz Home 2, đường 154 Phường Tân Phú Quận 9 Thủ Đức"
@@ -4627,7 +4627,7 @@ export const staffs = [
     },
     "District": "DISTRICT 11",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 11",
+    "NewDistrict": "DISTRICT 11",
     "Ward": "Phường 15",
     "Street": "Chung cư Thuận Việt, 319 Lý Thường Kiệt",
     "FullAddress": "Chung cư Thuận Việt, 319 Lý Thường Kiệt Phường 15 Quận 11 Hồ Chí Minh"
@@ -4644,7 +4644,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 1",
     "Street": "301/15 Phan Xích Long",
     "FullAddress": "301/15 Phan Xích Long Phường 1 Quận Phú Nhuận Hồ Chí Minh"
@@ -4661,7 +4661,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "1D Phạm Cự Lượng",
     "FullAddress": "1D Phạm Cự Lượng Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -4678,7 +4678,7 @@ export const staffs = [
     },
     "District": "DISTRICT 7",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 7",
+    "NewDistrict": "DISTRICT 7",
     "Ward": "Phường Tân Hưng",
     "Street": "D14 đường 5A",
     "FullAddress": "D14 đường 5A Phường Tân Hưng Quận 7 Hồ Chí Minh"
@@ -4695,7 +4695,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 2",
     "Street": "05 Phổ Quang ",
     "FullAddress": "05 Phổ Quang  Phường 2 Quận Tân Bình Hồ Chí Minh"
@@ -4712,7 +4712,7 @@ export const staffs = [
     },
     "District": "DISTRICT 12",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 12",
+    "NewDistrict": "DISTRICT 12",
     "Ward": "Phường Đông Hưng Thuận",
     "Street": "104/9A2 KP.2",
     "FullAddress": "104/9A2 KP.2 Phường Đông Hưng Thuận Quận 12 Hồ Chí Minh"
@@ -4729,7 +4729,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 2",
     "Street": "27C Phan Chu Trinh",
     "FullAddress": "27C Phan Chu Trinh Phường 2 Quận Bình Thạnh Hồ Chí Minh"
@@ -4763,7 +4763,7 @@ export const staffs = [
     },
     "District": "DISTRICT 2",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 2",
+    "NewDistrict": "DISTRICT 2",
     "Ward": "Phường Thảo Điền",
     "Street": "T1-B31.10 Masteri Thảo Điền, 159 Xa Lộ Hà Nội",
     "FullAddress": "T1-B31.10 Masteri Thảo Điền, 159 Xa Lộ Hà Nội Phường Thảo Điền Quận 2 Thủ Đức"
@@ -4780,7 +4780,7 @@ export const staffs = [
     },
     "District": "DISTRICT 9",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 9",
+    "NewDistrict": "DISTRICT 9",
     "Ward": "Phường Tân Phú",
     "Street": "194 đường 138",
     "FullAddress": "194 đường 138 Phường Tân Phú Quận 9 Thủ Đức"
@@ -4797,7 +4797,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 11",
     "Street": "273/29/5/10 nguyễn văn đậu",
     "FullAddress": "273/29/5/10 nguyễn văn đậu Phường 11 Quận Bình Thạnh Hồ Chí Minh"
@@ -4814,7 +4814,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 11",
     "Street": "31/8 đường số 8",
     "FullAddress": "31/8 đường số 8 Phường 11 Quận Gò Vấp Hồ Chí Minh"
@@ -4849,7 +4849,7 @@ export const staffs = [
     },
     "District": "DISTRICT 10",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận 10",
+    "NewDistrict": "DISTRICT 10",
     "Ward": "Phường 12",
     "Street": "Block Iris 4, chung cư Hà Đô Centrosa, số 200 đường 3 Tháng 2",
     "FullAddress": "Block Iris 4, chung cư Hà Đô Centrosa, số 200 đường 3 Tháng 2 Phường 12 Quận 10 Hồ Chí Minh"
@@ -4866,7 +4866,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 14",
     "Street": "330 /8 Hồng Lạc",
     "FullAddress": "330 /8 Hồng Lạc Phường 14 Quận Tân Bình Hồ Chí Minh"
@@ -4883,7 +4883,7 @@ export const staffs = [
     },
     "District": "BINH THANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Bình Thạnh",
+    "NewDistrict": "BINH THANH",
     "Ward": "Phường 3",
     "Street": "Chung cư Miếu Nổi, Lô C",
     "FullAddress": "Chung cư Miếu Nổi, Lô C Phường 3 Quận Bình Thạnh Hồ Chí Minh"
@@ -4900,7 +4900,7 @@ export const staffs = [
     },
     "District": "GO VAP",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Gò Vấp",
+    "NewDistrict": "GO VAP",
     "Ward": "Phường 5",
     "Street": "114/57/16 Dương Quảng Hàm",
     "FullAddress": "114/57/16 Dương Quảng Hàm Phường 5 Quận Gò Vấp Hồ Chí Minh"
@@ -4917,7 +4917,7 @@ export const staffs = [
     },
     "District": "PHU NHUAN",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Phú Nhuận",
+    "NewDistrict": "PHU NHUAN",
     "Ward": "Phường 1",
     "Street": "29/63A Đoàn Thị Điểm",
     "FullAddress": "29/63A Đoàn Thị Điểm Phường 1 Quận Phú Nhuận Hồ Chí Minh"
@@ -4934,7 +4934,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 15",
     "Street": "45/46A Tran Thai Tong",
     "FullAddress": "45/46A Tran Thai Tong Phường 15 Quận Tân Bình Hồ Chí Minh"
@@ -4951,7 +4951,7 @@ export const staffs = [
     },
     "District": "BINH CHANH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Huyện Bình Chánh",
+    "NewDistrict": "BINH CHANH",
     "Ward": "Xã Bình Hưng ",
     "Street": "C2/18A ấp 4",
     "FullAddress": "C2/18A ấp 4 Xã Bình Hưng  Huyện Bình Chánh Hồ Chí Minh"
@@ -4968,7 +4968,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 15",
     "Street": "346 Phạm Văn Bạch",
     "FullAddress": "346 Phạm Văn Bạch Phường 15 Quận Tân Bình Hồ Chí Minh"
@@ -4985,7 +4985,7 @@ export const staffs = [
     },
     "District": "DISTRICT 2",
     "City": "Thủ Đức",
-    "NewDistrict": "Quận 2",
+    "NewDistrict": "DISTRICT 2",
     "Ward": "Phường An Phú",
     "Street": "36 Mai Chí Thọ Chung cư Centana Block A2-09",
     "FullAddress": "36 Mai Chí Thọ Chung cư Centana Block A2-09 Phường An Phú Quận 2 Thủ Đức"
@@ -5002,7 +5002,7 @@ export const staffs = [
     },
     "District": "TAN BINH",
     "City": "Hồ Chí Minh",
-    "NewDistrict": "Quận Tân Bình",
+    "NewDistrict": "TAN BINH",
     "Ward": "Phường 12",
     "Street": "25 đường A4",
     "FullAddress": "25 đường A4 Phường 12 Quận Tân Bình Hồ Chí Minh"

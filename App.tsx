@@ -246,7 +246,7 @@ const App: React.VFC = () => {
                   id={i + 10000}
                   type={"in hcm"}
                   staffs={item.staffs}
-                  label={{ text: Object.keys(item.staffs).length.toString() }}
+                  label={{ text: Object.keys(item.staffs).length.toString(), fontSize: '12px' }}
                 />
               );
             })}
