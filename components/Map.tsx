@@ -415,7 +415,6 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         for (var i = 0; i < p.polygon.getPath().getLength(); i++) {
           bounds.extend(p.polygon.getPath().getAt(i));
         }
-
         map?.setCenter(bounds.getCenter());
         map?.setZoom(13);
       });
@@ -429,28 +428,12 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
           fillColor: "#1671E0",
           fillOpacity: 0.4,
         });
-
-        // infowindow.setContent(p.name);
-        // infowindow.setPosition({
-        //   lat: e.latLng.lat(),
-        //   lng: e.latLng.lng(),
-        // });
-        // infowindow.setZIndex(9998);
-        // infowindow.open(map);
       });
-      // p.polygon.addListener("mousemove", (e) => {
-      //   infowindow.setPosition({
-      //     lat: e.latLng.lat() + 0.002,
-      //     lng: e.latLng.lng(),
-      //   });
-      // });
       p.polygon.addListener("mouseout", () => {
         p.polygon.setOptions({
           fillColor: "#B2D7FC",
           fillOpacity: 0.3,
         });
-
-        // infowindow.close();
       });
     }
   };
@@ -466,21 +449,30 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
     }
   }, [map, areas]);
 
-  React.useEffect(() => {
-    if (areas !== "All") {
-      setMap(undefined);
-    }
-  }, [areas]);
+  // React.useEffect(() => { 
+  //   if(map) {
+  //     map.addListener("zoom_changed", () => {
+  //       console.log(map.getZoom(), "zoom");
+        
+  //     });
+  //   }
+  // }, [map]);
 
-  React.useEffect(() => {
-    if (map) {
-      map.setOptions({
-        options,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        zoom: map.getZoom() || options.zoom,
-      } as any);
-    }
-  }, [map, options]);
+  // React.useEffect(() => {
+  //   if (areas !== "All") {
+  //     setMap(undefined);
+  //   }
+  // }, [areas]);
+
+  // React.useEffect(() => {
+  //   if (map) {
+  //     map.setOptions({
+  //       options,
+  //       mapTypeId: google.maps.MapTypeId.ROADMAP,
+  //       zoom: map.getZoom() || options.zoom,
+  //     } as any);
+  //   }
+  // }, [map, options]);
 
   return (
     <>
