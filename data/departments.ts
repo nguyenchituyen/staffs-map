@@ -112,45 +112,52 @@ export const areaDatas = [
     },
     {
       id: 12,
-      name: 'THU DUC'
+      name: 'BINH CHANH'
     },
     {
       id: 13,
-      name: 'BINH THANH'
-    },
-    {
-      id: 14,
-      name: 'GO VAP'
-    },
-    {
-      id: 15,
       name: 'BINH TAN'
     },
     {
+      id: 14,
+      name: 'BINH THANH'
+    },
+    {
+      id: 15,
+      name: 'CAN GIO'
+    },
+    {
       id: 16,
-      name: 'TAN BINH'
+      name: 'CU CHI'
     },
     {
       id: 17,
-      name: 'TAN PHU'
+      name: 'GO VAP'
     },
     {
       id: 18,
-      name: 'PHU NHUAN'
-    },
-    {
-      id: 19,
-      name: 'DONG NAI'
-    },
-    {
-      id: 20,
       name: 'HOC MON'
     },
     {
+      id: 19,
+      name: 'PHU NHUAN'
+    },
+    {
+      id: 20,
+      name: 'TAN BINH'
+    },
+    {
       id: 21,
-      name: 'BINH DUONG'
+      name: 'TAN PHU'
+    },
+    {
+      id: 22,
+      name: 'THU DUC'
+    },
+    {
+      id: 23,
+      name: 'NHA BE'
     }
-
 ];
 
 export const bgColor = {

@@ -7,168 +7,168 @@ interface PolygonCustom {
 }
 
 export const arrPolygonPath = {
-  "Quận 1": {
+  "DISTRICT 1": {
     paths: district.hcm_d_1,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 2": {
+  "DISTRICT 2": {
     paths: district.hcm_d_2,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 3": {
+  "DISTRICT 3": {
     paths: district.hcm_d_3,
     center: {
       lat: 10.7843695,
       lng: 106.6844089,
     },
   },
-  "Quận 4": {
+  "DISTRICT 4": {
     paths: district.hcm_d_4,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 5": {
+  "DISTRICT 5": {
     paths: district.hcm_d_5,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 6": {
+  "DISTRICT 6": {
     paths: district.hcm_d_6,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 7": {
+  "DISTRICT 7": {
     paths: district.hcm_d_7,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 8": {
+  "DISTRICT 8": {
     paths: district.hcm_d_8,
     center: {
       lat: 10.7285473,
       lng: 106.6364885,
     },
   },
-  "Quận 9": {
+  "DISTRICT 9": {
     paths: district.hcm_d_9,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 10": {
+  "DISTRICT 10": {
     paths: district.hcm_d_10,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 11": {
+  "DISTRICT 11": {
     paths: district.hcm_d_11,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận 12": {
+  "DISTRICT 12": {
     paths: district.hcm_d_12,
     center: {
       lat: 10.8771531,
       lng: 106.6713322,
     },
   },
-  "Huyện Bình Chánh": {
+  "BINH CHANH": {
     paths: district.hcm_d_binhchanh,
     center: {
       lat: 10.7436552,
       lng: 106.5222933,
     },
   },
-  "Quận Bình Tân": {
+  "BINH TAN": {
     paths: district.hcm_d_binhtan,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận Bình Thạnh": {
+  "BINH THANH": {
     paths: district.hcm_d_binhthanh,
     center: {
       lat: 10.8105831,
       lng: 106.7091422,
     },
   },
-  "Huyện Cần Giờ": {
+  "CAN GIO": {
     paths: district.hcm_d_cangio,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Huyện Củ Chi": {
+  "CU CHI": {
     paths: district.hcm_d_cuchi,
     center: {
       lat: 10.992192,
       lng: 106.5265434,
     },
   },
-  "Quận Gò Vấp": {
+  "GO VAP": {
     paths: district.hcm_d_govap,
     center: {
       lat: 10.8446779,
       lng: 106.6652904,
     },
   },
-  "Huyện Hóc Môn": {
+  "HOC MON": {
     paths: district.hcm_d_hoocmon,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận Phú Nhuận": {
+  "PHU NHUAN": {
     paths: district.hcm_d_phunhuan,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận Tân Bình": {
+  "TAN BINH": {
     paths: district.hcm_d_tanbinh,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận Tân Phú": {
+  "TAN PHU": {
     paths: district.hcm_d_tanphu,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Quận Thủ Đức": {
+  "THU DUC": {
     paths: district.hcm_d_thuduc,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "Huyện Nhà Bè": {
+  "NHA BE": {
     paths: district.hcm_d_nhabe,
     center: {
       lat: 0,
@@ -394,18 +394,18 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         name: key,
         polygon: new google.maps.Polygon({
           paths: arrPolygonPath[key].paths,
-          strokeColor: "#FF0000",
-          strokeOpacity: 0.5,
+          strokeColor: "#1671E0",
+          strokeOpacity: 1,
           strokeWeight: 0.5,
-          fillColor: "#51F50A",
-          fillOpacity: 0.1,
+          fillColor: "#B2D7FC",
+          fillOpacity: 0.3,
         }),
       }));
       setArrPolygon(arr);
     }
   }, [ref, map]);
 
-  var infowindow = new google.maps.InfoWindow();
+  // var infowindow = new google.maps.InfoWindow();
   const polygonBinding = (p: PolygonCustom) => {
     if (map) {
       p.polygon.setMap(map);
@@ -426,8 +426,8 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
 
       p.polygon.addListener("mouseover", (e) => {
         p.polygon.setOptions({
-          fillColor: "#FF0000",
-          fillOpacity: 0.1,
+          fillColor: "#1671E0",
+          fillOpacity: 0.4,
         });
 
         // infowindow.setContent(p.name);
@@ -446,8 +446,8 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
       // });
       p.polygon.addListener("mouseout", () => {
         p.polygon.setOptions({
-          fillColor: "#51F50A",
-          fillOpacity: 0.1,
+          fillColor: "#B2D7FC",
+          fillOpacity: 0.3,
         });
 
         // infowindow.close();
