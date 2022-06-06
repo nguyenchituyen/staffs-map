@@ -3,14 +3,15 @@ const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
 
 export const inOfHcmStaffsAll = ((arr) => {
 
+
     const inOfHcmStaffsObTemp = arr
         .filter((x) => hcmCitys.includes(x.City))
         .reduce((a, b) => {
-            a[b.District] = [...(a[b.District] || []), b];
+            a[b.NewDistrict] = [...(a[b.NewDistrict] || []), b];
             return a;
         }, {});
 
-    const arrHCM = Object.keys(inOfHcmStaffsObTemp).map((key) => {
+    const arrStaffHCM = Object.keys(inOfHcmStaffsObTemp).map((key) => {
         let center = arrPolygonPath[key].center;
         if (!center.lat) {
             center = calCenter(arrPolygonPath[key].paths);
@@ -23,7 +24,7 @@ export const inOfHcmStaffsAll = ((arr) => {
         };
     });
 
-    return arrHCM;
+    return arrStaffHCM;
 })
 
 export const outOfHcmStaffsAll = ((arr) => {

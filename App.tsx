@@ -84,7 +84,7 @@ const App: React.VFC = () => {
       }
 
       if (area !== "All") {
-        dataFilter = dataFilter.filter((ite) => ite.District === area);
+        dataFilter = dataFilter.filter((ite) => ite.NewDistrict === area);
       }
 
       if (year[0] !== 0 || year[1] !== 15) {
@@ -213,7 +213,7 @@ const App: React.VFC = () => {
                 );
               })}
 
-            {showOffice &&
+            {/* {showOffice &&
               buildB.map((item, i) => {
                 return (
                   <Marker
@@ -224,7 +224,7 @@ const App: React.VFC = () => {
                     item={item}
                   />
                 );
-              })}
+              })} */}
 
             {outOfHcmStaffs.map((item, i) => {
               return (
