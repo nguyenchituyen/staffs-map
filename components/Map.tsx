@@ -7,168 +7,168 @@ interface PolygonCustom {
 }
 
 export const arrPolygonPath = {
-  "DISTRICT 1": {
+  "Quận 1": {
     paths: district.hcm_d_1,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 2": {
+  "Quận 2": {
     paths: district.hcm_d_2,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 3": {
+  "Quận 3": {
     paths: district.hcm_d_3,
     center: {
       lat: 10.7843695,
       lng: 106.6844089,
     },
   },
-  "DISTRICT 4": {
+  "Quận 4": {
     paths: district.hcm_d_4,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 5": {
+  "Quận 5": {
     paths: district.hcm_d_5,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 6": {
+  "Quận 6": {
     paths: district.hcm_d_6,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 7": {
+  "Quận 7": {
     paths: district.hcm_d_7,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 8": {
+  "Quận 8": {
     paths: district.hcm_d_8,
     center: {
       lat: 10.7285473,
       lng: 106.6364885,
     },
   },
-  "DISTRICT 9": {
+  "Quận 9": {
     paths: district.hcm_d_9,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 10": {
+  "Quận 10": {
     paths: district.hcm_d_10,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 11": {
+  "Quận 11": {
     paths: district.hcm_d_11,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "DISTRICT 12": {
+  "Quận 12": {
     paths: district.hcm_d_12,
     center: {
       lat: 10.8771531,
       lng: 106.6713322,
     },
   },
-  "BINH CHANH": {
+  "Huyện Bình Chánh": {
     paths: district.hcm_d_binhchanh,
     center: {
       lat: 10.7436552,
       lng: 106.5222933,
     },
   },
-  "BINH TAN": {
+  "Quận Bình Tân": {
     paths: district.hcm_d_binhtan,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "BINH THANH": {
+  "Quận Bình Thạnh": {
     paths: district.hcm_d_binhthanh,
     center: {
       lat: 10.8105831,
       lng: 106.7091422,
     },
   },
-  "CAN GIO": {
+  "Huyện Cần Giờ": {
     paths: district.hcm_d_cangio,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "CU CHI": {
+  "Huyện Củ Chi": {
     paths: district.hcm_d_cuchi,
     center: {
       lat: 10.992192,
       lng: 106.5265434,
     },
   },
-  "GO VAP": {
+  "Quận Gò Vấp": {
     paths: district.hcm_d_govap,
     center: {
       lat: 10.8446779,
       lng: 106.6652904,
     },
   },
-  "HOC MON": {
+  "Huyện Hóc Môn": {
     paths: district.hcm_d_hoocmon,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "PHU NHUAN": {
+  "Quận Phú Nhuận": {
     paths: district.hcm_d_phunhuan,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "TAN BINH": {
+  "Quận Tân Bình": {
     paths: district.hcm_d_tanbinh,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "TAN PHU": {
+  "Quận Tân Phú": {
     paths: district.hcm_d_tanphu,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "THU DUC": {
+  "Quận Thủ Đức": {
     paths: district.hcm_d_thuduc,
     center: {
       lat: 0,
       lng: 0,
     },
   },
-  "NHA BE": {
+  "Huyện Nhà Bè": {
     paths: district.hcm_d_nhabe,
     center: {
       lat: 0,

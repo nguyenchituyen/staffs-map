@@ -903,8 +903,8 @@ export const staffs = [
       "lng": 105.7579572
     },
     "District": "TAN BINH",
-    "City": "Hồ Chí Minh",
-    "NewDistrict": "",
+    "City": "Đồng Tháp",
+    "NewDistrict": "Tháp Mười",
     "Ward": "",
     "Street": "",
     "FullAddress": "Mỹ Nam 1, Mỹ Quý, Tháp Mười, Đồng Tháp"
@@ -2994,8 +2994,8 @@ export const staffs = [
       "lng": 109.1948525
     },
     "District": "DISTRICT 5",
-    "City": "Hồ Chí Minh",
-    "NewDistrict": "",
+    "City": "Nha Trang",
+    "NewDistrict": "Vinh Hoa",
     "Ward": "",
     "Street": "",
     "FullAddress": "9 Trinh Hoai Duc, Vinh Hoa, Nha Trang, Khanh Hoa"
@@ -4371,8 +4371,8 @@ export const staffs = [
       "lng": 109.0210855
     },
     "District": "NINH THUAN",
-    "City": "",
-    "NewDistrict": "",
+    "City": "Ninh Thuận",
+    "NewDistrict": "Phan Rang",
     "Ward": "",
     "Street": "",
     "FullAddress": "140A Hải Thượng Lãn Ông, Phường Mỹ Đông, Thành phố Phan Rang-Tháp Chàm, Ninh Thuận"

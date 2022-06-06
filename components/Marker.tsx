@@ -73,8 +73,8 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
             icon: {
               url:
                 options.item?.office === "A"
-                  ? "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-                  : "http://maps.google.com/mapfiles/ms/icons/pink-dot.png",
+                  ? "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+                  : "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
             },
           },
         });
