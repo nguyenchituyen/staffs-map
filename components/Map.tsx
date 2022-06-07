@@ -380,6 +380,7 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const [map, setMap] = React.useState<google.maps.Map>();
   const [arrPolygon, setArrPolygon] = React.useState([] as PolygonCustom[]);
+  // const infoWindow = new google.maps.InfoWindow();
 
   React.useEffect(() => {
     if (ref.current && !map) {
@@ -405,8 +406,6 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
       setArrPolygon(arr);
     }
   }, [ref, map]);
-
-  // var infowindow = new google.maps.InfoWindow();
   const polygonBinding = (p: PolygonCustom) => {
     if (map) {
       p.polygon.setMap(map);
@@ -417,7 +416,7 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
           bounds.extend(p.polygon.getPath().getAt(i));
         }
         map?.setCenter(bounds.getCenter());
-        map?.setZoom(12);
+        map?.setZoom(13);
       });
 
       p.polygon.setValues({
@@ -455,6 +454,11 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
       map.addListener("zoom_changed", () => {
         options.sendToZoom(map.getZoom());
       });
+      // map.addListener('click', () => {
+      //   if(infoWindow) {
+      //     infoWindow.close()
+      //   } 
+      // });
     }
   }, [map]);
 

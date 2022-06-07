@@ -79,9 +79,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           },
         });
         infoContent =
-        '<div id="content">' +
-        '<div id="siteNotice">' +
-        "</div>" +
+        '<div class="content-popup">' +
         '<h3 id="firstHeading" class="firstHeading">' + options.item.BuildingName +
         '</h3>' +
         '<div id="bodyContent">' +
@@ -119,11 +117,11 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
-              scale: 11,
-              fillColor: options.type === "in hcm" ? "#002BFF" : "#F5EF01",
-              fillOpacity: 0.5,
+              scale: 10,
+              fillColor: options.type === "in hcm" ? "#002BFF" : "#28a745",
+              fillOpacity: 0.6,
               strokeWeight: 0,
-            },
+            }
           },
         });
         if (options.type === "in hcm" && options.staffs ) {
@@ -131,26 +129,19 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
            infoContent = options.staffs.map((staff) => {
 
             const content = 
-              <>
+              <div className="content-popup">
                 <div>{staff.Nickname}</div>
                 <div>{staff.FullAddress}</div>
                 <hr/>
-              </>
+              </div>
              return ReactDOMServer.renderToStaticMarkup(content)
             }).join('');
 
         } else {
           infoContent =
-            '<div id="content">' +
-            '<div id="siteNotice">' +
-            "</div>" +
-            '<h3 id="firstHeading" class="firstHeading">' +
-            options.item?.Nickname +
-            "</h3>" +
-            "<p><b>Address:</b> " +
-            options.item?.FullAddress +
-            "</p>" +
-            "</div>";
+            '<div class="content-popup">' + 
+              '<b>' + options.item?.Nickname + '</b>' +
+              '<p><b>Address:</b>' + options.item?.FullAddress + '</p></div>';
         }
       } else if (options.label) {
         marker.setOptions({
@@ -171,20 +162,25 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
       // normal office
 
       if (infoContent) {
-        const infowindow = new google.maps.InfoWindow({
+        const infoWindow = new google.maps.InfoWindow({
           content: infoContent,
           zIndex: 9999,
         });
 
-        function handleClickMarker() {
-          infowindow.open({
+        const handleHoverMarker = (() => {
+          infoWindow.open({
             anchor: marker,
             map: (marker as any).map,
             shouldFocus: false,
           });
-        }
+        });
 
-         const listenerAddList =  marker.addListener("click", handleClickMarker);
+        // marker.addListener("mouseout", () => { 
+        //   infoWindow.close();
+        // });
+
+        const listenerAddList =  marker.addListener("click", handleHoverMarker);
+
 
         return () => google.maps.event.removeListener(listenerAddList);;
       }

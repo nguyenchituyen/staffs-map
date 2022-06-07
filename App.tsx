@@ -1,25 +1,20 @@
 import * as React from "react";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import { Wrapper } from "@googlemaps/react-wrapper";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import { Slider } from "@mui/material";
+import { Radio, RadioGroup, Slider } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import Header from "./components/Header";
 
+import Header from "./components/Header";
 import Map from "./components/Map";
 import Marker from "./components/Marker";
-
-import { buildA, staffs, districtCenter } from "./data";
+import { inHcmAll, outHcmAll, inHcmAllGroup } from "./components/util";
+import { buildA, staffs, districtCenter, candidates } from "./data";
 import * as data from "./data";
-import {
-  inHcmStaffsAll,
-  outHcmStaffsAll,
-  inHcmStaffsAllGroup,
-} from "./components/util";
 
 const marks = [
   {
@@ -30,7 +25,7 @@ const marks = [
     value: 15,
     label: "15 years",
   },
-];  
+];
 
 const App: React.VFC = () => {
   const [zoom, setZoom] = React.useState(11);
@@ -40,24 +35,23 @@ const App: React.VFC = () => {
   });
 
   const [inHcmStaffsGroup, setInHcmStaffsGroup] = React.useState(
-    inHcmStaffsAllGroup(staffs)
+    inHcmAllGroup(staffs)
   );
-  const [inHcmStaffs, setInHcmStaffs] = React.useState(inHcmStaffsAll(staffs));
-  const [outHcmStaffs, setOutHcmStaffs] = React.useState(
-    outHcmStaffsAll(staffs)
-  );
+  const [inHcmStaffs, setInHcmStaffs] = React.useState(inHcmAll(staffs));
+  const [outHcmStaffs, setOutHcmStaffs] = React.useState(outHcmAll(staffs));
 
   function setFilter(arr) {
-    const inHcmStaffsGroup = inHcmStaffsAllGroup(arr);
+    const inHcmStaffsGroup = inHcmAllGroup(arr);
     setInHcmStaffsGroup(inHcmStaffsGroup);
 
-    const inOfHcmStaffs = inHcmStaffsAll(arr);
+    const inHcmStaffs = inHcmAll(arr);
     setInHcmStaffs(inHcmStaffs);
 
-    const outHcmStaffs = outHcmStaffsAll(arr);
+    const outHcmStaffs = outHcmAll(arr);
     setOutHcmStaffs(outHcmStaffs);
   }
 
+  const [user, setUser] = React.useState("staff");
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
 
@@ -79,8 +73,12 @@ const App: React.VFC = () => {
     setShowOffice(!showOffice);
   };
 
+  const handleChangeUser = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setUser((event.target as HTMLInputElement).value);
+  };
+
   React.useEffect(() => {
-    let dataFilter = staffs;
+    let dataFilter = user === "staff" ? staffs : candidates;
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -109,17 +107,39 @@ const App: React.VFC = () => {
       year[0] === 0 &&
       year[1] === 15
     ) {
-      setFilter(staffs);
+      setFilter(dataFilter);
     } else {
       setFilter([]);
     }
-  }, [year, department, area, zoom]);
+  }, [year, department, area, zoom, user]);
 
   return (
     <div className="d-flex flex-column h-100">
       <div className="m-12">
         <Header />
         <div className="d-flex align-items-center">
+          <div className="w-240 mr-24">
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="demo-controlled-radio-buttons-group"
+                name="controlled-radio-buttons-group"
+                value={user}
+                onChange={handleChangeUser}
+              >
+                <FormControlLabel
+                  value="staff"
+                  control={<Radio />}
+                  label="Staff"
+                />
+                <FormControlLabel
+                  value="candidate"
+                  control={<Radio />}
+                  label="Candidate"
+                />
+              </RadioGroup>
+            </FormControl>
+          </div>
+
           <div className="w-240 mr-24">
             <FormControl fullWidth>
               <InputLabel id="select-label-department">Department</InputLabel>
@@ -193,23 +213,24 @@ const App: React.VFC = () => {
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
-            areas={area}  
+            areas={area}
             sendToZoom={setZoom}
           >
             <Marker position={center} type={"main office"} />
-            { zoom >= 10 && districtCenter.map((item) => {
-              return (
-                <Marker
-                  position={item.position}
-                  label={{  
-                    color: "#333",
-                    fontSize: zoom + 'px',
-                    fontWeight: "500",
-                    text: item.labelText,
-                  }}
-                />
-              );
-            })}
+            {zoom >= 11 &&
+              districtCenter.map((item) => {
+                return (
+                  <Marker
+                    position={item.position}
+                    label={{
+                      color: "#333",
+                      fontSize: zoom + "px",
+                      fontWeight: "500",
+                      text: item.labelText,
+                    }}
+                  />
+                );
+              })}
             {showOffice &&
               buildA.map((item, i) => {
                 return (
