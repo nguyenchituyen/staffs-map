@@ -8,14 +8,18 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import Header from './components/Header';
+import Header from "./components/Header";
 
 import Map from "./components/Map";
 import Marker from "./components/Marker";
 
-import { buildA, buildB, staffs, districtCenter } from "./data";
+import { buildA, staffs, districtCenter } from "./data";
 import * as data from "./data";
-import { inOfHcmStaffsAll, outOfHcmStaffsAll, calCenter } from './components/util';
+import {
+  inHcmStaffsAll,
+  outHcmStaffsAll,
+  inHcmStaffsAllGroup,
+} from "./components/util";
 
 const marks = [
   {
@@ -26,27 +30,33 @@ const marks = [
     value: 15,
     label: "15 years",
   },
-];
+];  
 
 const App: React.VFC = () => {
-  const [zoom, setZoom] = React.useState(13);
+  const [zoom, setZoom] = React.useState(11);
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 10.8092805, //IBM Building location
     lng: 106.6660986,
   });
 
-  const [inOfHcmStaffs, setInOfHcmStaffs] = React.useState(inOfHcmStaffsAll(staffs));
-  const [outOfHcmStaffs, setOutOfHcmStaffs] = React.useState(outOfHcmStaffsAll(staffs));
+  const [inHcmStaffsGroup, setInHcmStaffsGroup] = React.useState(
+    inHcmStaffsAllGroup(staffs)
+  );
+  const [inHcmStaffs, setInHcmStaffs] = React.useState(inHcmStaffsAll(staffs));
+  const [outHcmStaffs, setOutHcmStaffs] = React.useState(
+    outHcmStaffsAll(staffs)
+  );
 
   function setFilter(arr) {
+    const inHcmStaffsGroup = inHcmStaffsAllGroup(arr);
+    setInHcmStaffsGroup(inHcmStaffsGroup);
 
-    const outOfHcmStaffs = outOfHcmStaffsAll(arr);
-    setOutOfHcmStaffs(outOfHcmStaffs);
+    const inOfHcmStaffs = inHcmStaffsAll(arr);
+    setInHcmStaffs(inHcmStaffs);
 
-    const inOfHcmStaffs = inOfHcmStaffsAll(arr);
-    setInOfHcmStaffs(inOfHcmStaffs);
+    const outHcmStaffs = outHcmStaffsAll(arr);
+    setOutHcmStaffs(outHcmStaffs);
   }
-
 
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
@@ -69,7 +79,6 @@ const App: React.VFC = () => {
     setShowOffice(!showOffice);
   };
 
-
   React.useEffect(() => {
     let dataFilter = staffs;
     if (
@@ -80,7 +89,6 @@ const App: React.VFC = () => {
     ) {
       if (department !== "All") {
         dataFilter = dataFilter.filter((ite) => ite.Department === department);
-
       }
 
       if (area !== "All") {
@@ -105,7 +113,7 @@ const App: React.VFC = () => {
     } else {
       setFilter([]);
     }
-  }, [year, department, area]);
+  }, [year, department, area, zoom]);
 
   return (
     <div className="d-flex flex-column h-100">
@@ -179,27 +187,29 @@ const App: React.VFC = () => {
           </div>
         </div>
       </div>
-
       <div className="flex-grow-1">
-        <Wrapper
-          apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}
-        >
+        <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}>
           <Map
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
-            areas={area}
+            areas={area}  
+            sendToZoom={setZoom}
           >
-
             <Marker position={center} type={"main office"} />
-
-            {districtCenter.map((item) => {
+            { zoom >= 10 && districtCenter.map((item) => {
               return (
-                <Marker position={item.position} label={{ color: "#333", fontSize: "14px", fontWeight: '500', text: item.labelText }} />
-              )
-            })
-
-            }
+                <Marker
+                  position={item.position}
+                  label={{  
+                    color: "#333",
+                    fontSize: zoom + 'px',
+                    fontWeight: "500",
+                    text: item.labelText,
+                  }}
+                />
+              );
+            })}
             {showOffice &&
               buildA.map((item, i) => {
                 return (
@@ -212,21 +222,7 @@ const App: React.VFC = () => {
                   />
                 );
               })}
-
-            {/* {showOffice &&
-              buildB.map((item, i) => {
-                return (
-                  <Marker
-                    key={i}
-                    id={i}
-                    position={item.position}
-                    type={"sub office"}
-                    item={item}
-                  />
-                );
-              })} */}
-
-            {outOfHcmStaffs.map((item, i) => {
+            {outHcmStaffs.map((item, i) => {
               return (
                 <Marker
                   key={"outOfHcmStaffs" + i}
@@ -237,19 +233,35 @@ const App: React.VFC = () => {
                 />
               );
             })}
-
-            {inOfHcmStaffs.map((item, i) => {
-              return (
-                <Marker
-                  key={"inOfHcmStaffs" + i + 10000}
-                  position={item.position}
-                  id={i + 10000}
-                  type={"in hcm"}
-                  staffs={item.staffs}
-                  label={{ text: Object.keys(item.staffs).length.toString(), fontSize: '12px' }}
-                />
-              );
-            })}
+            ;
+            {zoom > 12
+              ? inHcmStaffs.map((item, i) => {
+                  return (
+                    <Marker
+                      key={"inOfHcmStaffsZoom" + i}
+                      position={item.position}
+                      item={item}
+                      id={i}
+                      type={"in hcm"}
+                    />
+                  );
+                })
+              : inHcmStaffsGroup.map((item, i) => {
+                  return (
+                    <Marker
+                      key={"inOfHcmStaffs" + i}
+                      position={item.position}
+                      id={i}
+                      type={"in hcm"}
+                      staffs={item.staffs}
+                      label={{
+                        text: Object.keys(item.staffs).length.toString(),
+                        fontSize: "12px",
+                      }}
+                    />
+                  );
+                })}
+            ;
           </Map>
         </Wrapper>
       </div>

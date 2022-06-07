@@ -1,9 +1,7 @@
 import { arrPolygonPath } from "./Map";
 const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
 
-export const inOfHcmStaffsAll = ((arr) => {
-
-
+export const inHcmStaffsAllGroup = ((arr) => {
     const inOfHcmStaffsObTemp = arr
         .filter((x) => hcmCitys.includes(x.City))
         .reduce((a, b) => {
@@ -27,7 +25,11 @@ export const inOfHcmStaffsAll = ((arr) => {
     return arrStaffHCM;
 })
 
-export const outOfHcmStaffsAll = ((arr) => {
+export const inHcmStaffsAll = ((arr) => {
+    return arr.filter((x) => hcmCitys.includes(x.City));
+})
+
+export const outHcmStaffsAll = ((arr) => {
     return arr.filter((x) => !hcmCitys.includes(x.City));
 })
 
