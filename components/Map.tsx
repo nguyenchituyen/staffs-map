@@ -181,6 +181,7 @@ interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string };
   areas: string;
   children: any;
+  sendToZoom: any;
 }
 
 const styleMap = [
@@ -416,7 +417,7 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
           bounds.extend(p.polygon.getPath().getAt(i));
         }
         map?.setCenter(bounds.getCenter());
-        map?.setZoom(13);
+        map?.setZoom(12);
       });
 
       p.polygon.setValues({
@@ -449,30 +450,15 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
     }
   }, [map, areas]);
 
-  // React.useEffect(() => { 
-  //   if(map) {
-  //     map.addListener("zoom_changed", () => {
-  //       console.log(map.getZoom(), "zoom");
-        
-  //     });
-  //   }
-  // }, [map]);
+  React.useEffect(() => { 
+    if(map) {
+      map.addListener("zoom_changed", () => {
+        options.sendToZoom(map.getZoom());
+      });
+    }
+  }, [map]);
 
-  // React.useEffect(() => {
-  //   if (areas !== "All") {
-  //     setMap(undefined);
-  //   }
-  // }, [areas]);
 
-  // React.useEffect(() => {
-  //   if (map) {
-  //     map.setOptions({
-  //       options,
-  //       mapTypeId: google.maps.MapTypeId.ROADMAP,
-  //       zoom: map.getZoom() || options.zoom,
-  //     } as any);
-  //   }
-  // }, [map, options]);
 
   return (
     <>

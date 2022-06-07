@@ -30,10 +30,10 @@ const marks = [
     value: 15,
     label: "15 years",
   },
-];
+];  
 
 const App: React.VFC = () => {
-  const [zoom, setZoom] = React.useState(13);
+  const [zoom, setZoom] = React.useState(11);
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 10.8092805, //IBM Building location
     lng: 106.6660986,
@@ -113,7 +113,7 @@ const App: React.VFC = () => {
     } else {
       setFilter([]);
     }
-  }, [year, department, area]);
+  }, [year, department, area, zoom]);
 
   return (
     <div className="d-flex flex-column h-100">
@@ -187,23 +187,23 @@ const App: React.VFC = () => {
           </div>
         </div>
       </div>
-
       <div className="flex-grow-1">
         <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}>
           <Map
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
-            areas={area}
+            areas={area}  
+            sendToZoom={setZoom}
           >
             <Marker position={center} type={"main office"} />
-            { zoom > 11 && districtCenter.map((item) => {
+            { zoom >= 10 && districtCenter.map((item) => {
               return (
                 <Marker
                   position={item.position}
                   label={{  
                     color: "#333",
-                    fontSize: "14px",
+                    fontSize: zoom + 'px',
                     fontWeight: "500",
                     text: item.labelText,
                   }}
@@ -234,7 +234,7 @@ const App: React.VFC = () => {
               );
             })}
             ;
-            {zoom < 13
+            {zoom > 12
               ? inHcmStaffs.map((item, i) => {
                   return (
                     <Marker
@@ -249,9 +249,9 @@ const App: React.VFC = () => {
               : inHcmStaffsGroup.map((item, i) => {
                   return (
                     <Marker
-                      key={"inOfHcmStaffs" + i + 10000}
+                      key={"inOfHcmStaffs" + i}
                       position={item.position}
-                      id={i + 10000}
+                      id={i}
                       type={"in hcm"}
                       staffs={item.staffs}
                       label={{
