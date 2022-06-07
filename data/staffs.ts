@@ -3330,8 +3330,8 @@ export const staffs = [
     "StartDate": "6-Jul-2021",
     "Address": "Tổ 17, KP4, P. Trảng Dài, TP Biên Hòa, Tỉnh Đồng Nai",
     "position": {
-      "lat": 10.8762722,
-      "lng": 106.8632478
+      "lat": 10.8798722,
+      "lng": 106.8652478
     },
     "District": "DONG NAI",
     "City": "Đồng Nai",
