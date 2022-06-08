@@ -253,7 +253,7 @@ export const staffs = [
     "StartDate": "31-Dec-2014",
     "Address": "Block D, CC Emerald, Số 2, Đường N4, phường Sơn Kỳ, quận Tân Phú, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8032792,
+      "lat": 10.8092792,
       "lng": 106.6120286
     },
     "District": "TAN PHU",
@@ -406,7 +406,7 @@ export const staffs = [
     "StartDate": "20-Aug-2015",
     "Address": "193 Phạm Văn Hai, phường 5, quận Tân Bình, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8379033,
+      "lat": 10.8389033,
       "lng": 106.6400218
     },
     "District": "GO VAP",
@@ -627,7 +627,7 @@ export const staffs = [
     "StartDate": "5-Oct-2015",
     "Address": "D8.17 chung cư Emerald, số 2 đường N4, Phường Sơn Kỳ, Quận Tân Phú, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8032792,
+      "lat": 10.8072792,
       "lng": 106.6120286
     },
     "District": "TAN PHU",
@@ -1664,7 +1664,7 @@ export const staffs = [
     "StartDate": "4-Nov-2019",
     "Address": "872/51/12 Quang Trung, phường 8, quận Gò Vấp, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8399253,
+      "lat": 10.8379253,
       "lng": 106.6530966
     },
     "District": "GO VAP",
@@ -1681,7 +1681,7 @@ export const staffs = [
     "StartDate": "4-Nov-2019",
     "Address": "12/33 Nguyễn Tuân, phường 3, quận Gò Vấp, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8310819,
+      "lat": 10.8320819,
       "lng": 106.6214991
     },
     "District": "DISTRICT 12",
@@ -2174,7 +2174,7 @@ export const staffs = [
     "StartDate": "13-Apr-2020",
     "Address": "624 Lê Văn Thọ, P.13, Q.Gò Vấp, Tp.Hồ Chí Minh",
     "position": {
-      "lat": 10.8533623,
+      "lat": 10.8543623,
       "lng": 106.6561071
     },
     "District": "GO VAP",
@@ -2225,7 +2225,7 @@ export const staffs = [
     "StartDate": "28-Apr-2020",
     "Address": "537 Phạm Văn Đồng, phường 13, quận Bình Thạnh, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8026679,
+      "lat": 10.8046679,
       "lng": 106.6595782
     },
     "District": "TAN BINH",
@@ -3109,7 +3109,7 @@ export const staffs = [
     "StartDate": "29-Jun-2021",
     "Address": "688/13A Lê Đức Thọ, Phường 15, !uận Gò Vấp, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8481697,
+      "lat": 10.8491697,
       "lng": 106.66594
     },
     "District": "GO VAP",
@@ -3398,7 +3398,7 @@ export const staffs = [
     "StartDate": "13-Jul-2021",
     "Address": "60 Trần Văn Danh, phường 13, quận Tân Bình, thành phố Hồ Chí Minh",
     "position": {
-      "lat": 10.8076481,
+      "lat": 10.8096481,
       "lng": 106.6642521
     },
     "District": "TAN BINH",
@@ -4231,7 +4231,7 @@ export const staffs = [
     "StartDate": "18-Nov-2021",
     "Address": "C10.08 chung cư Emerald 36 Bờ Bao Tân Thắng, P. Sơn K, Q.Tân Phú, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.8032792,
+      "lat": 10.8052792,
       "lng": 106.6120286
     },
     "District": "TAN PHU",
@@ -4469,8 +4469,8 @@ export const staffs = [
     "StartDate": "22-Feb-2022",
     "Address": "01.21 chung cư B1, 06-10 Trường Sa, Phường 17, Quận Bình Thạnh, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.7922593,
-      "lng": 106.6822192
+      "lat": 10.7930945, 
+      "lng": 106.7013049
     },
     "District": "DISTRICT 3",
     "City": "Hồ Chí Minh",
@@ -4878,7 +4878,7 @@ export const staffs = [
     "StartDate": "3-Aug-2020",
     "Address": "P. 302, 18 lô A Cc Ngô Quyền, Q5, Tp. Hồ Chí Minh",
     "position": {
-      "lat": 10.7957817,
+      "lat": 10.7977817,
       "lng": 106.6926527
     },
     "District": "BINH THANH",

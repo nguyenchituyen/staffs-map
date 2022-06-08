@@ -51,7 +51,7 @@ const App: React.VFC = () => {
     setOutHcmStaffs(outHcmStaffs);
   }
 
-  const [user, setUser] = React.useState("staff");
+  const [employee, setEmployee] = React.useState("staff");
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
 
@@ -73,12 +73,12 @@ const App: React.VFC = () => {
     setShowOffice(!showOffice);
   };
 
-  const handleChangeUser = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setUser((event.target as HTMLInputElement).value);
+  const handleChangeEmployee = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmployee((event.target as HTMLInputElement).value);
   };
 
   React.useEffect(() => {
-    let dataFilter = user === "staff" ? staffs : candidates;
+    let dataFilter = employee === "staff" ?  staffs : candidates;
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -111,7 +111,7 @@ const App: React.VFC = () => {
     } else {
       setFilter([]);
     }
-  }, [year, department, area, zoom, user]);
+  }, [year, department, area, zoom, employee]);
 
   return (
     <div className="d-flex flex-column h-100">
@@ -123,8 +123,8 @@ const App: React.VFC = () => {
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"
                 name="controlled-radio-buttons-group"
-                value={user}
-                onChange={handleChangeUser}
+                value={employee}
+                onChange={handleChangeEmployee}
               >
                 <FormControlLabel
                   value="staff"
