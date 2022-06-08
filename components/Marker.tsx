@@ -1,6 +1,6 @@
 import * as React from "react";
-import ReactDOMServer from 'react-dom/server';
-
+import { infoContent as mockInfoContent } from "./mock/inforContent";
+import { formatString } from "./util";
 export interface MarkerItemInfo {
   office?: string;
   BuildingName?: string;
@@ -38,7 +38,6 @@ export interface MarkerOptionsCustom extends google.maps.MarkerOptions {
 }
 
 const Marker: React.FC<MarkerOptionsCustom> = (options) => {
-
   const [marker, setMarker] = React.useState<google.maps.Marker>();
 
   React.useEffect(() => {
@@ -55,16 +54,11 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
   }, [marker]);
 
   React.useEffect(() => {
-
     if (marker) {
       let infoContent = "";
       if (options.type === "main office") {
         marker.setOptions({ ...options, zIndex: 999 });
-        infoContent =
-          '<h3 id="firstHeading" class="firstHeading">Aperia</h3>' +
-          "<p><b>Address:</b> " +
-          "12 Song Thao, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam" +
-          "</p>";
+        infoContent = mockInfoContent["main_office"];
       } else if (options.type === "sub office" && options.item) {
         marker.setOptions({
           ...options,
@@ -78,38 +72,34 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
             },
           },
         });
-        infoContent =
-        '<div class="content-popup">' +
-        '<h3 id="firstHeading" class="firstHeading">' + options.item.BuildingName +
-        '</h3>' +
-        '<div id="bodyContent">' +
-        "<p><b>Premises:</b> "
-        + options.item.Premises +
-        "</p>" +
-        "<p><b>Floor:</b> "
-        + options.item.Floor +
-        "</p>" +
-        "<p><b>Vacant Status:</b> "
-        + options.item.VacantStatus +
-        "</p>" +
-        "<p><b>Asking Rent (VAT excluded):</b> "
-        + options.item.AskingRent +
-        "</p>" +
-        "<p><b>Gross Rent (VAT excluded):</b> "
-        + options.item.GrossRent +
-        "</p>" +
-        "<p><b>Service Charge (VAT excluded):</b> "
-        + options.item.ServiceCharge +
-        "</p>" +
-        "<p><b>Total Amount (VAT excluded):</b> "
-        + options.item.TotalAmount +
-        "</p>" +
-        "<p><b>Address:</b> "
-        + options.item.Address +
-        "</p>" +
-        "</div>" +
-        "</div>";
 
+        const {
+          BuildingName,
+          Premises,
+          Floor,
+          VacantStatus,
+          AskingRent,
+          GrossRent,
+          ServiceCharge,
+          TotalAmount,
+          Address,
+          Nickname,
+          FullAddress,
+        } = options.item;
+        infoContent = formatString(
+          mockInfoContent["office"],
+          BuildingName,
+          Premises,
+          Floor,
+          VacantStatus,
+          AskingRent,
+          GrossRent,
+          ServiceCharge,
+          TotalAmount,
+          Address,
+          Nickname,
+          FullAddress
+        );
       } else if (options.type === "in hcm" || options.type === "out hcm") {
         marker.setOptions({
           ...options,
@@ -121,44 +111,43 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
               fillColor: options.type === "in hcm" ? "#002BFF" : "#28a745",
               fillOpacity: 0.6,
               strokeWeight: 0,
-            }
+            },
           },
         });
-        if (options.type === "in hcm" && options.staffs ) {
-
-           infoContent = options.staffs.map((staff) => {
-
-            const content = 
-              <div className="content-popup">
-                <div>{staff.Nickname}</div>
-                <div>{staff.FullAddress}</div>
-                <hr/>
-              </div>
-             return ReactDOMServer.renderToStaticMarkup(content)
-            }).join('');
-
+        if (options.type === "in hcm" && options.staffs) {
+          infoContent = options.staffs
+            .map((staff) => {
+              const content = formatString(
+                mockInfoContent["employee_group"],
+                staff.Nickname,
+                staff.FullAddress
+              );
+              return content;
+            })
+            .join("");
         } else {
-          infoContent =
-            '<div class="content-popup">' + 
-              '<b>' + options.item?.Nickname + '</b>' +
-              '<p><b>Address:</b>' + options.item?.FullAddress + '</p></div>';
+          infoContent = formatString(
+            mockInfoContent["employee"],
+            options.item?.Nickname,
+            options.item?.FullAddress
+          );
         }
       } else if (options.label) {
         marker.setOptions({
           ...options,
-          cursor: 'auto',
+          cursor: "auto",
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
               scale: 0,
-              fillColor: '#ecedf2',
+              fillColor: "#ecedf2",
               fillOpacity: 0,
-              strokeWeight: 0
+              strokeWeight: 0,
             },
-          }
+          },
         });
       }
-      
+
       // normal office
 
       if (infoContent) {
@@ -167,22 +156,25 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           zIndex: 9999,
         });
 
-        const handleHoverMarker = (() => {
+        const handleHoverMarker = () => {
           infoWindow.open({
             anchor: marker,
             map: (marker as any).map,
-            shouldFocus: false,
+            shouldFocus: false,          
           });
-        });
+        };
 
-        // marker.addListener("mouseout", () => { 
-        //   infoWindow.close();
-        // });
+        const listenerAddList = marker.addListener("click", handleHoverMarker);
 
-        const listenerAddList =  marker.addListener("click", handleHoverMarker);
+        google.maps.event.addListener(
+          (marker as any).map,
+          "click",
+          function (event) {
+            infoWindow.close();
+          }
+        );
 
-
-        return () => google.maps.event.removeListener(listenerAddList);;
+        return () => google.maps.event.removeListener(listenerAddList);
       }
     }
   }, [marker, options]);
