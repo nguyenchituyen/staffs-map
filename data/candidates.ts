@@ -2052,7 +2052,7 @@ export const candidates = [
     "NewDistrict": "BINH THANH",
     "City": "Hồ Chí Minh",
     "position": {
-        lat: 10.807884, 
+        lat: 10.809884, 
         lng: 106.714991
     }
    },
