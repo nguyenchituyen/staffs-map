@@ -1,16 +1,15 @@
 import { arrPolygonPath } from "./Map";
 const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
 
-export const inOfHcmStaffsAll = ((arr) => {
-
-    const inOfHcmStaffsObTemp = arr
+export const inHcmAllGroup = ((arr) => {
+    const inOfHcmObTemp = arr
         .filter((x) => hcmCitys.includes(x.City))
         .reduce((a, b) => {
-            a[b.District] = [...(a[b.District] || []), b];
+            a[b.NewDistrict] = [...(a[b.NewDistrict] || []), b];
             return a;
         }, {});
 
-    const arrHCM = Object.keys(inOfHcmStaffsObTemp).map((key) => {
+    const arrHCM = Object.keys(inOfHcmObTemp).map((key) => {
         let center = arrPolygonPath[key].center;
         if (!center.lat) {
             center = calCenter(arrPolygonPath[key].paths);
@@ -18,7 +17,7 @@ export const inOfHcmStaffsAll = ((arr) => {
 
         return {
             name: key,
-            staffs: inOfHcmStaffsObTemp[key],
+            staffs: inOfHcmObTemp[key],
             position: center,
         };
     });
@@ -26,7 +25,11 @@ export const inOfHcmStaffsAll = ((arr) => {
     return arrHCM;
 })
 
-export const outOfHcmStaffsAll = ((arr) => {
+export const inHcmAll = ((arr) => {
+    return arr.filter((x) => hcmCitys.includes(x.City));
+})
+
+export const outHcmAll = ((arr) => {
     return arr.filter((x) => !hcmCitys.includes(x.City));
 })
 

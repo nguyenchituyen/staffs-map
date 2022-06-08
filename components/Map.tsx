@@ -181,6 +181,7 @@ interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string };
   areas: string;
   children: any;
+  sendToZoom: any;
 }
 
 const styleMap = [
@@ -379,6 +380,7 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const [map, setMap] = React.useState<google.maps.Map>();
   const [arrPolygon, setArrPolygon] = React.useState([] as PolygonCustom[]);
+  // const infoWindow = new google.maps.InfoWindow();
 
   React.useEffect(() => {
     if (ref.current && !map) {
@@ -394,18 +396,16 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         name: key,
         polygon: new google.maps.Polygon({
           paths: arrPolygonPath[key].paths,
-          strokeColor: "#FF0000",
-          strokeOpacity: 0.5,
+          strokeColor: "#1671E0",
+          strokeOpacity: 1,
           strokeWeight: 0.5,
-          fillColor: "#51F50A",
-          fillOpacity: 0.1,
+          fillColor: "#B2D7FC",
+          fillOpacity: 0.3,
         }),
       }));
       setArrPolygon(arr);
     }
   }, [ref, map]);
-
-  var infowindow = new google.maps.InfoWindow();
   const polygonBinding = (p: PolygonCustom) => {
     if (map) {
       p.polygon.setMap(map);
@@ -415,7 +415,6 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
         for (var i = 0; i < p.polygon.getPath().getLength(); i++) {
           bounds.extend(p.polygon.getPath().getAt(i));
         }
-
         map?.setCenter(bounds.getCenter());
         map?.setZoom(13);
       });
@@ -426,31 +425,15 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
 
       p.polygon.addListener("mouseover", (e) => {
         p.polygon.setOptions({
-          fillColor: "#FF0000",
-          fillOpacity: 0.1,
+          fillColor: "#1671E0",
+          fillOpacity: 0.4,
         });
-
-        // infowindow.setContent(p.name);
-        // infowindow.setPosition({
-        //   lat: e.latLng.lat(),
-        //   lng: e.latLng.lng(),
-        // });
-        // infowindow.setZIndex(9998);
-        // infowindow.open(map);
       });
-      // p.polygon.addListener("mousemove", (e) => {
-      //   infowindow.setPosition({
-      //     lat: e.latLng.lat() + 0.002,
-      //     lng: e.latLng.lng(),
-      //   });
-      // });
       p.polygon.addListener("mouseout", () => {
         p.polygon.setOptions({
-          fillColor: "#51F50A",
-          fillOpacity: 0.1,
+          fillColor: "#B2D7FC",
+          fillOpacity: 0.3,
         });
-
-        // infowindow.close();
       });
     }
   };
@@ -466,21 +449,20 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
     }
   }, [map, areas]);
 
-  React.useEffect(() => {
-    if (areas !== "All") {
-      setMap(undefined);
+  React.useEffect(() => { 
+    if(map) {
+      map.addListener("zoom_changed", () => {
+        options.sendToZoom(map.getZoom());
+      });
+      // map.addListener('click', () => {
+      //   if(infoWindow) {
+      //     infoWindow.close()
+      //   } 
+      // });
     }
-  }, [areas]);
+  }, [map]);
 
-  React.useEffect(() => {
-    if (map) {
-      map.setOptions({
-        options,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        zoom: map.getZoom() || options.zoom,
-      } as any);
-    }
-  }, [map, options]);
+
 
   return (
     <>

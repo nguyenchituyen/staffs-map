@@ -1,21 +1,20 @@
 import * as React from "react";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import { Wrapper } from "@googlemaps/react-wrapper";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import { Slider } from "@mui/material";
+import { Radio, RadioGroup, Slider } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import Header from './components/Header';
 
+import Header from "./components/Header";
 import Map from "./components/Map";
 import Marker from "./components/Marker";
-
-import { buildA, buildB, staffs, districtCenter } from "./data";
+import { inHcmAll, outHcmAll, inHcmAllGroup } from "./components/util";
+import { buildA, staffs, districtCenter, candidates } from "./data";
 import * as data from "./data";
-import { inOfHcmStaffsAll, outOfHcmStaffsAll, calCenter } from './components/util';
 
 const marks = [
   {
@@ -29,25 +28,30 @@ const marks = [
 ];
 
 const App: React.VFC = () => {
-  const [zoom, setZoom] = React.useState(13);
+  const [zoom, setZoom] = React.useState(11);
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 10.8092805, //IBM Building location
     lng: 106.6660986,
   });
 
-  const [inOfHcmStaffs, setInOfHcmStaffs] = React.useState(inOfHcmStaffsAll(staffs));
-  const [outOfHcmStaffs, setOutOfHcmStaffs] = React.useState(outOfHcmStaffsAll(staffs));
+  const [inHcmStaffsGroup, setInHcmStaffsGroup] = React.useState(
+    inHcmAllGroup(staffs)
+  );
+  const [inHcmStaffs, setInHcmStaffs] = React.useState(inHcmAll(staffs));
+  const [outHcmStaffs, setOutHcmStaffs] = React.useState(outHcmAll(staffs));
 
   function setFilter(arr) {
+    const inHcmStaffsGroup = inHcmAllGroup(arr);
+    setInHcmStaffsGroup(inHcmStaffsGroup);
 
-    const outOfHcmStaffs = outOfHcmStaffsAll(arr);
-    setOutOfHcmStaffs(outOfHcmStaffs);
+    const inHcmStaffs = inHcmAll(arr);
+    setInHcmStaffs(inHcmStaffs);
 
-    const inOfHcmStaffs = inOfHcmStaffsAll(arr);
-    setInOfHcmStaffs(inOfHcmStaffs);
+    const outHcmStaffs = outHcmAll(arr);
+    setOutHcmStaffs(outHcmStaffs);
   }
 
-
+  const [user, setUser] = React.useState("staff");
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
 
@@ -69,9 +73,12 @@ const App: React.VFC = () => {
     setShowOffice(!showOffice);
   };
 
+  const handleChangeUser = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setUser((event.target as HTMLInputElement).value);
+  };
 
   React.useEffect(() => {
-    let dataFilter = staffs;
+    let dataFilter = user === "staff" ? staffs : candidates;
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -80,11 +87,10 @@ const App: React.VFC = () => {
     ) {
       if (department !== "All") {
         dataFilter = dataFilter.filter((ite) => ite.Department === department);
-
       }
 
       if (area !== "All") {
-        dataFilter = dataFilter.filter((ite) => ite.District === area);
+        dataFilter = dataFilter.filter((ite) => ite.NewDistrict === area);
       }
 
       if (year[0] !== 0 || year[1] !== 15) {
@@ -101,17 +107,39 @@ const App: React.VFC = () => {
       year[0] === 0 &&
       year[1] === 15
     ) {
-      setFilter(staffs);
+      setFilter(dataFilter);
     } else {
       setFilter([]);
     }
-  }, [year, department, area]);
+  }, [year, department, area, zoom, user]);
 
   return (
     <div className="d-flex flex-column h-100">
       <div className="m-12">
         <Header />
         <div className="d-flex align-items-center">
+          <div className="w-240 mr-24">
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="demo-controlled-radio-buttons-group"
+                name="controlled-radio-buttons-group"
+                value={user}
+                onChange={handleChangeUser}
+              >
+                <FormControlLabel
+                  value="staff"
+                  control={<Radio />}
+                  label="Staff"
+                />
+                <FormControlLabel
+                  value="candidate"
+                  control={<Radio />}
+                  label="Candidate"
+                />
+              </RadioGroup>
+            </FormControl>
+          </div>
+
           <div className="w-240 mr-24">
             <FormControl fullWidth>
               <InputLabel id="select-label-department">Department</InputLabel>
@@ -179,27 +207,30 @@ const App: React.VFC = () => {
           </div>
         </div>
       </div>
-
       <div className="flex-grow-1">
-        <Wrapper
-          apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}
-        >
+        <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}>
           <Map
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
             areas={area}
+            sendToZoom={setZoom}
           >
-
             <Marker position={center} type={"main office"} />
-
-            {districtCenter.map((item) => {
-              return (
-                <Marker position={item.position} label={{ color: "#333", fontSize: "14px", fontWeight: '500', text: item.labelText }} />
-              )
-            })
-
-            }
+            {zoom >= 11 &&
+              districtCenter.map((item) => {
+                return (
+                  <Marker
+                    position={item.position}
+                    label={{
+                      color: "#333",
+                      fontSize: zoom + "px",
+                      fontWeight: "500",
+                      text: item.labelText,
+                    }}
+                  />
+                );
+              })}
             {showOffice &&
               buildA.map((item, i) => {
                 return (
@@ -212,21 +243,7 @@ const App: React.VFC = () => {
                   />
                 );
               })}
-
-            {showOffice &&
-              buildB.map((item, i) => {
-                return (
-                  <Marker
-                    key={i}
-                    id={i}
-                    position={item.position}
-                    type={"sub office"}
-                    item={item}
-                  />
-                );
-              })}
-
-            {outOfHcmStaffs.map((item, i) => {
+            {outHcmStaffs.map((item, i) => {
               return (
                 <Marker
                   key={"outOfHcmStaffs" + i}
@@ -237,19 +254,35 @@ const App: React.VFC = () => {
                 />
               );
             })}
-
-            {inOfHcmStaffs.map((item, i) => {
-              return (
-                <Marker
-                  key={"inOfHcmStaffs" + i + 10000}
-                  position={item.position}
-                  id={i + 10000}
-                  type={"in hcm"}
-                  staffs={item.staffs}
-                  label={{ text: Object.keys(item.staffs).length.toString() }}
-                />
-              );
-            })}
+            ;
+            {zoom > 12
+              ? inHcmStaffs.map((item, i) => {
+                  return (
+                    <Marker
+                      key={"inOfHcmStaffsZoom" + i}
+                      position={item.position}
+                      item={item}
+                      id={i}
+                      type={"in hcm"}
+                    />
+                  );
+                })
+              : inHcmStaffsGroup.map((item, i) => {
+                  return (
+                    <Marker
+                      key={"inOfHcmStaffs" + i}
+                      position={item.position}
+                      id={i}
+                      type={"in hcm"}
+                      staffs={item.staffs}
+                      label={{
+                        text: Object.keys(item.staffs).length.toString(),
+                        fontSize: "12px",
+                      }}
+                    />
+                  );
+                })}
+            ;
           </Map>
         </Wrapper>
       </div>
