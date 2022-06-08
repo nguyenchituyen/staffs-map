@@ -34,21 +34,24 @@ const App: React.VFC = () => {
     lng: 106.6660986,
   });
 
-  const [inHcmStaffsGroup, setInHcmStaffsGroup] = React.useState(
+  const [inHcmEmployeeGroup, setInHcmEmployeeGroup] = React.useState(
     inHcmAllGroup(staffs)
   );
-  const [inHcmStaffs, setInHcmStaffs] = React.useState(inHcmAll(staffs));
-  const [outHcmStaffs, setOutHcmStaffs] = React.useState(outHcmAll(staffs));
+  const [inHcmEmployee, setInHcmEmployee] = React.useState(inHcmAll(staffs));
+  const [outHcmEmployee, setOutHcmEmployee] = React.useState(outHcmAll(staffs));
 
   function setFilter(arr) {
-    const inHcmStaffsGroup = inHcmAllGroup(arr);
-    setInHcmStaffsGroup(inHcmStaffsGroup);
+    const inHcmEmployeeGroup = inHcmAllGroup(arr);
+    setInHcmEmployeeGroup(inHcmEmployeeGroup);
 
-    const inHcmStaffs = inHcmAll(arr);
-    setInHcmStaffs(inHcmStaffs);
 
-    const outHcmStaffs = outHcmAll(arr);
-    setOutHcmStaffs(outHcmStaffs);
+    console.log(inHcmEmployeeGroup, "inHcmEmployeeGroup");
+    
+    const inHcmEmployee = inHcmAll(arr);
+    setInHcmEmployee(inHcmEmployee);
+
+    const outHcmEmployee = outHcmAll(arr);
+    setOutHcmEmployee(outHcmEmployee);
   }
 
   const [employee, setEmployee] = React.useState("staff");
@@ -78,7 +81,7 @@ const App: React.VFC = () => {
   };
 
   React.useEffect(() => {
-    let dataFilter = employee === "staff" ?  staffs : candidates;
+    let dataFilter = employee === "staff" ? staffs : candidates;
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -121,8 +124,8 @@ const App: React.VFC = () => {
           <div className="w-240 mr-24">
             <FormControl>
               <RadioGroup
-                aria-labelledby="demo-controlled-radio-buttons-group"
-                name="controlled-radio-buttons-group"
+                aria-labelledby="type-employee"
+                name="type-employee"
                 value={employee}
                 onChange={handleChangeEmployee}
               >
@@ -216,7 +219,9 @@ const App: React.VFC = () => {
             areas={area}
             sendToZoom={setZoom}
           >
+            {/* show main office  */}
             <Marker position={center} type={"main office"} />
+            {/* show district label */}
             {zoom >= 11 &&
               districtCenter.map((item) => {
                 return (
@@ -231,6 +236,7 @@ const App: React.VFC = () => {
                   />
                 );
               })}
+            {/* show office  */}
             {showOffice &&
               buildA.map((item, i) => {
                 return (
@@ -243,7 +249,8 @@ const App: React.VFC = () => {
                   />
                 );
               })}
-            {outHcmStaffs.map((item, i) => {
+            {/* show employee */}
+            {outHcmEmployee.map((item, i) => {
               return (
                 <Marker
                   key={"outOfHcmStaffs" + i}
@@ -256,7 +263,7 @@ const App: React.VFC = () => {
             })}
             ;
             {zoom > 12
-              ? inHcmStaffs.map((item, i) => {
+              ? inHcmEmployee.map((item, i) => {
                   return (
                     <Marker
                       key={"inOfHcmStaffsZoom" + i}
@@ -267,7 +274,7 @@ const App: React.VFC = () => {
                     />
                   );
                 })
-              : inHcmStaffsGroup.map((item, i) => {
+              : inHcmEmployeeGroup.map((item, i) => {
                   return (
                     <Marker
                       key={"inOfHcmStaffs" + i}

@@ -41,3 +41,13 @@ export function calCenter(paths) {
         lng: (Math.max(...lngs) + Math.min(...lngs)) / 2,
     };
 }
+
+export const formatString = (strContent: string, ...param) => {
+
+    let ret = strContent;
+    param.forEach((val, index) => {
+        ret = ret.replace(`{${index}}`, val);
+    })
+
+    return ret;
+}
