@@ -55,6 +55,14 @@ export const departmentDatas = [
     id: 13,
     name: 'DevOps'
   },
+  {
+    id: 14,
+    name: 'Java'
+  },
+  {
+    id: 15,
+    name: 'AI'
+  }
 ]
 
 export const areaDatas = [
