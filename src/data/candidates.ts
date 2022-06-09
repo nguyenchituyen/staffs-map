@@ -1,6 +1,6 @@
 export const candidates = [
   {
-    Nickname: "Vũ Công Tâm",
+    NickName: "Vũ Công Tâm",
     FullAddress:
       "66 Đô Đốc Long Street, Tan Quy Ward, Tan Phu District, Ho Chi Minh City, Vietnam",
     Department: "Software Developer",
@@ -13,7 +13,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "VO VAN HOAI",
+    NickName: "VO VAN HOAI",
     FullAddress: "21/10 Tu Lap Street, 4 Ward, Tan Binh District, HCM City",
     Department: "Software Developer",
     Seniorty: "",
@@ -25,7 +25,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Duong Dinh Hanh",
+    NickName: "Duong Dinh Hanh",
     FullAddress:
       "145/9 Do Xuan Hop street, Phuong Long B, District 9, Thu Duc City",
     Department: "Software Developer",
@@ -38,7 +38,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Thành Trần",
+    NickName: "Thành Trần",
     FullAddress: "District 11 , Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -50,7 +50,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phụng Mai",
+    NickName: "Phụng Mai",
     FullAddress: "37/6 Tân Lập 1, phường HIệp Phú, TP.Thủ Đức, Việt Nam",
     Department: "Software Developer",
     Seniorty: "",
@@ -62,7 +62,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Khang Nguyễn",
+    NickName: "Khang Nguyễn",
     FullAddress: "Tô Hiến Thành,Quận 10,Thành phố Hồ Chí Minh",
     Department: "Software Developer",
     Seniorty: "",
@@ -74,7 +74,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lê Trần Thế Vinh",
+    NickName: "Lê Trần Thế Vinh",
     FullAddress: "Ninh Đa, Ninh Hòa, Khánh Hòa",
     Department: "Software Developer",
     Seniorty: "",
@@ -86,7 +86,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYỄN ĐĂNG DUY",
+    NickName: "NGUYỄN ĐĂNG DUY",
     FullAddress: "556/2 Le Van Viet Street, District 9, Ho Chi Minh City,",
     Department: "Software Developer",
     Seniorty: "",
@@ -98,7 +98,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TUAN LA THANH",
+    NickName: "TUAN LA THANH",
     FullAddress: "Go Vap District, Ho Chi Minh City, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -110,7 +110,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "CHU NGOC THANG",
+    NickName: "CHU NGOC THANG",
     FullAddress: "1198 Truong Sa Street, Ward 13, Phu Nhuan District",
     Department: "Software Developer",
     Seniorty: "",
@@ -122,7 +122,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN VAN HIEU",
+    NickName: "NGUYEN VAN HIEU",
     FullAddress: "Hoang Hoa Tham-P.15-Q.Tan Binh-HCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -134,7 +134,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Trường Thạnh",
+    NickName: "Nguyễn Trường Thạnh",
     FullAddress:
       "057 Huyện Lộ 07, Ấp Láng, Xã Tân Thành, Huyện Gò Công Đông,Thành phố Tiền Giang",
     Department: "Software Developer",
@@ -147,7 +147,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hieu Huynh",
+    NickName: "Hieu Huynh",
     FullAddress: "156 Đường 30, P6 ,Quận Gò Vấp,Thành phố Hồ Chí Minh",
     Department: "Software Developer",
     Seniorty: "",
@@ -159,7 +159,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Ðỗ Trung Thứ",
+    NickName: "Ðỗ Trung Thứ",
     FullAddress: "526 Lạc Long Quân Street, Ward 5, District 11",
     Department: "Software Developer",
     Seniorty: "",
@@ -171,7 +171,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "VAN NGUYEN (NGUYỄN LÂM VĂN)",
+    NickName: "VAN NGUYEN (NGUYỄN LÂM VĂN)",
     FullAddress:
       "64 Chau Thi Hoa str, ward 4, district 8, Ho Chi Minh city, Viet Nam",
     Department: "Software Developer",
@@ -184,7 +184,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Truong Quang Hau",
+    NickName: "Truong Quang Hau",
     FullAddress: "Binh Thanh district, HCMC, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -196,7 +196,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRAN VAN THINH",
+    NickName: "TRAN VAN THINH",
     FullAddress: "92i/1 Trần Thị Bảy, P Hiệp Thành, Quận 12, TP Hồ Chí Minh",
     Department: "Software Developer",
     Seniorty: "",
@@ -208,7 +208,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TUAN NGUYEN ANH",
+    NickName: "TUAN NGUYEN ANH",
     FullAddress:
       "102/126 Le Van Tho Street, Ward 11, Go Vap District, Ho Chi Minh City,Viet Nam",
     Department: "Software Developer",
@@ -221,7 +221,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRẦN VĂN ĐẠT",
+    NickName: "TRẦN VĂN ĐẠT",
     FullAddress: "35/5/4A Nguyễn Quý Anh, P. Tân Sơn Nhì, Q. Tân Phú, TP.HCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -233,7 +233,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRAN TRI TAI",
+    NickName: "TRAN TRI TAI",
     FullAddress: "District 7, Ho Chi Minh",
     Department: "Software Developer",
     Seniorty: "",
@@ -245,7 +245,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRAN NGUYEN TRONG TIN",
+    NickName: "TRAN NGUYEN TRONG TIN",
     FullAddress: "District 3, HCMC",
     Department: "Software Developer",
     Seniorty: "",
@@ -257,7 +257,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tang Hoang An",
+    NickName: "Tang Hoang An",
     FullAddress:
       "74A Hoang Xuan Nhi street, Phu Trung ward, TanPhu district, Ho Chi Minh city",
     Department: "Software Developer",
@@ -270,7 +270,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Van Tai",
+    NickName: "Nguyen Van Tai",
     FullAddress: "Tan Phu district, Ho Chi Minh , Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -282,7 +282,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Van Nghiep",
+    NickName: "Nguyen Van Nghiep",
     FullAddress: "Thu Duc City",
     Department: "Software Developer",
     Seniorty: "",
@@ -294,7 +294,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Huu Tan",
+    NickName: "Nguyen Huu Tan",
     FullAddress:
       "No. 333/7, Le Van Sy Street, Ward 1, Tan Binh District, Ho Chi Minh City",
     Department: "Software Developer",
@@ -307,7 +307,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hoang Minh Toan",
+    NickName: "Hoang Minh Toan",
     FullAddress: "DaNang, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -319,7 +319,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tu Do Anh",
+    NickName: "Tu Do Anh",
     FullAddress: "Binh Thanh, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -331,7 +331,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Châu Minh Ý",
+    NickName: "Châu Minh Ý",
     FullAddress: "District 7, Ho Chi Minh, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -343,7 +343,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Vũ Xuân Lộc",
+    NickName: "Vũ Xuân Lộc",
     FullAddress: "197B Hoàng Văn Thụ, P.8, Q. Phú Nhuận, TP. Hồ Chí Minh",
     Department: "Software Developer",
     Seniorty: "",
@@ -355,7 +355,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tran Quang",
+    NickName: "Tran Quang",
     FullAddress: "Da Nang, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -367,7 +367,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN HOANG NAM",
+    NickName: "NGUYEN HOANG NAM",
     FullAddress: "District 1, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -379,7 +379,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Bui Le Son Tung",
+    NickName: "Bui Le Son Tung",
     FullAddress: "Danang, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -391,7 +391,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Trung Tin",
+    NickName: "Pham Trung Tin",
     FullAddress:
       "393/3, Chu Van An Street, Ward 12, Binh Thanh District, - Ho Chi Minh",
     Department: "Software Developer",
@@ -404,7 +404,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN VAN THAT",
+    NickName: "NGUYEN VAN THAT",
     FullAddress: "Phuoc Hoi - Long Hung - Bien Hoa - Dong Nai",
     Department: "Software Developer",
     Seniorty: "",
@@ -416,7 +416,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "LY HOANG TIN",
+    NickName: "LY HOANG TIN",
     FullAddress: "Tan Binh District Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -428,7 +428,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Ho Nhat An",
+    NickName: "Ho Nhat An",
     FullAddress:
       "427/46D Xo Viet Nghe Tinh street, ward 25, Binh Thanh district, Ho Chi Minh city",
     Department: "Software Developer",
@@ -441,7 +441,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hà Văn Qui",
+    NickName: "Hà Văn Qui",
     FullAddress: "Tan Binh, Ho Chi Minh",
     Department: "Software Developer",
     Seniorty: "",
@@ -453,7 +453,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "MINH PHAM",
+    NickName: "MINH PHAM",
     FullAddress: "D11, Ho Chi Minh City, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -465,7 +465,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phi Tran",
+    NickName: "Phi Tran",
     FullAddress: "606/8 3-Thang-2 St, District 10, Ho Chi Minh city",
     Department: "Software Developer",
     Seniorty: "",
@@ -477,7 +477,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phan Cong Uy",
+    NickName: "Phan Cong Uy",
     FullAddress: "Go Vap District, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -489,7 +489,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Dinh Thuat",
+    NickName: "Pham Dinh Thuat",
     FullAddress: "Hoc Mon, Ho Chi Minh, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -501,7 +501,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Minh Nhat Le",
+    NickName: "Minh Nhat Le",
     FullAddress: "District 8",
     Department: "Software Developer",
     Seniorty: "",
@@ -513,7 +513,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Duc Nhat",
+    NickName: "Nguyen Duc Nhat",
     FullAddress: "Vinh Loc A, Binh Chanh, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -525,7 +525,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN HOANG LONG",
+    NickName: "NGUYEN HOANG LONG",
     FullAddress: "Saigon Gateway, ward,District 9, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -537,7 +537,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "CAO XUAN NHAT QUANG",
+    NickName: "CAO XUAN NHAT QUANG",
     FullAddress: "12/26 tinhtam street, Hue city",
     Department: "Software Developer",
     Seniorty: "",
@@ -549,7 +549,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "PHUONG NGUYEN DUY",
+    NickName: "PHUONG NGUYEN DUY",
     FullAddress:
       "114/15 Bui Quang La Street, Ward 12, Go Vap District, Ho Chi Minh City, Viet Nam SUMMAR",
     Department: "Software Developer",
@@ -562,7 +562,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Xuan Ha",
+    NickName: "Le Xuan Ha",
     FullAddress: "48, Dan Toc, Tan Thanh, Tan Phu, Ho Chi Minh, Viet Nam",
     Department: "Software Developer",
     Seniorty: "",
@@ -574,7 +574,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HUU DAO",
+    NickName: "HUU DAO",
     FullAddress: "Binh Thanh, HCM City",
     Department: "Software Developer",
     Seniorty: "",
@@ -586,7 +586,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Trương Thoại Tấn",
+    NickName: "Trương Thoại Tấn",
     FullAddress: "Binh Duong",
     Department: "Software Developer",
     Seniorty: "",
@@ -598,7 +598,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN VAN NHUT",
+    NickName: "NGUYEN VAN NHUT",
     FullAddress: "Phuoc Hoi - Long Hung - Bien Hoa - Dong Nai",
     Department: "Software Developer",
     Seniorty: "",
@@ -610,7 +610,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Anh Khoa",
+    NickName: "Nguyễn Anh Khoa",
     FullAddress: "104/9A2 Dong Hung Thuan Ward, District 12, HoChi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -622,7 +622,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "PHAN MINH NAM",
+    NickName: "PHAN MINH NAM",
     FullAddress: "Hiep Binh Chanh Ward, Thu Duc District, Ho Chi Minh city",
     Department: "Software Developer",
     Seniorty: "",
@@ -634,7 +634,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Kim Thành Nhân",
+    NickName: "Nguyễn Kim Thành Nhân",
     FullAddress:
       "203/6/22 Huỳnh Văn Nghệ, P.12, Q. Gò Vấp, Go Vap, Ho Chi Minh, Vietnam",
     Department: "Software Developer",
@@ -647,7 +647,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Hoan Cau",
+    NickName: "Nguyen Hoan Cau",
     FullAddress: "Phu Nhuan, Ho Chi Minh, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -659,7 +659,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "LUONG ANH PHU",
+    NickName: "LUONG ANH PHU",
     FullAddress: "Binh Chanh District, HCMC",
     Department: "Software Developer",
     Seniorty: "",
@@ -671,7 +671,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HUYNH PHUC LOC",
+    NickName: "HUYNH PHUC LOC",
     FullAddress: "22 Street 1, Tan Phu Ward, District 7, HCMC",
     Department: "Software Developer",
     Seniorty: "",
@@ -683,7 +683,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lê Trọng Nghĩa",
+    NickName: "Lê Trọng Nghĩa",
     FullAddress: "232/1/32 Binh Loi st, ward 13th , Binh Thanh, HCMC",
     Department: "Software Developer",
     Seniorty: "",
@@ -695,7 +695,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "THANG DUONG QUOC",
+    NickName: "THANG DUONG QUOC",
     FullAddress: "45/35 Au Duong Lan Street, 8 District, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -707,7 +707,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Trần Thanh Tùng",
+    NickName: "Trần Thanh Tùng",
     FullAddress: "8/12G, đường 50, KP. 8, P. Hiệp Bình Chánh, TP. Thủ Đức",
     Department: "Software Developer",
     Seniorty: "",
@@ -719,7 +719,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Duong Thanh Liem",
+    NickName: "Duong Thanh Liem",
     FullAddress:
       "60 street 1, Ward Tan Thuan Dong, District 7, Ho Chi Minh City",
     Department: "Software Developer",
@@ -732,7 +732,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "KHOI PHAN",
+    NickName: "KHOI PHAN",
     FullAddress: "190/18A Su Van Hanh, W.9, Dis. 5",
     Department: "Software Developer",
     Seniorty: "",
@@ -744,7 +744,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HOANG THANH BINH",
+    NickName: "HOANG THANH BINH",
     FullAddress: "Huynh Van Luy, Thu Dau Mot City, Binh Duong Provide",
     Department: "Software Developer",
     Seniorty: "",
@@ -756,7 +756,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN KIM LONG",
+    NickName: "NGUYEN KIM LONG",
     FullAddress: "Tân Bình-Tp.HCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -768,7 +768,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYỄN NGỌC VŨ",
+    NickName: "NGUYỄN NGỌC VŨ",
     FullAddress: "52/72 Nguyễn Sỹ Sách, Ward 15, Tân Bình Dist., TP.HCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -780,7 +780,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Minh Duong",
+    NickName: "Le Minh Duong",
     FullAddress: "236 Dien Bien Phu, Binh Thanh, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -792,7 +792,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Văn Hoàng",
+    NickName: "Nguyễn Văn Hoàng",
     FullAddress: "108/22/08 Cong Hoa, Q Tan Binh, TPHCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -804,7 +804,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "PHAM ANH TUAN",
+    NickName: "PHAM ANH TUAN",
     FullAddress:
       "street 11, Phu Huu Ward, District 9 (Thu Duc city), Ho Chi Minh City, Vietnam",
     Department: "Software Developer",
@@ -817,7 +817,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "ly song hy",
+    NickName: "ly song hy",
     FullAddress: "249 Xom Dat street, district 11, HCM City",
     Department: "Software Developer",
     Seniorty: "",
@@ -829,7 +829,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN TRONG HUAN",
+    NickName: "NGUYEN TRONG HUAN",
     FullAddress: "Nguyen Thai Son, Go Vap District, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -841,7 +841,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TUYEN, CHI LU",
+    NickName: "TUYEN, CHI LU",
     FullAddress: "Alley 400, Tung Thien Vuong Street, District 8, HCM City",
     Department: "Software Developer",
     Seniorty: "",
@@ -853,7 +853,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRAN TIEN HOANG",
+    NickName: "TRAN TIEN HOANG",
     FullAddress:
       "158 Tan Thoi Hiep 21, Tan Thoi Hiep, District 12, Ho Chi Minh",
     Department: "Software Developer",
@@ -866,7 +866,7 @@ export const candidates = [
     },
   },
   // {
-  //   "Nickname": "TRAN TIEN HOANG",
+  //   "NickName": "TRAN TIEN HOANG",
   //   "FullAddress": "158 Tan Thoi Hiep 21, Tan Thoi Hiep, District 12, Ho Chi Minh city",
   //   "Department": "Frontend Developer",
   //   "Seniorty": "",
@@ -878,7 +878,7 @@ export const candidates = [
   //   }
   //  },
   {
-    Nickname: "Trần Ân Vũ",
+    NickName: "Trần Ân Vũ",
     FullAddress: "96 Hoang Hoa Tham, District Tan Binh, HCMC",
     Department: "Software Developer",
     Seniorty: "",
@@ -890,7 +890,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phạm Văn Hải",
+    NickName: "Phạm Văn Hải",
     FullAddress: "111/13 Pham Van Chieu",
     Department: "Software Developer",
     Seniorty: "",
@@ -902,7 +902,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Van Nghiep",
+    NickName: "Nguyen Van Nghiep",
     FullAddress: "Thu Duc City",
     Department: "Software Developer",
     Seniorty: "",
@@ -914,7 +914,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN CHI LINH",
+    NickName: "NGUYEN CHI LINH",
     FullAddress: "Bien Hoa City, Dong Nai Province, Viet Nam",
     Department: "Software Developer",
     Seniorty: "",
@@ -926,7 +926,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "ĐỖ XUÂN THÀNH",
+    NickName: "ĐỖ XUÂN THÀNH",
     FullAddress: "90 Tam Dao, district 10, HCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -938,7 +938,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Sam Quang Minh",
+    NickName: "Sam Quang Minh",
     FullAddress: "Binh Tan District, Ho Chi Minh City , Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -950,7 +950,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TAY NGUYEN",
+    NickName: "TAY NGUYEN",
     FullAddress:
       "45/25 100 Binh Thoi st, ward 14, district 11, Ho Chi Minh cit",
     Department: "Software Developer",
@@ -963,7 +963,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "BUI THANH DUNG",
+    NickName: "BUI THANH DUNG",
     FullAddress: "Bach Dang street, Tan Binh district, Ho Chi Minh city.",
     Department: "Software Developer",
     Seniorty: "",
@@ -975,7 +975,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN DINH TOAN",
+    NickName: "NGUYEN DINH TOAN",
     FullAddress: "Hiep Binh Phuoc Ward, Thu Duc District, HCMC",
     Department: "Software Developer",
     Seniorty: "",
@@ -987,7 +987,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "LAM HAU HUONG",
+    NickName: "LAM HAU HUONG",
     FullAddress: "352/30 Nguyen Dinh Chieu, Phuong 4, Quan 3",
     Department: "Software Developer",
     Seniorty: "",
@@ -999,7 +999,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Quang Phuoc",
+    NickName: "Le Quang Phuoc",
     FullAddress: "Tan Phu district, Ho Chi Minh City, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -1011,7 +1011,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN HUU KHANH",
+    NickName: "NGUYEN HUU KHANH",
     FullAddress: "751A Au Co, Ward Tan Thanh, Tan Phu District",
     Department: "Software Developer",
     Seniorty: "",
@@ -1023,7 +1023,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Bình An",
+    NickName: "Nguyễn Bình An",
     FullAddress:
       "A2-04, SunView Town Buildings, Go Dua Street, Hiệp Bình Phước Ward, Thủ Đức District, HCM City",
     Department: "Software Developer",
@@ -1036,7 +1036,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nghi Mai",
+    NickName: "Nghi Mai",
     FullAddress: "425/9 Nguyen Dinh Chieu, District 3",
     Department: "Software Developer",
     Seniorty: "",
@@ -1048,7 +1048,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN LE MINH CHIEN",
+    NickName: "NGUYEN LE MINH CHIEN",
     FullAddress: "District Tan Binh, Ho Chi Minh City, Vietnam",
     Department: "Software Developer",
     Seniorty: "",
@@ -1060,7 +1060,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tran Ba Thien",
+    NickName: "Tran Ba Thien",
     FullAddress:
       "153/A2 KP2 P.T hạnh Xuân Quận 12, T P. H CM,Quận 12,T hành phố H ồ Chí Minh",
     Department: "Software Developer",
@@ -1073,7 +1073,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hoang thi Kim Phung",
+    NickName: "Hoang thi Kim Phung",
     FullAddress: "Go Vap",
     Department: "Software Developer",
     Seniorty: "",
@@ -1085,7 +1085,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HOA, HOANG CONG",
+    NickName: "HOA, HOANG CONG",
     FullAddress: "HOA, HOANG CONG",
     Department: "Software Developer",
     Seniorty: "",
@@ -1097,7 +1097,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Hong Phuc",
+    NickName: "Le Hong Phuc",
     FullAddress: "6/13 Van Chung St, Ward 13, Tan Binh Dist, HCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -1109,7 +1109,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huynh Tuan Kiet",
+    NickName: "Huynh Tuan Kiet",
     FullAddress: "45/23 Binh Tien Street, Ward 7, District 6, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -1121,7 +1121,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Công Nhịn",
+    NickName: "Nguyễn Công Nhịn",
     FullAddress: "Tân Phú",
     Department: "Software Developer",
     Seniorty: "",
@@ -1133,7 +1133,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phan Thi Tam",
+    NickName: "Phan Thi Tam",
     FullAddress: "332, Hong Bang, District 5, Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -1145,7 +1145,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thanh Trung",
+    NickName: "Nguyen Thanh Trung",
     FullAddress: "114 An Duong Vuong street, Ward 16, District 8, HCMC.",
     Department: "Software Developer",
     Seniorty: "",
@@ -1157,7 +1157,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huynh Quoc Cuong",
+    NickName: "Huynh Quoc Cuong",
     FullAddress: "district 11 , Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -1169,7 +1169,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phạm Tiền",
+    NickName: "Phạm Tiền",
     FullAddress: "101 Bac Hai Street, District 10 Ho Chi Minh City",
     Department: "Software Developer",
     Seniorty: "",
@@ -1181,7 +1181,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huynh Chau Son",
+    NickName: "Huynh Chau Son",
     FullAddress: "129 No. 8 St., Ward 11, Go Vap Dist, HCMC",
     Department: "Software Developer",
     Seniorty: "",
@@ -1193,7 +1193,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Vuong Phu Thanh",
+    NickName: "Vuong Phu Thanh",
     FullAddress: "272/42B Lê Văn Quới Phường Bình Hưng Hòa A, Quận Bình Tân",
     Department: "Software Developer",
     Seniorty: "",
@@ -1205,7 +1205,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Duc Tri",
+    NickName: "Nguyen Duc Tri",
     FullAddress: "69 Le Van Tho , Ward 8, District Go Vap, HCM",
     Department: "Software Developer",
     Seniorty: "",
@@ -1217,7 +1217,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HỒ THIỆN NHÂN",
+    NickName: "HỒ THIỆN NHÂN",
     FullAddress: "97/2 Ung Văn Khiêm, Binh Thanh, Ho Chi Minh, Vietnam",
     Department: "AI",
     Seniorty: "",
@@ -1229,7 +1229,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huynh Huy Vu",
+    NickName: "Huynh Huy Vu",
     FullAddress: "34/5 25A, Tan Quy, Q.7, Tp.HCM",
     Department: "AI",
     Seniorty: "",
@@ -1241,7 +1241,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Công Hà",
+    NickName: "Nguyễn Công Hà",
     FullAddress:
       "71/3, Đường Nguyễn Văn Thương, Phường 25, QuậnBình Thạnh, TP. HCM",
     Department: "AI",
@@ -1254,7 +1254,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lam Pham Ba Tung",
+    NickName: "Lam Pham Ba Tung",
     FullAddress: "Tan Phu, Ho Chi Minh city",
     Department: "AI",
     Seniorty: "",
@@ -1266,7 +1266,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "LE THE LONG",
+    NickName: "LE THE LONG",
     FullAddress:
       "24A Khuong Viet Street, Phu Trung Ward, Ho Chi Minh City, Vietnam",
     Department: "AI",
@@ -1279,7 +1279,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGO THANH HIEU",
+    NickName: "NGO THANH HIEU",
     FullAddress: "Go Vap District, Ho Chi Minh City, Viet Nam",
     Department: "AI",
     Seniorty: "",
@@ -1291,7 +1291,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hiep Cao",
+    NickName: "Hiep Cao",
     FullAddress:
       "103 Ho Hoc Lam Street, An Lac Ward, Binh Tan District, Ho Chi",
     Department: "Java",
@@ -1304,7 +1304,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dang Duc Hung",
+    NickName: "Dang Duc Hung",
     FullAddress: "Vinhomes Grand Park, Nguyen Xien, Thu Duc, HCM city",
     Department: "Java",
     Seniorty: "",
@@ -1316,7 +1316,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "DOAN THANH SON",
+    NickName: "DOAN THANH SON",
     FullAddress:
       "423/57 To Ky street, Trung My Tay ward, District 12, Ho Chi Minh Cit",
     Department: "Java",
@@ -1329,7 +1329,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Trương Đình Giang",
+    NickName: "Trương Đình Giang",
     FullAddress:
       "15 Nguyễn Sơn Trà, phường Hòa Cường Bắc, quận Hải Châu, thành phố Đà Nẵng",
     Department: "Java",
@@ -1342,7 +1342,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Xuan Nam",
+    NickName: "Le Xuan Nam",
     FullAddress: "District 8",
     Department: "Java",
     Seniorty: "",
@@ -1354,7 +1354,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Minh Van",
+    NickName: "Pham Minh Van",
     FullAddress: "6/16 Khu Pho 2, Linh Trung Ward, Thu Duc District, HCM City",
     Department: "Java",
     Seniorty: "",
@@ -1366,7 +1366,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Van Tuan",
+    NickName: "Pham Van Tuan",
     FullAddress: "Da Nang",
     Department: "Java",
     Seniorty: "",
@@ -1378,7 +1378,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hoang Vinh Binh",
+    NickName: "Hoang Vinh Binh",
     FullAddress:
       "830 Su Van Hanh Stress, Ward 13, District 10, Ho Chi Minh City",
     Department: "QC",
@@ -1391,7 +1391,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "DUONG DINH QUI",
+    NickName: "DUONG DINH QUI",
     FullAddress: "403 Ben Phu Lam Street, Ward 9, District 6, Ho Chi Minh city",
     Department: "QC",
     Seniorty: "",
@@ -1403,7 +1403,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGO LE BAO",
+    NickName: "NGO LE BAO",
     FullAddress:
       "75/39/14A Street 48, Hiep Binh Chanh Ward, Thu Duc District, HCMC",
     Department: "QC",
@@ -1416,7 +1416,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Cao Xuân Kỳ",
+    NickName: "Cao Xuân Kỳ",
     FullAddress: "Quận Bình Thạnh",
     Department: "QC",
     Seniorty: "",
@@ -1428,7 +1428,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "L Ê N G Ọ C C H Â U",
+    NickName: "L Ê N G Ọ C C H Â U",
     FullAddress: "26BC 14 Strest, Ward 5, Go Vap, Ho Chi Minh",
     Department: "QC",
     Seniorty: "",
@@ -1440,7 +1440,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "CHU DUY TUAN",
+    NickName: "CHU DUY TUAN",
     FullAddress: "37/30 C1 Street, Ward 13, Tan Binh District, HCMC",
     Department: "QC",
     Seniorty: "",
@@ -1452,7 +1452,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dinh Thi Tuong Vi",
+    NickName: "Dinh Thi Tuong Vi",
     FullAddress: "TCH 10 street, district 12, Ho Chi Minh city",
     Department: "QC",
     Seniorty: "",
@@ -1464,7 +1464,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "LOAN PHAM THI TRUC",
+    NickName: "LOAN PHAM THI TRUC",
     FullAddress: "Cu Chi District, Ho Chi Minh City",
     Department: "QC",
     Seniorty: "",
@@ -1476,7 +1476,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "MAI TRONG KHIEM",
+    NickName: "MAI TRONG KHIEM",
     FullAddress: "184/70 Pham Van Hai Str, Ward 3, Tan Binh District, HCMC",
     Department: "QC",
     Seniorty: "",
@@ -1488,7 +1488,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Bui Nguyen Lam Vien",
+    NickName: "Bui Nguyen Lam Vien",
     FullAddress: "222 Xô Viết Nghệ Tĩnh, Binh Thanh District, Ho Chi Minh City",
     Department: "QC",
     Seniorty: "",
@@ -1500,7 +1500,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "ĐỖ THỊ HỒNG LOAN",
+    NickName: "ĐỖ THỊ HỒNG LOAN",
     FullAddress:
       "225/1 Nguyen van Khoi, Ward 8, Go Vap district, Ho Chi Minh city.",
     Department: "QC",
@@ -1513,7 +1513,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN QUOC DOAN",
+    NickName: "NGUYEN QUOC DOAN",
     FullAddress:
       "Ngo Thoi Nhiem Apartment, Ho Ba Phan Street, Phuoc Long A Ward, District 9, HCMC",
     Department: "QC",
@@ -1526,7 +1526,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hồ Ngọc Long",
+    NickName: "Hồ Ngọc Long",
     FullAddress: "Binh Tan, TP. HCM, Viet Nam",
     Department: "QC",
     Seniorty: "",
@@ -1538,7 +1538,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Tri Tin",
+    NickName: "Nguyen Tri Tin",
     FullAddress:
       "75/20 Ha Dac Street, Trung My Tay Ward, District 12, Ho Chi Minh Cit",
     Department: "QC",
@@ -1551,7 +1551,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thi Duc Hanh",
+    NickName: "Nguyen Thi Duc Hanh",
     FullAddress: "179 Tan Huong, Tan Phu, HCM",
     Department: "QC",
     Seniorty: "",
@@ -1563,7 +1563,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN THI THU LOI",
+    NickName: "NGUYEN THI THU LOI",
     FullAddress: "52 Street No. 40, Hiep Binh Chanh Ward, Thu Duc District",
     Department: "QC",
     Seniorty: "",
@@ -1575,7 +1575,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Đặng Thị Kim Hoàng",
+    NickName: "Đặng Thị Kim Hoàng",
     FullAddress:
       "80/5, Luu Chi Hieu Street , Tay Thanh Ward, Tan Phu District, HCMC",
     Department: "QC",
@@ -1588,7 +1588,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dao Quoc Anh",
+    NickName: "Dao Quoc Anh",
     FullAddress: "District 12, Ho Chi Minh city",
     Department: "QC",
     Seniorty: "",
@@ -1600,7 +1600,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dinh Thi Van Vo",
+    NickName: "Dinh Thi Van Vo",
     FullAddress: "Go Vap Dist. Ho Chi Minh City",
     Department: "QC",
     Seniorty: "",
@@ -1612,7 +1612,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dương Trấn Huy",
+    NickName: "Dương Trấn Huy",
     FullAddress: "Thạch Lam, P. Phú Thạnh, Q.Tân Phú, TP. Ho Chi Minh",
     Department: "QC",
     Seniorty: "",
@@ -1624,7 +1624,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Dang Khoa",
+    NickName: "Pham Dang Khoa",
     FullAddress: "352/40 Nguyen Dinh Chieu Street, 3 Dist, HCM city",
     Department: "QC",
     Seniorty: "",
@@ -1636,7 +1636,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Ho Thanh Trien",
+    NickName: "Ho Thanh Trien",
     FullAddress: "District 12, Ho Chi Minh City",
     Department: "QC",
     Seniorty: "",
@@ -1648,7 +1648,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huỳnh Thị Thùy Diễm",
+    NickName: "Huỳnh Thị Thùy Diễm",
     FullAddress: "Thu Duc district, HCM",
     Department: "QC",
     Seniorty: "",
@@ -1660,7 +1660,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huynh Thi Yen",
+    NickName: "Huynh Thi Yen",
     FullAddress:
       "A29/15/1 Quoc Lo 50 - Hamlet 1, Binh Hung Village, Binh Chanh District, Ho Chi Minh City",
     Department: "QC",
@@ -1673,7 +1673,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "DO TIEN BACH DANG",
+    NickName: "DO TIEN BACH DANG",
     FullAddress: "156 Hong Lac Street, Tan Binh District – Ho Chi Minh City",
     Department: "QC",
     Seniorty: "",
@@ -1685,7 +1685,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Đậu tuấn sanh",
+    NickName: "Đậu tuấn sanh",
     FullAddress: "Cong Hoa-Tan Binh-Tphcm, Vietnam",
     Department: "QC",
     Seniorty: "",
@@ -1697,7 +1697,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tran Minh Hai",
+    NickName: "Tran Minh Hai",
     FullAddress: "1041/62/181 Tran Xuan Soan, District 7, HCM",
     Department: "QC",
     Seniorty: "",
@@ -1709,7 +1709,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Man Dat",
+    NickName: "Le Man Dat",
     FullAddress: "8/29 Pham Van Chieu, Go Vap, HCM",
     Department: "QC",
     Seniorty: "",
@@ -1721,7 +1721,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thi Bach Tuyet",
+    NickName: "Nguyen Thi Bach Tuyet",
     FullAddress:
       "A1002, Techcon Apartment, Hoa Su street, Ward 7, Phu Nhuan District, Ho Chi Minh city.",
     Department: "QC",
@@ -1734,7 +1734,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Thao Pham",
+    NickName: "Thao Pham",
     FullAddress: "96/3, Street no.265, Hiep Phu Ward, District 9, HCMC",
     Department: "QC",
     Seniorty: "",
@@ -1746,7 +1746,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "PHAM THI THUY",
+    NickName: "PHAM THI THUY",
     FullAddress:
       "21, 3 street, Van Phuc City, Hiep Binh Phuoc Ward, Thu Duc District",
     Department: "QC",
@@ -1759,7 +1759,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tâm Dương",
+    NickName: "Tâm Dương",
     FullAddress: "27/37 Trần Bình Trọng F1.Q5",
     Department: "QC",
     Seniorty: "",
@@ -1771,7 +1771,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TÔ NGỌC KIM NGÂN",
+    NickName: "TÔ NGỌC KIM NGÂN",
     FullAddress:
       "185/9/14 Nguyen Phuc Chu street, ward 15, Tan Binh district, Ho Chi Minh city",
     Department: "QC",
@@ -1784,7 +1784,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "VU NGOC DUC",
+    NickName: "VU NGOC DUC",
     FullAddress: "835/18K Tran Hung Dao, District 5, HCM city",
     Department: "QC",
     Seniorty: "",
@@ -1796,7 +1796,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "BUI THI THUY CHI",
+    NickName: "BUI THI THUY CHI",
     FullAddress: "Thu Duc city, HCMC",
     Department: "QC",
     Seniorty: "",
@@ -1808,7 +1808,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN VAN KIET",
+    NickName: "NGUYEN VAN KIET",
     FullAddress:
       "112 A5, KDC Palm Residence, P. An Phu, TP. Thu Duc, Hochiminh City, Vietnam",
     Department: "QC",
@@ -1821,7 +1821,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dang Tien Dung",
+    NickName: "Dang Tien Dung",
     FullAddress: "Go Vap district, HCM City",
     Department: "QC",
     Seniorty: "",
@@ -1833,7 +1833,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Minh Nguyen Anh",
+    NickName: "Minh Nguyen Anh",
     FullAddress:
       "Cityland Park Hills, Room P1-05.11, 18C Phan Van Tri Street, Ward 10, Govap District,HCM City",
     Department: "QC",
@@ -1846,7 +1846,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "CHIEU THI PHAM",
+    NickName: "CHIEU THI PHAM",
     FullAddress: "HCM city, VietNam",
     Department: "QC",
     Seniorty: "",
@@ -1858,7 +1858,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Võ Đăng Tâm",
+    NickName: "Võ Đăng Tâm",
     FullAddress: "District 8, HCM City",
     Department: "QC",
     Seniorty: "",
@@ -1870,7 +1870,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "DUONG THI NGOC THAM",
+    NickName: "DUONG THI NGOC THAM",
     FullAddress: "312/20 Ton Dan, Ward 4, District 4,HCM City",
     Department: "QC",
     Seniorty: "",
@@ -1882,7 +1882,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "AN LE",
+    NickName: "AN LE",
     FullAddress: "Tan Phu District, HCMC, VN",
     Department: "QC",
     Seniorty: "",
@@ -1894,7 +1894,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Van Tien",
+    NickName: "Pham Van Tien",
     FullAddress: "Thu Duc, HCM",
     Department: "QC",
     Seniorty: "",
@@ -1906,7 +1906,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRAN TRANG NHA LINH",
+    NickName: "TRAN TRANG NHA LINH",
     FullAddress: "District 8, HCM City",
     Department: "QC",
     Seniorty: "",
@@ -1918,7 +1918,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Kieu Thanh Phuc",
+    NickName: "Kieu Thanh Phuc",
     FullAddress:
       "Thu Thiem Xanh Apartment, No 1, Street No 63, Binh Trung Dong Ward, Thu Duc city, HCM city",
     Department: "QC",
@@ -1931,7 +1931,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRẦN TRỌNG NGHĨA",
+    NickName: "TRẦN TRỌNG NGHĨA",
     FullAddress:
       "503 B6 condominium, Thanh Cong ward,Da Dinh,Ha Noi City, Vietnam",
     Department: "QC",
@@ -1944,7 +1944,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "CAO LE PHUONG QUYNH",
+    NickName: "CAO LE PHUONG QUYNH",
     FullAddress: "Hong Ha, Phu Nhuan, HCMC, Vietnam.",
     Department: "QC",
     Seniorty: "",
@@ -1956,7 +1956,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Van Hoan",
+    NickName: "Nguyen Van Hoan",
     FullAddress: "Ho Chi Minh, Viet Nam",
     Department: "QC",
     Seniorty: "",
@@ -1968,7 +1968,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "VÕ ĐẠI THÁI HÒA",
+    NickName: "VÕ ĐẠI THÁI HÒA",
     FullAddress: "Số 22/23/8, đường 02, Gò Vấp",
     Department: "QC",
     Seniorty: "",
@@ -1980,7 +1980,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thanh Hoai",
+    NickName: "Nguyen Thanh Hoai",
     FullAddress: "19/15 HT 35, District 12, HCM, Viet Nam",
     Department: "QC",
     Seniorty: "",
@@ -1992,7 +1992,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Bùi Duy Quang",
+    NickName: "Bùi Duy Quang",
     FullAddress: "230/12 Hai Bà Trưng Street, Ward Tân Định, District 1",
     Department: "QC",
     Seniorty: "",
@@ -2004,7 +2004,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hoàn Nguyễn Viết",
+    NickName: "Hoàn Nguyễn Viết",
     FullAddress: "District 10, Hochiminh City",
     Department: "QC",
     Seniorty: "",
@@ -2016,7 +2016,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Ly Bao Huy",
+    NickName: "Ly Bao Huy",
     FullAddress:
       "XO VIET NGHE TINH STREET, BINH THANH DISTRICT,HO CHI MINH CITY, 70000",
     Department: "QC",
@@ -2029,7 +2029,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Trọng Quang",
+    NickName: "Nguyễn Trọng Quang",
     FullAddress:
       "02 N4 Street, Son Ky Ward, Tan Phu District, Ho Chi Minh City, Vietnam",
     Department: "QC",
@@ -2042,7 +2042,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Duy Qui",
+    NickName: "Le Duy Qui",
     FullAddress: "12d 10 Street, Linh Trung,Thu Duc, HoChiMinh city",
     Department: "QC",
     Seniorty: "",
@@ -2054,7 +2054,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thanh Duy",
+    NickName: "Nguyen Thanh Duy",
     FullAddress: "Binh Trung Tay,Thu Duc, Ho Chi Minh city",
     Department: "QC",
     Seniorty: "",
@@ -2066,7 +2066,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Anh Duy Vu",
+    NickName: "Anh Duy Vu",
     FullAddress: "372/19/14 Dien Bien Phu, Ward 17, Binh Thanh District, HCMC",
     Department: "QC",
     Seniorty: "",
@@ -2078,7 +2078,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Cong Chi Tai",
+    NickName: "Nguyen Cong Chi Tai",
     FullAddress: "Ho Chi Minh City, VN",
     Department: "QC",
     Seniorty: "",
@@ -2090,7 +2090,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRẦN TUẤN LINH",
+    NickName: "TRẦN TUẤN LINH",
     FullAddress: "District 2",
     Department: "QC",
     Seniorty: "",
@@ -2102,7 +2102,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tran Xuan Vinh",
+    NickName: "Tran Xuan Vinh",
     FullAddress:
       "Phạm Văn Hai Street, Ward 3, Tan Binh District, Ho Chi Minh City.",
     Department: "BA",
@@ -2115,7 +2115,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tran Thi Kim Ngan",
+    NickName: "Tran Thi Kim Ngan",
     FullAddress: "Bac Hai Street, District 10, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2127,7 +2127,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Vu Phuong Mai",
+    NickName: "Vu Phuong Mai",
     FullAddress: "6 Do Tan Phong, Ward 9, Phu Nhuan District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2139,7 +2139,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Le Duc Huy",
+    NickName: "Nguyen Le Duc Huy",
     FullAddress: "Binh Tan District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2151,7 +2151,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Minh Tri",
+    NickName: "Nguyen Minh Tri",
     FullAddress:
       "12 Nguyễn Hữu Thọ, Phước Kiển, Nhà Bè District, Ho Chi Minh City",
     Department: "BA",
@@ -2164,7 +2164,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Thong Chu",
+    NickName: "Thong Chu",
     FullAddress: "Cong Hoa Street,Ward 13, Tan Binh District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2176,7 +2176,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lam Tuan Tu",
+    NickName: "Lam Tuan Tu",
     FullAddress: "Binh Chanh District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2188,7 +2188,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thi Anh Duong",
+    NickName: "Nguyen Thi Anh Duong",
     FullAddress: "District 7, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2200,7 +2200,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Luu Tran Thien An",
+    NickName: "Luu Tran Thien An",
     FullAddress:
       "27/06 Dong Hung Thuan 06, Tan Hung Thuan Ward, District 12, Ho Chi Minh City",
     Department: "BA",
@@ -2213,7 +2213,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hoang Thi Thu",
+    NickName: "Hoang Thi Thu",
     FullAddress:
       "443/11 Le Van Sy Street, Ward 12, District 3, Ho Chi Minh City",
     Department: "BA",
@@ -2226,7 +2226,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Duong Thanh Dat",
+    NickName: "Duong Thanh Dat",
     FullAddress:
       "36/24/21, Hiep Binh Phuoc Ward, Thu Duc District, Ho Chi Minh City",
     Department: "BA",
@@ -2239,7 +2239,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Khanh Linh",
+    NickName: "Le Khanh Linh",
     FullAddress: "25 A4 Street, Ward 12, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2251,7 +2251,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tieu Hong Dao",
+    NickName: "Tieu Hong Dao",
     FullAddress:
       "59/15, Lien Khu 10-11 street, Binh Tri Dong Ward, Binh Tan District, Ho Chi Minh City",
     Department: "BA",
@@ -2264,7 +2264,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Quy Le",
+    NickName: "Quy Le",
     FullAddress:
       "Nguyen Cong Hoan, Ward 7, Phu Nhuan District, Ho Chi Minh City",
     Department: "BA",
@@ -2277,7 +2277,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Huy Hung",
+    NickName: "Nguyen Huy Hung",
     FullAddress: "54 Vu Huy Tan, Binh Thanh District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2289,7 +2289,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thuy Anh Thi",
+    NickName: "Nguyen Thuy Anh Thi",
     FullAddress: "Binh Thanh District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2301,7 +2301,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Truong Thi Hong Chau",
+    NickName: "Truong Thi Hong Chau",
     FullAddress: "Nguyen Thi Tan, Ward 2, District 8, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2313,7 +2313,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Van Hai",
+    NickName: "Nguyen Van Hai",
     FullAddress: "Tan Binh District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2325,7 +2325,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hương Hồ Thái Thu",
+    NickName: "Hương Hồ Thái Thu",
     FullAddress: "Tan Binh District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2337,7 +2337,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Khoa Hoang",
+    NickName: "Khoa Hoang",
     FullAddress: "District 7, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2349,7 +2349,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Phu Phuc",
+    NickName: "Pham Phu Phuc",
     FullAddress: "536/11/1 Au Co, Ward 10, Tan Binh District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2361,7 +2361,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Nhu Tram",
+    NickName: "Nguyen Nhu Tram",
     FullAddress: "Go Vap District, Ho Chi Minh City",
     Department: "BA",
     Seniorty: "",
@@ -2373,7 +2373,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Vu Tuan Chien",
+    NickName: "Vu Tuan Chien",
     FullAddress: "Binh Tan District, Ho Chi Minh City",
     Department: "SM",
     Seniorty: "",
@@ -2385,7 +2385,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Anais",
+    NickName: "Anais",
     FullAddress: "Binh Thanh District, Ho Chi Minh City",
     Department: "SM",
     Seniorty: "",
@@ -2397,7 +2397,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Vu Hoang Viet",
+    NickName: "Vu Hoang Viet",
     FullAddress:
       "2 Phan Van Dang, Thanh My Loi, Thu Duc City, Ho Chi Minh City",
     Department: "SM",
@@ -2410,7 +2410,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Duy Le",
+    NickName: "Duy Le",
     FullAddress: "Nha Be, Ho Chi Minh City",
     Department: "SM",
     Seniorty: "",
@@ -2422,7 +2422,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dong Le",
+    NickName: "Dong Le",
     FullAddress: "District 12, Ho Chi Minh City",
     Department: "SM",
     Seniorty: "",
@@ -2434,7 +2434,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Le Thuy An",
+    NickName: "Nguyen Le Thuy An",
     FullAddress: "Ward 15, District 8, Ho Chi Minh City",
     Department: "SM",
     Seniorty: "",
@@ -2446,7 +2446,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huynh Chan Quoc",
+    NickName: "Huynh Chan Quoc",
     FullAddress: "Ward Binh Tri Dong, Binh Tan District, Ho Chi Minh",
     Department: "SM",
     Seniorty: "",
@@ -2458,7 +2458,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Dung Tran",
+    NickName: "Dung Tran",
     FullAddress: "District 12, Ho Chi Minh City",
     Department: "SM",
     Seniorty: "",
@@ -2470,7 +2470,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Hong Phong",
+    NickName: "Le Hong Phong",
     FullAddress: "Thoi An Ward, District 12 Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2482,7 +2482,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Phuong Thanh Di",
+    NickName: "Le Phuong Thanh Di",
     FullAddress: "Nguyen Thien Thuat, Ward 2, District 3, Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2494,7 +2494,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Cao Thoai",
+    NickName: "Le Cao Thoai",
     FullAddress: "Binh Hung Hoa Ward, Binh Tan District, Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2506,7 +2506,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Gia Khanh",
+    NickName: "Nguyen Gia Khanh",
     FullAddress: "District 7, Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2518,7 +2518,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Yen Ho",
+    NickName: "Yen Ho",
     FullAddress: "Luy Ban Bich Street, Tan Phu District, Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2530,7 +2530,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thi Phuong Thuy",
+    NickName: "Nguyen Thi Phuong Thuy",
     FullAddress: "Ward 9, District 5, Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2542,7 +2542,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pho Tran",
+    NickName: "Pho Tran",
     FullAddress: "Ward Son Ky, Tan Phu District, Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2554,7 +2554,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hoang Ngoc Chau",
+    NickName: "Hoang Ngoc Chau",
     FullAddress: "District 9, Ho Chi Minh City",
     Department: "PMO",
     Seniorty: "",
@@ -2566,7 +2566,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Khoa Nguyen",
+    NickName: "Khoa Nguyen",
     FullAddress: "Binh Tan District",
     Department: "PMO",
     Seniorty: "",
@@ -2578,7 +2578,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN VAN DUC",
+    NickName: "NGUYEN VAN DUC",
     FullAddress: "District 6, Ho Chi Minh City, Vietnam",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2590,7 +2590,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Van Nhat",
+    NickName: "Nguyen Van Nhat",
     FullAddress: "District 3, Ho Chi Minh City, Viet Nam.",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2602,7 +2602,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Văn Hoàng",
+    NickName: "Nguyễn Văn Hoàng",
     FullAddress: "108/22/08 Cong Hoa, Q Tan Binh, TPHCM",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2615,7 +2615,7 @@ export const candidates = [
   },
 
   {
-    Nickname: "Nguyen Ngoc Thung",
+    NickName: "Nguyen Ngoc Thung",
     FullAddress: "Tan Chanh Hiep Ward, District 12, Ho Chi Minh City,",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2627,7 +2627,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Vo Minh Dat",
+    NickName: "Vo Minh Dat",
     FullAddress: "292/6A XVNT , Distrist Binh Thanh,Ho Chi Minh, Vietnam",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2639,7 +2639,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Gia Huong",
+    NickName: "Pham Gia Huong",
     FullAddress: "355 Nguyễn Trọng Tuyển phường 1 Quận tân bình",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2651,7 +2651,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Trần Minh Trí",
+    NickName: "Trần Minh Trí",
     FullAddress:
       "146/1A Nguyễn Chế Nghĩa street, ward 12, district 8, Hồ Chí Minh city",
     Department: "Frontend Developer",
@@ -2664,7 +2664,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HO DANG NGUYEN",
+    NickName: "HO DANG NGUYEN",
     FullAddress: "9 District, Long Thanh My, Thu Duc City, Ho Chi Minh",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2676,7 +2676,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tran Linh Quan",
+    NickName: "Tran Linh Quan",
     FullAddress: "115 Ong Ich Khiem, Thanh Binh, Hai Chau, Da Nang",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2688,7 +2688,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Ha Anh Quoc",
+    NickName: "Ha Anh Quoc",
     FullAddress:
       "82/17/4 Dinh Tien Hoang street, ward 1, Binh Thanh district, Ho Chi Minh city",
     Department: "Frontend Developer",
@@ -2701,7 +2701,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Duc Hieu",
+    NickName: "Nguyen Duc Hieu",
     FullAddress: "Huỳnh Tấn Phát, Phú Mỹ, Quận 7, Hồ Chí Minh",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2713,7 +2713,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huynh Thi Thuy Trinh",
+    NickName: "Huynh Thi Thuy Trinh",
     FullAddress: "Lac Long Quan Street, Ward 5, District 11, HCM",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2725,7 +2725,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "TRẦN NGỌC HIÊU",
+    NickName: "TRẦN NGỌC HIÊU",
     FullAddress: "75/8 Tân lập, Đông Hòa, Thành phố Thủ Đức",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2737,7 +2737,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Võ Duy Tân",
+    NickName: "Võ Duy Tân",
     FullAddress: "Củ Chi, TP Hồ Chí Minh",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2749,7 +2749,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Tung Uyen, Do Thi",
+    NickName: "Tung Uyen, Do Thi",
     FullAddress: "14/14 Nguyen Van Luong, Go Vap , HCM",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2761,7 +2761,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "VO THAI LOC",
+    NickName: "VO THAI LOC",
     FullAddress: "20 trường sa Q.Bình Thạnh, TPHCM",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2773,7 +2773,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYỄN NGỌC THẤT",
+    NickName: "NGUYỄN NGỌC THẤT",
     FullAddress: "428/20 Hoang Ngan, 16th Ward, 8th District",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2785,7 +2785,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "LU THIEN TUNG",
+    NickName: "LU THIEN TUNG",
     FullAddress: "34 Tran Xuan Hoa, Ward 7, District 5, Ho Chi Minh City",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2797,7 +2797,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nhat Han Nguyen",
+    NickName: "Nhat Han Nguyen",
     FullAddress: "435 Le Duc Tho, Ward 17, Go Vap District, HCM City",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2809,7 +2809,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "BUI QUOC HUY",
+    NickName: "BUI QUOC HUY",
     FullAddress: "Tan Binh District, Ho Chi Minh City",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2821,7 +2821,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Phuoc Khanh",
+    NickName: "Nguyen Phuoc Khanh",
     FullAddress: "District 10",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2833,7 +2833,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lâm Khải",
+    NickName: "Lâm Khải",
     FullAddress: "449/29 Sư Vạn Hạnh p12, quận 10",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2845,7 +2845,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Loi N",
+    NickName: "Loi N",
     FullAddress: "Nha Be",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2857,7 +2857,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Ha Thi NgocTuyen",
+    NickName: "Ha Thi NgocTuyen",
     FullAddress: "District 8",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2869,7 +2869,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lâm Tuấn Lộc",
+    NickName: "Lâm Tuấn Lộc",
     FullAddress: "221 Phan Dinh Phung Str, 15 Ward, Phu Nhuan Dist, HCM City",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2881,7 +2881,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Dang Khoa",
+    NickName: "Pham Dang Khoa",
     FullAddress:
       "70 Chu Van An Street, Tan Thanh Ward, Tan Phu District, Ho Chi Minh City",
     Department: "Frontend Developer",
@@ -2894,7 +2894,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Viet Xuan",
+    NickName: "Nguyen Viet Xuan",
     FullAddress: "Linh Chieu, Thu Duc, HCM",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2906,7 +2906,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phan Le Linh",
+    NickName: "Phan Le Linh",
     FullAddress: "239-241 Hoa Binh Street, Tan Phu wards, Ho Chi Minh city",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2918,7 +2918,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Phan Van Phuc Em",
+    NickName: "Phan Van Phuc Em",
     FullAddress: "Quarter 6, Linh Trung Ward, Thu Duc.",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2930,7 +2930,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Hoàng Trung Thành",
+    NickName: "Hoàng Trung Thành",
     FullAddress: "To Ngoc Van, Thu Duc, HCMC",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2942,7 +2942,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Le Viet Hung",
+    NickName: "Le Viet Hung",
     FullAddress: "Thu Duc",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2954,7 +2954,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYỄN DUY HỌC",
+    NickName: "NGUYỄN DUY HỌC",
     FullAddress: "204B Vĩnh Viễn st. Ward 4, District 10",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2966,7 +2966,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thanh Phu",
+    NickName: "Nguyen Thanh Phu",
     FullAddress: "154 Pham Van Hai, P.3, Q. Tan Binh.",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -2978,7 +2978,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN HUU VINH",
+    NickName: "NGUYEN HUU VINH",
     FullAddress:
       "11/5 Tân Hòa 2 Street, Hiệp Phú Wards, District 9, Ho Chi Minh City",
     Department: "Frontend Developer",
@@ -2991,7 +2991,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyễn Quang Vinh",
+    NickName: "Nguyễn Quang Vinh",
     FullAddress:
       "350/64/15 Nguyễn Văn Lượng St, Gò Vấp District, Hồ Chí Minh City, Vietnam.",
     Department: "Frontend Developer",
@@ -3004,7 +3004,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lương Phú An",
+    NickName: "Lương Phú An",
     FullAddress: "122 D2, Tang Nhon Phu A, District 9, HCM City",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3016,7 +3016,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Cù Thị Ngọc Trâm",
+    NickName: "Cù Thị Ngọc Trâm",
     FullAddress: "District 9, Ho Chi Minh, Vietnam",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3028,7 +3028,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYEN HOANG PHUOC",
+    NickName: "NGUYEN HOANG PHUOC",
     FullAddress: "11A Tan Vien, Tan Binh District, Ho Chi Minh, Viet Nam",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3040,7 +3040,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Bui Hoang Minh",
+    NickName: "Nguyen Bui Hoang Minh",
     FullAddress: "Tan Binh District, Ho Chi Minh City, Vietnam",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3052,7 +3052,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Nguyen Thanh Nhan",
+    NickName: "Nguyen Thanh Nhan",
     FullAddress: "49/14/12 Bui Quang La Street, Ward 12, Go Vap District",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3064,7 +3064,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Võ Thanh Chi",
+    NickName: "Võ Thanh Chi",
     FullAddress: "District 9 , Ho Chi Minh city",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3076,7 +3076,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "THANH QUY VO",
+    NickName: "THANH QUY VO",
     FullAddress: "Binh Thanh District, HCMC",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3088,7 +3088,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Pham Dai Tai",
+    NickName: "Pham Dai Tai",
     FullAddress: "Nghe An",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3100,7 +3100,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "NGUYỄN QUỐC BẢO",
+    NickName: "NGUYỄN QUỐC BẢO",
     FullAddress:
       "484/71 To Ky, Tan Chanh Hiep Ward, District 12, Ho Chi Minh City, Vietnam",
     Department: "Frontend Developer",
@@ -3113,7 +3113,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Huỳnh Văn Huân",
+    NickName: "Huỳnh Văn Huân",
     FullAddress: "11/4 Lò Siêu P.16 Q.11 TPHCM",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3125,7 +3125,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HOANG DUC MINH",
+    NickName: "HOANG DUC MINH",
     FullAddress:
       "30/18 Lam Van Ben Street, Tan Kieng Ward, District 7, Ho Chi Minh City",
     Department: "Frontend Developer",
@@ -3138,7 +3138,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "HUYNH MINH QUAN",
+    NickName: "HUYNH MINH QUAN",
     FullAddress: "Binh Thanh District, Ho Chi Minh City, Vietnam",
     Department: "Frontend Developer",
     Seniorty: "",
@@ -3150,7 +3150,7 @@ export const candidates = [
     },
   },
   {
-    Nickname: "Lê Gia Trung",
+    NickName: "Lê Gia Trung",
     FullAddress: "Ung Văn Khiêm Street, District Binh Thanh, HCMC",
     Department: "Frontend Developer",
     Seniorty: "",

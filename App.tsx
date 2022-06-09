@@ -9,12 +9,12 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 
-import Header from "./components/Header";
-import Map from "./components/Map";
-import Marker from "./components/Marker";
-import { inHcmAll, outHcmAll, inHcmAllGroup } from "./components/util";
-import { buildA, staffs, districtCenter, candidates } from "./data";
-import * as data from "./data";
+import Header from "./src/components/Header";
+import Map from "./src/components/Map";
+import Marker from "./src/components/Marker";
+import { inHcmAll, outHcmAll, inHcmAllGroup } from "./src/components/util";
+import { buildA, staffs, districtCenter, candidates } from "./src/data";
+import * as data from "./src/data";
 
 const marks = [
   {
@@ -44,9 +44,6 @@ const App: React.VFC = () => {
     const inHcmEmployeeGroup = inHcmAllGroup(arr);
     setInHcmEmployeeGroup(inHcmEmployeeGroup);
 
-
-    console.log(inHcmEmployeeGroup, "inHcmEmployeeGroup");
-    
     const inHcmEmployee = inHcmAll(arr);
     setInHcmEmployee(inHcmEmployee);
 
@@ -57,6 +54,8 @@ const App: React.VFC = () => {
   const [employee, setEmployee] = React.useState("staff");
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
+  const [currentInfoWindow, setCurrentInfoWindow] =
+    React.useState<google.maps.InfoWindow>();
 
   const [department, setDepartment] = React.useState("All");
   const handleChangeDepartment = (event: SelectChangeEvent) => {
@@ -115,6 +114,13 @@ const App: React.VFC = () => {
       setFilter([]);
     }
   }, [year, department, area, zoom, employee]);
+
+  const handleClickMarker = (infoWindow: google.maps.InfoWindow) => {
+    if (currentInfoWindow) {
+      currentInfoWindow.close();
+    }
+    setCurrentInfoWindow(infoWindow);
+  };
 
   return (
     <div className="d-flex flex-column h-100">
@@ -246,6 +252,7 @@ const App: React.VFC = () => {
                     position={item.position}
                     type={"sub office"}
                     item={item}
+                    onClick={handleClickMarker}
                   />
                 );
               })}
@@ -256,8 +263,9 @@ const App: React.VFC = () => {
                   key={"outOfHcmStaffs" + i}
                   position={item.position}
                   item={item}
-                  id={i}
+                  id={i + 10000}
                   type={"out hcm"}
+                  onClick={handleClickMarker}
                 />
               );
             })}
@@ -269,8 +277,9 @@ const App: React.VFC = () => {
                       key={"inOfHcmStaffsZoom" + i}
                       position={item.position}
                       item={item}
-                      id={i}
+                      id={i + 10000}
                       type={"in hcm"}
+                      onClick={handleClickMarker}
                     />
                   );
                 })
@@ -279,13 +288,14 @@ const App: React.VFC = () => {
                     <Marker
                       key={"inOfHcmStaffs" + i}
                       position={item.position}
-                      id={i}
+                      id={i + 30000}
                       type={"in hcm"}
-                      staffs={item.staffs}
+                      employees={item.employees}
                       label={{
-                        text: Object.keys(item.staffs).length.toString(),
+                        text: Object.keys(item.employees).length.toString(),
                         fontSize: "12px",
                       }}
+                      onClick={handleClickMarker}
                     />
                   );
                 })}

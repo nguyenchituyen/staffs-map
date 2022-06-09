@@ -17,7 +17,7 @@ export const inHcmAllGroup = ((arr) => {
 
         return {
             name: key,
-            staffs: inOfHcmObTemp[key],
+            employees: inOfHcmObTemp[key],
             position: center,
         };
     });
@@ -33,14 +33,14 @@ export const outHcmAll = ((arr) => {
     return arr.filter((x) => !hcmCitys.includes(x.City));
 })
 
-export function calCenter(paths) {
+export const  calCenter = ((paths) => {
     const lats = paths.map((x) => x.lat);
     const lngs = paths.map((x) => x.lng);
     return {
         lat: (Math.max(...lats) + Math.min(...lats)) / 2,
         lng: (Math.max(...lngs) + Math.min(...lngs)) / 2,
     };
-}
+});
 
 export const formatString = (strContent: string, ...param) => {
 
