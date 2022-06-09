@@ -167,19 +167,3 @@ export const areaDatas = [
       name: 'NHA BE'
     }
 ];
-
-export const bgColor = {
-    'all': '#FF0000',
-    'Admin': '#002BFF',
-    'PMO': '#FF9933',
-    'SQL Developer': '#0080FF',
-    'QC': '#cc0066',
-    'BA': '#6C1AD7',
-    'HR': '#0C3E69',
-    'SM': '#0C6944',
-    'IT': '#22690C',
-    'Design': '#57690C',
-    'Frontend Developer': '#695D0C',
-    'DBA': '#69470C',
-    'DevOps': '#69370C'
-}

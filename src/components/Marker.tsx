@@ -1,5 +1,5 @@
 import * as React from "react";
-import { infoContent as mockInfoContent } from "./mock/inforContent";
+import { infoContent as mockInfoContent } from "../mock/inforContent";
 import { formatString } from "./util";
 export interface MarkerItemInfo {
   office?: string;
@@ -18,9 +18,9 @@ export interface MarkerItemInfo {
   };
   labelText?: string;
   Department?: string;
-  Nickname?: string;
+  NickName?: string;
   VietnameseName?: string;
-  StartDate?: string;
+  StartDate?: Date;
   Seniorty?: string;
   District?: string;
   City?: string;
@@ -34,7 +34,8 @@ export interface MarkerOptionsCustom extends google.maps.MarkerOptions {
   id?: number;
   type?: "main office" | "sub office" | "in hcm" | "out hcm";
   item?: MarkerItemInfo;
-  staffs?: MarkerItemInfo[];
+  employees?: MarkerItemInfo[];
+  onClick?: (infoWindow: google.maps.InfoWindow) => void;
 }
 
 const Marker: React.FC<MarkerOptionsCustom> = (options) => {
@@ -83,7 +84,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           ServiceCharge,
           TotalAmount,
           Address,
-          Nickname,
+          NickName,
           FullAddress,
         } = options.item;
         infoContent = formatString(
@@ -97,7 +98,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           ServiceCharge,
           TotalAmount,
           Address,
-          Nickname,
+          NickName,
           FullAddress
         );
       } else if (options.type === "in hcm" || options.type === "out hcm") {
@@ -114,13 +115,14 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
             },
           },
         });
-        if (options.type === "in hcm" && options.staffs) {
-          infoContent = options.staffs
+        if (options.type === "in hcm" && options.employees) {
+          infoContent = options.employees
             .map((staff) => {
               const content = formatString(
                 mockInfoContent["employee_group"],
-                staff.Nickname,
-                staff.FullAddress
+                staff.NickName,
+                staff.FullAddress,
+                staff.StartDate
               );
               return content;
             })
@@ -128,8 +130,9 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
         } else {
           infoContent = formatString(
             mockInfoContent["employee"],
-            options.item?.Nickname,
-            options.item?.FullAddress
+            options.item?.NickName,
+            options.item?.FullAddress,
+            options.item?.StartDate
           );
         }
       } else if (options.label) {
@@ -148,31 +151,22 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
         });
       }
 
-      // normal office
-
       if (infoContent) {
         const infoWindow = new google.maps.InfoWindow({
           content: infoContent,
           zIndex: 9999,
         });
 
-        const handleHoverMarker = () => {
-          infoWindow.open({
-            anchor: marker,
-            map: (marker as any).map,
-            shouldFocus: false,          
-          });
+        const handleClickMarker = () => {
+          infoWindow.open((marker as any).map, marker);
+          options.onClick && options.onClick(infoWindow);
         };
 
-        const listenerAddList = marker.addListener("click", handleHoverMarker);
+        const listenerAddList = marker.addListener("click", handleClickMarker);
 
-        google.maps.event.addListener(
-          (marker as any).map,
-          "click",
-          function (event) {
-            infoWindow.close();
-          }
-        );
+        google.maps.event.addListener((marker as any).map, "click", () => {
+          infoWindow.close();
+        });
 
         return () => google.maps.event.removeListener(listenerAddList);
       }

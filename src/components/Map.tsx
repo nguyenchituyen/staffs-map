@@ -186,201 +186,205 @@ interface MapProps extends google.maps.MapOptions {
 
 const styleMap = [
   {
-    "featureType": "all",
-    "elementType": "labels.text",
-    "stylers": [
+    featureType: "all",
+    elementType: "labels.text",
+    stylers: [
       {
-        "color": "#878787"
-      }
-    ]
+        color: "#878787",
+      },
+    ],
   },
   {
-    "featureType": "all",
-    "elementType": "labels.text.stroke",
-    "stylers": [
+    featureType: "all",
+    elementType: "labels.text.stroke",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "landscape",
-    "elementType": "all",
-    "stylers": [
+    featureType: "landscape",
+    elementType: "all",
+    stylers: [
       {
-        "color": "#f9f5ed"
-      }
-    ]
+        color: "#f9f5ed",
+      },
+    ],
   },
   {
-    "featureType": "landscape",
-    "elementType": "labels",
-    "stylers": [
+    featureType: "landscape",
+    elementType: "labels",
+    stylers: [
       {
-        "visibility": "on"
-      }
-    ]
+        visibility: "on",
+      },
+    ],
   },
   {
-    "featureType": "poi",
-    "elementType": "labels",
-    "stylers": [
+    featureType: "poi",
+    elementType: "labels",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road",
-    "elementType": "labels",
-    "stylers": [
+    featureType: "road",
+    elementType: "labels",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.highway",
-    "elementType": "all",
-    "stylers": [
+    featureType: "road.highway",
+    elementType: "all",
+    stylers: [
       {
-        "color": "#f5f5f5"
-      }
-    ]
+        color: "#f5f5f5",
+      },
+    ],
   },
   {
-    "featureType": "road.highway",
-    "elementType": "geometry.stroke",
-    "stylers": [
+    featureType: "road.highway",
+    elementType: "geometry.stroke",
+    stylers: [
       {
-        "color": "#c9c9c9"
-      }
-    ]
+        color: "#c9c9c9",
+      },
+    ],
   },
   {
-    "featureType": "road.highway",
-    "elementType": "labels",
-    "stylers": [
+    featureType: "road.highway",
+    elementType: "labels",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.highway",
-    "elementType": "labels.text",
-    "stylers": [
+    featureType: "road.highway",
+    elementType: "labels.text",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.highway",
-    "elementType": "labels.text.fill",
-    "stylers": [
+    featureType: "road.highway",
+    elementType: "labels.text.fill",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.highway",
-    "elementType": "labels.text.stroke",
-    "stylers": [
+    featureType: "road.highway",
+    elementType: "labels.text.stroke",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.arterial",
-    "elementType": "labels",
-    "stylers": [
+    featureType: "road.arterial",
+    elementType: "labels",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.arterial",
-    "elementType": "labels.text",
-    "stylers": [
+    featureType: "road.arterial",
+    elementType: "labels.text",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.arterial",
-    "elementType": "labels.text.fill",
-    "stylers": [
+    featureType: "road.arterial",
+    elementType: "labels.text.fill",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.arterial",
-    "elementType": "labels.text.stroke",
-    "stylers": [
+    featureType: "road.arterial",
+    elementType: "labels.text.stroke",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.local",
-    "elementType": "labels",
-    "stylers": [
+    featureType: "road.local",
+    elementType: "labels",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.local",
-    "elementType": "labels.text.fill",
-    "stylers": [
+    featureType: "road.local",
+    elementType: "labels.text.fill",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "road.local",
-    "elementType": "labels.text.stroke",
-    "stylers": [
+    featureType: "road.local",
+    elementType: "labels.text.stroke",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "transit",
-    "elementType": "labels",
-    "stylers": [
+    featureType: "transit",
+    elementType: "labels",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "water",
-    "elementType": "all",
-    "stylers": [
+    featureType: "water",
+    elementType: "all",
+    stylers: [
       {
-        "color": "#aee0f4"
-      }
-    ]
-  }
+        color: "#aee0f4",
+      },
+    ],
+  },
 ];
 
-const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
+const Map: React.FC<MapProps> = ({
+  children,
+  style,
+  areas,
+  ...options
+}) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const [map, setMap] = React.useState<google.maps.Map>();
   const [arrPolygon, setArrPolygon] = React.useState([] as PolygonCustom[]);
-  // const infoWindow = new google.maps.InfoWindow();
 
   React.useEffect(() => {
     if (ref.current && !map) {
@@ -406,37 +410,39 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
       setArrPolygon(arr);
     }
   }, [ref, map]);
-  const polygonBinding = (p: PolygonCustom) => {
-    if (map) {
-      p.polygon.setMap(map);
 
-      p.polygon.addListener("click", () => {
-        var bounds = new google.maps.LatLngBounds();
-        for (var i = 0; i < p.polygon.getPath().getLength(); i++) {
-          bounds.extend(p.polygon.getPath().getAt(i));
-        }
-        map?.setCenter(bounds.getCenter());
-        map?.setZoom(13);
-      });
+  const polygonBinding = React.useCallback(
+    (p: PolygonCustom) => {
+      if (map) {
+        p.polygon.setMap(map);
 
-      p.polygon.setValues({
-
-      })
-
-      p.polygon.addListener("mouseover", (e) => {
-        p.polygon.setOptions({
-          fillColor: "#1671E0",
-          fillOpacity: 0.4,
+        p.polygon.addListener("click", () => {
+          var bounds = new google.maps.LatLngBounds();
+          for (var i = 0; i < p.polygon.getPath().getLength(); i++) {
+            bounds.extend(p.polygon.getPath().getAt(i));
+          }
+          map?.setCenter(bounds.getCenter());
+          map?.setZoom(13);
         });
-      });
-      p.polygon.addListener("mouseout", () => {
-        p.polygon.setOptions({
-          fillColor: "#B2D7FC",
-          fillOpacity: 0.3,
+
+        p.polygon.setValues({});
+
+        p.polygon.addListener("mouseover", () => {
+          p.polygon.setOptions({
+            fillColor: "#1671E0",
+            fillOpacity: 0.4,
+          });
         });
-      });
-    }
-  };
+        p.polygon.addListener("mouseout", () => {
+          p.polygon.setOptions({
+            fillColor: "#B2D7FC",
+            fillOpacity: 0.3,
+          });
+        });
+      }
+    },
+    [map]
+  );
 
   React.useEffect(() => {
     if (map) {
@@ -449,20 +455,13 @@ const Map: React.FC<MapProps> = ({ children, style, areas, ...options }) => {
     }
   }, [map, areas]);
 
-  React.useEffect(() => { 
-    if(map) {
+  React.useEffect(() => {
+    if (map) {
       map.addListener("zoom_changed", () => {
         options.sendToZoom(map.getZoom());
       });
-      // map.addListener('click', () => {
-      //   if(infoWindow) {
-      //     infoWindow.close()
-      //   } 
-      // });
     }
   }, [map]);
-
-
 
   return (
     <>
