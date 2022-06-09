@@ -19,12 +19,14 @@ export const infoContent = {
     </p>`,
 
   employee_group: `<div className="content-popup">
-    <p>{0}</p>
+    <p class="fw-500">{0}</p>
     <p>{1}</p>
+    <p>{2}</p>
     <hr />
   </div>`,
   employee: `<div className="content-popup">
-    <p>{0}</p>
+    <p class="fw-500">{0}</p>
     <p>{1}</p>  
+    <p>{2}</p>
   </div>`,
 };
