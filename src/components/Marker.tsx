@@ -35,6 +35,7 @@ export interface MarkerOptionsCustom extends google.maps.MarkerOptions {
   type?: "main office" | "sub office" | "in hcm" | "out hcm";
   item?: MarkerItemInfo;
   employees?: MarkerItemInfo[];
+  typeEmployee?: string;
   onClick?: (infoWindow: google.maps.InfoWindow) => void;
 }
 
@@ -109,20 +110,22 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
               scale: 10,
-              fillColor: options.type === "in hcm" ? "#002BFF" : "#28a745",
+              fillColor:
+                options.typeEmployee === "staff" ? "#002BFF" : "#ffa500",
               fillOpacity: 0.6,
               strokeWeight: 0,
             },
           },
         });
+
         if (options.type === "in hcm" && options.employees) {
           infoContent = options.employees
             .map((staff) => {
               const content = formatString(
                 mockInfoContent["employee_group"],
                 staff.NickName,
+                staff.Department,
                 staff.FullAddress,
-                staff.StartDate
               );
               return content;
             })
@@ -131,8 +134,8 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           infoContent = formatString(
             mockInfoContent["employee"],
             options.item?.NickName,
+            options.item?.Department,
             options.item?.FullAddress,
-            options.item?.StartDate
           );
         }
       } else if (options.label) {

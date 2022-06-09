@@ -12,7 +12,7 @@ import Switch from "@mui/material/Switch";
 import Header from "./src/components/Header";
 import Map from "./src/components/Map";
 import Marker from "./src/components/Marker";
-import { inHcmAll, outHcmAll, inHcmAllGroup } from "./src/components/util";
+import { inHcmAll, outHcmAll, inHcmAllGroup, newArray } from "./src/components/util";
 import { buildA, staffs, districtCenter, candidates } from "./src/data";
 import * as data from "./src/data";
 
@@ -41,6 +41,9 @@ const App: React.VFC = () => {
   const [outHcmEmployee, setOutHcmEmployee] = React.useState(outHcmAll(staffs));
 
   function setFilter(arr) {
+
+    // const newArr = newArray(arr);
+  
     const inHcmEmployeeGroup = inHcmAllGroup(arr);
     setInHcmEmployeeGroup(inHcmEmployeeGroup);
 
@@ -81,6 +84,9 @@ const App: React.VFC = () => {
 
   React.useEffect(() => {
     let dataFilter = employee === "staff" ? staffs : candidates;
+    // const dataFilter = [...inHcmEmployee, ...outHcmEmployee, ...inHcmEmployeeGroup];
+    // let sortedData = [...dataFilter]
+
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -102,6 +108,7 @@ const App: React.VFC = () => {
           );
         });
       }
+      
       setFilter(dataFilter);
     } else if (
       department === "All" &&
@@ -130,6 +137,7 @@ const App: React.VFC = () => {
           <div className="w-240 mr-24">
             <FormControl>
               <RadioGroup
+              row
                 aria-labelledby="type-employee"
                 name="type-employee"
                 value={employee}
@@ -266,6 +274,7 @@ const App: React.VFC = () => {
                   id={i + 10000}
                   type={"out hcm"}
                   onClick={handleClickMarker}
+                  typeEmployee={employee}
                 />
               );
             })}
@@ -280,6 +289,7 @@ const App: React.VFC = () => {
                       id={i + 10000}
                       type={"in hcm"}
                       onClick={handleClickMarker}
+                      typeEmployee={employee}
                     />
                   );
                 })
@@ -293,9 +303,11 @@ const App: React.VFC = () => {
                       employees={item.employees}
                       label={{
                         text: Object.keys(item.employees).length.toString(),
-                        fontSize: "12px",
+                        fontSize: "12px" ,
+                        color: employee === "staff" ? "#fff"  : "#333"
                       }}
                       onClick={handleClickMarker}
+                      typeEmployee={employee}
                     />
                   );
                 })}
