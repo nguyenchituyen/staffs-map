@@ -99,9 +99,12 @@ const App: React.VFC = () => {
   }
 
   const newStaffs = addSeniorty(staffs);  
-  let dataFilter = employee === "staff" ? newStaffs : candidates;
+
 
   React.useEffect(() => {
+    let dataFilter = employee === "staff" ? newStaffs : candidates;
+    console.log(dataFilter, "dataFilter");
+    
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -134,7 +137,7 @@ const App: React.VFC = () => {
     } else {
       setFilter([]);
     }
-  }, [year, department, area,]);
+  }, [year, department, area, employee]);
 
   return (
     <>

@@ -1428,7 +1428,7 @@ export const candidates = [
     },
   },
   {
-    NickName: "L Ê N G Ọ C C H Â U",
+    NickName: "Lê Ngọc Châu",
     FullAddress: "26BC 14 Strest, Ward 5, Go Vap, Ho Chi Minh",
     Department: "QC",
     Seniorty: "",
@@ -1440,7 +1440,7 @@ export const candidates = [
     },
   },
   {
-    NickName: "CHU DUY TUAN",
+    NickName: "Chu Duy Tuan",
     FullAddress: "37/30 C1 Street, Ward 13, Tan Binh District, HCMC",
     Department: "QC",
     Seniorty: "",
@@ -1464,7 +1464,7 @@ export const candidates = [
     },
   },
   {
-    NickName: "LOAN PHAM THI TRUC",
+    NickName: "Loan Pham Thi Truc",
     FullAddress: "Cu Chi District, Ho Chi Minh City",
     Department: "QC",
     Seniorty: "",
@@ -1476,7 +1476,7 @@ export const candidates = [
     },
   },
   {
-    NickName: "MAI TRONG KHIEM",
+    NickName: "Mai Trong Khiem",
     FullAddress: "184/70 Pham Van Hai Str, Ward 3, Tan Binh District, HCMC",
     Department: "QC",
     Seniorty: "",
@@ -1500,7 +1500,7 @@ export const candidates = [
     },
   },
   {
-    NickName: "ĐỖ THỊ HỒNG LOAN",
+    NickName: "Đỗ Thị Hồng Loan",
     FullAddress:
       "225/1 Nguyen van Khoi, Ward 8, Go Vap district, Ho Chi Minh city.",
     Department: "QC",
@@ -1513,7 +1513,7 @@ export const candidates = [
     },
   },
   {
-    NickName: "NGUYEN QUOC DOAN",
+    NickName: "Nguyen Quoc Doan",
     FullAddress:
       "Ngo Thoi Nhiem Apartment, Ho Ba Phan Street, Phuoc Long A Ward, District 9, HCMC",
     Department: "QC",
