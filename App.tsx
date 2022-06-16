@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Radio, RadioGroup, Slider, FormGroup, FormControlLabel, Switch, MenuItem, InputLabel } from "@mui/material";
+import { Radio, RadioGroup, Slider, FormGroup, FormControlLabel, Switch, MenuItem, InputLabel, Button } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Header from "./src/components/Header";
@@ -14,6 +14,7 @@ import {
 import { buildA, staffs, districtCenter, candidates } from "./src/data";
 import * as data from "./src/data";
 import { marksSeniorty } from "./src/components/constant";
+import classNames from 'classnames';
 
 
 const App: React.VFC = () => {
@@ -44,6 +45,7 @@ const App: React.VFC = () => {
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
   const [showHeatMap, setShowHeatMap] = React.useState(false);
+  const [showFilter, setShowFilter] = React.useState(false);
 
   const [currentInfoWindow, setCurrentInfoWindow] =
     React.useState<google.maps.InfoWindow>();
@@ -73,6 +75,18 @@ const App: React.VFC = () => {
   const handleChangeEmployee = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmployee((event.target as HTMLInputElement).value);
   };
+
+  const handleClickMarker = (infoWindow: google.maps.InfoWindow) => {
+    if (currentInfoWindow) {
+      currentInfoWindow.close();
+    }
+    setCurrentInfoWindow(infoWindow);
+  };
+
+
+  const handleShowFilter = () => {
+    setShowFilter(!showFilter); 
+  }
 
   React.useEffect(() => {
     const newStaffs = addSeniorty(staffs);
@@ -112,123 +126,18 @@ const App: React.VFC = () => {
     }
   }, [year, department, area, zoom, employee]);
 
-  const handleClickMarker = (infoWindow: google.maps.InfoWindow) => {
-    if (currentInfoWindow) {
-      currentInfoWindow.close();
-    }
-    setCurrentInfoWindow(infoWindow);
-  };
+
 
   return (
     <>
       <Header />
       <div className="main-content">
+        
         <div className="left-content">
-          <div className="filter-content">
-            <FormControl>
-              <RadioGroup
-                row
-                aria-labelledby="type-employee"
-                name="type-employee"
-                value={employee}
-                onChange={handleChangeEmployee}
-              >
-                <FormControlLabel
-                  value="staff"
-                  control={<Radio />}
-                  label="Staff"
-                />
-                <FormControlLabel
-                  value="candidate"
-                  control={<Radio />}
-                  label="Candidate"
-                />
-              </RadioGroup>
-            </FormControl>
-
-            <FormGroup>
-              <FormControlLabel
-                control={
-                  <Switch
-                    value={showOffice}
-                    onChange={handleChangeShowOffice}
-                  />
-                }
-                label="Available Offices"
-              />
-            </FormGroup>
-            <FormGroup>
-              <FormControlLabel
-                control={
-                  <Switch
-                    value={showHeatMap}
-                    onChange={handleChangeShowHeatMap}
-                  />
-                }
-                label="Heat Map"
-              />
-            </FormGroup>
-            {!showHeatMap && (
-              <>
-                <div className="mb-20">
-                  <FormControl fullWidth>
-                    <InputLabel id="select-label-department">
-                      Department
-                    </InputLabel>
-                    <Select
-                      labelId="select-label-department"
-                      id="demo-simple-select"
-                      value={department}
-                      label="Department"
-                      onChange={handleChangeDepartment}
-                    >
-                      {data.departmentDatas.map((ite, i) => (
-                        <MenuItem key={i} value={ite.name}>
-                          {ite.name}
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                </div>
-                <div className="mb-20">
-                  <FormControl fullWidth>
-                    <InputLabel id="select-label-area">Area</InputLabel>
-                    <Select
-                      labelId="select-label-area"
-                      id="demo-simple-select"
-                      value={area}
-                      label="Area"
-                      onChange={handleChangeArea}
-                    >
-                      {data.areaDatas.map((ite, i) => (
-                        <MenuItem key={i} value={ite.name}>
-                          {ite.name}
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                </div>
-                {employee === "staff" && (
-                  <div className="mx-20">
-                    <FormControl fullWidth>
-                      <Slider
-                        step={0.5}
-                        getAriaLabel={() => "Year range"}
-                        defaultValue={1}
-                        aria-label="Default"
-                        valueLabelDisplay="auto"
-                        max={15}
-                        min={0}
-                        marks={marksSeniorty}
-                        value={year}
-                        onChange={handleOnChangeYear}
-                      />
-                    </FormControl>
-                  </div>
-                )}
-              </>
-            )}
-          </div>
+          <div className="d-flex align-items-center justify-content-between">
+            <h5>Listing</h5>
+            <Button onClick={handleShowFilter} variant="text">Filter</Button>
+          </div> 
         </div>
         <div className="right-content">
           <Map
@@ -333,6 +242,119 @@ const App: React.VFC = () => {
               })}
           </Map>
         </div>
+        { showFilter && <div className="overlay"></div>}
+        <div className={classNames("filter-content", showFilter && 'show')}>
+          <div className="d-flex align-items-center justify-content-between p-16 border-bottom">
+            <h3>Filter</h3>
+            <Button onClick={handleShowFilter}>Close</Button>
+          </div>
+          <div className="p-16">
+            <p className="fw-700 mb-16">Staff & Candidate</p>
+            <p className="color-grey">Data Type</p>
+            <FormControl>
+              <RadioGroup
+                row
+                aria-labelledby="type-employee"
+                name="type-employee"
+                value={employee}
+                onChange={handleChangeEmployee}
+              >
+                <FormControlLabel
+                  value="staff"
+                  control={<Radio />}
+                  label="Staff"
+                />
+                <FormControlLabel
+                  value="candidate"
+                  control={<Radio />}
+                  label="Candidate"
+                />
+              </RadioGroup>
+            </FormControl>
+            <FormGroup>
+              <FormControlLabel
+                control={
+                  <Switch
+                    value={showOffice}
+                    onChange={handleChangeShowOffice}
+                  />
+                }
+                label="Available Offices"
+              />
+            </FormGroup>
+            <FormGroup className="mb-20">
+              <FormControlLabel
+                control={
+                  <Switch
+                    value={showHeatMap}
+                    onChange={handleChangeShowHeatMap}
+                  />
+                }
+                label="Heat Map"
+              />
+            </FormGroup>
+            {!showHeatMap && (
+              <>
+                <div className="mb-20">
+                  <FormControl fullWidth>
+                    <InputLabel id="select-label-department">
+                      Department
+                    </InputLabel>
+                    <Select
+                      labelId="select-label-department"
+                      id="demo-simple-select"
+                      value={department}
+                      label="Department"
+                      onChange={handleChangeDepartment}
+                    >
+                      {data.departmentDatas.map((ite, i) => (
+                        <MenuItem key={i} value={ite.name}>
+                          {ite.name}
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </div>
+                <div className="mb-20">
+                  <FormControl fullWidth>
+                    <InputLabel id="select-label-area">Area</InputLabel>
+                    <Select
+                      labelId="select-label-area"
+                      id="demo-simple-select"
+                      value={area}
+                      label="Area"
+                      onChange={handleChangeArea}
+                    >
+                      {data.areaDatas.map((ite, i) => (
+                        <MenuItem key={i} value={ite.name}>
+                          {ite.name}
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </div>
+                {employee === "staff" && (
+                  <div className="mx-20">
+                    <FormControl fullWidth>
+                      <Slider
+                        step={0.5}
+                        getAriaLabel={() => "Year range"}
+                        defaultValue={1}
+                        aria-label="Default"
+                        valueLabelDisplay="auto"
+                        max={15}
+                        min={0}
+                        marks={marksSeniorty}
+                        value={year}
+                        onChange={handleOnChangeYear}
+                      />
+                    </FormControl>
+                  </div>
+                )}
+              </>
+            )}
+            </div>
+          </div>
       </div>
     </>
   );

@@ -10,13 +10,13 @@ export const infoContent = {
 
   employee_group: `<div className="content-popup">
     <p class="fw-500 color-blue mb-4">{0}</p>
-    <p class="fs-12 mb-4">{1}</p>
-    <p class="fs-12 color-grey mb-0">{2}</p>
+    <p class="fs-12 mb-4">{1}<span class="dot"></span>{2} yrs</p>
+    <p class="fs-12 color-grey mb-0">{3}</p>
     <div class="divider" />
   </div>`,
   employee: `<div className="content-popup">
     <p class="fw-500 color-blue mb-4">{0}</p>
-    <p class="fs-12 mb-4">{1}</p>  
-    <p class="fs-12 color-grey mb-0">{2}</p>
+    <p class="fs-12 mb-4">{1}<span class="dot"></span>{2} yrs</p>  
+    <p class="fs-12 color-grey mb-0">{3}</p>
   </div>`,
 };
