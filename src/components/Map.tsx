@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as district from "../data";
+import { staffs } from "../data";
 
 interface PolygonCustom {
   name: string;
@@ -177,214 +178,117 @@ export const arrPolygonPath = {
   },
 };
 
+const styleMap = [
+  {
+      "featureType": "all",
+      "elementType": "labels.text",
+      "stylers": [
+          {
+              "color": "#878787"
+          }
+      ]
+  },
+  {
+      "featureType": "all",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "administrative",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "landscape",
+      "elementType": "all",
+      "stylers": [
+          {
+              "color": "#f3f3f3"
+          }
+      ]
+  },
+  {
+      "featureType": "landscape",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+  },
+  {
+      "featureType": "poi",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "road",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "transit",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "water",
+      "elementType": "all",
+      "stylers": [
+          {
+              "color": "#aee0f4"
+          }
+      ]
+  }
+]
+
 interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string };
   areas: string;
   children: any;
-  sendToZoom: any;
+  sendToZoom?: any;
+  typeMaps?: string;
+  typeEmployees?: string;
 }
 
-const styleMap = [
-  {
-    featureType: "all",
-    elementType: "labels.text",
-    stylers: [
-      {
-        color: "#878787",
-      },
-    ],
-  },
-  {
-    featureType: "all",
-    elementType: "labels.text.stroke",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "landscape",
-    elementType: "all",
-    stylers: [
-      {
-        color: "#f9f5ed",
-      },
-    ],
-  },
-  {
-    featureType: "landscape",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "on",
-      },
-    ],
-  },
-  {
-    featureType: "poi",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "all",
-    stylers: [
-      {
-        color: "#f5f5f5",
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "geometry.stroke",
-    stylers: [
-      {
-        color: "#c9c9c9",
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "labels.text",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "labels.text.stroke",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.arterial",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.arterial",
-    elementType: "labels.text",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.arterial",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.arterial",
-    elementType: "labels.text.stroke",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.local",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.local",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.local",
-    elementType: "labels.text.stroke",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "transit",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "water",
-    elementType: "all",
-    stylers: [
-      {
-        color: "#aee0f4",
-      },
-    ],
-  },
-];
+
 
 const Map: React.FC<MapProps> = ({
   children,
   style,
   areas,
+  typeMaps,
+  typeEmployees,
   ...options
 }) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const [map, setMap] = React.useState<google.maps.Map>();
   const [arrPolygon, setArrPolygon] = React.useState([] as PolygonCustom[]);
+  const [heatMap, setHeatMap] =
+    React.useState<google.maps.visualization.HeatmapLayer | null>(null);
+
+  const heatMapData = staffs.map((item) => new google.maps.LatLng(item.position.lat, item.position.lng));
+    
 
   React.useEffect(() => {
     if (ref.current && !map) {
@@ -400,11 +304,11 @@ const Map: React.FC<MapProps> = ({
         name: key,
         polygon: new google.maps.Polygon({
           paths: arrPolygonPath[key].paths,
-          strokeColor: "#1671E0",
+          strokeColor: "#757585",
           strokeOpacity: 1,
           strokeWeight: 0.5,
-          fillColor: "#B2D7FC",
-          fillOpacity: 0.3,
+          fillColor: "#D2D2D6",
+          fillOpacity: 0.2,
         }),
       }));
       setArrPolygon(arr);
@@ -429,14 +333,14 @@ const Map: React.FC<MapProps> = ({
 
         p.polygon.addListener("mouseover", () => {
           p.polygon.setOptions({
-            fillColor: "#1671E0",
+            fillColor: "#D2D2D6",
             fillOpacity: 0.4,
           });
         });
         p.polygon.addListener("mouseout", () => {
           p.polygon.setOptions({
-            fillColor: "#B2D7FC",
-            fillOpacity: 0.3,
+            fillColor: "#D2D2D6",
+            fillOpacity: 0.2,
           });
         });
       }
@@ -452,8 +356,22 @@ const Map: React.FC<MapProps> = ({
       poligons.forEach((p) => {
         polygonBinding(p);
       });
+
+      const heatMapObj = new google.maps.visualization.HeatmapLayer({
+        data: heatMapData,
+      });
+      setHeatMap(heatMapObj);
     }
-  }, [map, areas]);
+  }, [map, areas, typeEmployees]);
+
+  React.useEffect(() => {
+    if (!map) return;
+    if (typeMaps === "heatMap") {
+      heatMap?.setMap(map);
+    } else {
+      heatMap?.setMap(null);
+    }
+  }, [map, typeMaps, heatMap, typeEmployees]);
 
   React.useEffect(() => {
     if (map) {

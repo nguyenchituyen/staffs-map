@@ -37,6 +37,7 @@ export interface MarkerOptionsCustom extends google.maps.MarkerOptions {
   employees?: MarkerItemInfo[];
   typeEmployee?: string;
   onClick?: (infoWindow: google.maps.InfoWindow) => void;
+  zooms?: number;
 }
 
 const Marker: React.FC<MarkerOptionsCustom> = (options) => {
@@ -64,13 +65,10 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
       } else if (options.type === "sub office" && options.item) {
         marker.setOptions({
           ...options,
-          zIndex: 999,
+          zIndex: 99000,
           ...{
             icon: {
-              url:
-                options.item?.office === "A"
-                  ? "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
-                  : "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+              url: '../../public/images/office.png',
             },
           },
         });
@@ -79,41 +77,30 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           BuildingName,
           Premises,
           Floor,
-          VacantStatus,
-          AskingRent,
-          GrossRent,
-          ServiceCharge,
           TotalAmount,
           Address,
-          NickName,
-          FullAddress,
         } = options.item;
         infoContent = formatString(
           mockInfoContent["office"],
           BuildingName,
           Premises,
           Floor,
-          VacantStatus,
-          AskingRent,
-          GrossRent,
-          ServiceCharge,
           TotalAmount,
           Address,
-          NickName,
-          FullAddress
         );
-      } else if (options.type === "in hcm" || options.type === "out hcm") {
+      } else if ((options.type === "in hcm" || options.type === "out hcm") && options.zooms) {
         marker.setOptions({
           ...options,
           cursor: "auto",
           ...{
             icon: {
               path: google.maps.SymbolPath.CIRCLE,
-              scale: 10,
+              scale: options.zooms >= 12 ?  8 : 10,
               fillColor:
-                options.typeEmployee === "staff" ? "#002BFF" : "#ffa500",
-              fillOpacity: 0.6,
-              strokeWeight: 0,
+                options.typeEmployee === "staff" ? "#1671E0" : "#45B027",
+              fillOpacity: 1,
+              strokeWeight: 2,
+              strokeColor: '#FFFFFF',   
             },
           },
         });

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Wrapper } from "@googlemaps/react-wrapper";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import { Radio, RadioGroup, Slider } from "@mui/material";
@@ -8,11 +7,10 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-
 import Header from "./src/components/Header";
 import Map from "./src/components/Map";
 import Marker from "./src/components/Marker";
-import { inHcmAll, outHcmAll, inHcmAllGroup, newArray } from "./src/components/util";
+import { inHcmAll, outHcmAll, inHcmAllGroup, addSeniorty } from "./src/components/util";
 import { buildA, staffs, districtCenter, candidates } from "./src/data";
 import * as data from "./src/data";
 
@@ -40,10 +38,7 @@ const App: React.VFC = () => {
   const [inHcmEmployee, setInHcmEmployee] = React.useState(inHcmAll(staffs));
   const [outHcmEmployee, setOutHcmEmployee] = React.useState(outHcmAll(staffs));
 
-  function setFilter(arr) {
-
-    // const newArr = newArray(arr);
-  
+  const setFilter = (arr) => {
     const inHcmEmployeeGroup = inHcmAllGroup(arr);
     setInHcmEmployeeGroup(inHcmEmployeeGroup);
 
@@ -52,9 +47,11 @@ const App: React.VFC = () => {
 
     const outHcmEmployee = outHcmAll(arr);
     setOutHcmEmployee(outHcmEmployee);
-  }
+  };
 
   const [employee, setEmployee] = React.useState("staff");
+  const [typeMap, setTypeMap] = React.useState("streetMap");
+
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
   const [currentInfoWindow, setCurrentInfoWindow] =
@@ -74,18 +71,22 @@ const App: React.VFC = () => {
     setYear(e.target.value as number[]);
   };
 
-  const handleChangeShowOffice = (e) => {
+  const handleChangeShowOffice = () => {
     setShowOffice(!showOffice);
+  };
+
+  const handleChangeMap = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setTypeMap((event.target as HTMLInputElement).value);
   };
 
   const handleChangeEmployee = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmployee((event.target as HTMLInputElement).value);
   };
 
+
   React.useEffect(() => {
-    let dataFilter = employee === "staff" ? staffs : candidates;
-    // const dataFilter = [...inHcmEmployee, ...outHcmEmployee, ...inHcmEmployeeGroup];
-    // let sortedData = [...dataFilter]
+    const newStaffs = addSeniorty(staffs);
+    let dataFilter = employee === "staff" ? newStaffs : candidates;
 
     if (
       (department !== "" && department !== "All") ||
@@ -108,7 +109,7 @@ const App: React.VFC = () => {
           );
         });
       }
-      
+
       setFilter(dataFilter);
     } else if (
       department === "All" &&
@@ -134,10 +135,33 @@ const App: React.VFC = () => {
       <div className="m-12">
         <Header />
         <div className="d-flex align-items-center">
+          <div className="mr-24">
+            <FormControl>
+              <RadioGroup
+                row
+                aria-labelledby="type-map"
+                name="type-map"
+                value={typeMap}
+                onChange={handleChangeMap}
+              >
+                <FormControlLabel
+                  value="streetMap"
+                  control={<Radio />}
+                  label="Street Map"
+                />
+                <FormControlLabel
+                  value="heatMap"
+                  control={<Radio />}
+                  label="Heat Map"
+                />
+              </RadioGroup>
+            </FormControl>
+          </div>
+
           <div className="w-240 mr-24">
             <FormControl>
               <RadioGroup
-              row
+                row
                 aria-labelledby="type-employee"
                 name="type-employee"
                 value={employee}
@@ -156,59 +180,6 @@ const App: React.VFC = () => {
               </RadioGroup>
             </FormControl>
           </div>
-
-          <div className="w-240 mr-24">
-            <FormControl fullWidth>
-              <InputLabel id="select-label-department">Department</InputLabel>
-              <Select
-                labelId="select-label-department"
-                id="demo-simple-select"
-                value={department}
-                label="Department"
-                onChange={handleChangeDepartment}
-              >
-                {data.departmentDatas.map((ite, i) => (
-                  <MenuItem key={i} value={ite.name}>
-                    {ite.name}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          </div>
-          <div className="w-240 mr-48">
-            <FormControl fullWidth>
-              <InputLabel id="select-label-area">Area</InputLabel>
-              <Select
-                labelId="select-label-area"
-                id="demo-simple-select"
-                value={area}
-                label="Area"
-                onChange={handleChangeArea}
-              >
-                {data.areaDatas.map((ite, i) => (
-                  <MenuItem key={i} value={ite.name}>
-                    {ite.name}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          </div>
-          <div className="w-280 d-flex mr-48">
-            <FormControl fullWidth>
-              <Slider
-                step={0.5}
-                getAriaLabel={() => "Year range"}
-                defaultValue={1}
-                aria-label="Default"
-                valueLabelDisplay="auto"
-                max={15}
-                min={0}
-                marks={marks}
-                value={year}
-                onChange={handleOnChangeYear}
-              />
-            </FormControl>
-          </div>
           <div className="d-flex w-240">
             <FormGroup>
               <FormControlLabel
@@ -222,19 +193,79 @@ const App: React.VFC = () => {
               />
             </FormGroup>
           </div>
+
+          {typeMap === "streetMap" && (
+            <>
+              <div className="w-240 mr-24">
+                <FormControl fullWidth>
+                  <InputLabel id="select-label-department">
+                    Department
+                  </InputLabel>
+                  <Select
+                    labelId="select-label-department"
+                    id="demo-simple-select"
+                    value={department}
+                    label="Department"
+                    onChange={handleChangeDepartment}
+                  >
+                    {data.departmentDatas.map((ite, i) => (
+                      <MenuItem key={i} value={ite.name}>
+                        {ite.name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </div>
+              <div className="w-240 mr-48">
+                <FormControl fullWidth>
+                  <InputLabel id="select-label-area">Area</InputLabel>
+                  <Select
+                    labelId="select-label-area"
+                    id="demo-simple-select"
+                    value={area}
+                    label="Area"
+                    onChange={handleChangeArea}
+                  >
+                    {data.areaDatas.map((ite, i) => (
+                      <MenuItem key={i} value={ite.name}>
+                        {ite.name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </div>
+              <div className="w-280 d-flex mr-48">
+                <FormControl fullWidth>
+                  <Slider
+                    step={0.5}
+                    getAriaLabel={() => "Year range"}
+                    defaultValue={1}
+                    aria-label="Default"
+                    valueLabelDisplay="auto"
+                    max={15}
+                    min={0}
+                    marks={marks}
+                    value={year}
+                    onChange={handleOnChangeYear}
+                  />
+                </FormControl>
+              </div>
+            </>
+          )}
         </div>
       </div>
       <div className="flex-grow-1">
-        <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}>
           <Map
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
             areas={area}
             sendToZoom={setZoom}
+            typeMaps={typeMap}
+            typeEmployees = {employee}
           >
             {/* show main office  */}
-            <Marker position={center} type={"main office"} />
+            <Marker position={center} type={"main office"} icon={{ url: '../../public/images/main-office.png'}} zIndex={99999} />
             {/* show district label */}
             {zoom >= 11 &&
               districtCenter.map((item) => {
@@ -251,7 +282,7 @@ const App: React.VFC = () => {
                 );
               })}
             {/* show office  */}
-            {showOffice &&
+            {showOffice && 
               buildA.map((item, i) => {
                 return (
                   <Marker
@@ -265,7 +296,7 @@ const App: React.VFC = () => {
                 );
               })}
             {/* show employee */}
-            {outHcmEmployee.map((item, i) => {
+            {typeMap === 'streetMap' && outHcmEmployee.map((item, i) => {
               return (
                 <Marker
                   key={"outOfHcmStaffs" + i}
@@ -275,45 +306,49 @@ const App: React.VFC = () => {
                   type={"out hcm"}
                   onClick={handleClickMarker}
                   typeEmployee={employee}
+                  zooms={zoom}
                 />
               );
             })}
             ;
-            {zoom > 12
-              ? inHcmEmployee.map((item, i) => {
-                  return (
-                    <Marker
-                      key={"inOfHcmStaffsZoom" + i}
-                      position={item.position}
-                      item={item}
-                      id={i + 10000}
-                      type={"in hcm"}
-                      onClick={handleClickMarker}
-                      typeEmployee={employee}
-                    />
-                  );
-                })
-              : inHcmEmployeeGroup.map((item, i) => {
-                  return (
-                    <Marker
-                      key={"inOfHcmStaffs" + i}
-                      position={item.position}
-                      id={i + 30000}
-                      type={"in hcm"}
-                      employees={item.employees}
-                      label={{
-                        text: Object.keys(item.employees).length.toString(),
-                        fontSize: "12px" ,
-                        color: employee === "staff" ? "#fff"  : "#333"
-                      }}
-                      onClick={handleClickMarker}
-                      typeEmployee={employee}
-                    />
-                  );
-                })}
+            {typeMap === 'streetMap' && zoom < 12 &&
+              inHcmEmployeeGroup.map((item, i) => {
+                return (
+                  <Marker
+                    key={"inOfHcmStaffs" + i}
+                    position={item.position}
+                    id={i + 30000}
+                    type={"in hcm"}
+                    employees={item.employees}
+                    label={{
+                      text: Object.keys(item.employees).length.toString(),
+                      fontSize: "12px",
+                      color: "#fff",
+                    }}
+                    onClick={handleClickMarker}
+                    typeEmployee={employee}
+                    zooms={zoom}
+
+                  />
+                );
+              })}
             ;
+            {typeMap === 'streetMap' && zoom >= 12 &&
+              inHcmEmployee.map((item, i) => {
+                return (
+                  <Marker
+                    key={"inOfHcmStaffsZoom" + i}
+                    position={item.position}
+                    item={item}
+                    id={i + 10000}
+                    type={"in hcm"}
+                    onClick={handleClickMarker}
+                    typeEmployee={employee}
+                    zooms={zoom}
+                  />
+                );
+              })}
           </Map>
-        </Wrapper>
       </div>
     </div>
   );

@@ -1,32 +1,22 @@
 export const infoContent = {
   office: `<div class="content-popup">
-    <h3 id="firstHeading" class="firstHeading">{0}</h3>
-    <div id="bodyContent">
-      <p><b>Premises:</b> {1}</p>
-      <p><b>Floor:</b> {2}</p>
-      <p><b>Vacant Status:</b> {3}</p>
-      <p><b>Asking Rent (VAT excluded):</b> {4}</p>
-      <p><b>Gross Rent (VAT excluded):</b> {5}</p>
-      <p><b>Service Charge (VAT excluded):</b>{6}</p>
-      <p><b>Total Amount (VAT excluded):</b> {7}</p>
-      <p><b>Address:</b> {8}</p>
-    </div>
+    <p class="fw-600 mb-4">{0}</p>
+    <p class="mb-4 fs-12">{1} premises<span class="dot"></span>{2} floors<span class="dot"></span>{3}</p>
+    <p class="color-grey fs-12 mb-0">{4}</p>
   </div>`,
 
-  main_office: `<h3 id="firstHeading" class="firstHeading">Aperia</h3>
-    <p><b>Address:</b>
-    12 Song Thao, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam
-    </p>`,
+  main_office: `<p class="fw-700 color-blue mb-8">Aperia Office</p>
+    <p class="color-grey fs-12 mb-0">12 Song Thao, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam</p>`,
 
   employee_group: `<div className="content-popup">
-    <p class="fw-500">{0}</p>
-    <p>{1}</p>
-    <p>{2}</p>
-    <hr />
+    <p class="fw-500 color-blue mb-4">{0}</p>
+    <p class="fs-12 mb-4">{1}</p>
+    <p class="fs-12 color-grey mb-0">{2}</p>
+    <div class="divider" />
   </div>`,
   employee: `<div className="content-popup">
-    <p class="fw-500">{0}</p>
-    <p>{1}</p>  
-    <p>{2}</p>
+    <p class="fw-500 color-blue mb-4">{0}</p>
+    <p class="fs-12 mb-4">{1}</p>  
+    <p class="fs-12 color-grey mb-0">{2}</p>
   </div>`,
 };

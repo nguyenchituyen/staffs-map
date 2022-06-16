@@ -9,7 +9,7 @@ export const buildA = [
     AskingRent: "30 usd/m2",
     ServiceCharge: "6 usd/m2",
     GrossRent: "39.6 usd/m2",
-    TotalAmount: "89179.2 usd",
+    TotalAmount: "89179.2$/month",
     Address: "151-153 Nguyen Dinh Chieu, Ward 6, District 3",
     position: {
       lat: 10.7760406,
@@ -25,7 +25,7 @@ export const buildA = [
     AskingRent: "30 usd/m2",
     ServiceCharge: "5 usd/m2",
     GrossRent: "38.5 usd/m2",
-    TotalAmount: "82698 usd",
+    TotalAmount: "82698$/month",
     Address: "72 Le Thanh Ton, Ben Nghe Ward, District 1",
     position: {
       lat: 10.7780728,
@@ -41,7 +41,7 @@ export const buildA = [
     AskingRent: "23 usd/m2",
     ServiceCharge: "6 usd/m2",
     GrossRent: "31.9 usd/m2",
-    TotalAmount: "45304.4 usd",
+    TotalAmount: "45304.4$/month",
     Address: "518B Dien Bien Phu, Ward 21, Binh Thanh District",
     position: {
       lat: 10.8007413,
@@ -57,7 +57,7 @@ export const buildA = [
     AskingRent: "21 usd/m2",
     ServiceCharge: "9 usd/m2",
     GrossRent: "29.7 usd/m2",
-    TotalAmount: "86308.2 usd",
+    TotalAmount: "86308.2$/month",
     Address: "24-26 Phan Dinh Giot, Ward 2, Tan Binh District",
     position: {
       lat: 10.8000858,

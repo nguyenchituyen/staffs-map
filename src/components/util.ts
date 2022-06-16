@@ -1,10 +1,10 @@
 import { arrPolygonPath } from "./Map";
 const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
 
-export const newArray = (arr) => {
+export const addSeniorty = (arr) => {
   const nowDate = Date.now();
 
-  const newArrayTemp = arr.map((obj) => {
+  const newSeniorty = arr.map((obj) => {
     const startDate = obj.StartDate ? convertDate(obj.StartDate) : new Date();
     return {
       ...obj,
@@ -20,8 +20,21 @@ export const newArray = (arr) => {
     };
   });
 
-  return newArrayTemp;
+  return newSeniorty;
 };
+
+// export const inHcmWard = (arr) => {
+  
+//   const arrWardHCM = arr.filter(e => e.NewDistrict === 'GO VAP').reduce((prev, current) => 
+//   {
+//       return {
+//           ...prev,
+//           [current.Ward]: prev[current.Ward] ? [...prev[current.Ward], current] : [current]
+//       }
+//   }, {})
+
+//   return arrWardHCM;
+// };
 
 export const inHcmAllGroup = (arr) => {
   const inOfHcmObTemp = arr
