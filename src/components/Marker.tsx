@@ -68,7 +68,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
           zIndex: 99000,
           ...{
             icon: {
-              url: '../../public/images/office.png',
+              url: '../../images/office.png',
             },
           },
         });
