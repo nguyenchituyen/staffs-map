@@ -1,29 +1,20 @@
 import * as React from "react";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import { Radio, RadioGroup, Slider } from "@mui/material";
+import { Radio, RadioGroup, Slider, FormGroup, FormControlLabel, Switch, MenuItem, InputLabel } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Switch from "@mui/material/Switch";
 import Header from "./src/components/Header";
 import Map from "./src/components/Map";
 import Marker from "./src/components/Marker";
-import { inHcmAll, outHcmAll, inHcmAllGroup, addSeniorty } from "./src/components/util";
+import {
+  inHcmAll,
+  outHcmAll,
+  inHcmAllGroup,
+  addSeniorty,
+} from "./src/components/util";
 import { buildA, staffs, districtCenter, candidates } from "./src/data";
 import * as data from "./src/data";
+import { marksSeniorty } from "./src/components/constant";
 
-const marks = [
-  {
-    value: 0,
-    label: "0 year",
-  },
-  {
-    value: 15,
-    label: "15 years",
-  },
-];
 
 const App: React.VFC = () => {
   const [zoom, setZoom] = React.useState(11);
@@ -50,10 +41,10 @@ const App: React.VFC = () => {
   };
 
   const [employee, setEmployee] = React.useState("staff");
-  const [typeMap, setTypeMap] = React.useState("streetMap");
-
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
+  const [showHeatMap, setShowHeatMap] = React.useState(false);
+
   const [currentInfoWindow, setCurrentInfoWindow] =
     React.useState<google.maps.InfoWindow>();
 
@@ -75,14 +66,13 @@ const App: React.VFC = () => {
     setShowOffice(!showOffice);
   };
 
-  const handleChangeMap = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTypeMap((event.target as HTMLInputElement).value);
+  const handleChangeShowHeatMap = () => {
+    setShowHeatMap(!showHeatMap);
   };
 
   const handleChangeEmployee = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmployee((event.target as HTMLInputElement).value);
   };
-
 
   React.useEffect(() => {
     const newStaffs = addSeniorty(staffs);
@@ -109,7 +99,6 @@ const App: React.VFC = () => {
           );
         });
       }
-
       setFilter(dataFilter);
     } else if (
       department === "All" &&
@@ -131,34 +120,11 @@ const App: React.VFC = () => {
   };
 
   return (
-    <div className="d-flex flex-column h-100">
-      <div className="m-12">
-        <Header />
-        <div className="d-flex align-items-center">
-          <div className="mr-24">
-            <FormControl>
-              <RadioGroup
-                row
-                aria-labelledby="type-map"
-                name="type-map"
-                value={typeMap}
-                onChange={handleChangeMap}
-              >
-                <FormControlLabel
-                  value="streetMap"
-                  control={<Radio />}
-                  label="Street Map"
-                />
-                <FormControlLabel
-                  value="heatMap"
-                  control={<Radio />}
-                  label="Heat Map"
-                />
-              </RadioGroup>
-            </FormControl>
-          </div>
-
-          <div className="w-240 mr-24">
+    <>
+      <Header />
+      <div className="main-content">
+        <div className="left-content">
+          <div className="filter-content">
             <FormControl>
               <RadioGroup
                 row
@@ -179,8 +145,7 @@ const App: React.VFC = () => {
                 />
               </RadioGroup>
             </FormControl>
-          </div>
-          <div className="d-flex w-240">
+
             <FormGroup>
               <FormControlLabel
                 control={
@@ -192,80 +157,96 @@ const App: React.VFC = () => {
                 label="Available Offices"
               />
             </FormGroup>
-          </div>
-
-          {typeMap === "streetMap" && (
-            <>
-              <div className="w-240 mr-24">
-                <FormControl fullWidth>
-                  <InputLabel id="select-label-department">
-                    Department
-                  </InputLabel>
-                  <Select
-                    labelId="select-label-department"
-                    id="demo-simple-select"
-                    value={department}
-                    label="Department"
-                    onChange={handleChangeDepartment}
-                  >
-                    {data.departmentDatas.map((ite, i) => (
-                      <MenuItem key={i} value={ite.name}>
-                        {ite.name}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </div>
-              <div className="w-240 mr-48">
-                <FormControl fullWidth>
-                  <InputLabel id="select-label-area">Area</InputLabel>
-                  <Select
-                    labelId="select-label-area"
-                    id="demo-simple-select"
-                    value={area}
-                    label="Area"
-                    onChange={handleChangeArea}
-                  >
-                    {data.areaDatas.map((ite, i) => (
-                      <MenuItem key={i} value={ite.name}>
-                        {ite.name}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </div>
-              <div className="w-280 d-flex mr-48">
-                <FormControl fullWidth>
-                  <Slider
-                    step={0.5}
-                    getAriaLabel={() => "Year range"}
-                    defaultValue={1}
-                    aria-label="Default"
-                    valueLabelDisplay="auto"
-                    max={15}
-                    min={0}
-                    marks={marks}
-                    value={year}
-                    onChange={handleOnChangeYear}
+            <FormGroup>
+              <FormControlLabel
+                control={
+                  <Switch
+                    value={showHeatMap}
+                    onChange={handleChangeShowHeatMap}
                   />
-                </FormControl>
-              </div>
-            </>
-          )}
+                }
+                label="Heat Map"
+              />
+            </FormGroup>
+            {!showHeatMap && (
+              <>
+                <div className="mb-20">
+                  <FormControl fullWidth>
+                    <InputLabel id="select-label-department">
+                      Department
+                    </InputLabel>
+                    <Select
+                      labelId="select-label-department"
+                      id="demo-simple-select"
+                      value={department}
+                      label="Department"
+                      onChange={handleChangeDepartment}
+                    >
+                      {data.departmentDatas.map((ite, i) => (
+                        <MenuItem key={i} value={ite.name}>
+                          {ite.name}
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </div>
+                <div className="mb-20">
+                  <FormControl fullWidth>
+                    <InputLabel id="select-label-area">Area</InputLabel>
+                    <Select
+                      labelId="select-label-area"
+                      id="demo-simple-select"
+                      value={area}
+                      label="Area"
+                      onChange={handleChangeArea}
+                    >
+                      {data.areaDatas.map((ite, i) => (
+                        <MenuItem key={i} value={ite.name}>
+                          {ite.name}
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </div>
+                {employee === "staff" && (
+                  <div className="mx-20">
+                    <FormControl fullWidth>
+                      <Slider
+                        step={0.5}
+                        getAriaLabel={() => "Year range"}
+                        defaultValue={1}
+                        aria-label="Default"
+                        valueLabelDisplay="auto"
+                        max={15}
+                        min={0}
+                        marks={marksSeniorty}
+                        value={year}
+                        onChange={handleOnChangeYear}
+                      />
+                    </FormControl>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
         </div>
-      </div>
-      <div className="flex-grow-1">
+        <div className="right-content">
           <Map
             center={center}
             zoom={zoom}
             style={{ flexGrow: "1", height: "100%" }}
             areas={area}
             sendToZoom={setZoom}
-            typeMaps={typeMap}
-            typeEmployees = {employee}
+            showHeatMaps={showHeatMap}
+            typeEmployees={employee}
           >
             {/* show main office  */}
-            <Marker position={center} type={"main office"} icon={{ url: '../../images/main-office.png'}} zIndex={99999} />
+            <Marker
+              position={center}
+              type={"main office"}
+              icon={{ url: "../../images/main-office.png" }}
+              zIndex={99999}
+            />
             {/* show district label */}
             {zoom >= 11 &&
               districtCenter.map((item) => {
@@ -282,7 +263,7 @@ const App: React.VFC = () => {
                 );
               })}
             {/* show office  */}
-            {showOffice && 
+            {showOffice &&
               buildA.map((item, i) => {
                 return (
                   <Marker
@@ -296,22 +277,24 @@ const App: React.VFC = () => {
                 );
               })}
             {/* show employee */}
-            {typeMap === 'streetMap' && outHcmEmployee.map((item, i) => {
-              return (
-                <Marker
-                  key={"outOfHcmStaffs" + i}
-                  position={item.position}
-                  item={item}
-                  id={i + 10000}
-                  type={"out hcm"}
-                  onClick={handleClickMarker}
-                  typeEmployee={employee}
-                  zooms={zoom}
-                />
-              );
-            })}
+            {!showHeatMap &&
+              outHcmEmployee.map((item, i) => {
+                return (
+                  <Marker
+                    key={"outOfHcmStaffs" + i}
+                    position={item.position}
+                    item={item}
+                    id={i + 10000}
+                    type={"out hcm"}
+                    onClick={handleClickMarker}
+                    typeEmployee={employee}
+                    zooms={zoom}
+                  />
+                );
+              })}
             ;
-            {typeMap === 'streetMap' && zoom < 12 &&
+            {!showHeatMap &&
+              zoom < 12 &&
               inHcmEmployeeGroup.map((item, i) => {
                 return (
                   <Marker
@@ -328,12 +311,12 @@ const App: React.VFC = () => {
                     onClick={handleClickMarker}
                     typeEmployee={employee}
                     zooms={zoom}
-
                   />
                 );
               })}
             ;
-            {typeMap === 'streetMap' && zoom >= 12 &&
+            {!showHeatMap &&
+              zoom >= 12 &&
               inHcmEmployee.map((item, i) => {
                 return (
                   <Marker
@@ -349,8 +332,9 @@ const App: React.VFC = () => {
                 );
               })}
           </Map>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

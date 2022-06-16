@@ -1,4 +1,4 @@
-import { arrPolygonPath } from "./Map";
+import { arrPolygonPath } from "./constant";
 const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
 
 export const addSeniorty = (arr) => {
