@@ -16,12 +16,17 @@ body,
   overflow: hidden;
 }
 
-label, h3 {
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: large;
-  font-weight: bold;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
 }
 
 .header {
@@ -45,15 +50,32 @@ label, h3 {
   position: relative;
   width: 380px;
   height: calc(100vh - 68px);
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
-  padding: 16px;
 }
 
 .main-content .right-content {
   position: relative;
   flex: 1;
   height: calc(100vh - 68px);
+}
+
+.main-content .info-content {
+  height: calc(100vh - 168px);
+  padding: 16px;
+}
+
+.main-content .info-content .employee {
+  display: flex;
+  margin-top: 16px;
+}
+
+.main-content .info-content .employee img {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #757585;
 }
 
 .fw-500 {
@@ -83,12 +105,28 @@ input {
   color: #757585;
 }
 
+.color-grey-n50 {
+  color: #757585
+}
+
+.color-grey-n70 {
+  color: #494957
+}
+
+.color-grey-n80 {
+  color: #393944
+}
+
 .color-black {
   color: #18181D;
 }
 
 p {
   margin-top: 0;
+}
+
+.p-16 {
+  padding: 16px;
 }
 
 .mt-0 {
@@ -105,6 +143,10 @@ p {
 
 .mb-8 {
   margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
 
 .mb-20 {
@@ -133,6 +175,10 @@ p {
   margin-bottom: 8px;
 }
 
+.border-bottom {
+  border-bottom: 1px solid #E1E1E3;
+}
+
 .dot {
   width: 4px;
   height: 4px;
@@ -144,14 +190,40 @@ p {
   margin-right: 8px;
 }
 
-.gm-style .gm-style-iw {
-  font-size: 14px;
-  font-weight: 400;
+.filter-content {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: calc(100vh - 68px);
+  background: #fff;
+  transition: left 500ms;
+  z-index: 1000;
 }
 
+.filter-content.show {
+  left: 0;
+  transition: left 500ms;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 68px);
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.4;
+  z-index: 999;
+}
 .fs-12 {
   font-size: 12px;
   line-height: 16px;
+}
+
+.gm-style .gm-style-iw {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .gm-style .gm-style-iw-c {
@@ -186,8 +258,6 @@ p {
   height: 360px;
 }
 
-
-
 .d-flex {
   display: flex;
 }
@@ -198,6 +268,10 @@ p {
 
 .align-items-center {
   align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
 }
 
 .flex-grow-1 {

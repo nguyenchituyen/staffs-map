@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Radio, RadioGroup, Slider, FormGroup, FormControlLabel, Switch, MenuItem, InputLabel } from "@mui/material";
+import { Radio, RadioGroup, Slider, FormGroup, FormControlLabel, Switch, MenuItem, InputLabel, Button } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Header from "./src/components/Header";
@@ -13,7 +13,11 @@ import {
 } from "./src/components/util";
 import { buildA, staffs, districtCenter, candidates } from "./src/data";
 import * as data from "./src/data";
-import { marksSeniorty } from "./src/components/constant";
+import { marksSeniorty } from "./src/data/constant";
+import classNames from 'classnames';
+
+import PerfectScrollbar from 'react-perfect-scrollbar';
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 
 const App: React.VFC = () => {
@@ -23,13 +27,20 @@ const App: React.VFC = () => {
     lng: 106.6660986,
   });
 
+  // const [inHcmEmployeeWard, setInHcmEmployeeWard] = React.useState(
+  //   inHcmWard(staffs)
+  // );
   const [inHcmEmployeeGroup, setInHcmEmployeeGroup] = React.useState(
     inHcmAllGroup(staffs)
   );
   const [inHcmEmployee, setInHcmEmployee] = React.useState(inHcmAll(staffs));
   const [outHcmEmployee, setOutHcmEmployee] = React.useState(outHcmAll(staffs));
+  
 
   const setFilter = (arr) => {
+    // const inHcmEmployeeWard = inHcmWard(arr);
+    // setInHcmEmployeeWard(inHcmEmployeeWard);
+
     const inHcmEmployeeGroup = inHcmAllGroup(arr);
     setInHcmEmployeeGroup(inHcmEmployeeGroup);
 
@@ -44,6 +55,7 @@ const App: React.VFC = () => {
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
   const [showHeatMap, setShowHeatMap] = React.useState(false);
+  const [showFilter, setShowFilter] = React.useState(false);
 
   const [currentInfoWindow, setCurrentInfoWindow] =
     React.useState<google.maps.InfoWindow>();
@@ -74,10 +86,22 @@ const App: React.VFC = () => {
     setEmployee((event.target as HTMLInputElement).value);
   };
 
-  React.useEffect(() => {
-    const newStaffs = addSeniorty(staffs);
-    let dataFilter = employee === "staff" ? newStaffs : candidates;
+  const handleClickMarker = (infoWindow: google.maps.InfoWindow) => {
+    if (currentInfoWindow) {
+      currentInfoWindow.close();
+    }
+    setCurrentInfoWindow(infoWindow);
+  };
 
+
+  const handleShowFilter = () => {
+    setShowFilter(!showFilter); 
+  }
+
+  const newStaffs = addSeniorty(staffs);  
+  let dataFilter = employee === "staff" ? newStaffs : candidates;
+
+  React.useEffect(() => {
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -110,21 +134,166 @@ const App: React.VFC = () => {
     } else {
       setFilter([]);
     }
-  }, [year, department, area, zoom, employee]);
-
-  const handleClickMarker = (infoWindow: google.maps.InfoWindow) => {
-    if (currentInfoWindow) {
-      currentInfoWindow.close();
-    }
-    setCurrentInfoWindow(infoWindow);
-  };
+  }, [year, department, area,]);
 
   return (
     <>
       <Header />
       <div className="main-content">
         <div className="left-content">
-          <div className="filter-content">
+          <div className="d-flex align-items-center justify-content-between p-16 border-bottom">
+            <h5>Listing</h5>
+            <Button onClick={handleShowFilter} variant="text">Filter</Button>
+          </div> 
+          <PerfectScrollbar className="info-content">
+            <p className="color-grey-n80 fs-12">{newStaffs.length} Results</p>
+            { newStaffs.map((item) => (
+              <div className="employee">
+                <img className="employee-image" src="./images/avatar.png" alt="" />
+                <div>
+                  <p className="fw-700 mb-4 color-black">{item.NickName}</p>
+                  <p className="color-grey-n70 mb-4">{item.Department}</p>
+                  <p className="color-grey-n50">{item.FullAddress}</p>
+                </div>
+              </div>
+            ))}
+          </PerfectScrollbar>
+        </div>
+        <div className="right-content">
+          <Map
+            center={center}
+            zoom={zoom}
+            style={{ flexGrow: "1", height: "100%" }}
+            areas={area}
+            sendToZoom={setZoom}
+            showHeatMaps={showHeatMap}
+            typeEmployees={employee}
+          >
+            {/* show main office  */}
+            <Marker
+              position={center}
+              type={"main office"}
+              icon={{ url: "../../images/main-office.png" }}
+              zIndex={99999}
+            />
+            {/* show district label */}
+            {/* {zoom >= 11 &&
+              districtCenter.map((item) => {
+                return (
+                  <Marker
+                    position={item.position}
+                    label={{
+                      color: "#333",
+                      fontSize: zoom + "px",
+                      fontWeight: "500",
+                      text: item.labelText,
+                    }}
+                  />
+                );
+              })} */}
+            {/* show office  */}
+            {showOffice &&
+              buildA.map((item, i) => {
+                return (
+                  <Marker
+                    key={i}
+                    id={i}
+                    position={item.position}
+                    type={"sub office"}
+                    item={item}
+                    onClick={handleClickMarker}
+                  />
+                );
+              })}
+            {/* show employee */}
+            {!showHeatMap &&
+              outHcmEmployee.map((item, i) => {
+                return (
+                  <Marker
+                    key={"outOfHcmStaffs" + i}
+                    position={item.position}
+                    item={item}
+                    id={i + 10000}
+                    type={"out hcm"}
+                    onClick={handleClickMarker}
+                    typeEmployee={employee}
+                    zooms={zoom}
+                  />
+                );
+              })}
+            ;
+            {!showHeatMap &&
+              zoom < 12 &&
+              inHcmEmployeeGroup.map((item, i) => {
+                return (
+                  <Marker
+                    key={"inOfHcmGroupStaffs" + i}
+                    position={item.position}
+                    id={i + 20000}
+                    type={"in hcm"}
+                    employees={item.employees}
+                    label={{
+                      text: Object.keys(item.employees).length.toString(),
+                      fontSize: "12px",
+                      color: "#fff",
+                    }}
+                    onClick={handleClickMarker}
+                    typeEmployee={employee}
+                    zooms={zoom}
+                  />
+                );
+              })}
+            ;
+            {/* {!showHeatMap &&
+              zoom >= 12 &&
+              zoom < 14 &&
+              inHcmEmployeeWard.map((item, i) => {
+                return (
+                  <Marker
+                    key={"inOfHcmWardStaffs" + i}
+                    position={item.position}
+                    id={i + 30000}
+                    type={"in hcm"}
+                    employees={item.employees}
+                    label={{
+                      text: Object.keys(item.employees).length.toString(),
+                      fontSize: "12px",
+                      color: "#fff",
+                    }}
+                    onClick={handleClickMarker}
+                    typeEmployee={employee}
+                    zooms={zoom}
+                  />
+                );
+              })} */}
+            {!showHeatMap &&
+              zoom >= 12 &&
+              inHcmEmployee.map((item, i) => {
+                return (
+                  <Marker
+                    key={"inOfHcmStaffs" + i}
+                    position={item.position}
+                    item={item}
+                    id={i + 40000}
+                    type={"in hcm"}
+                    onClick={handleClickMarker}
+                    typeEmployee={employee}
+                    zooms={zoom}
+                  />
+                );
+              })}
+              
+          </Map>
+        </div>
+        { showFilter && <div className="overlay"></div>}
+        <div className={classNames("filter-content", showFilter && 'show')}>
+          <div className="d-flex align-items-center justify-content-between p-16 border-bottom">
+            <h3>Filter</h3>
+            <Button onClick={handleShowFilter}>Close</Button>
+          </div>
+          <div className="p-16">
+            <p className="fw-700 mb-16">Staff & Candidate</p>
+            <p className="color-grey">Data Type</p>
             <FormControl>
               <RadioGroup
                 row
@@ -145,7 +314,6 @@ const App: React.VFC = () => {
                 />
               </RadioGroup>
             </FormControl>
-
             <FormGroup>
               <FormControlLabel
                 control={
@@ -157,7 +325,7 @@ const App: React.VFC = () => {
                 label="Available Offices"
               />
             </FormGroup>
-            <FormGroup>
+            <FormGroup className="mb-20">
               <FormControlLabel
                 control={
                   <Switch
@@ -228,111 +396,8 @@ const App: React.VFC = () => {
                 )}
               </>
             )}
+            </div>
           </div>
-        </div>
-        <div className="right-content">
-          <Map
-            center={center}
-            zoom={zoom}
-            style={{ flexGrow: "1", height: "100%" }}
-            areas={area}
-            sendToZoom={setZoom}
-            showHeatMaps={showHeatMap}
-            typeEmployees={employee}
-          >
-            {/* show main office  */}
-            <Marker
-              position={center}
-              type={"main office"}
-              icon={{ url: "../../images/main-office.png" }}
-              zIndex={99999}
-            />
-            {/* show district label */}
-            {zoom >= 11 &&
-              districtCenter.map((item) => {
-                return (
-                  <Marker
-                    position={item.position}
-                    label={{
-                      color: "#333",
-                      fontSize: zoom + "px",
-                      fontWeight: "500",
-                      text: item.labelText,
-                    }}
-                  />
-                );
-              })}
-            {/* show office  */}
-            {showOffice &&
-              buildA.map((item, i) => {
-                return (
-                  <Marker
-                    key={i}
-                    id={i}
-                    position={item.position}
-                    type={"sub office"}
-                    item={item}
-                    onClick={handleClickMarker}
-                  />
-                );
-              })}
-            {/* show employee */}
-            {!showHeatMap &&
-              outHcmEmployee.map((item, i) => {
-                return (
-                  <Marker
-                    key={"outOfHcmStaffs" + i}
-                    position={item.position}
-                    item={item}
-                    id={i + 10000}
-                    type={"out hcm"}
-                    onClick={handleClickMarker}
-                    typeEmployee={employee}
-                    zooms={zoom}
-                  />
-                );
-              })}
-            ;
-            {!showHeatMap &&
-              zoom < 12 &&
-              inHcmEmployeeGroup.map((item, i) => {
-                return (
-                  <Marker
-                    key={"inOfHcmStaffs" + i}
-                    position={item.position}
-                    id={i + 30000}
-                    type={"in hcm"}
-                    employees={item.employees}
-                    label={{
-                      text: Object.keys(item.employees).length.toString(),
-                      fontSize: "12px",
-                      color: "#fff",
-                    }}
-                    onClick={handleClickMarker}
-                    typeEmployee={employee}
-                    zooms={zoom}
-                  />
-                );
-              })}
-            ;
-            {!showHeatMap &&
-              zoom >= 12 &&
-              inHcmEmployee.map((item, i) => {
-                return (
-                  <Marker
-                    key={"inOfHcmStaffsZoom" + i}
-                    position={item.position}
-                    item={item}
-                    id={i + 10000}
-                    type={"in hcm"}
-                    onClick={handleClickMarker}
-                    typeEmployee={employee}
-                    zooms={zoom}
-                  />
-                );
-              })}
-          </Map>
-        </div>
       </div>
     </>
   );

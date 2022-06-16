@@ -112,6 +112,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
                 mockInfoContent["employee_group"],
                 staff.NickName,
                 staff.Department,
+                staff?.Seniorty,
                 staff.FullAddress,
               );
               return content;
@@ -122,6 +123,7 @@ const Marker: React.FC<MarkerOptionsCustom> = (options) => {
             mockInfoContent["employee"],
             options.item?.NickName,
             options.item?.Department,
+            options.item?.Seniorty,
             options.item?.FullAddress,
           );
         }

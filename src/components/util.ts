@@ -1,5 +1,9 @@
-import { arrPolygonPath } from "./constant";
+import { arrPolygonPath, arrWardPath } from "../data/constant";
 const hcmCitys = ["Hồ Chí Minh", "Thủ Đức"];
+
+export const areaDatas = [
+'DISTRICT 1','DISTRICT 2','DISTRICT 3','DISTRICT 4','DISTRICT 5','DISTRICT 6','DISTRICT 7','DISTRICT 8','DISTRICT 9','DISTRICT 10',   
+   'DISTRICT 11','DISTRICT 12','BINH CHANH','BINH TAN','BINH THANH','CAN GIO','CU CHI','GO VAP','HOC MON','PHU NHUAN','TAN BINH','TAN PHU','THU DUC','NHA BE'];
 
 export const addSeniorty = (arr) => {
   const nowDate = Date.now();
@@ -10,12 +14,12 @@ export const addSeniorty = (arr) => {
       ...obj,
       StartDate: startDate,
       Seniorty: (
-        (nowDate - startDate.getTime()) /
-        1000 /
-        60 /
-        60 /
-        24 /
-        365
+ (nowDate - startDate.getTime()) /
+ 1000 /
+ 60 /
+ 60 /
+ 24 /
+ 365
       ).toFixed(2),
     };
   });
@@ -23,18 +27,30 @@ export const addSeniorty = (arr) => {
   return newSeniorty;
 };
 
-// export const inHcmWard = (arr) => {
+export const inHcmWard = (arr) => {
   
-//   const arrWardHCM = arr.filter(e => e.NewDistrict === 'GO VAP').reduce((prev, current) => 
-//   {
-//       return {
-//           ...prev,
-//           [current.Ward]: prev[current.Ward] ? [...prev[current.Ward], current] : [current]
-//       }
-//   }, {})
+  const arrWard = areaDatas.map(ward => (
+    arr.filter(e => e.NewDistrict === ward).reduce((prev, current) => 
+    {
+        return {
+     ...prev,
+     [current.Ward]: prev[current.Ward] ? [...prev[current.Ward], current] : [current]
+        }
+    }, {})
+  ));
 
-//   return arrWardHCM;
-// };
+  const newArrWard = Object.keys(arrWard).map((key) => {
+    let center = arrWardPath[key]?.center;
+
+    return {
+      name: arrWardPath[key],
+      employees: arrWard[key],
+      position: center,
+    };
+  });
+
+  return newArrWard;
+};
 
 export const inHcmAllGroup = (arr) => {
   const inOfHcmObTemp = arr
@@ -43,6 +59,7 @@ export const inHcmAllGroup = (arr) => {
       a[b.NewDistrict] = [...(a[b.NewDistrict] || []), b];
       return a;
     }, {});
+
 
   const arrHCM = Object.keys(inOfHcmObTemp).map((key) => {
     let center = arrPolygonPath[key].center;

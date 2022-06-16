@@ -1,6 +1,6 @@
 import * as React from "react";
 import { staffs } from "../data";
-import  {styleMap, arrPolygonPath } from "./constant"
+import  {styleMap, arrPolygonPath } from "../data/constant"
 
 interface PolygonCustom {
   name: string;
