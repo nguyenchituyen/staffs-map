@@ -52,13 +52,30 @@ h5 {
   height: calc(100vh - 68px);
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 16px;
 }
 
 .main-content .right-content {
   position: relative;
   flex: 1;
   height: calc(100vh - 68px);
+}
+
+.main-content .info-content {
+  height: calc(100vh - 168px);
+  padding: 16px;
+}
+
+.main-content .info-content .employee {
+  display: flex;
+  margin-top: 16px;
+}
+
+.main-content .info-content .employee img {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #757585;
 }
 
 .fw-500 {
@@ -86,6 +103,18 @@ input {
 
 .color-grey {
   color: #757585;
+}
+
+.color-grey-n50 {
+  color: #757585
+}
+
+.color-grey-n70 {
+  color: #494957
+}
+
+.color-grey-n80 {
+  color: #393944
 }
 
 .color-black {

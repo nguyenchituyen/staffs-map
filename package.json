@@ -42,6 +42,7 @@
     "fast-equals": "^2.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-perfect-scrollbar": "^1.5.8",
     "styled-components": "^5.3.5"
   }
 }
