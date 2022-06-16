@@ -10,6 +10,9 @@ body,
   width: 100%;
   margin: 0;
   font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #18181D;
 }
 
 label, h3 {
@@ -24,6 +27,14 @@ label, h3 {
   font-weight: 500;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
 input {
   width: 100%;
   padding: 0.25rem;
@@ -31,21 +42,90 @@ input {
   font-size: larger;
 }
 
-.gm-style .gm-style-iw-t::after {
-  background: linear-gradient(45deg,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%) #fff;
-  box-shadow: -2px 2px 2px 0rgba(178,178,178,.4);
-  content: "";
-  height: 10px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: translate(-50%,-50%) rotate(-45deg);
-  width: 10px;
+.color-blue {
+  color: #00257A;
 }
 
-/* .gm-ui-hover-effect {
+.color-grey {
+  color: #757585;
+}
+
+.color-black {
+  color: #18181D;
+}
+
+p {
+  margin-top: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  border: none;
+  background-color: #E1E1E3;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #9696A0;
+  display: inline-block;
+  vertical-align: 3px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.gm-style .gm-style-iw {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.fs-12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.gm-style .gm-style-iw-c {
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 6%), 0px 5px 23px rgb(0 0 0 / 7%), 0px 12px 30px rgb(0 0 0 / 9%), 0px 40px 68px rgb(0 0 0 / 12%);
+}
+
+.gm-style-iw.gm-style-iw-c {
+  padding: 0;
+}
+.gm-style-iw-d {
+  padding: 16px;
+}
+
+.gm-style-iw-d {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.gm-ui-hover-effect,
+.gm-style .gm-style-iw-t::after {
   display: none !important;
-} */
+}
+
+
 
 .d-flex {
   display: flex;
@@ -89,4 +169,5 @@ input {
 
 .gm-style-iw-d {
   max-height: 400px !important;
+  max-width: 476px;
 }

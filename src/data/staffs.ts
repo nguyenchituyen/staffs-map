@@ -5,7 +5,6 @@ export const staffs = [
     VietnameseName: "Nguyễn Ngọc Khoa",
     StartDate: "15-Feb-2008",
     Address: "Hẻm 33, đường số 8 , Phường 11, Q. GòVấp. Tp. Hồ Chí Minh",
-    Seniorty: "14.17",
     position: {
       lat: 10.8390308,
       lng: 106.6600791,
@@ -23,7 +22,6 @@ export const staffs = [
     VietnameseName: "Phan Thị Diệp Trúc ",
     StartDate: "2-Jun-2008",
     Address: "415/44 Tân Hương, Phường Tân Quý, Quận Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "13.83",
     position: {
       lat: 10.7913527,
       lng: 106.6283715,
@@ -42,7 +40,7 @@ export const staffs = [
     StartDate: "6-Sep-2008",
     Address:
       "Căn hộ A10.05, Chung cư 26 Nguyễn Thượng Hiền, Phường 1, Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "13.58",
+    
       position: {
       lat: 10.8149342,
       lng: 106.6875073,
@@ -61,7 +59,7 @@ export const staffs = [
     VietnameseName: "Trần Ái Thơ",
     StartDate: "9-Jan-2010",
     Address: "63 đường T5, phường Tây Thạnh, quận Tân Phú, Tp.Hồ Chí Minh",
-    Seniorty: "12.25",
+    
     position: {
       lat: 10.8122907,
       lng: 106.6261831,
@@ -80,7 +78,7 @@ export const staffs = [
     StartDate: "4-Jan-2011",
     Address:
       "B02.09 Opal Riverside, đường số 10, Phường Hiệp Bình Chánh, Quận Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "11.25",
+    
       position: {
       lat: 10.8248022,
       lng: 106.7257247,
@@ -99,8 +97,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Xuân Ngọc Lan",
     StartDate: "1-Nov-2012",
     Address: "10F2 Nguyễn Thị Minh Khai, phường Đa Kao, quận 1, tp.Hồ Chí Minh",
-    Seniorty: "9.42",
-    position: {
+        position: {
       lat: 10.785632,
       lng: 106.7005057,
     },
@@ -117,8 +114,7 @@ export const staffs = [
     VietnameseName: "Ngô Quốc Oai",
     StartDate: "29-May-2013",
     Address: "230/18/24 Trường Chinh, phường 13, quận Tân Bình,Tp. Hồ Chí Minh",
-    Seniorty: "8.83",
-    position: {
+        position: {
       lat: 10.795616,
       lng: 106.684242,
     },
@@ -135,8 +131,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Trường Giang",
     StartDate: "24-Jun-2013",
     Address: "90/62, Đỗ Thừa Luông, Tân Quý, Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "8.83",
-    position: {
+        position: {
       lat: 10.7925234,
       lng: 106.6173263,
     },
@@ -154,8 +149,7 @@ export const staffs = [
     StartDate: "7-Oct-2013",
     Address:
       "chung cư 8xplus 163a Trường Chinh, Tân Thới Nhất, Quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "8.50",
-      position: {
+          position: {
       lat: 10.8310819,
       lng: 106.6214991,
     },
@@ -172,8 +166,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Kiến Thi",
     StartDate: "18-Mar-2014",
     Address: "362/34/4 HT13, P.Hiệp Thành, Q12, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.880155,
       lng: 106.638935,
     },
@@ -191,8 +184,7 @@ export const staffs = [
     StartDate: "16-May-2014",
     Address:
       "A2.307 CC Green Town, đường số 1, P.Bình Hưng Hòa B, Q.Bình Tân, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8051211,
       lng: 106.5938291,
     },
@@ -211,8 +203,7 @@ export const staffs = [
     StartDate: "5-Oct-2014",
     Address:
       "313 khu 3, ấp Phước Toàn, xã Long Hiệp, huyện Bến Lức, tỉnh Long An",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.6256995,
       lng: 106.5320263,
     },
@@ -229,8 +220,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Việt Cường",
     StartDate: "14-Nov-2014",
     Address: "237/32/37 Hòa Binh, P Hiệp Tân, Q Tân Phú, Tp. Hồ Chí Minh ",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.7700362,
       lng: 106.6249517,
     },
@@ -247,8 +237,7 @@ export const staffs = [
     VietnameseName: "Phạm Viết Tuấn",
     StartDate: "1-Dec-2014",
     Address: "Phường 11, quận Bình Thạnh, Tp.Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8032792,
       lng: 106.6120286,
     },
@@ -267,8 +256,7 @@ export const staffs = [
     StartDate: "31-Dec-2014",
     Address:
       "Block D, CC Emerald, Số 2, Đường N4, phường Sơn Kỳ, quận Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8092792,
       lng: 106.6120286,
     },
@@ -287,8 +275,7 @@ export const staffs = [
     StartDate: "2-Jan-2015",
     Address:
       "B504 cc Sunview Town, đường Gò Dưa, phường Hiệp Bình Phước, Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-      position: {
+     position: {
       lat: 10.865689,
       lng: 106.7280284,
     },
@@ -307,8 +294,7 @@ export const staffs = [
     StartDate: "2-Jan-2015",
     Address:
       "63/2/6 đường 2, tổ 6, KP4, P. Tăng Nhơn Phú B, TP. Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8441842,
       lng: 106.7854802,
     },
@@ -325,8 +311,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Vũ Minh Nhật",
     StartDate: "12-Jan-2015",
     Address: "256/126/29A Phan Huy Ích, P.12, Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8379033,
       lng: 106.6400218,
     },
@@ -343,8 +328,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Thu Phương",
     StartDate: "15-Jan-2015",
     Address: "610 Nguyễn Chí Thanh, P7, Q11, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.758156,
       lng: 106.6596331,
     },
@@ -361,8 +345,7 @@ export const staffs = [
     VietnameseName: "Đào Thu Huyền",
     StartDate: "16-Jan-2015",
     Address: "41F/46 đường Trục, phường 3, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8804218,
       lng: 106.6486109,
     },
@@ -380,8 +363,7 @@ export const staffs = [
     StartDate: "9-Feb-2015",
     Address:
       "17.1 B3 Chung cư Terra Rosa - 13E Nguyễn Văn Linh, Phong Phú, Bình Chánh, TPHCM",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.7059938,
       lng: 106.6436831,
     },
@@ -399,8 +381,7 @@ export const staffs = [
     VietnameseName: "Lê Hồng Quốc",
     StartDate: "12-Feb-2015",
     Address: "383/2/112 Quang Trung, Phuong 10, Go Vap Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8299494,
       lng: 106.6686085,
     },
@@ -418,8 +399,7 @@ export const staffs = [
     StartDate: "31-Mar-2015",
     Address:
       "56/13 KP2 đường TX25, phường Thạnh Xuân, quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8815107,
       lng: 106.6773255,
     },
@@ -437,8 +417,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Thiên Lý",
     StartDate: "20-Aug-2015",
     Address: "193 Phạm Văn Hai, phường 5, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8389033,
       lng: 106.6400218,
     },
@@ -455,8 +434,7 @@ export const staffs = [
     VietnameseName: "Trần Thị Tuyết Mai",
     StartDate: "24-Aug-2015",
     Address: "8/20 B1 Nguyen Thien Thuat, P24, Binh Thanh, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8057946,
       lng: 106.7003159,
     },
@@ -475,8 +453,7 @@ export const staffs = [
     StartDate: "1-Sep-2015",
     Address:
       "124/10 Võ Văn Hát - Phường Long Trường - TP. Thủ Đức (Q9) - Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8235216,
       lng: 106.8081086,
     },
@@ -493,8 +470,7 @@ export const staffs = [
     VietnameseName: "Phạm Thị Dung",
     StartDate: "7-Sep-2015",
     Address: "479/44/3/12 To 27, KP3, Tan Thoi Hiep, Q12, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8665581,
       lng: 106.6377608,
     },
@@ -513,8 +489,7 @@ export const staffs = [
     StartDate: "9-Sep-2015",
     Address:
       "Grand Riverside, 283 Bến Vân Đồn, phường 2 quận 4, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.7580992,
       lng: 106.694623,
     },
@@ -532,8 +507,7 @@ export const staffs = [
     StartDate: "14-Sep-2015",
     Address:
       "19/18. đường số 4, KP17, Bình Hưng hòa A, Bình Tân, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.7586606,
       lng: 106.9356309,
     },
@@ -551,8 +525,7 @@ export const staffs = [
     StartDate: "21-Sep-2015",
     Address:
       "Chung cư Gia Hòa, 523A Đỗ Xuân Hợp, P. Phước Long B, Quận 9, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8135404,
       lng: 106.7786463,
     },
@@ -570,8 +543,7 @@ export const staffs = [
     VietnameseName: "Đặng Hoàng Tuấn",
     StartDate: "21-Sep-2015",
     Address: "188 Nguyễn Xí, p26, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8162043,
       lng: 106.7067974,
     },
@@ -588,8 +560,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thanh An",
     StartDate: "21-Sep-2015",
     Address: "BT11 đường số 9, An Bình, Dĩ An, Bình Dương",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8774959,
       lng: 106.7497843,
     },
@@ -608,8 +579,7 @@ export const staffs = [
     StartDate: "28-Sep-2015",
     Address:
       "52/52/8 Nguyễn Sỹ Sách, phường 15, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8516414,
       lng: 106.6565433,
     },
@@ -627,8 +597,7 @@ export const staffs = [
     StartDate: "30-Sep-2015",
     Address:
       "Phòng B206 chung cư An Bình, đường Lê Trọng Tấn, Phường An Bình, TP. Dĩ An, Tỉnh Bình Dương",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8200502,
       lng: 106.7620173,
     },
@@ -646,8 +615,7 @@ export const staffs = [
     VietnameseName: "Huỳnh Vân Quyên",
     StartDate: "1-Oct-2015",
     Address: "258/28 Phạm Văn Bạch, phường 15, quận Tân Bình, Tp.Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.803841,
       lng: 106.640447,
     },
@@ -665,8 +633,7 @@ export const staffs = [
     StartDate: "1-Oct-2015",
     Address:
       "Căn hộ B5-09 Chung cư moonlight 102 đặng văn bi thành phố thủ đức thành phố Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8438637,
       lng: 106.7627085,
     },
@@ -685,8 +652,7 @@ export const staffs = [
     StartDate: "5-Oct-2015",
     Address:
       "D8.17 chung cư Emerald, số 2 đường N4, Phường Sơn Kỳ, Quận Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8072792,
       lng: 106.6120286,
     },
@@ -704,8 +670,7 @@ export const staffs = [
     StartDate: "12-Oct-2015",
     Address:
       "2/4/31/41 Lê Thúc Hoạch, phường Phú Thọ Hòa, quận Tân Phú. Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.7865666,
       lng: 106.628846,
     },
@@ -724,8 +689,7 @@ export const staffs = [
     StartDate: "13-Oct-2015",
     Address:
       "AK6 010.17 Chung cư Akari 77 Võ Văn Kiệt, phường An Lạc, quận Bình Tân, Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.7178421,
       lng: 106.6068264,
     },
@@ -744,8 +708,7 @@ export const staffs = [
     StartDate: "15-Oct-2015",
     Address:
       "Số 15, đường 13, khu phố Giãn Dân, phường Long Bình, TP Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8920576,
       lng: 106.8271524,
     },
@@ -762,8 +725,7 @@ export const staffs = [
     VietnameseName: "Cao Lưu Thanh Phương",
     StartDate: "16-Oct-2015",
     Address: "số 1/1 Cù Chính Lan, Phường 13 quận Tân Bình, TPTp. Hồ Chí Minh",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.8370442,
       lng: 106.7238174,
     },
@@ -780,8 +742,7 @@ export const staffs = [
     VietnameseName: "Lê Thị Thục Uyên",
     StartDate: "4-Dec-2015",
     Address: "Tổ 6B, kp Đông Thành, Tân Đông Hiệp, dĩ an, Bình Dương",
-    Seniorty: "7",
-    position: {
+   position: {
       lat: 10.9219671,
       lng: 106.773995,
     },
@@ -800,8 +761,7 @@ export const staffs = [
     StartDate: "1-Mar-2016",
     Address:
       "54 KP3A, đường ĐHT26, phường Đông Hưng Thuận, Quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "7",
-      position: {
+     position: {
       lat: 10.8319314,
       lng: 106.6275672,
     },
@@ -818,8 +778,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Đức Dũng",
     StartDate: "21-Mar-2016",
     Address: "159/1/2 Bạch Đằng, phường 2, Tân Bình, TPTp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.816604,
       lng: 106.674534,
     },
@@ -837,8 +796,7 @@ export const staffs = [
     StartDate: "1-Apr-2016",
     Address:
       "Block A1-809, Chung cư ehome 3, Hồ Học Lãm, An Lạc, Bình Tân, Hồ Chí Minh",
-    Seniorty: "6",
-      position: {
+     position: {
       lat: 10.7156255,
       lng: 106.6149397,
     },
@@ -856,8 +814,7 @@ export const staffs = [
     VietnameseName: "Võ Duy Minh",
     StartDate: "1-Jun-2016",
     Address: "263/19 Xóm Chiếu, p15, Q4, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.7571303,
       lng: 106.710357,
     },
@@ -875,8 +832,7 @@ export const staffs = [
     StartDate: "1-Jul-2016",
     Address:
       "23M Đường số 25, P. Bình Hưng Hòa A, Q. Bình Tân, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-      position: {
+     position: {
       lat: 10.7810509,
       lng: 106.6042183,
     },
@@ -894,8 +850,7 @@ export const staffs = [
     VietnameseName: "Võ Hồng Phi",
     StartDate: "4-Jul-2016",
     Address: "phường 8, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.8641998,
       lng: 106.7346583,
     },
@@ -912,8 +867,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Miền",
     StartDate: "5-Jul-2016",
     Address: "cc Phu' Gia xã Phú Xuân, nhà bè, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.6785067,
       lng: 106.7410408,
     },
@@ -931,8 +885,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Lê Duy Quang",
     StartDate: "21-Jul-2016",
     Address: "2050 Phạm Thế Hiển, phường 6, quận 8, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.7351357,
       lng: 106.6463952,
     },
@@ -949,8 +902,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Linh Chi",
     StartDate: "1-Aug-2016",
     Address: "chung cư Vinhomes Central Park , 208 Nguyễn Hữu Cảnh, p22, qBT",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.7925023,
       lng: 106.7216586,
     },
@@ -967,8 +919,7 @@ export const staffs = [
     VietnameseName: "Đinh Công Thắng",
     StartDate: "1-Aug-2016",
     Address: "10 Chữ Đồng Tử, phường 7, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.7875479,
       lng: 106.6572577,
     },
@@ -985,8 +936,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thanh Lai",
     StartDate: "22-Aug-2016",
     Address: "719 Lạc Long Quân, Phường 10, Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.49084,
       lng: 105.7579572,
     },
@@ -1004,8 +954,7 @@ export const staffs = [
     StartDate: "22-Aug-2016",
     Address:
       "39 Đông Hưng Thuận 32, KP 2, phường Tân Hưng Thuận, Quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-      position: {
+     position: {
       lat: 10.8357308,
       lng: 106.6201058,
     },
@@ -1022,8 +971,7 @@ export const staffs = [
     VietnameseName: "Trần Hồ Hữu Đức",
     StartDate: "14-Nov-2016",
     Address: "84/28 Nguyễn Văn Nghi, phường 5, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-    position: {
+   position: {
       lat: 10.8216138,
       lng: 106.6887995,
     },
@@ -1041,8 +989,7 @@ export const staffs = [
     StartDate: "21-Nov-2016",
     Address:
       "1/80, khu phố 7, Quang Trung, thị trấn Hóc Môn, huyện Hóc Môn, Tp. Hồ Chí Minh",
-    Seniorty: "6",
-      position: {
+     position: {
       lat: 10.8654473,
       lng: 106.6193907,
     },
@@ -1060,8 +1007,7 @@ export const staffs = [
     StartDate: "16-Jan-2017",
     Address:
       "482/51/10 Lê Quang Định, phường 11, quận Bình Thạnh, Tp.Hồ Chí Minh",
-    Seniorty: "5",
-      position: {
+     position: {
       lat: 10.8095244,
       lng: 106.6937269,
     },
@@ -1079,8 +1025,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Thuỳ Vân",
     StartDate: "1-Mar-2017",
     Address: "74/2 Trần Khắc Chân, phường 15, quận Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.797177,
       lng: 106.676401,
     },
@@ -1097,8 +1042,7 @@ export const staffs = [
     VietnameseName: "Trương Nguyễn Đăng Trường",
     StartDate: "27-Mar-2017",
     Address: "68/15 Hồ Thị Kỷ, phường 1, quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.7678169,
       lng: 106.6753512,
     },
@@ -1115,8 +1059,7 @@ export const staffs = [
     VietnameseName: "Lý Minh Trí",
     StartDate: "5-Apr-2017",
     Address: "Số 12 Khu phố 6, đường 48, quận Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.8349815,
       lng: 106.7257698,
     },
@@ -1134,8 +1077,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Cao Nguyên",
     StartDate: "3-May-2017",
     Address: "439/46/06 Đường số 10, phường 8, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.794675,
       lng: 106.6886829,
     },
@@ -1154,8 +1096,7 @@ export const staffs = [
     StartDate: "12-Jun-2017",
     Address:
       "Đường 39, khu phố Hoà Long, phường Vĩnh Phú , Tx. Thuận An, Bình Dương",
-    Seniorty: "5",
-      position: {
+     position: {
       lat: 10.7233362,
       lng: 106.6230941,
     },
@@ -1173,8 +1114,7 @@ export const staffs = [
     VietnameseName: "Lê Công Bằng",
     StartDate: "1-Aug-2017",
     Address: "149/42 Đất Thánh, Phường 6, Quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.7828624,
       lng: 106.657603,
     },
@@ -1191,8 +1131,7 @@ export const staffs = [
     VietnameseName: "Tạ Ngọc Phương Uyên",
     StartDate: "21-Aug-2017",
     Address: "392/1/3 Cao Thắng nối dài, quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.8015214,
       lng: 106.6157189,
     },
@@ -1210,8 +1149,7 @@ export const staffs = [
     VietnameseName: "Phan Thanh Quốc",
     StartDate: "2-May-2018",
     Address: "Số 20 đường A4, phường 12, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.7962139,
       lng: 106.6450992,
     },
@@ -1228,8 +1166,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Yến Nhi",
     StartDate: "6-Aug-2018",
     Address: "61/3B, Tổ 2, khu phố 2, Thị trấn Hóc Môn, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.7889188,
       lng: 106.6358004,
     },
@@ -1248,8 +1185,7 @@ export const staffs = [
     StartDate: "6-Aug-2018",
     Address:
       "207/52/28 Nguyễn Văn Đậu, phường 11, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-      position: {
+     position: {
       lat: 10.8520871,
       lng: 106.6905746,
     },
@@ -1266,8 +1202,7 @@ export const staffs = [
     VietnameseName: "Phạm Viết Mẫn",
     StartDate: "15-Aug-2018",
     Address: "24A Phan Văn Sửu P13 Quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.7639642,
       lng: 106.6349409,
     },
@@ -1285,8 +1220,7 @@ export const staffs = [
     StartDate: "20-Aug-2018",
     Address:
       "75/34 đường 48 (nhánh 3) ,phường Hiệp Bình Chánh , Quận Thủ Đức , TpTp. Hồ Chí Minh",
-    Seniorty: "5",
-      position: {
+     position: {
       lat: 10.8372024,
       lng: 106.7253921,
     },
@@ -1304,8 +1238,7 @@ export const staffs = [
     StartDate: "24-Sep-2018",
     Address:
       "217/17/6 Nơ Trang Long, phường 12, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-      position: {
+     position: {
       lat: 10.814808,
       lng: 106.696335,
     },
@@ -1322,8 +1255,7 @@ export const staffs = [
     VietnameseName: "Hồ Thái Minh Châu",
     StartDate: "24-Sep-2018",
     Address: "230/9 Tùng Thiện Vương, phường 11, quận 8, Tp. Hồ Chí Minh",
-    Seniorty: "5",
-    position: {
+   position: {
       lat: 10.74877,
       lng: 106.6667654,
     },
@@ -1340,8 +1272,7 @@ export const staffs = [
     VietnameseName: "Hoàng Thị Diệu Linh",
     StartDate: "17-Oct-2018",
     Address: "CC Flora Fuji, Đường F1, Phước Long B, TP.Thủ Đức",
-    Seniorty: "4",
-    position: {
+   position: {
       lat: 10.8131639,
       lng: 106.7849956,
     },
@@ -1359,8 +1290,7 @@ export const staffs = [
     VietnameseName: "Lê Yến Oanh",
     StartDate: "10-Dec-2018",
     Address: "10.08 D2, Chung cư Mỹ Đức, 220 XVNT, P21, Bình Thạnh",
-    Seniorty: "4",
-    position: {
+   position: {
       lat: 10.7982577,
       lng: 106.7134444,
     },
@@ -1378,8 +1308,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Duy Quang",
     StartDate: "11-Dec-2018",
     Address: "chung cư 1050 - 4 Phan Chu Trinh P.12 Q. Binh Thanh",
-    Seniorty: "4",
-    position: {
+   position: {
       lat: 10.8159309,
       lng: 106.7013969,
     },
@@ -1396,8 +1325,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Hoàng Lân",
     StartDate: "2-Jan-2019",
     Address: "965A Huỳnh Tấn Phát, phường Phú Thuận, quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "4",
-    position: {
+   position: {
       lat: 10.7287629,
       lng: 106.7328505,
     },
@@ -1414,8 +1342,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thanh Hải",
     StartDate: "14-Jan-2019",
     Address: "33 Kinh Dương Vương, phường 12, quận 6, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.7530517,
       lng: 106.6327273,
     },
@@ -1432,8 +1359,7 @@ export const staffs = [
     VietnameseName: "Trần Quang Phương Nam",
     StartDate: "16-Jan-2019",
     Address: "52A, Trần Văn Quang, phường 10, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8026679,
       lng: 106.6595782,
     },
@@ -1450,8 +1376,7 @@ export const staffs = [
     VietnameseName: "Ô Tuấn Hải",
     StartDate: "28-Jan-2019",
     Address: "30 Bạch Đằng, phường 2, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.825875,
       lng: 106.703098,
     },
@@ -1468,8 +1393,7 @@ export const staffs = [
     VietnameseName: "Phan Huỳnh Tú",
     StartDate: "14-Feb-2019",
     Address: "755 Quang Trung, phường 12, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8410772,
       lng: 106.6446953,
     },
@@ -1486,8 +1410,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Tiến Thành",
     StartDate: "25-Feb-2019",
     Address: "380/37/8, Phạm Văn Chiêu, phường 9, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.848229,
       lng: 106.651326,
     },
@@ -1505,8 +1428,7 @@ export const staffs = [
     StartDate: "25-Feb-2019",
     Address:
       "44/6A, đường số 6, phương Linh Tây, quận Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-      position: {
+     position: {
       lat: 10.8399253,
       lng: 106.6530966,
     },
@@ -1523,8 +1445,7 @@ export const staffs = [
     VietnameseName: "Đặng Nhật Anh",
     StartDate: "6-Mar-2019",
     Address: "37/7/ Ngô Bệ , quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8312258,
       lng: 106.6119672,
     },
@@ -1541,8 +1462,7 @@ export const staffs = [
     VietnameseName: "Ka Phu Thị Yến",
     StartDate: "12-Mar-2019",
     Address: "56 Nguyến Bá Tuyển, phường 12, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.7988028,
       lng: 106.647895,
     },
@@ -1559,8 +1479,7 @@ export const staffs = [
     VietnameseName: "Lê Minh Thiện",
     StartDate: "19-Mar-2019",
     Address: "33 Phan Tây Hồ, phường 7, quận Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8021014,
       lng: 106.6873102,
     },
@@ -1578,8 +1497,7 @@ export const staffs = [
     StartDate: "8-Apr-2019",
     Address:
       "đường số 8, phường Trường Thọ, thành phố Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-      position: {
+     position: {
       lat: 10.8454196,
       lng: 106.7584063,
     },
@@ -1597,8 +1515,7 @@ export const staffs = [
     StartDate: "22-Apr-2019",
     Address:
       "343/33A Trần Thủ Độ, phường Phú Thạnh, quận Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-      position: {
+     position: {
       lat: 10.7840229,
       lng: 106.6198857,
     },
@@ -1617,8 +1534,7 @@ export const staffs = [
     StartDate: "6-May-2019",
     Address:
       "34/17 Đình Nghi Xuân, phường Bình Trị Đông, quận Bình Tân, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-      position: {
+     position: {
       lat: 10.769901,
       lng: 106.6208336,
     },
@@ -1636,8 +1552,7 @@ export const staffs = [
     VietnameseName: "Võ Minh Thắng",
     StartDate: "20-May-2019",
     Address: "377 Tân Hương, phường Tân Quý, quận Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.7896078,
       lng: 106.6185218,
     },
@@ -1655,8 +1570,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Lê Phương Thảo",
     StartDate: "2-Jul-2019",
     Address: "86/88 Ông Ích Khiêm F14 Q11, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.7682036,
       lng: 106.6461455,
     },
@@ -1673,8 +1587,7 @@ export const staffs = [
     VietnameseName: "Lê Tấn Nha",
     StartDate: "8-Jul-2019",
     Address: "32 đường số 5, Hiệp Bình Phước, quận Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8485907,
       lng: 106.7232404,
     },
@@ -1693,8 +1606,7 @@ export const staffs = [
     StartDate: "22-Jul-2019",
     Address:
       "566/137/37 Nguyễn Thái Sơn, phường 5, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-      position: {
+     position: {
       lat: 10.807541,
       lng: 106.666532,
     },
@@ -1711,8 +1623,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Phạm Thiên Ân",
     StartDate: "5-Aug-2019",
     Address: "453KA/82B Lê Văn Sỹ, phường 11, quận Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.7863496,
       lng: 106.6755769,
     },
@@ -1730,8 +1641,7 @@ export const staffs = [
     VietnameseName: "Phan Thế Vinh",
     StartDate: "10-Sep-2019",
     Address: "87 Hùng Vương, phường 4, quận 5, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.7619439,
       lng: 106.676266,
     },
@@ -1748,8 +1658,7 @@ export const staffs = [
     VietnameseName: "Võ Thị Như Trang",
     StartDate: "23-Sep-2019",
     Address: "A02.12 Botanica Premier, 104 Hồng Hà, phường 2, quận Tân Bình",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8105303,
       lng: 106.6695955,
     },
@@ -1767,8 +1676,7 @@ export const staffs = [
     StartDate: "15-Oct-2019",
     Address:
       "28/3/5 đường Tam Bình, Phường HIệp BÌnh Chánh, Quận Thủ Đức, TP.THủ Đức",
-    Seniorty: "3",
-      position: {
+     position: {
       lat: 10.8401046,
       lng: 106.7358125,
     },
@@ -1785,8 +1693,7 @@ export const staffs = [
     VietnameseName: "Lê Gia Bảo",
     StartDate: "23-Oct-2019",
     Address: "76 Nguyễn Phi Khanh, phường Tân Định, quận 1, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.7917923,
       lng: 106.6934434,
     },
@@ -1803,8 +1710,7 @@ export const staffs = [
     VietnameseName: "Vũ Như Tài",
     StartDate: "29-Oct-2019",
     Address: "Số 205, Thoại Ngọc Hầu, Quận Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8503191,
       lng: 106.6536426,
     },
@@ -1821,8 +1727,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Phan Hòa Phát",
     StartDate: "4-Nov-2019",
     Address: "872/51/12 Quang Trung, phường 8, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8379253,
       lng: 106.6530966,
     },
@@ -1839,8 +1744,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thành Pin",
     StartDate: "4-Nov-2019",
     Address: "12/33 Nguyễn Tuân, phường 3, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "3",
-    position: {
+   position: {
       lat: 10.8320819,
       lng: 106.6214991,
     },
@@ -1857,8 +1761,7 @@ export const staffs = [
     VietnameseName: "Hoàng Hương Anh",
     StartDate: "4-Nov-2019",
     Address: "528/5/58 Điện Biên Phủ, phường 11, quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8085588,
       lng: 106.6649849,
     },
@@ -1875,8 +1778,7 @@ export const staffs = [
     VietnameseName: "Trần Đài Trang",
     StartDate: "11-Nov-2019",
     Address: "28 Đường số 2, phường Phước Long B, quận 9, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8292362,
       lng: 106.7739912,
     },
@@ -1893,8 +1795,7 @@ export const staffs = [
     VietnameseName: "Đinh Thành Nhân",
     StartDate: "18-Nov-2019",
     Address: "22/14 Phan Văn Đốn, Tân Thới Nhất, quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8301426,
       lng: 106.6184344,
     },
@@ -1913,8 +1814,7 @@ export const staffs = [
     StartDate: "26-Nov-2019",
     Address:
       "87/54/12 Quốc lộ 1, phường Hiệp Bình Phước, quận Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8630865,
       lng: 106.7202453,
     },
@@ -1932,8 +1832,7 @@ export const staffs = [
     VietnameseName: "Võ Thuận Minh Huy",
     StartDate: "26-Nov-2019",
     Address: "21/24 Trường Sơn, phường 4, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8721052,
       lng: 106.6386056,
     },
@@ -1950,8 +1849,7 @@ export const staffs = [
     VietnameseName: "Trần Đặng Anh Khoa",
     StartDate: "17-Dec-2019",
     Address: "9/17A Đoàn Thị Điểm, p1, Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7977399,
       lng: 106.681423,
     },
@@ -1969,8 +1867,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Văn Ninh",
     StartDate: "17-Dec-2019",
     Address: "175 Quốc lộ 13, phường 26, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8154073,
       lng: 106.7128014,
     },
@@ -1987,8 +1884,7 @@ export const staffs = [
     VietnameseName: "Ngô Dư Phim",
     StartDate: "17-Dec-2019",
     Address: "175 Quốc lộ 13, phường 26, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8113971,
       lng: 106.6784239,
     },
@@ -2005,8 +1901,7 @@ export const staffs = [
     VietnameseName: "Trương Hồng Vân",
     StartDate: "25-Dec-2019",
     Address: "5L, Ngô Sĩ Liên, phường 14, quận 8, TP.Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.815012,
       lng: 106.71798,
     },
@@ -2024,8 +1919,7 @@ export const staffs = [
     StartDate: "3-Feb-2020",
     Address:
       "Nhà 30, đường số 19B, Bình An (An Khánh), Quận 2 (TP Thủ Đức), Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7976533,
       lng: 106.7300867,
     },
@@ -2042,8 +1936,7 @@ export const staffs = [
     VietnameseName: "Lâm Duy Quý",
     StartDate: "3-Feb-2020",
     Address: "329 Lô T, cư xá Thanh Đa, P.27, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8163542,
       lng: 106.7203731,
     },
@@ -2060,8 +1953,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Văn Đạo",
     StartDate: "3-Feb-2020",
     Address: "862 Nguyễn Kiệm, phường 3, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8224691,
       lng: 106.679017,
     },
@@ -2078,8 +1970,7 @@ export const staffs = [
     VietnameseName: "Võ Thanh Trúc",
     StartDate: "3-Feb-2020",
     Address: "246/9F Phan Văn Trị, phường 12, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.815118,
       lng: 106.695595,
     },
@@ -2096,8 +1987,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thái Quỳnh Như",
     StartDate: "12-Feb-2020",
     Address: "9P/3 Bạch Đằng, phường 2, Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.833717,
       lng: 106.66136,
     },
@@ -2114,8 +2004,7 @@ export const staffs = [
     VietnameseName: "Cù Ngọc Phong",
     StartDate: "17-Feb-2020",
     Address: "26 Nguyễn Bá Tuyển, phường 12, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.803183,
       lng: 106.636353,
     },
@@ -2133,8 +2022,7 @@ export const staffs = [
     StartDate: "2-Jan-2015",
     Address:
       "108/11 đường 11, khu phố 5, phường Linh Xuân, quận Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.88111,
       lng: 106.7672,
     },
@@ -2152,8 +2040,7 @@ export const staffs = [
     StartDate: "3-Mar-2020",
     Address:
       "C9.16 chung cư Celadon city - 36 Bờ Bao Tân Thắng, phường Sơn Kỳ, quận Tân Phú, thành phố Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8061559,
       lng: 106.6665255,
     },
@@ -2171,8 +2058,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Lâm Văn",
     StartDate: "10-Mar-2020",
     Address: "64 Châu Thị Hóa, phường 4, quận 8, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8076477,
       lng: 106.6643049,
     },
@@ -2190,8 +2076,7 @@ export const staffs = [
     StartDate: "17-Mar-2020",
     Address:
       "B1.10 Chung cư Tín Phong, P. Tân Thới Nhất, quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8269414,
       lng: 106.6108474,
     },
@@ -2209,8 +2094,7 @@ export const staffs = [
     VietnameseName: "Tô Hồng Phúc",
     StartDate: "17-Mar-2020",
     Address: "269/19 Bà Hom, phường 13, quận 6, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.754988,
       lng: 106.625644,
     },
@@ -2228,8 +2112,7 @@ export const staffs = [
     StartDate: "17-Mar-2020",
     Address:
       "33/15 Đường Tân Thới Hiệp 07, phường Tân Thới Hiệp, quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8620815,
       lng: 106.6481904,
     },
@@ -2247,8 +2130,7 @@ export const staffs = [
     VietnameseName: "Đào Ngọc Dương",
     StartDate: "1-Apr-2020",
     Address: "340/17/14/2 Tân Chánh Hiệp 10, phường Tân Chánh Hiệp, quận 13",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8627093,
       lng: 106.6321936,
     },
@@ -2266,8 +2148,7 @@ export const staffs = [
     VietnameseName: "Phạm Anh Khoa",
     StartDate: "1-Apr-2020",
     Address: "108 đường DC11, p.Sơn Kỳ, q.Tân Phútttt",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8090622,
       lng: 106.6092561,
     },
@@ -2284,8 +2165,7 @@ export const staffs = [
     VietnameseName: "Trần Thị Thảo",
     StartDate: "1-Apr-2020",
     Address: "104/72 Phạm Văn Bạch, phường 15 quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.81949,
       lng: 106.638226,
     },
@@ -2303,8 +2183,7 @@ export const staffs = [
     StartDate: "1-Apr-2020",
     Address:
       "16-18 Đường Số 1, Lương Đình Của, phường An Khánh, Tp. Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7848699,
       lng: 106.730263,
     },
@@ -2322,8 +2201,7 @@ export const staffs = [
     VietnameseName: "Nhâm Thị Thu Thảo",
     StartDate: "1-Apr-2020",
     Address: "138/18 Ngô Quyền, phường 5, quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7597214,
       lng: 106.6656111,
     },
@@ -2340,8 +2218,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Trung Thành",
     StartDate: "7-Apr-2020",
     Address: "624 Lê Văn Thọ, P.13, Q.Gò Vấp",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8533623,
       lng: 106.6561071,
     },
@@ -2358,8 +2235,7 @@ export const staffs = [
     VietnameseName: "Đặng Hoài Nam",
     StartDate: "7-Apr-2020",
     Address: "34/5/7 Cống Lở Phường 15, Quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8016131,
       lng: 106.636865,
     },
@@ -2376,8 +2252,7 @@ export const staffs = [
     VietnameseName: "Trần Thị Hoàng Nhạn",
     StartDate: "13-Apr-2020",
     Address: "624 Lê Văn Thọ, P.13, Q.Gò Vấp, Tp.Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8543623,
       lng: 106.6561071,
     },
@@ -2394,8 +2269,7 @@ export const staffs = [
     VietnameseName: "Âu Dương Tuấn",
     StartDate: "13-Apr-2020",
     Address: "8/4A tổ 3 KP1 phường Bửu Long, thành phố Biên Hoà, tỉnh Đồng Nai",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.9544304,
       lng: 106.8011208,
     },
@@ -2413,8 +2287,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Minh Trí",
     StartDate: "21-Apr-2020",
     Address: "Tân Định, Tân Thông Hội, Củ Chi, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.9573596,
       lng: 106.5090539,
     },
@@ -2432,8 +2305,7 @@ export const staffs = [
     VietnameseName: "Trần Văn Thành",
     StartDate: "28-Apr-2020",
     Address: "537 Phạm Văn Đồng, phường 13, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8046679,
       lng: 106.6595782,
     },
@@ -2450,8 +2322,7 @@ export const staffs = [
     VietnameseName: "Lê Quang Dũng",
     StartDate: "4-May-2020",
     Address: "C/c Jamona, quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8234239,
       lng: 106.6357573,
     },
@@ -2468,8 +2339,7 @@ export const staffs = [
     VietnameseName: "Phan Công Úy",
     StartDate: "5-May-2020",
     Address: "193/16/17 Lê Đức Thọ, Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8722638,
       lng: 106.6600127,
     },
@@ -2488,8 +2358,7 @@ export const staffs = [
     StartDate: "12-May-2020",
     Address:
       "195/27 Nguyễn Văn Thương, phường 25, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7190464,
       lng: 106.6298787,
     },
@@ -2506,8 +2375,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thái Pháp",
     StartDate: "12-May-2020",
     Address: "533/17 Phạm Văn Bạch, phường 15, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8188212,
       lng: 106.6341845,
     },
@@ -2525,8 +2393,7 @@ export const staffs = [
     StartDate: "12-May-2020",
     Address:
       "1/24 đường 74, tổ 4, khu phố 5, phường Phước Long A, quận 9, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8224164,
       lng: 106.763273,
     },
@@ -2543,8 +2410,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Viết Hưng",
     StartDate: "2-Jun-2020",
     Address: "658/34 CMT8, phường 11, quận 3, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.8367531,
       lng: 106.764318,
     },
@@ -2562,8 +2428,7 @@ export const staffs = [
     VietnameseName: "Lê Thanh Phương",
     StartDate: "2-Jun-2020",
     Address: "688/13A Lê Đức Thọ, phường 15, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.8481697,
       lng: 106.66594,
     },
@@ -2580,8 +2445,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Minh Phương",
     StartDate: "9-Jun-2020",
     Address: "66A Đường 77, P. Tân Qui, Q. 7, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.7411934,
       lng: 106.7064988,
     },
@@ -2598,8 +2462,7 @@ export const staffs = [
     VietnameseName: "Võ Minh Tuấn",
     StartDate: "9-Jun-2020",
     Address: "7 Huỳnh Văn Bánh, P. 17, Q. Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.795565,
       lng: 106.6817523,
     },
@@ -2616,8 +2479,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Ngọc Thùy Dương",
     StartDate: "16-Jun-2020",
     Address: "467/127 Lê Đức Thọ, Phường 16, Quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.8453253,
       lng: 106.6715593,
     },
@@ -2634,8 +2496,7 @@ export const staffs = [
     VietnameseName: "Đỗ Bội Linh",
     StartDate: "16-Jun-2020",
     Address: "299/30A/9 Lê Quang Sung, phường 6, quận 6, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.751288,
       lng: 106.643821,
     },
@@ -2652,8 +2513,7 @@ export const staffs = [
     VietnameseName: "Bùi Thế Phong",
     StartDate: "18-Jun-2020",
     Address: "146/97/77 Vũ Tùng, phường 2, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.8260603,
       lng: 106.723013,
     },
@@ -2670,8 +2530,7 @@ export const staffs = [
     VietnameseName: "Phạm Thị Hoa",
     StartDate: "1-Jul-2020",
     Address: "79/53 Ấp 7, Đông Thạnh, Hóc Môn, Tp. Hồ Chí Minh",
-    Seniorty: "2",
-    position: {
+   position: {
       lat: 10.9001724,
       lng: 106.6251624,
     },
@@ -2689,8 +2548,7 @@ export const staffs = [
     StartDate: "14-Jul-2020",
     Address:
       "235 lô P, cư xá Thanh Đa, phường 27, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8166994,
       lng: 106.7190411,
     },
@@ -2708,8 +2566,7 @@ export const staffs = [
     VietnameseName: "Hồ Thị Chinh",
     StartDate: "14-Jul-2020",
     Address: "53/12A KP2, phường Trung Mỹ Tây, quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8592588,
       lng: 106.5972465,
     },
@@ -2728,8 +2585,7 @@ export const staffs = [
     StartDate: "14-Jul-2020",
     Address:
       "441/14/19 Điện Biên Phủ, phường 25, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.801641,
       lng: 106.71238,
     },
@@ -2747,8 +2603,7 @@ export const staffs = [
     VietnameseName: "Cao Thị Lan",
     StartDate: "11-Aug-2020",
     Address: "94 Nguyễn Du, phường 7, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8277178,
       lng: 106.6861062,
     },
@@ -2765,8 +2620,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Đức Thuận",
     StartDate: "1-Sep-2020",
     Address: "29/2 Đường 41, phường Bình Trảng Đông, Q2, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7864793,
       lng: 106.7714591,
     },
@@ -2784,8 +2638,7 @@ export const staffs = [
     StartDate: "1-Sep-2020",
     Address:
       "496/46/17 Dương Quảng Hàm, phường 6, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8367337,
       lng: 106.6860227,
     },
@@ -2802,8 +2655,7 @@ export const staffs = [
     VietnameseName: "Võ Thị Mai Mỹ",
     StartDate: "1-Sep-2020",
     Address: "75 Nguyễn Đình Khơi, phường 4, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7941448,
       lng: 106.658099,
     },
@@ -2820,8 +2672,7 @@ export const staffs = [
     VietnameseName: "Lê Minh Quang",
     StartDate: "1-Sep-2020",
     Address: "118 Lê Thị Hồng, P.17, Q. Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.835682,
       lng: 106.6800123,
     },
@@ -2838,8 +2689,7 @@ export const staffs = [
     VietnameseName: "Phan Đình Minh Long",
     StartDate: "3-Sep-2020",
     Address: "28/29/5 Phan Tây Hồ, phường 7, quận Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7324695,
       lng: 106.6534818,
     },
@@ -2857,8 +2707,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Hoàng Phúc",
     StartDate: "8-Sep-2020",
     Address: "18 Nguyễn Thị Nhỏ, phường 14, quận 5, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7520138,
       lng: 106.6508527,
     },
@@ -2875,8 +2724,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Minh Trị",
     StartDate: "20-Oct-2020",
     Address: "52/101 Nguyễn Sỹ Sách, phường 15 quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 11.0237454,
       lng: 106.5482464,
     },
@@ -2893,8 +2741,7 @@ export const staffs = [
     VietnameseName: "Lê Đức Phương Thảo",
     StartDate: "4-Nov-2020",
     Address: "89/15 Nguyễn Thượng Hiền, P. 5, Q. Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7957817,
       lng: 106.6926527,
     },
@@ -2912,8 +2759,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Tuấn Huy",
     StartDate: "17-Nov-2020",
     Address: "207 Nguyễn Xí, P. 26, Q. Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8089621,
       lng: 106.6899333,
     },
@@ -2930,8 +2776,7 @@ export const staffs = [
     VietnameseName: "Hoàng Trịnh Phương",
     StartDate: "23-Nov-2020",
     Address: "549A Nguyễn Văn Quá, P. Đông Hưng Thuận, Q. 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.843135,
       lng: 106.6257796,
     },
@@ -2949,8 +2794,7 @@ export const staffs = [
     VietnameseName: "Đỗ Trọng Nhân",
     StartDate: "15-Dec-2020",
     Address: "25/33/66 Bùi Quang Là, Q. Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8375572,
       lng: 106.6402093,
     },
@@ -2967,8 +2811,7 @@ export const staffs = [
     VietnameseName: "Hoàng Cao Cường",
     StartDate: "1-Apr-2021",
     Address: "B.608 cc Nhiêu Tứ 1, P.7, Q. Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7996162,
       lng: 106.6894301,
     },
@@ -2985,8 +2828,7 @@ export const staffs = [
     VietnameseName: "Trần Kim Nhật Vi",
     StartDate: "6-Apr-2021",
     Address: "13/8 Trần Kế Xương, P. 3, Q. Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.802345,
       lng: 106.692364,
     },
@@ -3004,8 +2846,7 @@ export const staffs = [
     StartDate: "12-Apr-2021",
     Address:
       "Đường 30, chung cư 4S Linh Đông, P. Linh Đông, TP. Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8441125,
       lng: 106.7407742,
     },
@@ -3023,8 +2864,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Quốc Trường",
     StartDate: "19-Apr-2021",
     Address: "32 Nguyễn Đình Khơi, P. 4, Q. Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7948687,
       lng: 106.6573263,
     },
@@ -3041,8 +2881,7 @@ export const staffs = [
     VietnameseName: "Lê Hồ Quang",
     StartDate: "27-Apr-2021",
     Address: "20/3B KP 2, Quốc lộ 1A, P. Trung Mỹ Tây, Q. 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8453027,
       lng: 106.6181498,
     },
@@ -3059,8 +2898,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Chí Tuyến",
     StartDate: "5-May-2021",
     Address: "26 Nguyễn Văn Thạnh, P. Long Thạnh Mỹ, TP. Thủ Đức",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8418625,
       lng: 106.8258005,
     },
@@ -3077,8 +2915,7 @@ export const staffs = [
     VietnameseName: "Bùi Quang Tiến",
     StartDate: "5-May-2021",
     Address: "223/12 cư xá Lữ Gia, P. 15, Q. 11, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.9167274,
       lng: 106.5482499,
     },
@@ -3096,8 +2933,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thiện Huy",
     StartDate: "12-May-2021",
     Address: "191/41/7 Lê Lợi, P. 3, Q. Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8142751,
       lng: 106.680136,
     },
@@ -3114,8 +2950,7 @@ export const staffs = [
     VietnameseName: "Phạm Đại Tài",
     StartDate: "18-May-2021",
     Address: "A50, đường D1, P. Tân Thới Nhất, Q. 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8430568,
       lng: 106.62123,
     },
@@ -3132,8 +2967,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Mai",
     StartDate: "1-Jun-2021",
     Address: "Chung cư Bộ Công An, Phường An Khánh, Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7942292,
       lng: 106.7360159,
     },
@@ -3151,8 +2985,7 @@ export const staffs = [
     StartDate: "1-Jun-2021",
     Address:
       "227 Hoàng Hoa Thám, phường 13, quận Tân Bình, Thành phố Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.807682,
       lng: 106.6477686,
     },
@@ -3170,8 +3003,7 @@ export const staffs = [
     StartDate: "16-Jan-2019",
     Address:
       "69/11 đường số 5, phường Tăng Nhơn Phú B, quận 9, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.9058407,
       lng: 106.761872,
     },
@@ -3189,8 +3021,7 @@ export const staffs = [
     VietnameseName: "Phạm Mạnh Cường",
     StartDate: "8-Jun-2021",
     Address: "222 Quang Trung, phường 10, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8297883,
       lng: 106.6712734,
     },
@@ -3207,8 +3038,7 @@ export const staffs = [
     VietnameseName: "Phạm Hữu Tài",
     StartDate: "8-Jun-2021",
     Address: "86B Hùng Vương, phường 9, quận 5, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7599531,
       lng: 106.6725036,
     },
@@ -3226,8 +3056,7 @@ export const staffs = [
     StartDate: "8-Jun-2021",
     Address:
       "159 Xa Lộ Hà Nội, Phường Thảo Điền, Quận 2, TP.Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8017781,
       lng: 106.7393475,
     },
@@ -3244,8 +3073,7 @@ export const staffs = [
     VietnameseName: "Trần Thị Châu Khoa",
     StartDate: "15-Jun-2021",
     Address: "86/53  TCH 36, Phường Tân Chánh Hiệp, Quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.857027,
       lng: 106.623316,
     },
@@ -3263,8 +3091,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Hà Vũ Duy",
     StartDate: "15-Jun-2021",
     Address: "57 Tản Đà, Phường 10, Quận 5, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 12.2866299,
       lng: 109.1948525,
     },
@@ -3281,8 +3108,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thanh Nhân",
     StartDate: "15-Jun-2021",
     Address: "49/14/12 Bùi Quang Là, P. 12, Q. Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8012136,
       lng: 106.701444,
     },
@@ -3299,8 +3125,7 @@ export const staffs = [
     VietnameseName: "Lê Hà My",
     StartDate: "15-Jun-2021",
     Address: "339/63 Lê Văn Sỹ, P.13, Q.3, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7882253,
       lng: 106.6497163,
     },
@@ -3317,8 +3142,7 @@ export const staffs = [
     VietnameseName: "Đặng Phước Sinh",
     StartDate: "17-Jun-2021",
     Address: "250B Tân Kỳ Tân Quý, P. Sơn Kỳ, Q. Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7983786,
       lng: 106.6237152,
     },
@@ -3335,8 +3159,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Hoài Cát Linh",
     StartDate: "22-Jun-2021",
     Address: "50/2 Ba Vân, phường 14, quận Tân Bình, TPTp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7949402,
       lng: 106.6426698,
     },
@@ -3353,8 +3176,7 @@ export const staffs = [
     VietnameseName: "Lê Minh Phúc",
     StartDate: "22-Jun-2021",
     Address: "373/197/8 Lý Thường Kiệt, Phường 9, Q. Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7789652,
       lng: 106.6502639,
     },
@@ -3371,8 +3193,7 @@ export const staffs = [
     VietnameseName: "Lâm Tuấn Lộc",
     StartDate: "25-Jun-2021",
     Address: "221 Phan Đình Phùng, Phường 15, Q. Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.795886,
       lng: 106.681673,
     },
@@ -3389,8 +3210,7 @@ export const staffs = [
     VietnameseName: "Phan Thị Phương Uyên",
     StartDate: "29-Jun-2021",
     Address: "688/13A Lê Đức Thọ, Phường 15, !uận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8491697,
       lng: 106.66594,
     },
@@ -3407,8 +3227,7 @@ export const staffs = [
     VietnameseName: "Phạm Nguyễn Khánh Thịnh",
     StartDate: "29-Jun-2021",
     Address: "338/1 Điện Biên Phủ, Phường 11, Quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7753892,
       lng: 106.6815661,
     },
@@ -3426,8 +3245,7 @@ export const staffs = [
     StartDate: "29-Jun-2021",
     Address:
       "24c/31 Đường số 5, Phường Linh Chiểu, TP. Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8538995,
       lng: 106.7674547,
     },
@@ -3444,8 +3262,7 @@ export const staffs = [
     VietnameseName: "Lương Tiên Trung",
     StartDate: "1-Jul-2021",
     Address: "118/55A, Lê Trọng Tấn, Tây Thạnh, Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8146001,
       lng: 106.6247307,
     },
@@ -3462,8 +3279,7 @@ export const staffs = [
     VietnameseName: "Lương Văn Triệu",
     StartDate: "1-Jul-2021",
     Address: "160/43 Phan Huy Ích, phường 12, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8405178,
       lng: 106.6393669,
     },
@@ -3480,8 +3296,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Triệu Khang",
     StartDate: "1-Jul-2021",
     Address: "163/15/2 Tô Hiến Thành P.13 Q.10 Tp.Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7800996,
       lng: 106.6697014,
     },
@@ -3499,8 +3314,7 @@ export const staffs = [
     StartDate: "1-Jul-2021",
     Address:
       "47, đường số 24A, phường Bình Trị Đông B, quận Bình Tân, Tp.Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7602697,
       lng: 106.6064123,
     },
@@ -3518,8 +3332,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Hoài Trân",
     StartDate: "1-Jul-2021",
     Address: "Số 6 Nghĩa Hưng, Phường 6, Quận Tân Bình, TP Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7972422,
       lng: 106.6756642,
     },
@@ -3538,8 +3351,7 @@ export const staffs = [
     StartDate: "1-Jul-2021",
     Address:
       "20/4 Tân Tiến 12, ấp Tân Tiến, xã Xuân Thới Đông, huyện Hóc Môn, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8605277,
       lng: 106.6018314,
     },
@@ -3558,8 +3370,7 @@ export const staffs = [
     StartDate: "1-Jul-2021",
     Address:
       "T3-703 Riviera Point, Nguyễn Văn Tưởng, Quận 7, Phường Tân Phú, TPTp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7319376,
       lng: 106.7292109,
     },
@@ -3578,8 +3389,7 @@ export const staffs = [
     StartDate: "5-Jul-2021",
     Address:
       "71/75 Đường số 3, khu phố 13, phường Bình Hưng Hòa A, quận Bình Tân, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7817192,
       lng: 106.6163971,
     },
@@ -3597,8 +3407,7 @@ export const staffs = [
     VietnameseName: "Phạm Thiên Ân",
     StartDate: "6-Jul-2021",
     Address: "207 Độc Lập, Phường Tân Quý, Quận Tân Phú, TPTp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7929194,
       lng: 106.6280595,
     },
@@ -3616,8 +3425,7 @@ export const staffs = [
     StartDate: "6-Jul-2021",
     Address:
       "Chung cư Hưng Ngân, 48A Dương Thị Mười, Phường Tân Chánh Hiệp, Quận 12, Thành phố Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8588807,
       lng: 106.6304778,
     },
@@ -3635,8 +3443,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Văn Thất",
     StartDate: "6-Jul-2021",
     Address: "Tổ 17, KP4, P. Trảng Dài, TP Biên Hòa, Tỉnh Đồng Nai",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8798722,
       lng: 106.8652478,
     },
@@ -3654,8 +3461,7 @@ export const staffs = [
     VietnameseName: "Đỗ Xuân Thành",
     StartDate: "6-Jul-2021",
     Address: "90 Tam Đảo, Phường 14, Quận 10, TPTp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7752784,
       lng: 106.6591656,
     },
@@ -3672,8 +3478,7 @@ export const staffs = [
     VietnameseName: "Bùi Thanh Dung",
     StartDate: "6-Jul-2021",
     Address: "3/33 Nguyễn Thái Sơn, P.3, Gò Vấp, Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.844706,
       lng: 106.7275805,
     },
@@ -3691,8 +3496,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thành Phú",
     StartDate: "6-Jul-2021",
     Address: "154/72/17 Phạm Văn Hai, P.3, Q. Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7939322,
       lng: 106.6606827,
     },
@@ -3710,8 +3514,7 @@ export const staffs = [
     StartDate: "13-Jul-2021",
     Address:
       "60 Trần Văn Danh, phường 13, quận Tân Bình, thành phố Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8096481,
       lng: 106.6642521,
     },
@@ -3729,8 +3532,7 @@ export const staffs = [
     StartDate: "13-Jul-2021",
     Address:
       "Chung cư 8x plus - 163A Trường Chinh, phường Tân Thới Nhất, Q12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8115582,
       lng: 106.6692217,
     },
@@ -3747,8 +3549,7 @@ export const staffs = [
     VietnameseName: "Vũ Thị Thu Thủy",
     StartDate: "13-Jul-2021",
     Address: "Tổ 17, KP4, P. Trảng Dài, TP Biên Hòa, Tỉnh Đồng Nai",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8319843,
       lng: 106.6866351,
     },
@@ -3765,8 +3566,7 @@ export const staffs = [
     VietnameseName: "Phạm Nguyễn Minh Hiếu",
     StartDate: "13-Jul-2021",
     Address: "528/113 Điện Biên Phủ, phường 9, quạn 3, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7709586,
       lng: 106.6759312,
     },
@@ -3783,8 +3583,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Bích Thủy",
     StartDate: "13-Jul-2021",
     Address: "35 Tứ Hải, phường 6, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7838746,
       lng: 106.6578805,
     },
@@ -3801,8 +3600,7 @@ export const staffs = [
     VietnameseName: "Phạm Đình Thuật",
     StartDate: "15-Jul-2021",
     Address: "Tổ 27, ấp Dân Thắng 1, Tân Thới Nhì, Hóc Môn, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8881883,
       lng: 106.577922,
     },
@@ -3820,8 +3618,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Viết Hưng",
     StartDate: "2-Jun-2020",
     Address: "Số 1A, đường 249, phường Tân Phú, quận 9, thành phố Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8472017,
       lng: 106.7816916,
     },
@@ -3838,8 +3635,7 @@ export const staffs = [
     VietnameseName: "Trần Văn Hưng",
     StartDate: "20-Jul-2021",
     Address: "405/46/40 Thống nhất, P.11, Q. Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8441648,
       lng: 106.6629318,
     },
@@ -3856,8 +3652,7 @@ export const staffs = [
     VietnameseName: "Đặng Thanh Long",
     StartDate: "20-Jul-2021",
     Address: "52/3 Nguyễn Văn Đậu, P.3, Q. Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8066295,
       lng: 106.6877731,
     },
@@ -3874,8 +3669,7 @@ export const staffs = [
     VietnameseName: "Vũ Hoàng Minh Hải",
     StartDate: "22-Jul-2021",
     Address: "548/29/4 Tân Kỳ Tân Quý, Bình Hưng Hòa, Bình Tân, TP Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8187868,
       lng: 106.6333219,
     },
@@ -3892,8 +3686,7 @@ export const staffs = [
     VietnameseName: "Trần Hoàng Minh",
     StartDate: "27-Jul-2021",
     Address: "944/36 Huỳnh Tấn Phát, phường Tân Phú, Quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.73603,
       lng: 106.731669,
     },
@@ -3910,8 +3703,7 @@ export const staffs = [
     VietnameseName: "Hà Văn Quí",
     StartDate: "29-Jul-2021",
     Address: "406/6 Cộng Hòa, P. 13, Q. Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8336604,
       lng: 106.7003146,
     },
@@ -3930,8 +3722,7 @@ export const staffs = [
     StartDate: "30-Jul-2021",
     Address:
       "49/56/99 Trịnh Đình Trọng, phường Phú Trung, quận Tân Phú, TP.Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7730186,
       lng: 106.6401254,
     },
@@ -3949,8 +3740,7 @@ export const staffs = [
     VietnameseName: "Hoàng Quốc Nam",
     StartDate: "2-Aug-2021",
     Address: "453/71 KA Lê Văn Sỹ, P.12, Q.3, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7893667,
       lng: 106.6751229,
     },
@@ -3968,8 +3758,7 @@ export const staffs = [
     StartDate: "3-Aug-2021",
     Address:
       "119 Bình Long, P. Bình Hưng Hoà A, Quận Bình Tân, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7786158,
       lng: 106.6206564,
     },
@@ -3987,8 +3776,7 @@ export const staffs = [
     VietnameseName: "Lê Văn Minh Phụng",
     StartDate: "3-Aug-2021",
     Address: "43A Phan Văn Hớn, Quận 12, Thành phố Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8399361,
       lng: 106.622944,
     },
@@ -4006,8 +3794,7 @@ export const staffs = [
     VietnameseName: "Phạm Hồ Linh Thư",
     StartDate: "10-Aug-2021",
     Address: "33/11 Trần Bình Trọng, P1, Q5, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.753564,
       lng: 106.6813788,
     },
@@ -4024,8 +3811,7 @@ export const staffs = [
     VietnameseName: "Lê Văn Thương",
     StartDate: "13-Aug-2021",
     Address: "Đường TMT13, Phường Trung Mĩ Tây, Q. 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7745024,
       lng: 106.6193403,
     },
@@ -4044,8 +3830,7 @@ export const staffs = [
     StartDate: "17-Aug-2021",
     Address:
       "05.18 S1.01 Vinhomes Grand Park, phường Long Thạnh Mỹ, Quận 9, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8067266,
       lng: 106.6780829,
     },
@@ -4062,8 +3847,7 @@ export const staffs = [
     VietnameseName: "Bùi Quốc Huy",
     StartDate: "17-Aug-2021",
     Address: "42/19 Nghĩa Phát, P.6, Q. Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.785795,
       lng: 106.657915,
     },
@@ -4080,8 +3864,7 @@ export const staffs = [
     VietnameseName: "Võ Thái Lộc",
     StartDate: "17-Aug-2021",
     Address: "Hẻm 14 trường sa P.17 Q.Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8257049,
       lng: 106.686365,
     },
@@ -4098,8 +3881,7 @@ export const staffs = [
     VietnameseName: "Phạm Bá Hải Quang",
     StartDate: "17-Aug-2021",
     Address: "129/66 Nguyễn Văn Công, phường 3, Quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.824067,
       lng: 106.6769585,
     },
@@ -4116,8 +3898,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Kiều Anh",
     StartDate: "17-Aug-2021",
     Address: "842/1/30 Nguyễn Kiệm, Phường 3, Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8157543,
       lng: 106.6787945,
     },
@@ -4134,8 +3915,7 @@ export const staffs = [
     VietnameseName: "Lâm Bảo Khang",
     StartDate: "24-Aug-2021",
     Address: "6A, Phùng Chí Kiên, P. Tân Qúy, Q. Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7975843,
       lng: 106.6232787,
     },
@@ -4153,8 +3933,7 @@ export const staffs = [
     StartDate: "24-Aug-2021",
     Address:
       "toà riverside 90 Nguyễn Hữu Cảnh, phường 22, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7895094,
       lng: 106.717751,
     },
@@ -4172,8 +3951,7 @@ export const staffs = [
     VietnameseName: "Đỗ Quốc Cường",
     StartDate: "26-Aug-2021",
     Address: "101/162/8/10 ấp 4 xã Đông Thạnh, Hóc Môn, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.9150265,
       lng: 106.6495946,
     },
@@ -4191,8 +3969,7 @@ export const staffs = [
     VietnameseName: "Diêu Văn Toàn",
     StartDate: "26-Aug-2021",
     Address: "83/41 Phạm Văn Bạch, Phường 15, Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.883285,
       lng: 106.6740259,
     },
@@ -4209,8 +3986,7 @@ export const staffs = [
     VietnameseName: "Phạm Ngọc Minh",
     StartDate: "31-Aug-2021",
     Address: "49/52 Âu Cơ, P. 14, Q. 11, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7712249,
       lng: 106.6505316,
     },
@@ -4228,8 +4004,7 @@ export const staffs = [
     VietnameseName: "Trần Minh Trí",
     StartDate: "7-Sep-2021",
     Address: "146/1A Nguyễn Chế Nghĩa, phường 12, quận 8, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7422849,
       lng: 106.6536656,
     },
@@ -4247,8 +4022,7 @@ export const staffs = [
     StartDate: "7-Sep-2021",
     Address:
       "81/1 đường số 12, phường Bình Hưng Hòa, quận Bình Tân, thành phố Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8219797,
       lng: 106.6067736,
     },
@@ -4266,8 +4040,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Kim Ngân",
     StartDate: "14-Sep-2021",
     Address: "1569 Nguyễn Cửu Phú xã Tân Kiên huyện Bình Chánh Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7303494,
       lng: 106.5812485,
     },
@@ -4284,8 +4057,7 @@ export const staffs = [
     VietnameseName: "Châu Minh Ý",
     StartDate: "16-Sep-2021",
     Address: "503/1 Trần Xuân Soạn, Tân Kiểng, Quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7510727,
       lng: 106.7084041,
     },
@@ -4302,8 +4074,7 @@ export const staffs = [
     VietnameseName: "Lê Trần Thế Vinh",
     StartDate: "21-Sep-2021",
     Address: "Chung cư Citihome, phường Cát Lái, Quận 2, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8063531,
       lng: 106.6787103,
     },
@@ -4320,8 +4091,7 @@ export const staffs = [
     VietnameseName: "Võ Minh Đạt",
     StartDate: "21-Sep-2021",
     Address: "194/50/8 Bạch Đằng, P24, Bình Thạnh, TP.Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.804245,
       lng: 106.706497,
     },
@@ -4339,8 +4109,7 @@ export const staffs = [
     StartDate: "21-Sep-2021",
     Address:
       "7.24 Moscow Tower, KP.4, P. Tân Thới Nhất, Q. 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8239366,
       lng: 106.624743,
     },
@@ -4358,8 +4127,7 @@ export const staffs = [
     VietnameseName: "Trần Xuân Mai",
     StartDate: "21-Sep-2021",
     Address: "18 lô B Bùi Minh Trực, phường 6, quận 8, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7362509,
       lng: 106.6530822,
     },
@@ -4376,8 +4144,7 @@ export const staffs = [
     VietnameseName: "Phan Ánh Dương",
     StartDate: "28-Sep-2021",
     Address: "25/17/6 Đoàn Giỏi, P. Sơn Kỳ, Q. Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7975271,
       lng: 106.6143495,
     },
@@ -4394,8 +4161,7 @@ export const staffs = [
     VietnameseName: "Trương Thanh Long",
     StartDate: "5-Oct-2021",
     Address: "28/34 Trần Bình Trọng, phường 1, quận 5, Tp Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7534539,
       lng: 106.6828851,
     },
@@ -4412,8 +4178,7 @@ export const staffs = [
     VietnameseName: "Lê Thanh Ngân",
     StartDate: "5-Oct-2021",
     Address: "136 Trần Quang Diệu, Phường 14, Quận 3, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7902859,
       lng: 106.6781861,
     },
@@ -4430,8 +4195,7 @@ export const staffs = [
     VietnameseName: "Trần Hoàng Phương",
     StartDate: "12-Oct-2021",
     Address: "338/25 Lê Văn Khương, P. Thới An, Q. 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8486919,
       lng: 106.6553467,
     },
@@ -4448,8 +4212,7 @@ export const staffs = [
     VietnameseName: "Hà Phi Phú",
     StartDate: "12-Oct-2021",
     Address: "14/23B Văn Chung, P.13, Q. Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8074848,
       lng: 106.6460481,
     },
@@ -4466,8 +4229,7 @@ export const staffs = [
     VietnameseName: "Phạm Văn Hải",
     StartDate: "14-Oct-2021",
     Address: "111/13 Phạm Văn Chiêu, p14, Q.Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8273988,
       lng: 106.6777775,
     },
@@ -4484,8 +4246,7 @@ export const staffs = [
     VietnameseName: "Võ Quốc Hùng",
     StartDate: "1-Nov-2021",
     Address: "C/c Sài Gòn Residence, Phước Kiến, Nhà Bè, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8098888,
       lng: 106.668623,
     },
@@ -4503,8 +4264,7 @@ export const staffs = [
     StartDate: "9-Nov-2021",
     Address:
       "482/12/2E Lê Quang Định, phường 11, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8132224,
       lng: 106.6904887,
     },
@@ -4522,8 +4282,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Văn Ninh",
     StartDate: "17-Dec-2019",
     Address: "8 đường số 1, phường Tân Thuận Đông, quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7520574,
       lng: 106.740085,
     },
@@ -4540,8 +4299,7 @@ export const staffs = [
     VietnameseName: "Ngô Phú Cường",
     StartDate: "9-Nov-2021",
     Address: "214/129C Nguyễn Trãi, quận 1, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7640372,
       lng: 106.6848678,
     },
@@ -4559,8 +4317,7 @@ export const staffs = [
     VietnameseName: "Lê Thị Bích Phượng",
     StartDate: "16-Nov-2021",
     Address: "28/12 Nguyễn Hiến Lê, phường 13, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8068329,
       lng: 106.6462088,
     },
@@ -4577,8 +4334,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Sỹ Hải Thanh",
     StartDate: "16-Nov-2021",
     Address: "phường 15 Quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8493477,
       lng: 106.6761982,
     },
@@ -4596,8 +4352,7 @@ export const staffs = [
     StartDate: "18-Nov-2021",
     Address:
       "A5/51B1 Ấp 1B, Đường liên ấp 123, Vĩnh lộc A, Bình Chánh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8094754,
       lng: 106.6330563,
     },
@@ -4616,8 +4371,7 @@ export const staffs = [
     StartDate: "18-Nov-2021",
     Address:
       "C10.08 chung cư Emerald 36 Bờ Bao Tân Thắng, P. Sơn K, Q.Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8052792,
       lng: 106.6120286,
     },
@@ -4635,8 +4389,7 @@ export const staffs = [
     VietnameseName: "Phạm Thị Chiều",
     StartDate: "1-Dec-2021",
     Address: "10/6 đường số 9, Hiệp Bình Chánh, Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8384987,
       lng: 106.8299253,
     },
@@ -4653,8 +4406,7 @@ export const staffs = [
     VietnameseName: "Võ Minh Huy",
     StartDate: "1-Dec-2021",
     Address: "389/5/22A quốc lộ 13, Hiệp Bình Phước, Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8633001,
       lng: 106.721001,
     },
@@ -4672,8 +4424,7 @@ export const staffs = [
     VietnameseName: "Giang Kim Chánh",
     StartDate: "1-Dec-2021",
     Address: "76 Hùng Vương, phường 1, quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7626049,
       lng: 106.6774003,
     },
@@ -4690,8 +4441,7 @@ export const staffs = [
     VietnameseName: "Trương Thanh Quang",
     StartDate: "2-Dec-2021",
     Address: "không ở HCM",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7069661,
       lng: 106.6240993,
     },
@@ -4709,8 +4459,7 @@ export const staffs = [
     StartDate: "2-Dec-2021",
     Address:
       "915/74 đường C2, tổ 17, ấp 3, Phước Kiến, Nhà Bè, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7122925,
       lng: 106.7051223,
     },
@@ -4727,8 +4476,7 @@ export const staffs = [
     VietnameseName: "Hứa Minh Tuấn",
     StartDate: "7-Dec-2021",
     Address: "31/1 Trương Đình Hội, Phường 16, Quận 8, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7169525,
       lng: 106.6253887,
     },
@@ -4745,8 +4493,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Vũ Hoài",
     StartDate: "9-Dec-2021",
     Address: "965/16/7 Quang Trung, phường 14, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8443808,
       lng: 106.6390136,
     },
@@ -4764,8 +4511,7 @@ export const staffs = [
     StartDate: "20-Dec-2021",
     Address:
       "Khu phố 9, Mỹ Đông, Thành phố Phan Rang – Tháp Chàm, Tỉnh Ninh Thuận",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 11.5483314,
       lng: 109.0210855,
     },
@@ -4783,8 +4529,7 @@ export const staffs = [
     VietnameseName: "Lê Hoàng Anh Quốc",
     StartDate: "28-Dec-2021",
     Address: "783 Trần Xuân Soạn, phường Tân Hưng, quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8781513,
       lng: 106.8089026,
     },
@@ -4802,8 +4547,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Sơn Lâm",
     StartDate: "4-Jan-2022",
     Address: "30/1 Đường 47 P. Hiệp Bình Chánh, Thủ Đức, Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8310464,
       lng: 106.7230632,
     },
@@ -4820,8 +4564,7 @@ export const staffs = [
     VietnameseName: "Ngô Thành Nguyên",
     StartDate: "4-Jan-2022",
     Address: "390/81 Nguyễn Đình Chiểu, phường 4, quận 3, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7747395,
       lng: 106.6842993,
     },
@@ -4838,8 +4581,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Ngọc Sinh",
     StartDate: "8-Feb-2022",
     Address: "7/2 Đường số 7, P. 7, Q. Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8287369,
       lng: 106.6823466,
     },
@@ -4857,8 +4599,7 @@ export const staffs = [
     StartDate: "14-Feb-2022",
     Address:
       "686/43/2 Quốc Lộ 1A, Khu Phố 9, Bình Hưng Hòa B, Bình Tân, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8234647,
       lng: 106.6029978,
     },
@@ -4877,8 +4618,7 @@ export const staffs = [
     StartDate: "22-Feb-2022",
     Address:
       "01.21 chung cư B1, 06-10 Trường Sa, Phường 17, Quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7930945,
       lng: 106.7013049,
     },
@@ -4896,8 +4636,7 @@ export const staffs = [
     VietnameseName: "Huỳnh Phúc Lộc",
     StartDate: "1-Mar-2022",
     Address: "22 Đường Số 1, Phường Tân Phú, Quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7368493,
       lng: 106.7207213,
     },
@@ -4914,8 +4653,7 @@ export const staffs = [
     VietnameseName: "Dương Thành Liêm",
     StartDate: "9-Mar-2022",
     Address: "60 Đường số 1, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7409639,
       lng: 106.7260093,
     },
@@ -4934,8 +4672,7 @@ export const staffs = [
     StartDate: "14-Mar-2022",
     Address:
       "36/24/21 đường số 4, phường Hiệp Bình Phước, Tp. Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8385459,
       lng: 106.720077,
     },
@@ -4952,8 +4689,7 @@ export const staffs = [
     VietnameseName: "Trần Phi",
     StartDate: "14-Mar-2022",
     Address: "606/8 đường 3 tháng 2, phường 14, Quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7673871,
       lng: 106.6609392,
     },
@@ -4970,8 +4706,7 @@ export const staffs = [
     VietnameseName: "Lê Minh Nhật",
     StartDate: "21-Mar-2022",
     Address: "52 đường 72, phường 10, quận 6, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7330966,
       lng: 106.6264044,
     },
@@ -4989,8 +4724,7 @@ export const staffs = [
     StartDate: "24-Mar-2022",
     Address:
       "95 đường Trương Quốc Dung, phường 10, quận Phú Nhuận, tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7943325,
       lng: 106.6731245,
     },
@@ -5007,8 +4741,7 @@ export const staffs = [
     VietnameseName: "Phan Thanh Hào",
     StartDate: "1-Apr-2022",
     Address: "486 đường 3/2, phường 14, quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7709337,
       lng: 106.6600791,
     },
@@ -5026,8 +4759,7 @@ export const staffs = [
     StartDate: "1-Apr-2022",
     Address:
       "Chung cư Topaz Home 2, đường 154, phường Tân Phú, Thành Phố Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.864831,
       lng: 106.810627,
     },
@@ -5046,8 +4778,7 @@ export const staffs = [
     StartDate: "5-Apr-2022",
     Address:
       "Phòng A4A, chung cư Thuận Việt, 319 đường Lý Thường Kiệt, phường 15, quận 11, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7626186,
       lng: 106.6586858,
     },
@@ -5065,8 +4796,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Tuấn Anh",
     StartDate: "5-Apr-2022",
     Address: "301/15 Phan Xích Long, p1, quận Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8019778,
       lng: 106.682614,
     },
@@ -5084,8 +4814,7 @@ export const staffs = [
     StartDate: "5-Apr-2022",
     Address:
       "148/3A đường Nguyễn Lâm, phường 3, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8036346,
       lng: 106.6664144,
     },
@@ -5102,8 +4831,7 @@ export const staffs = [
     VietnameseName: "Trần Trí Tài",
     StartDate: "5-Apr-2022",
     Address: "D14 đường 5A, phường Tân Hưng, quận 7, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7429751,
       lng: 106.7034814,
     },
@@ -5120,8 +4848,7 @@ export const staffs = [
     VietnameseName: "Lê Thế Long",
     StartDate: "12-Apr-2022",
     Address: "24A đường Khuôn Việt, quận Tân Phú, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8049112,
       lng: 106.6667395,
     },
@@ -5139,8 +4866,7 @@ export const staffs = [
     StartDate: "12-Apr-2022",
     Address:
       "104/9A2 khu phố 2, phường Đông Hưng Thuận, quận 12, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8299696,
       lng: 106.6284279,
     },
@@ -5158,8 +4884,7 @@ export const staffs = [
     StartDate: "12-Apr-2022",
     Address:
       "27/3 đường Phan Chu Trinh, phường 2, quận Bình Thạnh, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8034721,
       lng: 106.7015622,
     },
@@ -5177,8 +4902,7 @@ export const staffs = [
     StartDate: "18-Apr-2022",
     Address:
       "540, khu 3, ấp Phước hội, xã Long Hưng, thành phố Biên Hòa, tỉnh Đồng Nai",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8762722,
       lng: 106.8632478,
     },
@@ -5197,8 +4921,7 @@ export const staffs = [
     StartDate: "18-Apr-2022",
     Address:
       "T1-B31.10 Masteri Thảo Điền, Xa Lộ Hà Nội, TP Thủ Đức, TP Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8028186,
       lng: 106.7422617,
     },
@@ -5217,8 +4940,7 @@ export const staffs = [
     StartDate: "25-Apr-2022",
     Address:
       "194 đường 138, phường Tân Phú, quận 9, Tp. Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.861977,
       lng: 106.8094871,
     },
@@ -5236,8 +4958,7 @@ export const staffs = [
     StartDate: "19-Dec-2016",
     Address:
       "524 khu phố Hung Lộc, phường Hưng Định, thị xã Thuận An, tỉnh Bình Dương",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8148225,
       lng: 106.6934448,
     },
@@ -5255,8 +4976,7 @@ export const staffs = [
     VietnameseName: "Ngô Xuân Hiển",
     StartDate: "22-Jul-2019",
     Address: "31/8 đường số 8, Phường 11 , Q. Gò vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8381057,
       lng: 106.6633903,
     },
@@ -5274,8 +4994,7 @@ export const staffs = [
     StartDate: "7-Apr-2020",
     Address:
       "Chung cư BIWASE, Số 400, Đường Trần Quang Diệu, Phường An Phú, Tp Thuận An, Tỉnh Bình Dương",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.9596314,
       lng: 106.748793,
     },
@@ -5294,8 +5013,7 @@ export const staffs = [
     StartDate: "20-Apr-2020",
     Address:
       "Block Iris 4, chung cư Hà Đô Centrosa, số 200 đường 3 tháng 2, phường 12, quận 10, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7753466,
       lng: 106.6780884,
     },
@@ -5313,8 +5031,7 @@ export const staffs = [
     VietnameseName: "Lê Xuân Vinh",
     StartDate: "28-Apr-2020",
     Address: "330/8 Hồng Lạc, quận Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7870575,
       lng: 106.6436716,
     },
@@ -5331,8 +5048,7 @@ export const staffs = [
     VietnameseName: "Trần Thị Hồng Nhung",
     StartDate: "3-Aug-2020",
     Address: "P. 302, 18 lô A Cc Ngô Quyền, Q5, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7977817,
       lng: 106.6926527,
     },
@@ -5350,8 +5066,7 @@ export const staffs = [
     StartDate: "22-Sep-2020",
     Address:
       "114/57/16 Dương Quảng Hàm, phường 15, quận Gò Vấp, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8234685,
       lng: 106.6956493,
     },
@@ -5368,8 +5083,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thị Thanh Trúc",
     StartDate: "25-Dec-2020",
     Address: "694/16 Nguyễn Kiệm, P. 14, Q. Phú Nhuận, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7989092,
       lng: 106.6820635,
     },
@@ -5386,8 +5100,7 @@ export const staffs = [
     VietnameseName: "Nguyễn Thành Đạt",
     StartDate: "7-Sep-2021",
     Address: "45/46A Trần Thái Tông, p.15, Q.Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.8156181,
       lng: 106.6335352,
     },
@@ -5404,8 +5117,7 @@ export const staffs = [
     VietnameseName: "Võ Nhựt Kha",
     StartDate: "7-Sep-2021",
     Address: "C2/12 ấp 4, xã Bình Hưng, huyện Bình Chánh, TPTp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7290993,
       lng: 106.6767718,
     },
@@ -5423,8 +5135,7 @@ export const staffs = [
     StartDate: "14-Sep-2021",
     Address:
       "Căn hộ 0604, lô B1 chung cư An Lộc 1, khu phố 5, phường An Phú, Quận 2, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.8262867,
       lng: 106.6406665,
     },
@@ -5442,8 +5153,7 @@ export const staffs = [
     StartDate: "14-Sep-2021",
     Address:
       "36 Mai Chí Thọ, Quận 2, Phường An Phú, TP Thủ Đức, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-      position: {
+     position: {
       lat: 10.7908697,
       lng: 106.752271,
     },
@@ -5461,8 +5171,7 @@ export const staffs = [
     VietnameseName: "Lê Khánh Linh",
     StartDate: "6-Jan-2022",
     Address: "25 đường A4, P.12, Q. Tân Bình, Tp. Hồ Chí Minh",
-    Seniorty: "1",
-    position: {
+   position: {
       lat: 10.7998249,
       lng: 106.6498378,
     },
