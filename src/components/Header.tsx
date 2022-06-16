@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Header:React.FC = () => {
     return (
-        <img src="/public/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" alt="" />
     )
 }
 

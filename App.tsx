@@ -265,7 +265,7 @@ const App: React.VFC = () => {
             typeEmployees = {employee}
           >
             {/* show main office  */}
-            <Marker position={center} type={"main office"} icon={{ url: '../../public/images/main-office.png'}} zIndex={99999} />
+            <Marker position={center} type={"main office"} icon={{ url: '../../images/main-office.png'}} zIndex={99999} />
             {/* show district label */}
             {zoom >= 11 &&
               districtCenter.map((item) => {
