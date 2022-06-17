@@ -52,10 +52,14 @@ const App: React.VFC = () => {
   };
 
   const [employee, setEmployee] = React.useState("staff");
+  const newStaffs = addSeniorty(staffs);  
+  let dataFilter = employee === "staff" ? newStaffs : candidates;
+  
   const [year, setYear] = React.useState([0, 15]);
   const [showOffice, setShowOffice] = React.useState(false);
   const [showHeatMap, setShowHeatMap] = React.useState(false);
   const [showFilter, setShowFilter] = React.useState(false);
+  const [filterList, setFilterList] = React.useState(dataFilter);
 
   const [currentInfoWindow, setCurrentInfoWindow] =
     React.useState<google.maps.InfoWindow>();
@@ -98,13 +102,7 @@ const App: React.VFC = () => {
     setShowFilter(!showFilter); 
   }
 
-  const newStaffs = addSeniorty(staffs);  
-
-
   React.useEffect(() => {
-    let dataFilter = employee === "staff" ? newStaffs : candidates;
-    console.log(dataFilter, "dataFilter");
-    
     if (
       (department !== "" && department !== "All") ||
       (area !== "" && area !== "All") ||
@@ -126,7 +124,8 @@ const App: React.VFC = () => {
           );
         });
       }
-      setFilter(dataFilter);
+      setFilter(dataFilter); 
+      setFilterList(dataFilter);
     } else if (
       department === "All" &&
       area === "All" &&
@@ -134,6 +133,7 @@ const App: React.VFC = () => {
       year[1] === 15
     ) {
       setFilter(dataFilter);
+      setFilterList(dataFilter);
     } else {
       setFilter([]);
     }
@@ -149,8 +149,8 @@ const App: React.VFC = () => {
             <Button onClick={handleShowFilter} variant="text">Filter</Button>
           </div> 
           <PerfectScrollbar className="info-content">
-            <p className="color-grey-n80 fs-12">{newStaffs.length} Results</p>
-            { newStaffs.map((item) => (
+            <p className="color-grey-n80 fs-12">{filterList.length} Results</p>
+            { filterList.map((item) => (
               <div className="employee">
                 <img className="employee-image" src="./images/avatar.png" alt="" />
                 <div>
